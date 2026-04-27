@@ -1,0 +1,12 @@
+Given a non-empty array of integers and two indices defining a half-open subarray, return the index of a minimum element within that subarray.
+
+Assume the following preconditions hold:
+- The array length is greater than 0.
+- Two indices s and e are provided such that 0 <= s < e <= array length.
+
+The function must return an index m that satisfies:
+- m is within the half-open interval [s, e).
+- For every index k in [s, e), the element at position m is less than or equal to the element at position k.
+
+If multiple positions attain the minimum value in the specified range, returning any one of them is acceptable. The function reads the array and does not modify it.
+fn find_min_index(a: &[int], s: usize, e: usize) -> (min_i: usize)

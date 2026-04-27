@@ -1,0 +1,8 @@
+Given an array of 32-bit integers, determine whether it contains any odd element and, if so, return the index of the first odd element. An integer is odd if its remainder when divided by 2 is not zero.
+
+Return a pair (found, index), where:
+- If found is false, then every element in the array is even. The index value may be arbitrary (the reference implementation returns 0).
+- If found is true, then index is within the array bounds, the element at position index is odd, and every position strictly before index contains an even element (i.e., there is no odd element earlier in the array).
+
+There are no preconditions on the input; the array may be empty.
+fn find_first_odd(a: &[i32]) -> (bool, usize)

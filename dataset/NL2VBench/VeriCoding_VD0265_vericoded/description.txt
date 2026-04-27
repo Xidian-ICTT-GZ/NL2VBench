@@ -1,0 +1,4 @@
+Given two positive 32-bit unsigned integers, return their greatest common divisor (GCD).
+Assume both inputs are strictly greater than zero. The result must equal the mathematical GCD of the two inputs viewed as natural numbers: it is a positive integer that divides both inputs, and every common divisor of the inputs divides the result.
+If an iterative approach is used, it must maintain that both intermediate values remain strictly positive at all times, that the GCD of the current pair is invariant (equal to the GCD of the original inputs), and that the measure used for termination strictly decreases each step (e.g., the sum of the two current values strictly decreases), guaranteeing termination.
+fn gcd_calc(m: u32, n: u32) -> u32

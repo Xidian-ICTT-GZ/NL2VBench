@@ -1,0 +1,7 @@
+Implement initialization of a random-bit generator from an optional 64-bit seed. Provide a function that constructs and returns a generator object with the following properties:
+- The returned generator must be marked as initialized (its initialization flag is true).
+- The generator contains an embedded component that stores the provided seed exactly as given (including the case when no seed is provided).
+- The embedded component also stores a 64-bit internal state derived from the input seed. If a seed is provided, the internal state must be non-zero. If no seed is provided, the internal state may be zero.
+Additionally, provide a helper function that computes the internal state from the optional seed and guarantees that when a seed is present, the computed state is not zero. There are no preconditions on the input beyond being an optional 64-bit unsigned integer.
+fn compute_state(seed: Option<u64>) -> u64
+fn default_rng(seed: Option<u64>) -> Generator

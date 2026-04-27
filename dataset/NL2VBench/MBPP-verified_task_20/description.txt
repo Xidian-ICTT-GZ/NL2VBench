@@ -1,0 +1,2 @@
+Given a vector of 32-bit signed integers, determine whether the vector contains only one distinct value. Return true if and only if every element is equal to the first element. For an empty vector or a vector with a single element, return true. The returned boolean must be exactly equivalent to the universal property: for all indices i with 1 <= i < length of the vector, the element at position i equals the element at position 0. No additional preconditions are imposed on the input.
+fn has_only_one_distinct_element(arr: &Vec<i32>) -> (result: bool)

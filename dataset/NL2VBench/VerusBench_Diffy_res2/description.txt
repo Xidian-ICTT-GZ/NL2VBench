@@ -1,0 +1,6 @@
+You are given three mutable arrays of 32-bit integers and a mutable single-element array that stores an integer value, along with an integer N. Assume N is a positive integer strictly less than 1000. Assume each of the three arrays has length exactly N, and the single-element array has length exactly 1.
+
+Set every element of each of the three arrays to the value 1. Initialize the single-element array to 0, then accumulate into it the sum of all elements of the first array, followed by all elements of the second array, and then all elements of the third array. After the function returns, the value in the single-element array must be at most 3 · N. (Under these assumptions, because each element becomes 1 and there are N elements in each array, the resulting sum equals 3 · N.)
+
+The function must not change the lengths of any of the input arrays, and it should only use the provided arrays to perform the computation. All loops must terminate.
+pub fn myfun(a: &mut Vec<i32>, b: &mut Vec<i32>, c: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

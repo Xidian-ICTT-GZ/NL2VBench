@@ -1,0 +1,2 @@
+Given an integer representing a month number in the Gregorian calendar (where 1 = January, ..., 12 = December), determine whether that month has 31 days. Assume the input month is within the inclusive range 1 to 12. The return value must be true if and only if the month is one of {1, 3, 5, 7, 8, 10, 12}; otherwise, it must be false.
+fn month_has_31_days(month: i32) -> (result: bool)

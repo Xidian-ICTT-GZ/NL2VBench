@@ -1,0 +1,8 @@
+Given two arrays of signed 8-bit integers of equal length, return a boolean array of the same length that indicates, for each position, whether the element of the first array is greater than or equal to the corresponding element of the second array.
+Assume the two input arrays have equal length. The result must satisfy all of the following:
+- The output length equals the input length.
+- For every index i within bounds, the output at i is true if and only if the i-th element of the first array is greater than or equal to the i-th element of the second array.
+- If the two input arrays are identical element-wise, then every output entry is true.
+- For any index i, if the output at i is true and the i-th element of the second array is also greater than or equal to the i-th element of the first array, then those two elements are equal (antisymmetry of the greater-or-equal relation).
+- Every output entry is a boolean value.
+fn numpy_greater_equal(x1: Vec<i8>, x2: Vec<i8>) -> Vec<bool>

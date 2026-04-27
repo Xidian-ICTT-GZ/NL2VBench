@@ -1,0 +1,13 @@
+You are given a non-empty array of 8-bit signed integers. Select and return one value that appears in the array such that its last occurrence position (the greatest index at which this value appears) is minimal among all values that appear in the array.
+
+Assumptions and definitions:
+- The input array has positive length.
+- For any value x that appears in the array, define last_occurrence_position(x) as the largest index k with 0 <= k < n (where n is the array length) such that a[k] = x.
+
+Output requirements:
+- The returned value must be an element of the array.
+- For every value y that appears in the array, last_occurrence_position(returned_value) <= last_occurrence_position(y).
+
+If multiple values would tie for the minimal last occurrence position, returning any one of them is acceptable (note that ties cannot occur between distinct values because a single index holds exactly one value).
+fn solve(cafes: Vec<i8>) -> i8
+fn exec_last_occurrence_position(cafes: &Vec<i8>, cafe: i8) -> usize

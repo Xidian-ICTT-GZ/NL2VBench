@@ -1,0 +1,7 @@
+Given an integer array and a target integer, compute the insertion position of the target within the first 1000 elements of the array. Assume the array length is at least 1000 and that the elements in positions 0 through 999 are sorted in nondecreasing order. The function must return an index k with 0 <= k <= 1000 such that the following two conditions hold simultaneously:
+- For every index r with 0 <= r < k, the element at r is strictly less than the target.
+- For every index r with k <= r < 1000, the element at r is greater than or equal to the target.
+Equivalently, k is the lower bound of the target in the prefix of length 1000: if the target is less than or equal to the first element, k = 0; if the target is greater than all elements in the first 1000 positions, k = 1000. Only the first 1000 elements of the array are considered for this computation.
+spec fn is_2_pow(n: int) -> bool
+fn search_range_helper(a: &[i32], x: i32, lo: usize, hi: usize) -> (k: usize)
+fn search_1000(a: &[i32], x: i32) -> (k: usize)

@@ -1,0 +1,2 @@
+Given a list of lists of 32-bit signed integers, return a new list containing the first element of each sublist, in the same order as they appear. Assume every sublist in the input is non-empty. The output length must equal the number of sublists in the input. If the outer list is empty, the result must be an empty list.
+fn get_first_elements(arr: &Vec<Vec<i32>>) -> (result: Vec<i32>)

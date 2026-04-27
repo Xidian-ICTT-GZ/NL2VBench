@@ -1,0 +1,4 @@
+Given a 64-bit unsigned integer as input, determine whether it is a prime number. Assume the input is strictly greater than 1. The returned boolean must exactly match the mathematical definition of primality: a number is prime if it is greater than 1 and has no positive integer divisors other than 1 and itself. Formally, the output is true if and only if for all integers f with 1 < f < n, n mod f is not zero; otherwise, the output is false.
+spec fn divides(factor: nat, candidate: nat) -> bool
+spec fn is_prime(candidate: nat) -> bool
+fn test_prime(candidate: u64) -> (result: bool)

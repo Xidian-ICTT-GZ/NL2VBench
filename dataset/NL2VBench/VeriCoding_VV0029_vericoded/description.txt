@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, return the length of the longest contiguous strictly increasing streak. A streak is defined as a maximal contiguous segment where each element is strictly greater than its immediate predecessor. If the array is empty, return 0. The returned value must never exceed the array length.
+fn longest_increasing_streak(nums: &Vec<i32>) -> usize

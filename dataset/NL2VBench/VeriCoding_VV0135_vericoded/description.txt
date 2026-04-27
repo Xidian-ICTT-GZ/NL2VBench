@@ -1,0 +1,2 @@
+Implement a function that compares two 32-bit signed integers and returns a boolean indicating whether they are equal. The function must be total over all i32 values. Postconditions: it must return true if and only if the two inputs are equal, and false otherwise. There are no preconditions beyond the inputs being valid 32-bit signed integers.
+fn compare(a: i32, b: i32) -> (result: bool)

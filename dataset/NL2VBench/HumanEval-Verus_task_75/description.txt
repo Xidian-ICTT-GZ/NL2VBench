@@ -1,0 +1,5 @@
+You are given a vector of 32-bit unsigned integers representing the coefficients of a polynomial P(x), where the element at index i is the coefficient of x^i. Compute the coefficients of the derivative P'(x). For an input of length n:
+- If n = 0, return an empty vector.
+- Otherwise, return a vector of length n − 1 whose j-th element (0-based) is (j + 1) × input[j + 1].
+Assume the input length is at most 2^32 − 1. Perform the multiplication using 64-bit arithmetic and return 64-bit unsigned integers to avoid overflow. The result must correspond exactly to the index-weighted sequence of the input starting from index 1, i.e., the sequence [1 × input[1], 2 × input[2], …, (n − 1) × input[n − 1]].
+fn derivative(xs: &Vec<u32>) -> Vec<u64>

@@ -1,0 +1,3 @@
+Compute the length of the intersection of two intervals on the number line.
+Assume the inputs represent two intervals [start1, end1] and [start2, end2] with the following constraints: 0 ≤ start1 < end1 ≤ 100 and 0 ≤ start2 < end2 ≤ 100. Return the non-negative integer length of their overlap, which is zero if the intervals do not overlap or only touch at a single point. The result must be between 0 and 100 inclusive.
+fn solve(a: i8, b: i8, c: i8, d: i8) -> (result: i8)

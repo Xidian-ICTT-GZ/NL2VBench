@@ -1,0 +1,2 @@
+Given a finite array of characters, construct and return a new dynamic array containing exactly the lowercase English vowels from the input, in their original order. The set of vowels is precisely {'a', 'e', 'i', 'o', 'u'}. Characters not in this set (including uppercase letters and any other symbols) are excluded. The input may be empty. The result, when viewed as a mathematical sequence, must equal the subsequence of the input obtained by filtering out all non-vowel characters according to the given vowel set.
+fn filter_vowels_array(xs: &[char]) -> (ys: Vec<char>)

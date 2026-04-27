@@ -1,0 +1,11 @@
+You are given an array of 32-bit signed integers. Return a new vector that contains the even values drawn from the input.
+
+Constraints and guarantees:
+- There are no special preconditions on the input; the input length may be zero.
+- Every element in the returned vector must be even and must occur in the input array.
+- For every index in the input array whose value is even, that value must appear at least once in the returned vector.
+- No requirements are placed on the order of elements in the result beyond the above membership properties.
+- If the input is empty or contains no even numbers, return an empty vector.
+
+The function may allocate and return a new vector to hold the result.
+fn remove_odd_numbers(arr: &[i32]) -> Vec<i32>

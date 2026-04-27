@@ -1,0 +1,2 @@
+Given an array of non-negative integers, determine whether each position has a value whose parity matches the parity of its index. Return true if and only if, for every valid index i in the range [0, n), the element at position i is even when i is even, and the element at position i is odd when i is odd. The array length may be zero; in that case, the condition is considered satisfied and the function should return true.
+fn is_even_at_even_index(arr: &Vec<usize>) -> bool

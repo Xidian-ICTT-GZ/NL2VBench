@@ -1,0 +1,2 @@
+Given two finite lists of 32-bit signed integers, determine whether they share at least one common element. Return true if and only if there exists a value that appears in both lists; otherwise return false. Inputs may be empty. The result must exactly reflect the existence of at least one pair of valid indices, one in the first list and one in the second list, such that the elements at those positions are equal.
+fn has_common_element(list1: &Vec<i32>, list2: &Vec<i32>) -> bool

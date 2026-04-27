@@ -1,0 +1,2 @@
+Given a finite array of 32-bit integers and a target integer, determine whether every element of the array is equal to the target. The function must return true if and only if for every valid index i with 0 <= i < array length, the element at index i equals the target; otherwise, it must return false. There are no preconditions on the input. An empty array should be considered as satisfying the condition and must yield true.
+fn all_elements_equals(arr: &Vec<i32>, element: i32) -> bool

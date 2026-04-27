@@ -1,0 +1,7 @@
+You are given a finite array of 64-bit signed integers. Implement a function that returns the total sum of all elements as a 128-bit signed integer.
+
+Correctness must be stated against the mathematical sum of the sequence: define s([]) = 0 and for any non-empty sequence s(prefix ⧺ [last]) = s(prefix) + last. The function must ensure its return value equals this mathematical sum applied to the input array.
+
+Assume the input length is non-negative (as for any array). The elements may be any 64-bit signed values, including boundary values. For any prefix length k with 0 ≤ k ≤ length, the sum of the first k elements is bounded between k · i64::MIN and k · i64::MAX (a property implied by each element being within the 64-bit range). The algorithm must terminate.
+spec fn sum_to(arr: Seq<i64>) -> int
+fn sum(arr: &Vec<i64>) -> (sum: i128)

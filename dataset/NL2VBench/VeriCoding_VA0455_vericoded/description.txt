@@ -1,0 +1,8 @@
+You are given two piles of cookies with non-negative counts and two numbers representing guest requirements. The total number of guests who need to be served is the sum of two groups: regular guests and special guests. Each regular guest requires exactly one cookie (from either pile), and each special guest requires exactly two cookies: one cookie must come from the first pile and one cookie must come from the second pile. Assume the total number of guests is positive.
+
+Return true if and only if it is possible to satisfy all guests under these rules. This is equivalent to both of the following holding:
+- The total number of available cookies across both piles is at least the total number of required cookie servings (regular guests each require one cookie; special guests each require two cookies, one from each pile, which totals to regular + special servings).
+- Each pile individually contains at least as many cookies as the number of special guests, ensuring that each special guest can receive one cookie from each pile.
+
+Otherwise, return false.
+fn solve_cookie_distribution(a: u8, b: u8, n: u8, m: u8) -> (result: bool)

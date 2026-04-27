@@ -1,0 +1,5 @@
+You are given two signed 8-bit integers representing two values. Assume both inputs lie within the range [-100, 100]. Additionally, assume that both their sum and their difference are even numbers (equivalently, the two inputs have the same parity). Your task is to return a pair of signed 8-bit integers such that:
+- The first input equals the sum of the returned pair.
+- The second input equals the difference of the returned pair.
+The returned pair must satisfy these equations exactly under the given assumptions.
+fn solve(a: i8, b: i8) -> (result: (i8, i8))

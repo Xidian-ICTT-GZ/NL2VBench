@@ -1,0 +1,2 @@
+Given two non-negative integers representing a cost price and a selling price, compute the monetary loss. Assume both inputs are greater than or equal to zero. If the cost price is strictly greater than the selling price, the loss equals the difference between the cost price and the selling price. Otherwise, when the selling price is greater than or equal to the cost price, the loss is zero. Return the computed loss value.
+fn calculate_loss(cost_price: i32, selling_price: i32) -> (loss: i32)

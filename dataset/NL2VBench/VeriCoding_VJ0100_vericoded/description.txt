@@ -1,0 +1,7 @@
+Given an array of characters, construct a new array of the same length where each character’s case is toggled according to ASCII English letters. Specifically:
+- If an element is a lowercase English letter ('a' to 'z'), replace it with its uppercase counterpart.
+- If an element is an uppercase English letter ('A' to 'Z'), replace it with its lowercase counterpart.
+- All other characters (digits, punctuation, whitespace, non-ASCII letters, etc.) remain unchanged.
+
+The output must preserve the order of elements and have exactly the same length as the input. There are no additional preconditions on the input; assume any finite array of characters may be provided.
+fn to_toggle_case(str1: &Vec<char>) -> Vec<char>

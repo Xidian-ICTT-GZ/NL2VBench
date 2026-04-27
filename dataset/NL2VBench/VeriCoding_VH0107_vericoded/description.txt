@@ -1,0 +1,2 @@
+Given a finite vector of 8-bit signed integers, return a new vector containing the elements of the input in reverse order. The input may be empty. The result must have the same length as the input. For every valid index k in the range [0, n), where n is the input length, the element at position k in the result must equal the element at position n − 1 − k in the input.
+fn reverse(s: Vec<i8>) -> (rev: Vec<i8>)

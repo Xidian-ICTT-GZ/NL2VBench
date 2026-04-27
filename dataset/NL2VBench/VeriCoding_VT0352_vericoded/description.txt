@@ -1,0 +1,9 @@
+You are given an array of complex numbers (each with 32-bit integer real and imaginary components) and a positive integer tolerance. Define a complex number’s imaginary part as “close to zero” if the absolute value of the imaginary component is less than or equal to tolerance multiplied by a fixed machine epsilon (equal to 2). The task is to return a new array of the same length with the following behavior:
+- If every element’s imaginary part is close to zero under this definition, return an array where each element has the same real part as the corresponding input element, and its imaginary part set to zero.
+- Otherwise, return the input array unchanged.
+Additionally, the following properties must hold:
+- The output array has the same length as the input array.
+- The real part of each element in the output array is identical to the real part of the corresponding element in the input array, regardless of branch.
+- If the input array is already real (every element’s imaginary part equals zero), then the output must equal the input.
+Assume the tolerance is strictly positive.
+fn real_if_close(arr: Vec<Complex>, tol: i32) -> (result: Vec<Complex>)

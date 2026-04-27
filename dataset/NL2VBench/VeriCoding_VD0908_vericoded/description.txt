@@ -1,0 +1,8 @@
+You are given a mutable array of characters and three nonnegative integers: a prefix length l, a start index at, and a count p. Assume the following preconditions hold:
+- 0 <= l <= current length of the array.
+- 0 <= at and 0 <= p with at + p <= l.
+Modify the array in place so that its final contents are exactly the concatenation of:
+- the original characters at indices [0, at), followed by
+- the original characters at indices [at + p, l).
+In other words, delete p characters starting at index at from within the first l characters of the array, and remove all characters with original indices >= l. The resulting length must be l - p.
+fn delete(line: &mut Vec<char>, l: usize, at: usize, p: usize)

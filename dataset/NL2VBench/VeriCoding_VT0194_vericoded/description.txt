@@ -1,0 +1,11 @@
+Implement a function that, given an array of 32-bit floating-point numbers and a list of indices, returns a new array containing exactly the elements of the input array located at those indices, in the same order as the indices appear.
+
+Assumptions:
+- All indices are zero-based and within bounds of the input array: for every position i in the index list, 0 <= index_list[i] < length of the input array.
+
+Requirements:
+- The output array length must equal the length of the index list.
+- For every valid position i, the output at position i must be exactly the element from the input array at position index_list[i].
+
+The index list may be unsorted and may contain duplicates. If the index list is empty, the function must return an empty array.
+fn take(arr: Vec<f32>, indices: Vec<usize>) -> Vec<f32>

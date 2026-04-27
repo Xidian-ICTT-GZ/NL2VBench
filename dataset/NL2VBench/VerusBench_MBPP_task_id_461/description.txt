@@ -1,0 +1,8 @@
+Given a slice of bytes, return the number of positions whose byte value corresponds to an uppercase ASCII letter. Specifically, count how many bytes are in the inclusive range 65 to 90 (characters 'A' through 'Z'). The input slice may be empty. Return the result as an unsigned 64-bit integer.
+
+Correctness requirements:
+- The result must be between 0 and the length of the input slice (inclusive lower bound, and it cannot exceed the length).
+- The result must equal the mathematically defined count of uppercase letters in the sequence: for an empty sequence the count is 0; otherwise it is the count for the sequence without its last element plus 1 if the last byte is in [65, 90], and plus 0 otherwise.
+
+Do not count lowercase letters, digits, punctuation, or any non-letter bytes outside the uppercase ASCII range.
+fn count_uppercase(text: &[u8]) -> u64

@@ -1,0 +1,2 @@
+Given an unsigned 8-bit integer, return the number of 1-bits in its binary representation (the Hamming weight or popcount). The input range is 0 through 255, and the result must fit within an unsigned 8-bit integer. Since the input is 8 bits wide, the result is at most 8. The returned value must equal the mathematical popcount defined as: popcount(0) = 0 and, for n > 0, popcount(n) = (n mod 2) + popcount(floor(n / 2)).
+fn solve(n: u8) -> (r: u8)

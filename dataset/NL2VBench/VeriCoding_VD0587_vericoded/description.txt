@@ -1,0 +1,10 @@
+Given a slice of mathematical integers, determine whether there exists a position where three consecutive elements are all equal. Return an index that witnesses such a triple when it exists; otherwise, return the length of the slice.
+
+Formally, define that a triple exists if and only if there is some i with 0 <= i < len(a) - 2 such that a[i] = a[i+1] = a[i+2]. The function must satisfy the following postconditions:
+- The return value is either an index less than len(a) - 1 or exactly len(a).
+- The return value equals len(a) if and only if no triple exists in the slice.
+- The return value is less than len(a) - 1 if and only if a triple exists.
+- If the return value is less than len(a) - 1, then the three consecutive elements starting at that index are equal.
+
+No preconditions are required; the input slice may have any length. In particular, if the slice length is less than 3, no triple can exist and the function must return the slice length.
+fn get_triple(a: &[int]) -> (index: usize)

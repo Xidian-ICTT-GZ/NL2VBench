@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit integers, return the index of the first occurrence of the minimum value in the array. Assume the input size is positive. The returned index must be within the bounds of the array. The element at the returned index must be less than or equal to every element in the array. Additionally, for any position strictly before the returned index, the element there must be strictly greater than the element at the returned index. This guarantees that the index corresponds to the first occurrence of the global minimum.
+fn getmini(a: &Vec<i32>) -> usize

@@ -1,0 +1,2 @@
+Given two arrays of signed 8-bit integers of equal length, produce a boolean array of the same length where each position indicates whether the corresponding elements of the two input arrays are unequal. Assume the two input arrays have the same length. For every valid index i, the output at position i must be true if and only if the ith element of the first array, interpreted as a mathematical integer, is not equal to the ith element of the second array interpreted as a mathematical integer.
+fn not_equal(a: Vec<i8>, b: Vec<i8>) -> (result: Vec<bool>)

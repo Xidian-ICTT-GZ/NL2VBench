@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the sum of its smallest element and its largest element. Assume the input size is positive. Additionally, assume every element in the array is strictly greater than i32::MIN / 2 and strictly less than i32::MAX / 2. These bounds guarantee that both the minimum and maximum values, and their sum, fit within the 32-bit signed integer range without overflow. The function must produce exactly min(array) + max(array) as an i32.
+fn sum_min_max(arr: &Vec<i32>) -> (sum: i32)

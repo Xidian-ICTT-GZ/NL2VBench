@@ -1,0 +1,2 @@
+Given a 32-bit unsigned integer greater than 1, compute its largest proper divisor. A proper divisor of a number n is a positive integer d such that 1 ≤ d < n and n mod d = 0 (equivalently, there exists a natural number k with d × k = n). The result must strictly divide the input, be strictly less than the input, and be at least as large as every other proper divisor of the input. If the input is prime (i.e., it has no proper divisor greater than 1), return 1. Assume the input satisfies n > 1.
+fn largest_divisor(n: u32) -> (ret: u32)

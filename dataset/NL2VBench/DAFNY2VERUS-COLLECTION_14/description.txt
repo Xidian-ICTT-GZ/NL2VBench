@@ -1,0 +1,6 @@
+Implement a function that, given an array of 32-bit signed integers, returns the maximum value. The array may be empty. The function must satisfy the following properties:
+- If the array is empty, return 0.
+- For any array (empty or not), the returned value is greater than or equal to every element in the array.
+- If the array is non-empty, the returned value must be equal to one of the elements of the array (i.e., it is the maximum element that appears in the array).
+Assume standard 0-based indexing and that the input array is a valid vector.
+fn max(a: &Vec<i32>) -> (max: i32)

@@ -1,0 +1,2 @@
+You are given a mutable array of 32-bit integers and a positive integer N. Assume the array’s initial length is exactly N. Modify the array in place, without changing its length, so that after the function returns, every element at indices 0 through N-1 has the same parity as N. Formally, for all indices k with 0 ≤ k < N, the element at position k must satisfy a[k] mod 2 = N mod 2. No other properties about the final values are required beyond this parity guarantee.
+pub fn myfun(a: &mut Vec<i32>, N: u32)

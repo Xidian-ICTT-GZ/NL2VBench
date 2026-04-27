@@ -1,0 +1,3 @@
+Implement a function that receives three inputs: (1) a mutable array of 32-bit integers, (2) a mutable array of 32-bit integers that contains exactly one element, and (3) a 32-bit integer representing the size. Assume the size is strictly positive and less than 1000. Assume the length of the first array equals the given size, and the length of the single-element array is exactly one. The function must set the only element of the single-element array to five times the given size. Upon return, it is guaranteed that the single element equals five times the input size.
+fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)
+fn times_five(x: i32) -> i32

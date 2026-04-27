@@ -1,0 +1,7 @@
+Given two non-empty arrays of 32-bit floating point numbers, construct a Cartesian mesh grid. Return a pair of two 2D arrays (matrices) with the following properties:
+- The number of rows in each output matrix equals the length of the second input array.
+- The number of columns in each row equals the length of the first input array.
+- For every valid row index i and column index j, the element at position (i, j) in the first output matrix equals the j-th element of the first input array.
+- For every valid row index i and column index j, the element at position (i, j) in the second output matrix equals the i-th element of the second input array.
+Assume both input arrays are non-empty. The outputs should be standard nested dynamic arrays (i.e., arrays of arrays).
+fn meshgrid(x: Vec<f32>, y: Vec<f32>) -> (result: (Vec<Vec<f32>>, Vec<Vec<f32>>))

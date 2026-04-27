@@ -1,0 +1,6 @@
+Implement two functions:
+1) A character classifier that returns true if and only if the input character is one of the ASCII digits '0' through '9'.
+2) A string predicate that returns true if and only if every character in the input string is an ASCII digit as defined above.
+Assume the input string may be empty and may contain arbitrary Unicode characters; treat the string as a sequence of Unicode code points. The empty string should be classified as true (vacuously all characters are digits). The result of the string predicate must be logically equivalent to the universal condition: for all indices from 0 (inclusive) to the string length (exclusive), the character at that position is an ASCII digit. A correct solution must be consistent with the following invariant when conceptually processing the string left-to-right: after examining any prefix of length i, the intermediate boolean reflects that all characters in that prefix are ASCII digits. The implementation must terminate for any finite input length.
+fn is_ascii_digit(c: char) -> bool
+fn all_digits(s: String) -> bool

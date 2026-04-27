@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers and a target integer, determine whether the target value appears in the array. Return true if and only if there exists an index i such that 0 <= i < the array's length and the element at that index equals the target; otherwise return false. There are no preconditions: the array may be empty, and any integer value may be provided as the target. The correctness requirement is that the Boolean result must exactly correspond to the truth of the existential statement described above.
+fn contains_k(arr: &Vec<i32>, k: i32) -> bool

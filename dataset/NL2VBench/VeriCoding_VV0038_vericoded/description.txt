@@ -1,0 +1,2 @@
+Given a non-empty vector of unsigned integers (usize), return the maximum element in the vector. Assume the input size is greater than zero. The result must be equal to the value at some valid index of the input, and every element in the input must be less than or equal to the returned value.
+fn max_of_list(lst: &Vec<usize>) -> (result: usize)

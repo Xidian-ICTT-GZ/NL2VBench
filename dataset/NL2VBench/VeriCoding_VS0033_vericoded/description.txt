@@ -1,0 +1,2 @@
+Given a non-empty vector of 8-bit signed integers, return the maximum value present in the vector. Assume the input length is strictly greater than zero. The returned value must be equal to one of the elements in the input, and it must be greater than or equal to every element in the input.
+fn max(a: Vec<i8>) -> (result: i8)

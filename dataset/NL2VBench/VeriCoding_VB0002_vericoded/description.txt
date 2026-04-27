@@ -1,0 +1,7 @@
+Given two arrays of characters representing binary numbers, return a comparison result indicating their numeric order. Each array encodes a non-negative integer in base 2 and must satisfy all of the following:
+- Every element is either the character '0' or '1'.
+- The array is non-empty.
+- The representation is canonical: either the array has length 1 and contains '0' (representing zero), or its first character is '1' (no leading zeros for positive numbers).
+Return -1 if the first number is smaller than the second, 0 if both numbers are equal, and 1 if the first number is larger. The numeric value of a binary array is defined in the standard way (most significant bit first).
+Assume the inputs always satisfy the above constraints.
+fn compare(s1: Vec<char>, s2: Vec<char>) -> (res: i32)

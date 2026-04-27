@@ -1,0 +1,2 @@
+Implement a function that takes an array of 32-bit signed integers and a target value, and returns whether the target occurs in the array. The array may be empty and is not assumed to be sorted. The result must be true if and only if there exists an index within the bounds of the array such that the element at that index equals the target value; otherwise, the result must be false.
+fn contains_k(arr: &Vec<i32>, k: i32) -> (result: bool)

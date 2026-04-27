@@ -1,0 +1,9 @@
+You are given:
+- A positive integer N with 0 < N < 1000.
+- A mutable array of 32-bit integers whose length is exactly N.
+- A mutable single-element array (length 1) that serves as an output accumulator.
+
+Write a procedure that modifies the input array so that, after completion, every element of the array equals 3. The procedure must then compute the sum of all elements in the array and store the result in the single-element output array. Assume the output array initially contains any value but has length 1. The length of the input array must remain N throughout the execution, and the length of the output array must remain 1.
+
+Guarantee: After the procedure returns, the single-element output array contains 3 * N.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: usize)

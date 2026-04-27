@@ -1,0 +1,7 @@
+Given an array of characters, return a single-character array according to the following rule:
+- Define "all lowercase" to mean the input length is positive and every character is a lowercase ASCII letter between 'a' and 'z' inclusive.
+- If and only if the input is all lowercase, return an array containing the single character 'a'.
+- Otherwise (including the case where the input is empty or contains any character outside 'a'..'z'), return an array containing the single character 'A'.
+Additionally, the output must always be one of exactly ['a'] or ['A'].
+fn solve(input: Vec<char>) -> Vec<char>
+fn check_all_lowercase(v: &Vec<char>) -> bool

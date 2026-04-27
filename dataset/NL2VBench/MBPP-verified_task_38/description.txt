@@ -1,0 +1,3 @@
+Given three integer arrays of equal length, compute the number of indices where all three arrays have the same value at that index. Assume the arrays have identical lengths (including the possibility of zero length). The result must be an integer between 0 and the common length of the arrays, inclusive.
+spec fn count_identical(s1: Seq<i32>, s2: Seq<i32>, s3: Seq<i32>) -> int
+fn count_identical_position(arr1: &Vec<i32>, arr2: &Vec<i32>, arr3: &Vec<i32>) -> usize

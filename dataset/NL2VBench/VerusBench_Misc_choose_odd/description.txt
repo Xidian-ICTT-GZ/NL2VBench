@@ -1,0 +1,2 @@
+Given an array of unsigned 64-bit integers, assume the array contains at least one odd element. Return the index of some odd element. The returned index must be strictly less than the array length. If multiple odd elements exist, returning any one of them is acceptable.
+fn choose_odd(v: &Vec<u64>) -> usize

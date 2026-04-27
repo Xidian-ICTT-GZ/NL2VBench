@@ -1,0 +1,8 @@
+Given a non-empty array of 32-bit signed integers and a positive prefix length that does not exceed the array’s length, return an index within that prefix where a maximum element occurs. The returned index must be within [0, prefix length). The value at the returned index must be greater than or equal to every value in the specified prefix. Any index that satisfies these conditions is acceptable when there are ties.
+Assumptions:
+- The array length is greater than 0.
+- The prefix length is strictly positive and at most the array length.
+Output requirements:
+- The returned index is in the range [0, prefix length).
+- For every position in the prefix, the element at the returned index is at least as large as the element at that position.
+fn findMax(a: &[i32], n: usize) -> (r: usize)

@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers and a 32-bit signed integer value, determine whether the value is strictly greater than every element in the array. Return true if and only if for all valid indices in the array, the value is greater than the element at that index. There are no preconditions on the array or the value; the array may be empty. For an empty array, the property holds vacuously and the result must be true.
+fn is_greater(arr: &Vec<i32>, number: i32) -> bool

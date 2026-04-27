@@ -1,0 +1,2 @@
+You are given an array of 32-bit integers and an index. Assume the index is strictly less than the length of the array (i.e., the index is valid). Create and return a new array that has the same length as the input. In the returned array, the element at the specified index must be set to the constant value 60. All other positions must retain the corresponding values from the original array.
+fn test_array_elements(a: &Vec<i32>, j: usize) -> (result: Vec<i32>)

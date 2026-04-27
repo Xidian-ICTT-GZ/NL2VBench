@@ -1,0 +1,2 @@
+Given a non-empty array of characters, return a new array that is the exact reverse of the input. Assume the input array length is strictly positive. The output must have the same length as the input. For every valid index i in the range [0, n), where n is the input length, the character at position i in the output must be equal to the character at position (n − i − 1) in the input.
+fn reverse(a: Vec<char>) -> (b: Vec<char>)

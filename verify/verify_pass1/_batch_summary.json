@@ -1,0 +1,505 @@
+{
+  "generated_from": [
+    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot",
+    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot_COT",
+    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot_LTM",
+    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_zeroshot"
+  ],
+  "output_dir": "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass1",
+  "generation": 4,
+  "generation_name": "fourth",
+  "total_experiments": 54,
+  "total_samples": 41148,
+  "total_succeeded": 1882,
+  "total_failed": 39266,
+  "overall_success_rate": 0.045737338388257026,
+  "timestamp": "2026-04-27T12:07:21.901118+00:00",
+  "experiments": [
+    {
+      "experiment": "p1_fewshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p1_fewshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 53,
+      "failed": 709,
+      "success_rate": 0.06955380577427822
+    },
+    {
+      "experiment": "p1_fewshot_deepseek-v3.2",
+      "pipeline": "p1_fewshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 21,
+      "failed": 741,
+      "success_rate": 0.027559055118110236
+    },
+    {
+      "experiment": "p1_fewshot_gpt-4o-mini",
+      "pipeline": "p1_fewshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 20,
+      "failed": 742,
+      "success_rate": 0.026246719160104987
+    },
+    {
+      "experiment": "p1_fewshot_gpt-5.2",
+      "pipeline": "p1_fewshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 228,
+      "failed": 534,
+      "success_rate": 0.2992125984251969
+    },
+    {
+      "experiment": "p1_fewshot_o4-mini",
+      "pipeline": "p1_fewshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 29,
+      "failed": 733,
+      "success_rate": 0.03805774278215223
+    },
+    {
+      "experiment": "p2_fewshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p2_fewshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 24,
+      "failed": 738,
+      "success_rate": 0.031496062992125984
+    },
+    {
+      "experiment": "p2_fewshot_deepseek-v3.2",
+      "pipeline": "p2_fewshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 4,
+      "failed": 758,
+      "success_rate": 0.005249343832020997
+    },
+    {
+      "experiment": "p2_fewshot_gpt-4o-mini",
+      "pipeline": "p2_fewshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 6,
+      "failed": 756,
+      "success_rate": 0.007874015748031496
+    },
+    {
+      "experiment": "p2_fewshot_gpt-5.2",
+      "pipeline": "p2_fewshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 79,
+      "failed": 683,
+      "success_rate": 0.1036745406824147
+    },
+    {
+      "experiment": "p2_fewshot_o4-mini",
+      "pipeline": "p2_fewshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 19,
+      "failed": 743,
+      "success_rate": 0.024934383202099737
+    },
+    {
+      "experiment": "p3_fewshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p3_fewshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 23,
+      "failed": 739,
+      "success_rate": 0.030183727034120734
+    },
+    {
+      "experiment": "p3_fewshot_deepseek-v3.2",
+      "pipeline": "p3_fewshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 28,
+      "failed": 734,
+      "success_rate": 0.03674540682414698
+    },
+    {
+      "experiment": "p3_fewshot_gpt-4o-mini",
+      "pipeline": "p3_fewshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 20,
+      "failed": 742,
+      "success_rate": 0.026246719160104987
+    },
+    {
+      "experiment": "p3_fewshot_gpt-5.2",
+      "pipeline": "p3_fewshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 154,
+      "failed": 608,
+      "success_rate": 0.2020997375328084
+    },
+    {
+      "experiment": "p3_fewshot_o4-mini",
+      "pipeline": "p3_fewshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 29,
+      "failed": 733,
+      "success_rate": 0.03805774278215223
+    },
+    {
+      "experiment": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929",
+      "pipeline": "p1_fewshot+COT",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 40,
+      "failed": 722,
+      "success_rate": 0.05249343832020997
+    },
+    {
+      "experiment": "p1_fewshotplusCOT_deepseek-v3.2",
+      "pipeline": "p1_fewshot+COT",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 23,
+      "failed": 739,
+      "success_rate": 0.030183727034120734
+    },
+    {
+      "experiment": "p1_fewshotplusCOT_gpt-4o-mini",
+      "pipeline": "p1_fewshot+COT",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 17,
+      "failed": 745,
+      "success_rate": 0.02230971128608924
+    },
+    {
+      "experiment": "p1_fewshotplusCOT_gpt-5.2",
+      "pipeline": "p1_fewshot+COT",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 210,
+      "failed": 552,
+      "success_rate": 0.2755905511811024
+    },
+    {
+      "experiment": "p2_fewshotplusCOT_claude-sonnet-4-5-20250929",
+      "pipeline": "p2_fewshot+COT",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 22,
+      "failed": 740,
+      "success_rate": 0.028871391076115485
+    },
+    {
+      "experiment": "p2_fewshotplusCOT_deepseek-v3.2",
+      "pipeline": "p2_fewshot+COT",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 2,
+      "failed": 760,
+      "success_rate": 0.0026246719160104987
+    },
+    {
+      "experiment": "p2_fewshotplusCOT_gpt-4o-mini",
+      "pipeline": "p2_fewshot+COT",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 3,
+      "failed": 759,
+      "success_rate": 0.003937007874015748
+    },
+    {
+      "experiment": "p2_fewshotplusCOT_gpt-5.2",
+      "pipeline": "p2_fewshot+COT",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 72,
+      "failed": 690,
+      "success_rate": 0.09448818897637795
+    },
+    {
+      "experiment": "p3_fewshotplusCOT_claude-sonnet-4-5-20250929",
+      "pipeline": "p3_fewshot+COT",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 39,
+      "failed": 723,
+      "success_rate": 0.051181102362204724
+    },
+    {
+      "experiment": "p3_fewshotplusCOT_deepseek-v3.2",
+      "pipeline": "p3_fewshot+COT",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 35,
+      "failed": 727,
+      "success_rate": 0.045931758530183726
+    },
+    {
+      "experiment": "p3_fewshotplusCOT_gpt-4o-mini",
+      "pipeline": "p3_fewshot+COT",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 18,
+      "failed": 744,
+      "success_rate": 0.023622047244094488
+    },
+    {
+      "experiment": "p3_fewshotplusCOT_gpt-5.2",
+      "pipeline": "p3_fewshot+COT",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 165,
+      "failed": 597,
+      "success_rate": 0.21653543307086615
+    },
+    {
+      "experiment": "p1_fewshotplusLTM_claude-sonnet-4-5-20250929",
+      "pipeline": "p1_fewshot+LTM",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 31,
+      "failed": 731,
+      "success_rate": 0.04068241469816273
+    },
+    {
+      "experiment": "p1_fewshotplusLTM_deepseek-v3.2",
+      "pipeline": "p1_fewshot+LTM",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 40,
+      "failed": 722,
+      "success_rate": 0.05249343832020997
+    },
+    {
+      "experiment": "p1_fewshotplusLTM_gpt-4o-mini",
+      "pipeline": "p1_fewshot+LTM",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 21,
+      "failed": 741,
+      "success_rate": 0.027559055118110236
+    },
+    {
+      "experiment": "p1_fewshotplusLTM_gpt-5.2",
+      "pipeline": "p1_fewshot+LTM",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 102,
+      "failed": 660,
+      "success_rate": 0.13385826771653545
+    },
+    {
+      "experiment": "p2_fewshotplusLTM_claude-sonnet-4-5-20250929",
+      "pipeline": "p2_fewshot+LTM",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 13,
+      "failed": 749,
+      "success_rate": 0.01706036745406824
+    },
+    {
+      "experiment": "p2_fewshotplusLTM_deepseek-v3.2",
+      "pipeline": "p2_fewshot+LTM",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 43,
+      "failed": 719,
+      "success_rate": 0.05643044619422572
+    },
+    {
+      "experiment": "p2_fewshotplusLTM_gpt-4o-mini",
+      "pipeline": "p2_fewshot+LTM",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 10,
+      "failed": 752,
+      "success_rate": 0.013123359580052493
+    },
+    {
+      "experiment": "p2_fewshotplusLTM_gpt-5.2",
+      "pipeline": "p2_fewshot+LTM",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p3_fewshotplusLTM_claude-sonnet-4-5-20250929",
+      "pipeline": "p3_fewshot+LTM",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 36,
+      "failed": 726,
+      "success_rate": 0.047244094488188976
+    },
+    {
+      "experiment": "p3_fewshotplusLTM_deepseek-v3.2",
+      "pipeline": "p3_fewshot+LTM",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 47,
+      "failed": 715,
+      "success_rate": 0.06167979002624672
+    },
+    {
+      "experiment": "p3_fewshotplusLTM_gpt-4o-mini",
+      "pipeline": "p3_fewshot+LTM",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 19,
+      "failed": 743,
+      "success_rate": 0.024934383202099737
+    },
+    {
+      "experiment": "p3_fewshotplusLTM_gpt-5.2",
+      "pipeline": "p3_fewshot+LTM",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 126,
+      "failed": 636,
+      "success_rate": 0.16535433070866143
+    },
+    {
+      "experiment": "p1_zeroshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p1_zeroshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 1,
+      "failed": 761,
+      "success_rate": 0.0013123359580052493
+    },
+    {
+      "experiment": "p1_zeroshot_deepseek-v3.2",
+      "pipeline": "p1_zeroshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 8,
+      "failed": 754,
+      "success_rate": 0.010498687664041995
+    },
+    {
+      "experiment": "p1_zeroshot_gpt-4o-mini",
+      "pipeline": "p1_zeroshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p1_zeroshot_gpt-5.2",
+      "pipeline": "p1_zeroshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 1,
+      "failed": 761,
+      "success_rate": 0.0013123359580052493
+    },
+    {
+      "experiment": "p1_zeroshot_o4-mini",
+      "pipeline": "p1_zeroshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p2_zeroshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p2_zeroshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p2_zeroshot_deepseek-v3.2",
+      "pipeline": "p2_zeroshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p2_zeroshot_gpt-4o-mini",
+      "pipeline": "p2_zeroshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p2_zeroshot_gpt-5.2",
+      "pipeline": "p2_zeroshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p2_zeroshot_o4-mini",
+      "pipeline": "p2_zeroshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p3_zeroshot_claude-sonnet-4-5-20250929",
+      "pipeline": "p3_zeroshot",
+      "model": "claude-sonnet-4-5-20250929",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p3_zeroshot_deepseek-v3.2",
+      "pipeline": "p3_zeroshot",
+      "model": "deepseek-v3.2",
+      "total": 762,
+      "succeeded": 1,
+      "failed": 761,
+      "success_rate": 0.0013123359580052493
+    },
+    {
+      "experiment": "p3_zeroshot_gpt-4o-mini",
+      "pipeline": "p3_zeroshot",
+      "model": "gpt-4o-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p3_zeroshot_gpt-5.2",
+      "pipeline": "p3_zeroshot",
+      "model": "gpt-5.2",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    },
+    {
+      "experiment": "p3_zeroshot_o4-mini",
+      "pipeline": "p3_zeroshot",
+      "model": "o4-mini",
+      "total": 762,
+      "succeeded": 0,
+      "failed": 762,
+      "success_rate": 0.0
+    }
+  ]
+}

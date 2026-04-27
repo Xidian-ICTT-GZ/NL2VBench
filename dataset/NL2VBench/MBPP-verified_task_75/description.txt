@@ -1,0 +1,11 @@
+Implement two functions operating on integer arrays:
+
+1) Membership check: Given an array and an integer value, return true if and only if there exists an index within the array’s bounds whose element equals the given value. The result must exactly reflect logical membership: it is true precisely when the value occurs in the array and false otherwise. No assumptions are made about ordering or duplicates in the array; any finite-length array is allowed.
+
+2) Filter by exclusion: Given two arrays, referred to as the first array and the second array, return a new array consisting only of elements taken from the first array that do not occur anywhere in the second array. The following properties must hold for the returned array:
+- Every element in the returned array appears in the first array and does not appear in the second array.
+- For every position in the first array, the element at that position either appears in the second array or appears somewhere in the returned array.
+
+There are no preconditions on the contents or lengths of the input arrays. The specification does not impose any requirement on ordering or uniqueness in the returned array; duplicates may be present. The algorithm must terminate for all valid inputs.
+fn contains(str: &Vec<i32>, key: i32) -> (result: bool)
+fn remove_elements(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: Vec<i32>)

@@ -1,0 +1,4 @@
+You are given three nonnegative counts representing the available quantities of three distinct colors. A "table" (or group) consists of exactly three items. No table may be monochromatic; that is, a table cannot be formed using three items of the same color. Assume each input count is provided as a signed 8-bit integer and is nonnegative (so each count is in the range [0, 127]). Compute the maximum number of such tables that can be formed from the given counts.
+
+Formally, let the three counts be a, b, and c. The output must equal min(floor((a + b + c) / 3), a + b, a + c, b + c), using integer division for floor((a + b + c) / 3). The output must be a nonnegative integer.
+fn solve(r: i8, g: i8, b: i8) -> i8

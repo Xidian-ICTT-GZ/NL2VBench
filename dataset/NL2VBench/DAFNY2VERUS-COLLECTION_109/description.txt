@@ -1,0 +1,5 @@
+Given two arrays of 64-bit unsigned integers, determine whether they share at least one common value. Assume the following:
+- The second array is sorted in non-decreasing (ascending) order; duplicates are allowed.
+- All elements in both arrays are non-negative (this is inherent for unsigned integers).
+The function must return true if and only if there exists an index pair (i, j) such that the i-th element of the first array equals the j-th element of the second array. If the function returns false, it must be guaranteed that no such pair exists. Arrays may be empty.
+fn tangent(r: Vec<u64>, x: Vec<u64>) -> (b: bool)

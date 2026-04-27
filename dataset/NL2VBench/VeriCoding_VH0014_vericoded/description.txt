@@ -1,0 +1,2 @@
+Given a finite sequence of characters, construct the sequence of all its non-empty prefixes in order. If the input has length n, the output must be a sequence of length n. For each index i with 0 <= i < n, the i-th element of the output must be exactly the first i+1 characters of the input. For an empty input, return an empty sequence. The output must preserve the order of characters within each prefix and the prefixes must appear in increasing prefix length from 1 to n.
+fn all_prefixes(s: Vec<char>) -> (result: Vec<Vec<char>>)

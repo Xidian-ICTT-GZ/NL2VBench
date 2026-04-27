@@ -1,0 +1,2 @@
+Given a non-empty collection of integer sublists, return a reference to one sublist that has the smallest length among all sublists in the collection. Assume the input contains at least one sublist. The returned sublist must be exactly equal to some sublist present in the input (i.e., it is not a modified copy), and its length must be less than or equal to the length of every other sublist in the collection. If multiple sublists share the minimal length, returning any one of them is acceptable.
+fn min_sublist(seq: &Vec<Vec<i32>>) -> (min_list: &Vec<i32>)

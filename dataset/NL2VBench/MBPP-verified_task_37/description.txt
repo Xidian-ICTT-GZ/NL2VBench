@@ -1,0 +1,2 @@
+Given an array of 32-bit unsigned integers, return a new array containing exactly the elements of the input that are odd (i.e., not divisible by 2), preserving their original relative order. The input may be empty. The result must be logically equivalent to applying a filter with the predicate "value % 2 != 0" to the input sequence.
+fn find_odd_numbers(arr: &Vec<u32>) -> (odd_numbers: Vec<u32>)

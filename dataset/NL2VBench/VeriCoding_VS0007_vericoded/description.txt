@@ -1,0 +1,2 @@
+Given two non-empty arrays (vectors) of bytes (u8) with equal length, return a new array of the same length where each element is the bitwise XOR of the corresponding elements from the two inputs. Assume the two input arrays have identical lengths and that this length is strictly positive. For every valid index i in the range 0 <= i < n (where n is the common length), the output at position i must equal input1[i] XOR input2[i].
+fn bitwise_xor(a: Vec<u8>, b: Vec<u8>) -> Vec<u8>

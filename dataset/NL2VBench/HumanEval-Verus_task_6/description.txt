@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, determine whether there exists a prefix of the array whose arithmetic sum is strictly negative. Formally, return true if and only if there exists an index i with 0 <= i <= n (where n is the length of the array) such that the sum of the first i elements, interpreted in unbounded mathematical integers (i.e., without 32-bit overflow), is less than 0; otherwise, return false. The array may be empty, in which case the answer is false.
+fn below_zero(operations: Vec<i32>) -> bool

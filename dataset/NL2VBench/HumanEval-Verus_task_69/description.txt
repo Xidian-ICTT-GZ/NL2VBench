@@ -1,0 +1,21 @@
+Implement two functions related to primality and prime factors under the following specifications.
+
+1) Primality predicate:
+- A number x is considered prime if it has no integer divisor in the range [2, x - 1]. Under this definition, 1 is treated as prime (it vacuously satisfies the condition).
+
+2) Function A: Determine primality
+- Input: a non-negative integer at least 2.
+- Output: a boolean indicating whether the input is prime according to the predicate above.
+- Correctness requirement: The result is true if and only if for all integers j with 2 <= j < input, input % j != 0.
+
+3) Function B: Largest prime factor
+- Input: a non-negative integer n at least 2.
+- Output: an integer largest satisfying all of the following:
+  - 1 <= largest <= n.
+  - largest is prime according to the predicate defined above.
+  - n is divisible by largest (n % largest == 0).
+  - For every integer p with 0 <= p < n, if p is prime according to the predicate and p divides n, then p <= largest. In other words, largest dominates all prime divisors of n that are strictly less than n; when n itself is prime, returning n is permitted.
+
+Assume all inputs satisfy the stated preconditions. The returned values must satisfy all postconditions listed.
+fn is_prime(num: u32) -> (result: bool)
+fn largest_prime_factor(n: u32) -> (largest: u32)

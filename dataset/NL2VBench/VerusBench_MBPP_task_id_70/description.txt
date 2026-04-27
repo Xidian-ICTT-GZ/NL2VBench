@@ -1,0 +1,2 @@
+Given a non-empty list of integer sequences (arrays), determine whether all sequences have exactly the same length. Return true if and only if, for every pair of valid indices in the list, the lengths of the sequences at those indices are equal. Assume the list contains at least one sequence. The contents of the sequences are irrelevant; only their lengths matter. Sequences of length zero are permitted and should be treated like any other length when checking equality.
+fn all_sequence_equal_length(seq: &Vec<Vec<i32>>) -> (result: bool)

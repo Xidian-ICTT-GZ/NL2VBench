@@ -1,0 +1,5 @@
+Implement two functions over integer arrays:
+1) A membership checker that, given an array of 32-bit integers and a target integer, returns whether the target occurs in the array. Its result must be true if and only if there exists an in-bounds index at which the array element equals the target; otherwise false.
+2) An intersection function that, given two arrays of 32-bit integers, returns a new array containing exactly the distinct integers that appear in both input arrays. Every element in the output must be present in both inputs, and the output must not contain duplicate values (each value appears at most once). The inputs may be empty and may contain duplicates; the function must handle all such cases. No specific ordering of the output is required by the specification.
+fn contains(arr: &Vec<i32>, key: i32) -> (result: bool)
+fn intersection(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: Vec<i32>)

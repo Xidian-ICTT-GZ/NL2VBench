@@ -1,0 +1,2 @@
+Implement an in-place transformation on a mutable array of 32-bit signed integers. For every valid index in the array, increase the element at that index by exactly 4. The array length must remain unchanged. Assume the input satisfies the following safety condition: every element is less than or equal to 2,147,483,643 (0x7FFF_FFFB), so that adding 4 to any element does not overflow the 32-bit signed integer range. Formally, for all indices k in [0, n), the output element equals the original element plus 4, and the size n is preserved.
+pub fn myfun2(x: &mut Vec<i32>)

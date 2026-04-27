@@ -1,0 +1,2 @@
+Given a non-empty array of mathematical integers, return the minimum element of the array. Assume the input size is positive (the array contains at least one element). The returned value must be less than or equal to every element in the array and must be equal to one of the elements of the array.
+fn min_array(a: Vec<int>) -> (r: int)

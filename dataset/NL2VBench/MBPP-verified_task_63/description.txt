@@ -1,0 +1,5 @@
+Given an array of 32-bit signed integers with length at least 2, return two indices (i_min, i_second) that satisfy the following properties:
+- Consider the global minimum value of the entire array. If the value at i_min equals this global minimum, then for every other index k (where k is within bounds and k != i_min), the value at k is greater than or equal to the value at i_second.
+- There exists at least one index k (within bounds and k != i_min) whose value is equal to the value at i_second.
+Duplicates are allowed. The second index may point to an element with the same value as the minimum if the minimum occurs multiple times. Assume the input length is at least 2 (so the global minimum is well-defined on the array).
+fn second_smallest(numbers: &Vec<i32>) -> (indices: (usize, usize))

@@ -1,0 +1,2 @@
+Given a positive 8-bit unsigned integer, compute its prime factorization using trial division. Return a vector containing the prime factors of the input in nondecreasing order. The product of all returned factors must equal the input value. Each factor must be a prime number in the standard sense: a natural number p is prime if there is no integer i with 1 < i < p such that p % i == 0. For the input value 1, return an empty vector (since 1 has no prime factors). Assume the input satisfies 1 <= value <= 255.
+pub fn factorize(n: u8) -> (factorization: Vec<u8>)

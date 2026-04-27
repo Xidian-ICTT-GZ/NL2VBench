@@ -1,0 +1,13 @@
+Implement two functions over arrays of 32-bit integers. The first function determines whether a given candidate array appears as a contiguous subarray of a given main array. The second function checks, for a specified starting index, whether the candidate array exactly matches the contiguous segment of the main array that begins at that index.
+
+Assumptions and constraints:
+- The candidate array length does not exceed the main array length.
+- For the index-based checker, the starting index is within bounds: 0 <= starting_index <= (main_length - candidate_length).
+
+Required properties:
+- Index-based checker: Return true exactly when the contiguous segment of the main array of length equal to the candidate, starting at the given index, is elementwise equal to the candidate. Otherwise, return false.
+- Subarray search: Return true exactly when there exists some starting index k such that the contiguous segment of the main array of length equal to the candidate, starting at k, is elementwise equal to the candidate. Otherwise, return false.
+
+Note: An empty candidate array should be considered present (i.e., a subarray) at any valid position.
+fn sub_array_at_index(main: &Vec<i32>, sub: &Vec<i32>, idx: usize) -> (result: bool)
+fn is_sub_array(main: &Vec<i32>, sub: &Vec<i32>) -> (result: bool)

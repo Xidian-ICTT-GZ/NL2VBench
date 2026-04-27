@@ -1,0 +1,2 @@
+Given a mutable array of 32-bit signed integers, modify it in place so that every negative element is replaced with 0 while all non-negative elements remain unchanged. No preconditions are imposed on the input values or the array length. The operation must not change the array length. Formally, for every valid index, the element in the post-state equals 0 if the corresponding element in the pre-state was negative; otherwise it equals the corresponding pre-state element.
+fn zap_negatives(a: &mut Vec<i32>)

@@ -1,0 +1,10 @@
+You are given an array of 32-bit signed integers. Return a new array of the same length where each position contains the square of the corresponding element from the input array.
+
+Assume the following precondition holds for every index within the bounds of the input: the square of the element at that index is nonnegative and strictly less than i32::MAX. This ensures that squaring any input element does not overflow and the result fits in a 32-bit signed integer.
+
+The result must satisfy the following properties:
+- The output array has exactly the same length as the input array.
+- For every valid index, the value at that index in the output equals the square of the value at the same index in the input.
+
+The function should handle empty inputs and any sizes, subject to the stated assumptions.
+fn square_nums(nums: &Vec<i32>) -> (squared: Vec<i32>)

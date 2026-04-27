@@ -1,0 +1,11 @@
+You are given three counts representing the numbers of items of three different colors. Determine whether it is possible to arrange all items in a single line so that no two adjacent items have the same color.
+
+Assumptions:
+- Each count is a signed 8-bit integer (i8).
+- Each count is at least 1 (i.e., all three colors are present and positive in quantity).
+
+Output:
+- Return true if and only if the following feasibility condition holds: twice the maximum of the three counts is less than or equal to the total count plus one. Formally, let max be the maximum of the three counts and total be their sum; return true exactly when 2 * max <= total + 1.
+
+This numeric condition is the necessary and sufficient criterion for the existence of such an arrangement without adjacent equal colors.
+fn check_lamp_arrangement(r: i8, g: i8, b: i8) -> (result: bool)

@@ -1,0 +1,2 @@
+Given a non-empty array of 8-bit signed integers, return a 2-element array containing the smallest value and the largest value in the input. The first element of the output must be less than or equal to the second element. Every element of the input must lie within the inclusive range defined by the returned values. Additionally, both returned values must be values that appear in the input array. Assume the input size is positive.
+fn getdomain(x: Vec<i8>) -> (result: Vec<i8>)

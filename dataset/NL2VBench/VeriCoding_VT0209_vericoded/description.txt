@@ -1,0 +1,24 @@
+Implement a function that constructs and returns a configuration object representing print options for arrays (similar to NumPy). The returned object must satisfy the following constraints:
+- The precision (number of digits for floating-point output) is a strictly positive integer.
+- The threshold (total number of elements which trigger summarization) is a strictly positive integer.
+- The edge item count (number of items shown at the beginning and end during summarization) is a strictly positive integer.
+- The line width (maximum characters per line before breaking) is a strictly positive integer.
+- The string used to represent not-a-number (NaN) is non-empty.
+- The string used to represent infinity is non-empty.
+- The sign-printing control is one of the following single-character strings: "-", "+", or a single space.
+- The floating-point mode is one of the following strings: "fixed", "unique", "maxprec", or "maxprec_equal".
+There are no preconditions on inputs because the function takes no parameters. The function must allocate and return a configuration object whose fields satisfy all the above properties.
+struct PrintOptions {
+    precision: u8,
+    threshold: u8,
+    edgeitems: u8,
+    linewidth: u8,
+    suppress: bool,
+    nanstr: Vec<char>,
+    infstr: Vec<char>,
+    sign: Vec<char>,
+    floatmode: Vec<char>,
+    legacy: Option<Vec<char>>,
+}
+
+fn get_printoptions() -> PrintOptions

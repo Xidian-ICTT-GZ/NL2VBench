@@ -1,0 +1,36 @@
+use vstd::math::abs;
+use vstd::prelude::*;
+use vstd::slice::*;
+verus! {
+fn has_close_elements(numbers: &[i64], threshold: i64) -> (result: bool){
+    if threshold <= 0 {
+        return false;
+    }
+    let max_minus_threshold: i64 = i64::MAX - threshold;
+    let numbers_len: usize = numbers.len();
+    for x in 0..numbers_len
+    {
+        let numbers_x: i64 = *slice_index_get(numbers, x);  
+        for y in x + 1..numbers_len
+        {
+            let numbers_y = *slice_index_get(numbers, y);  
+            if numbers_x > numbers_y {
+                if numbers_y > max_minus_threshold {
+                    return true;
+                }
+                if numbers_x < numbers_y + threshold {
+                    return true;
+                }
+            } else {
+                if numbers_x > max_minus_threshold {
+                    return true;
+                }
+                if numbers_y < numbers_x + threshold {
+                    return true;
+                }
+            }
+        }
+    }
+    false
+}
+} 

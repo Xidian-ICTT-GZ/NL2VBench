@@ -1,0 +1,4 @@
+You are given two positive sizes and two arrays of signed 8-bit integers whose lengths match those sizes. Both arrays are sorted in non-decreasing order. You are also given two selection indices, each at least 1 and at most the size of the corresponding array. Determine whether the element at the given 1-based position in the first array is strictly less than the element that is the given m-th position from the end (i.e., counting from the last element) in the second array. Return "YES" if the comparison holds, otherwise return "NO".
+
+Assume: (1) both sizes are at least 1; (2) each array length equals its declared size; (3) both arrays are sorted in non-decreasing order; (4) both selection indices are within the valid range for their respective arrays.
+fn solve(n_a: i8, n_b: i8, k: i8, m: i8, a: Vec<i8>, b: Vec<i8>) -> &'static str

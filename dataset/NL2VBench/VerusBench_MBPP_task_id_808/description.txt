@@ -1,0 +1,2 @@
+Given a finite array of 32-bit signed integers and a target integer, determine whether the target occurs in the array. The array may be empty. Return true if and only if there exists an index i with 0 ≤ i < n such that the element at position i equals the target; otherwise, return false. The function must not modify the input array.
+fn contains_k(arr: &Vec<i32>, k: i32) -> (result: bool)

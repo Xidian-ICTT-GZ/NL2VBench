@@ -1,0 +1,16 @@
+You are given an input consisting of exactly five characters: the first four are decimal digits ('0' through '9') and the fifth is a newline character ('\n'). Assume the input always satisfies these conditions. Also assume that there exists a choice of three operators, each either '+' or '-', to be placed between the four digits (in their original order) such that evaluating the expression as d1 op1 d2 op2 d3 op3 d4 equals 7, where each digit di is interpreted by its usual numeric value 0–9.
+
+Construct and return a character sequence of length 10 that represents one valid expression achieving the value 7. The output format must be:
+- digit1
+- operator1 ('+' or '-')
+- digit2
+- operator2 ('+' or '-')
+- digit3
+- operator3 ('+' or '-')
+- digit4
+- '='
+- '7'
+- '\n'
+
+The digits in the output must be exactly the four input digits in the same order. Each operator must be either '+' or '-'. The expression formed by these digits and operators must evaluate to 7. If multiple solutions exist, returning any one valid expression is acceptable. Do not reorder or modify the digits; only choose the operators.
+fn solve(input: Vec<char>) -> (result: Vec<char>)

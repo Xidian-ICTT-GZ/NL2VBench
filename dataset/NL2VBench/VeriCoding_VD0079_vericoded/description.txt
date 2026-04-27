@@ -1,0 +1,2 @@
+Given a mutable array of 32-bit integers and an integer threshold k, perform an in-place transformation such that for every valid index in the original array: if the original element is strictly greater than k, it becomes exactly -1; otherwise (if it is less than or equal to k) it remains equal to its original value. The array length must not change. The behavior is defined relative to the array’s initial contents; decisions are based on the pre-operation values, and no other modifications are allowed.
+fn replace(arr: &mut Vec<i32>, k: i32)

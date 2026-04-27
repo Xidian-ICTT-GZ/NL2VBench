@@ -1,0 +1,3 @@
+Implement a function that filters a floating-point array using a boolean mask of the same length. Given two arrays: a boolean mask and a floating-point array, both of equal length, return a new array that contains exactly those elements of the floating-point array whose corresponding entries in the boolean mask are true. Preserve the original relative order of the selected elements. Assume the input arrays have equal lengths. Assume the number of true values in the boolean mask is non-negative. The function must be verified to ensure that the length of the returned array is equal to the number of true values in the boolean mask.
+spec fn count_true(condition: Seq<bool>) -> int
+fn extract(condition: Vec<bool>, arr: Vec<f32>) -> (result: Vec<f32>)

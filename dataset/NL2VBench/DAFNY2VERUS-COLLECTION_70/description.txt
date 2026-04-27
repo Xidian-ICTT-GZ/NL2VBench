@@ -1,0 +1,8 @@
+You are given an array of integers and a single integer value. Implement a function that returns a new array consisting of all elements of the input array followed by the given value appended at the end. The input array length may be zero or greater.
+
+The function must satisfy the following properties:
+- The resulting array has length exactly one greater than the input array length.
+- For every index within the bounds of the original array, the element at that index in the result equals the corresponding element in the input.
+- The last element of the result equals the given integer value.
+- Conceptually, the result is the concatenation of the original array with a one-element array containing the given value (i.e., the result represents the original sequence followed by that value).
+fn append(a: Vec<int>, b: int) -> (c: Vec<int>)

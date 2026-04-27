@@ -1,0 +1,9 @@
+Implement a procedure that takes a mutable array of 32-bit signed integers and a positive length value. Assume the array’s initial length is exactly equal to the given length value. Modify the array in-place so that every element has the same parity as the length value; specifically, for every valid index from 0 up to but excluding the length value, the element modulo 2 equals the length value modulo 2. The procedure must not change the array’s length at any point.
+
+Correctness requirements:
+- Precondition: the length value is positive; the array’s initial length equals the length value.
+- Postcondition: for all indices in the range [0, length value), each element modulo 2 equals the length value modulo 2.
+- Preservation: throughout execution, the array length must remain equal to the length value.
+- If an iterative approach is used, it must maintain that the step counter never exceeds the length value and that all positions strictly before the current step already satisfy the parity property.
+
+fn myfun(a: &mut Vec<i32>, N: u32)

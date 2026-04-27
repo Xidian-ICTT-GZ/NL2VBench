@@ -1,0 +1,2 @@
+Given a string, determine whether the sequence of angle brackets within it is correctly balanced. Treat only the characters '<' and '>' as bracket tokens; all other characters are ignored. The sequence is considered correct if and only if (1) the total number of '<' equals the total number of '>', and (2) for every prefix of the string, the number of '>' never exceeds the number of '<' (i.e., the running difference between '<' and '>' never becomes negative). Assume the input length can be represented as a 32-bit signed integer.
+fn correct_bracketing(brackets: &str) -> bool

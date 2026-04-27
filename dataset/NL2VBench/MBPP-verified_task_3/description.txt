@@ -1,0 +1,2 @@
+Given an array of characters, determine whether it contains the letter 'Z' in either uppercase ('Z') or lowercase ('z'). The array may be empty. Return true if and only if there exists an index within the bounds of the array such that the character at that index is 'Z' or 'z'; otherwise, return false.
+fn contains_z(text: &Vec<char>) -> (result: bool)

@@ -1,0 +1,8 @@
+Implement a function that takes two inputs: a non-empty array of 8-bit signed integers and an integer quantile percentage in the range [0, 100]. The function must return a value that satisfies the following specification:
+- The return value is bounded by the elements of the array: it is greater than or equal to the array's minimum element and less than or equal to the array's maximum element.
+- When the quantile percentage is 0, the function returns the minimum element of the array (i.e., the value of some index that attains the minimum).
+- When the quantile percentage is 100, the function returns the maximum element of the array (i.e., the value of some index that attains the maximum).
+Assume the input array length is positive and the quantile percentage is between 0 and 100 inclusive.
+fn get_min_val(a: &Vec<i8>) -> i8
+fn get_max_val(a: &Vec<i8>) -> i8
+fn nanquantile(a: Vec<i8>, q: i8) -> i8

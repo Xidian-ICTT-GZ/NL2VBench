@@ -1,0 +1,2 @@
+Implement a function that, given a vector of elements that implement the Copy trait, returns a new vector containing exactly the same elements in the same order. Assume the element type is copyable (i.e., it implements Copy). The output must have the same length as the input, and for every valid index i (0-based, i in [0, input length)), the element at position i in the output equals the element at position i in the input. The function must not modify the input.
+fn copy<T: Copy>(a: &Vec<T>) -> (result: Vec<T>)

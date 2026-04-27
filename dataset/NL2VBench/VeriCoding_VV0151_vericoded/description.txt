@@ -1,0 +1,8 @@
+Given two arrays of characters, return their longest common prefix as an array of characters. The prefix must consist exactly of the sequence of characters, starting from index 0, that both inputs share in the same order. The output length must be less than or equal to each input's length. For every index in the returned prefix, the character at that index must equal the character at the same index of both inputs. Additionally, the returned prefix must be maximal: either it is equal to one of the entire inputs (meaning one input is a prefix of the other), or, if both inputs have a character immediately after the returned prefix, those two next characters must differ. The inputs may be empty.
+fn longest_common_prefix(str1: &Vec<char>, str2: &Vec<char>) -> (result: Vec<char>)
+    ensures
+        result.len() <= str1.len(),
+        result.len() <= str2.len(),
+        forall|i: int| 0 <= i < result.len() ==> result[i] == str1[i] && result[i] == str2[i],
+        result.len() == str1.len() || result.len() == str2.len() || 
+            (result.len() < str1.len() && result.len() < str2.len() && str1[result.len() as int] != str2[result.len() as int]),

@@ -1,0 +1,14 @@
+Implement a function that, given three mutable arrays and an integer, sets every element of the second array to the constant value N + 2.
+
+Assumptions:
+- N is a positive 32-bit integer and N < 1000.
+- At function entry, the length of the first array is exactly N.
+- At function entry, the length of the second array is exactly N.
+- At function entry, the length of the third array is exactly 1.
+
+Postcondition:
+- For all indices k with 0 <= k < N, after the function returns, the element at index k of the second array equals N + 2.
+
+Notes:
+- Because N < 1000 and N > 0, the value N + 2 fits within the 32-bit integer range.
+fn myfun(a: &mut Vec<i32>, b: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

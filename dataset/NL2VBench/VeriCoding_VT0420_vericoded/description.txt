@@ -1,0 +1,2 @@
+Given an array of 64-bit floating-point numbers, construct and return a new array that begins with 0.0 and has a length exactly one greater than the input. Assume the input length is non-negative. The output must satisfy: its first element is 0.0, and for every integer index i such that 1 <= i < the input length, the element at position i + 1 of the output equals the element at position i of the input. All referenced indices are within array bounds.
+fn hermemulx(c: Vec<f64>) -> (result: Vec<f64>)

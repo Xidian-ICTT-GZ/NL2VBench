@@ -1,0 +1,2 @@
+You are given three 8-bit signed integers representing costs. Assume each input value is in the inclusive range [1, 100]. Compute and return the non-negative difference between the largest and the smallest of the three values. The returned result must be an 8-bit signed integer and is guaranteed to fit within the type bounds under the stated assumptions. Formally, the output equals max(input1, input2, input3) minus min(input1, input2, input3), and it must be greater than or equal to zero.
+fn solve(a1: i8, a2: i8, a3: i8) -> (result: i8)

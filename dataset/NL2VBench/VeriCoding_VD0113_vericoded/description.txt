@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the zero-based index of the last (rightmost) occurrence of the maximum value in the array. Assume the input size is positive. The returned index must be within bounds of the array. The value at the returned index is at least as large as every element in the array. Additionally, for any position strictly after the returned index, the element there is strictly smaller than the returned value (i.e., there is no equal maximum to the right of the returned index).
+fn mlast_maximum(v: &[i32]) -> (i: usize)

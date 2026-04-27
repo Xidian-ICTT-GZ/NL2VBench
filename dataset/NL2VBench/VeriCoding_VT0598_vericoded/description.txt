@@ -1,0 +1,15 @@
+You are given a non-empty array of 8-bit signed integers and an integer q that represents a percentile. Assume the array length is positive and q is within the inclusive range [0, 100]. Implement a function that returns an 8-bit integer result subject to the following requirements:
+
+- General existence requirements for any q in [0, 100]:
+  • If an element of the array is less than or equal to result, then there exists (possibly a different) element of the array that is greater than or equal to result.
+  • If an element of the array is greater than or equal to result, then there exists (possibly a different) element of the array that is less than or equal to result.
+  These conditions ensure the array contains at least one element on each side of result (greater-or-equal and less-or-equal), i.e., result lies within the range covered by the array.
+
+- Boundary percentiles:
+  • If q equals 0, result must be less than or equal to every element of the array. Together with the existence requirements above, this implies result is equal to the minimum element present in the array.
+  • If q equals 100, result must be greater than or equal to every element of the array. Together with the existence requirements above, this implies result is equal to the maximum element present in the array.
+
+The function should return a value that satisfies these properties. In particular, for q = 0 it must return the minimum element; for q = 100 it must return the maximum element; and for any other q it may return any value that ensures there exists at least one array element greater than or equal to it and at least one array element less than or equal to it (returning any existing array element satisfies this).
+fn vec_min_i8(arr: &Vec<i8>) -> (m: i8)
+fn vec_max_i8(arr: &Vec<i8>) -> (m: i8)
+fn percentile(arr: Vec<i8>, q: i8) -> (result: i8)

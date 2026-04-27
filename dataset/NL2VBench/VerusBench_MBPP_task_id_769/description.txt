@@ -1,0 +1,8 @@
+Given two lists of 32-bit signed integers, return a new list containing exactly the values that appear in exactly one of the two input lists (the symmetric difference). The output must contain no duplicates: each qualifying value appears at most once. Preserve the relative order of first appearance within each list: first include all qualifying values from the first list in their original order, then include all qualifying values from the second list in their original order.
+Assume the lists may be empty and may contain repeated values. The following semantic properties must hold:
+- Coverage from the first list: for every position in the first list, if the value at that position does not occur anywhere in the second list, then that value must occur somewhere in the output.
+- Coverage from the second list: for every position in the second list, if the value at that position does not occur anywhere in the first list, then that value must occur somewhere in the output.
+- Uniqueness: no two distinct positions in the output contain the same value.
+Additionally, provide a helper that reports whether a given key occurs in a list (true if the key appears in any position, false otherwise).
+fn contains(arr: &Vec<i32>, key: i32) -> bool
+fn difference(arr1: &Vec<i32>, arr2: &Vec<i32>) -> Vec<i32>

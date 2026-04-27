@@ -1,0 +1,2 @@
+Given a non-empty array (slice) of 32-bit signed integers, return an integer that is less than or equal to every element in the array. Assume the input length is strictly positive. The returned value must satisfy the property that for all valid indices, the result is less than or equal to the element at that index. Conceptually, this corresponds to returning the minimum value of the array.
+fn min_array(a: &[i32]) -> (r: i32)

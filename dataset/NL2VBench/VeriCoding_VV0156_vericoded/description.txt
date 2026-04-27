@@ -1,0 +1,2 @@
+Implement a function that returns the minimum of two 32-bit signed integers. The function must satisfy the following behavior: if the first input is less than or equal to the second input, the result must be the first input; otherwise, the result must be the second input. The result must always be exactly one of the two inputs. Assume the standard total order for 32-bit signed integers.
+fn my_min(x: i32, y: i32) -> i32

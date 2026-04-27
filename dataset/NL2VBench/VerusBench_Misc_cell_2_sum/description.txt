@@ -1,0 +1,2 @@
+You are given a mutable array of unsigned 32-bit integers and a size parameter. Assume the size parameter equals the array’s initial length and is at most 0x7FFF_FFFF. Modify the array in place by capping every element greater than 2 to the value 2, without changing the array’s length. After this capping step, compute and return the sum of all elements in the array. The returned sum must be at most twice the size parameter (i.e., sum ≤ 2 × size).
+pub fn myfun(a: &mut Vec<u32>, N: u32) -> (sum: u32)

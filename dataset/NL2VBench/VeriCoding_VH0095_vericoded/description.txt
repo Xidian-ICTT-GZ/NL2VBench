@@ -1,0 +1,14 @@
+You are given a message represented as an array of characters. Assume every character in the input is either an uppercase letter 'A'–'Z', a lowercase letter 'a'–'z', or a space character ' '. No other characters appear in the input.
+
+Transform the message into a new array of the same length using the following rules applied independently to each character at the same index:
+- If the character is a space ' ', the output character is also a space ' '.
+- If the character is a vowel, where vowels are exactly one of {'a','e','i','o','u','A','E','I','O','U'}, first replace it according to the mapping:
+  - 'a' → 'c', 'e' → 'g', 'i' → 'k', 'o' → 'q', 'u' → 'w'
+  - 'A' → 'C', 'E' → 'G', 'I' → 'K', 'O' → 'Q', 'U' → 'W'
+  Then swap its case (uppercase becomes lowercase, lowercase becomes uppercase).
+- If the character is a letter but not a vowel (i.e., a consonant), swap its case (uppercase becomes lowercase, lowercase becomes uppercase).
+
+The output array must have exactly the same length as the input array, and each position must reflect the rule above for the corresponding input character. The transformation does not insert or remove characters.
+
+Assume the input strictly adheres to the allowed character set, and the transformation is applied sequentially across the array while producing the result.
+fn encode(message: Vec<char>) -> (result: Vec<char>)

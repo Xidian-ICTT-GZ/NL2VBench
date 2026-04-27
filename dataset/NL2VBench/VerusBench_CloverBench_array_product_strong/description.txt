@@ -1,0 +1,2 @@
+Given two arrays of 32-bit unsigned integers, return a new array containing the element-wise products of the inputs. Assume both input arrays have the same length n, where 0 <= n <= 100. Additionally, for every valid index i (0 <= i < n), the product of the corresponding elements is strictly less than 1000. The returned array must have the same length as the inputs, and each element at index i must equal the product of the two input elements at index i.
+fn product(a: &Vec<u32>, b: &Vec<u32>) -> (c: Vec<u32>)

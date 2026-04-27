@@ -1,0 +1,6 @@
+Given a string, return the count of standard vowels present in the string, where vowels are the ASCII letters 'a', 'e', 'i', 'o', 'u' and their uppercase forms. The count is case-insensitive but limited strictly to these five letters; any other characters, including non-ASCII letters, are not considered vowels.
+
+Additionally, if the string is non-empty and its last character is 'y' or 'Y', add 1 to the result.
+
+Assume the input length, measured in Unicode scalar values, does not exceed u32::MAX. If the string is empty, return 0 (there is no trailing 'y' to add).
+fn vowels_count(s: &str) -> (ret: u32)

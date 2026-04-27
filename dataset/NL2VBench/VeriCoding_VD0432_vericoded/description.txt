@@ -1,0 +1,2 @@
+Given an array of integer values and a starting index, return the index of a minimal element within the subarray that begins at the starting index and extends to the end of the array. Assume the array length is positive and the starting index is strictly less than the array length. The returned index must be within the bounds of the specified subarray, and the value at the returned index must be less than or equal to every value in that subarray.
+fn find_min(a: &[int], lo: usize) -> (minIdx: usize)

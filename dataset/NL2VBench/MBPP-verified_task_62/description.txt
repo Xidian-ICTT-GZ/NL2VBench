@@ -1,0 +1,6 @@
+Given two arrays of 32-bit unsigned integers of equal length, construct a new array where each element is the integer quotient of the corresponding elements of the first array divided by the second array. Assume the following conditions hold:
+- The two input arrays have the same length.
+- Every element in the second array is non-zero (no division by zero).
+- For every index, the quotient produced by dividing the element from the first array by the corresponding element from the second array lies within the 32-bit signed integer range [i32::MIN, i32::MAX].
+Return an array whose length equals the length of the inputs, and such that for every valid index i, the element at position i in the output equals the integer division result of the input elements at position i in the first and second arrays. Indexing is 0-based. The function is required to satisfy the specification only for inputs meeting the stated assumptions.
+fn element_wise_divide(arr1: &Vec<u32>, arr2: &Vec<u32>) -> Vec<u32>

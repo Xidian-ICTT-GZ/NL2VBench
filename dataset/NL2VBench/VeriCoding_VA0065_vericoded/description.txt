@@ -1,0 +1,10 @@
+You are given exactly three integers. Assume all three values are strictly positive and each is at most 1500. Return an array of characters that spells either "YES" or "NO" according to the following rule.
+
+First, consider the three numbers sorted in nondecreasing order (call them a ≤ b ≤ c). Return "YES" if and only if at least one of the following conditions holds:
+- a = 1 (i.e., at least one of the numbers is 1), or
+- a = 2 and b = 2 (i.e., at least two of the numbers are 2), or
+- (a, b, c) = (2, 4, 4), or
+- (a, b, c) = (3, 3, 3).
+
+Return "NO" in all other cases. The output must be exactly either the character sequence ['Y', 'E', 'S'] or ['N', 'O'].
+fn solve(nums: Vec<i8>) -> Vec<char>

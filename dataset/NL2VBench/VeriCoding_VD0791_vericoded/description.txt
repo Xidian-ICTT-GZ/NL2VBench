@@ -1,0 +1,2 @@
+Implement a function that determines whether a given month has 30 days. The input is an integer representing a month number. Assume the input month number is between 1 and 12 inclusive. The function must return true if and only if the month is April (4), June (6), September (9), or November (11). For all other valid month numbers, the function must return false.
+fn is_month_with_30_days(month: i32) -> (result: bool)

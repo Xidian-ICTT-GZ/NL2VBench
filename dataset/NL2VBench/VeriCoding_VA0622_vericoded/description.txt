@@ -1,0 +1,5 @@
+You are given a character array representing a single line that must follow a strict format. Assume the input length is at least 18 characters and the last character is a newline. The line must start with the exact prefix "AtCoder", followed by a space. After this prefix, there is a non-empty word (the "name") where the first character is an uppercase English letter ('A'–'Z') and every subsequent character up to the next space is a lowercase English letter ('a'–'z'). Immediately after this name and a space, the exact word "Contest" appears, and this is directly followed by the newline at the end of the input.
+
+Under these assumptions, output a 4-character sequence consisting of: 'A', the uppercase initial of the name (the first character after the "AtCoder " prefix), 'C', and a newline. In other words, for an input of the form "AtCoder <Name> Contest\n" where <Name> matches the described capitalization constraints, return the abbreviation "A<NameInitial>C\n".
+fn solve(input: Vec<char>) -> Vec<char>
+fn build_result(ch: char) -> Vec<char>

@@ -1,0 +1,10 @@
+Given a mutable array of non-negative integers and a mutable single-element output vector, perform the following task under the stated assumptions and guarantees:
+- Assumptions: The array length equals a given positive integer N; the output vector length is exactly 1; N > 0.
+- Task: First initialize the entire array so that every element is 0. Then iterate over the array to compute the sum of its elements and store the result in the sole position of the output vector.
+- Guarantee: After completion, the sole element of the output vector is 0.
+
+The algorithm must be structured with loops that satisfy the following properties:
+- During the first pass, for every index less than the current iteration boundary, the corresponding array element is 0; the array length remains N throughout the loop.
+- During the second pass, all positions of the array are 0 for all indices less than N; the array length remains N; the output vector length remains 1; and once at least one array element has been processed in this pass, the output value remains 0.
+- Each loop must strictly decrease a measure based on N minus the current position to ensure termination.
+pub fn myfun(a: &mut Vec<usize>, sum: &mut Vec<usize>, N: usize)

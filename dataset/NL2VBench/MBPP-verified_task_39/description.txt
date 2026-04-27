@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, return a new array where each element is the cube of the corresponding input element. Assume the following input constraints hold for every index within the array bounds: the square of each element is within the 32-bit signed integer range, and the cube of each element is within the 32-bit signed integer range. The output must preserve the order and length of the input, and for every valid index i, output[i] equals input[i] × input[i] × input[i].
+fn cube_element(nums: &Vec<i32>) -> (cubed: Vec<i32>)

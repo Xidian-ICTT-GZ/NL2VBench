@@ -1,0 +1,2 @@
+Given two finite sequences of characters, determine whether they contain exactly the same set of distinct characters. The order of characters and their multiplicities are irrelevant; only the presence or absence of each character matters. Return true if and only if every character appears in the first sequence exactly when it appears in the second sequence. There are no restrictions on input lengths, and empty sequences are allowed.
+fn same_chars(s0: Vec<char>, s1: Vec<char>) -> bool

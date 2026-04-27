@@ -1,0 +1,7 @@
+You are given a list of 8-bit signed integers. Construct and return a pair of lists with the following properties:
+- The first returned list is a rearrangement of the input: it contains exactly the same elements as the input with the same multiplicities (i.e., the same multiset) and has the same length as the input.
+- The second returned list has the same length as the input and is defined index-wise from the first returned list as follows. Let n be the input length. For every index i in [0, n):
+  - If i is even, the i-th element of the second list equals the element at position i/2 in the first list.
+  - If i is odd, the i-th element of the second list equals the element at position n - (i - 1)/2 - 1 in the first list.
+This definition yields a front–back interleaving order: first element of the first list, then last element of the first list, then second, then second-to-last, and so on. There are no restrictions on the input; the input may be empty, and the elements may take any i8 values.
+fn strange_sort_list_helper(s: Vec<i8>) -> (Vec<i8>, Vec<i8>)

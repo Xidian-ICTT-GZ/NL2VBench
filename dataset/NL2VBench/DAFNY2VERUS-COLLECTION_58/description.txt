@@ -1,0 +1,2 @@
+Given a non-empty slice of characters, return a new vector containing the same characters in reverse order. Assume the input length n is strictly positive. The output must have the same length as the input. For every valid index k with 0 <= k < n, the element at position k in the result must be equal to the element at position n - 1 - k in the input.
+fn reverse(a: &[char]) -> (b: Vec<char>)

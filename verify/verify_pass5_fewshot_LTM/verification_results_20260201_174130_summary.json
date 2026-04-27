@@ -1,0 +1,23 @@
+{
+  "total_samples": 0,
+  "by_pipeline": {
+    "p1_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    },
+    "p2_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    },
+    "p3_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "by_model": {},
+  "overall_pass5_rate": 0.0,
+  "timestamp": "2026-02-01T17:41:30.497064"
+}

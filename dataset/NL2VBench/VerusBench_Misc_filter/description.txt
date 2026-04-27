@@ -1,0 +1,2 @@
+Given an array of 64-bit unsigned integers and a separate output array, write a function that populates the output array with all elements from the input that are divisible by 3, in the same order as they appear. Assume the output array is initially empty. The function must not modify the input array. After the function completes, the output array must be exactly the subset of the input consisting of values divisible by 3, preserving their original order, and must contain no other elements.
+pub fn myfun4(x: &Vec<u64>, y: &mut Vec<u64>)

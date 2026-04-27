@@ -1,0 +1,2 @@
+Implement a function that reverses the elements of a mutable vector of 32-bit signed integers in place. After the function returns, for every index i such that 0 <= i < original_length, the element at index i in the resulting vector must equal the element at index (original_length - 1 - i) of the original vector. The vector’s length must remain unchanged. The function must correctly handle vectors of any length, including empty and single-element vectors. There are no additional preconditions.
+fn reverse(a: &mut Vec<i32>)

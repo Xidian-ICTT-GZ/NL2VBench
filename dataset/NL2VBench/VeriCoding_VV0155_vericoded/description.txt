@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the minimum value present in the array. Assume the array length is strictly greater than zero. The returned value must be less than or equal to every element of the array and must be exactly equal to at least one element in the array (i.e., it is the minimum element drawn from the array). No assumptions are made about the ordering of the array or the uniqueness of elements.
+fn min_array(a: &Vec<i32>) -> (result: i32)

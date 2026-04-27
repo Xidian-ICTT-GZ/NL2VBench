@@ -1,0 +1,2 @@
+Given an array of 32-bit integers and a target value, return the index of the first occurrence of the target in the array. If the target does not appear in the array, return -1. Assume the array length is strictly less than 2^31 so that any valid index fits in a 32-bit signed integer. The result must satisfy the following: if a nonnegative index i is returned, then 0 <= i < n and the element at position i equals the target; if a negative value is returned, then the target does not occur at any position in the array.
+fn find(blood: Vec<i32>, key: i32) -> (index: i32)

@@ -1,0 +1,4 @@
+Given a byte array representing ASCII text, determine whether it contains at least one occurrence of the letter 'z' or 'Z'. There are no preconditions on the input beyond being a valid byte slice.
+
+Return true if and only if there exists an index i with 0 <= i < length such that the element at position i equals the ASCII code for 'Z' (90) or the ASCII code for 'z' (122). Otherwise, return false.
+fn contains_z(text: &[u8]) -> (result: bool)

@@ -1,0 +1,2 @@
+Given a non-empty vector of 32-bit signed integers, return an index of a maximum element. The output index must satisfy two conditions: it is within bounds of the vector (strictly less than the vector length), and the element at that index is greater than or equal to every other element in the vector. If the maximum value occurs multiple times, returning any one of the indices of that maximum is acceptable. Assume the input length is at least 1.
+fn myfun1(x: &Vec<i32>) -> (max_index: usize)

@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the smallest value contained in the array. Assume the input size is strictly positive. The result must satisfy both of the following correctness conditions: it is less than or equal to every element of the array, and it is equal to at least one element in the array.
+fn smallest_num(nums: &Vec<i32>) -> (min: i32)

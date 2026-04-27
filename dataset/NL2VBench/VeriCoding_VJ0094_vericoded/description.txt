@@ -1,0 +1,11 @@
+Given an array of characters, return the number of positions that contain an uppercase English letter in the ASCII range 'A'..'Z'. Characters outside this ASCII range (including lowercase letters, digits, symbols, whitespace, and non-ASCII letters) must not be counted. The function must be total: it accepts any input array, including the empty array, and returns a 64-bit unsigned integer.
+
+Correctness requirements:
+- The result must satisfy 0 <= result <= length of the input array.
+- The result must equal the value defined by the following recursive specification over the sequence corresponding to the input array:
+  - Base case: count([]) = 0.
+  - Step: count(prefix ++ [x]) = count(prefix) + (1 if x is an uppercase ASCII letter in 'A'..'Z' else 0).
+- The recursive specification decreases the sequence length at each step, ensuring termination.
+
+Assume standard ASCII classification for uppercase letters based on their code points (65 through 90 inclusive).
+fn count_uppercase(text: &Vec<char>) -> u64

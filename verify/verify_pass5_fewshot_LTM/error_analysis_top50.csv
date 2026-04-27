@@ -1,0 +1,101 @@
+rank,error_type,count,percentage
+1,"E0432",7025,16.21
+2,"E0601",5751,13.27
+3,"E0425",5717,13.19
+4,"E0308",5665,13.07
+5,"forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` i",2014,4.65
+6,"expected curly braces",1919,4.43
+7,"The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec",1856,4.28
+8,"expected `,`",1556,3.59
+9,"E0599",1106,2.55
+10,"expected one of `!` or `::`, found keyword `fn`",690,1.59
+11,"unexpected token, expected `;`",542,1.25
+12,"E0428",533,1.23
+13,"expected -> (pattern: type)",468,1.08
+14,"non-private spec function must be marked open or closed to indicate whether the ",357,0.82
+15,"E0282",355,0.82
+16,"postcondition not satisfied",345,0.80
+17,"unknown",322,0.74
+18,"spec functions cannot have requires/ensures",320,0.74
+19,"in requires, use `old(a)` to refer to the pre-state of an &mut variable",300,0.69
+20,"Could not automatically infer triggers for this quantifier.  Use #[trigger] anno",284,0.66
+21,"E0283",229,0.53
+22,"E0277",229,0.53
+23,"expected one of `!`, `(`, `)`, `+`, `,`, `::`, or `<`, found `:`",226,0.52
+24,"This block would be parsed as the function/loop body, but it is followed immedia",202,0.47
+25,"expected `!`",191,0.44
+26,"missing `fn` or `struct` for function or struct definition",162,0.37
+27,"expected an expression",160,0.37
+28,"expected one of `!` or `::`, found `==`",154,0.36
+29,"this file contains an unclosed delimiter",146,0.34
+30,"possible arithmetic underflow/overflow",130,0.30
+31,"expected one of `!` or `::`, found `result`",129,0.30
+32,"expected one of `->`, `where`, or `{`, found `requires`",120,0.28
+33,"E0573",102,0.24
+34,"expected one of: `broadcast`, `assume_specification`, `fn`, `extern`, `use`, `st",99,0.23
+35,"E0412",95,0.22
+36,"unexpected closing delimiter: `}`",94,0.22
+37,"expected one of `!` or `::`, found `=`",89,0.21
+38,"complex arguments to &mut parameters are currently unsupported",89,0.21
+39,"mismatched closing delimiter: `}`",89,0.21
+40,"expected item, found keyword `if`",86,0.20
+41,"expected item, found keyword `let`",84,0.19
+42,"assertion failed",82,0.19
+43,"E0423",76,0.18
+44,"expected one of `!` or `::`, found `[`",76,0.18
+45,"invariant not satisfied at end of loop body",75,0.17
+46,"E0433",75,0.17
+47,"loop must have a decreases clause",73,0.17
+48,"E0284",71,0.16
+49,"in requires, use `old(sum)` to refer to the pre-state of an &mut variable",66,0.15
+50,"mismatched types; types must be compatible to use == or !=",61,0.14
+51,"Unsupported constant type",60,0.14
+52,"expected one of `!`, `+`, `::`, `where`, or `{`, found `<eof>`",56,0.13
+53,"could not prove termination",54,0.12
+54,"expected one of `->`, `where`, or `{`, found `<eof>`",49,0.11
+55,"expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `<eof>`",48,0.11
+56,"expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `requires`",46,0.11
+57,"cannot call function `alloc::slice::impl&%0::into_vec` with mode exec",45,0.10
+58,"expected one of `!` or `::`, found `.`",44,0.10
+59,"cannot find macro `verus` in this scope",43,0.10
+60,"expected one of `!` or `::`, found `i`",41,0.09
+61,"visibility `pub` is not followed by an item",40,0.09
+62,"mismatched closing delimiter: `)`",36,0.08
+63,"forall, choose, and exists do not allow parentheses, use `exists|<vars>| expr` i",35,0.08
+64,"expected one of `!` or `::`, found `|`",34,0.08
+65,"expected parentheses",33,0.08
+66,"expected `=`",32,0.07
+67,"panic is not supported (if you used Rust's `assert!` macro, you may have meant t",29,0.07
+68,"E0061",28,0.06
+69,"expected `..=`",28,0.06
+70,"in 'ensures' clause of public function, cannot refer to private function",28,0.06
+71,"`core::slice::impl&%0::contains` is not supported (note: you may be able to add ",27,0.06
+72,"recursive function must have a decreases clause",26,0.06
+73,"expected one of: `for`, parentheses, `fn`, `unsafe`, `extern`, `FnSpec`, `spec_f",23,0.05
+74,"expected item, found `(`",23,0.05
+75,"cannot call function `vstd::view::View::view` with mode spec",22,0.05
+76,"in exec code, the index operator is only supported for usize index",22,0.05
+77,"non-associative operator requires additional parentheses",22,0.05
+78,"the return value must be named in a function with an ensures clause",21,0.05
+79,"invariant not satisfied before loop",20,0.05
+80,"expected one of `!`, `+`, `::`, `where`, or `{`, found `requires`",20,0.05
+81,"expected `enum`",20,0.05
+82,"prefix `seq` is unknown",20,0.05
+83,"The verifier does not yet support the following Rust feature: only variables are",19,0.04
+84,"cannot call function `core::cmp::Ord::max` with mode exec",19,0.04
+85,"The verifier does not yet support the following Rust feature: index for &mut not",19,0.04
+86,"expected `)`",19,0.04
+87,"expected identifier or integer",18,0.04
+88,"no rules expected `:`",18,0.04
+89,"E0369",18,0.04
+90,"E0604",17,0.04
+91,"decreases cannot be a tuple; use `decreases x, y` rather than `decreases (x, y)`",17,0.04
+92,"precondition not satisfied",16,0.04
+93,"expected `;`",16,0.04
+94,"unknown start of token: `",15,0.03
+95,"unrecognized verifier attribute",15,0.03
+96,"expected one of `!` or `::`, found `<=`",15,0.03
+97,"expected `by`",14,0.03
+98,"expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `ensures`",14,0.03
+99,"`core::num::impl&%0::abs` is not supported (note: you may be able to add a Verus",13,0.03
+100,"expected one of `!` or `::`, found `a`",13,0.03

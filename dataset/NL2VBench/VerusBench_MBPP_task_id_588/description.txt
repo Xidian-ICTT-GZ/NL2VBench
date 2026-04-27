@@ -1,0 +1,4 @@
+Given a non-empty vector of 32-bit signed integers, compute the difference between the largest and the smallest element in the vector. Assume the input size is positive. Additionally, assume every element is strictly greater than i32::MIN / 2 and strictly less than i32::MAX / 2. Return an i32 equal to (maximum of all elements) minus (minimum of all elements). For a single-element input, the result is 0. The returned value must exactly match the mathematical difference between the maximum and minimum values computed over the entire input.
+spec fn max_rcur(seq: Seq<i32>) -> int
+spec fn min_rcur(seq: Seq<i32>) -> int
+fn difference_max_min(arr: &Vec<i32>) -> (diff: i32)

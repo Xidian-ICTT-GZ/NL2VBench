@@ -1,0 +1,2 @@
+Given two mathematical integers, implement a function that returns the minimum of the two. There are no preconditions on the input values. The returned value must satisfy both of the following: (1) it is exactly equal to one of the two inputs (the function must not produce any value other than one of the inputs), and (2) it is less than or equal to each of the two inputs. If the two inputs are equal, return that value.
+fn min(a: int, b: int) -> (result: int)

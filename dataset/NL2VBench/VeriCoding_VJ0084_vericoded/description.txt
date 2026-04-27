@@ -1,0 +1,5 @@
+Given two arrays of 32-bit signed integers, determine whether there exists at least one value that appears in both arrays. Return true if and only if there exists an index within the bounds of the first array such that the corresponding value is present in the second array. Otherwise, return false.
+
+Assume both arrays may be empty, may contain duplicates, and are not necessarily sorted. There are no preconditions on the inputs. The result must exactly reflect the logical condition: there exists an index k with 0 <= k < length of the first array such that the second array contains the value at index k of the first array.
+fn contains_value(arr2: &Vec<i32>, val: i32) -> bool
+fn any_value_exists(arr1: &Vec<i32>, arr2: &Vec<i32>) -> bool

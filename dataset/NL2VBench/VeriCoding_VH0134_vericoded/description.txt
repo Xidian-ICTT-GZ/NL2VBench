@@ -1,0 +1,2 @@
+Given an array of signed 8-bit integers, determine whether there exist four distinct indices in strictly increasing order such that the elements at those indices are, respectively, 0, 0, 1, and 1. The indices do not need to be consecutive. Assume no preconditions on the array contents or length; if the length is less than 4, the condition cannot be satisfied and the result must be false. The function must return true if and only if such indices exist, and false otherwise.
+fn is_nested(s: Vec<i8>) -> (res: bool)

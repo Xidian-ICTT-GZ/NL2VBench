@@ -1,0 +1,2 @@
+Implement a function that takes a vector of 8-bit signed integers and returns a new vector that is an exact copy of the input. The returned vector must have the same length as the input, and for every valid index from 0 up to but not including the input length, the element at that index in the returned vector must equal the corresponding element in the input. Assume the input is any finite vector of 8-bit signed integers. The function must terminate.
+fn copy(arr: &Vec<i8>) -> (result: Vec<i8>)

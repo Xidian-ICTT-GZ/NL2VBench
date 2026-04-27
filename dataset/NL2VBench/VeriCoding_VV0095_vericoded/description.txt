@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, determine whether there exists an adjacent pair of elements where the second element is exactly one greater than the first. Formally, return true if and only if there exists an index i such that 0 <= i < n - 1 and array[i] + 1 == array[i + 1], where n is the length of the array. If the array has fewer than two elements, the result is false. No assumptions are made about sorting or distinctness of elements.
+fn contains_consecutive_numbers(a: &Vec<i32>) -> (result: bool)

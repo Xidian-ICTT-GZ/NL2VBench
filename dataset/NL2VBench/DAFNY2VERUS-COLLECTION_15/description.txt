@@ -1,0 +1,2 @@
+Given an array of 32-bit integers, return the index of the first element that is equal to zero. If the array contains no zero, return the array’s length. Use zero-based indexing, and allow the array length to be zero. The returned index must satisfy the following properties: it lies within [0, n] where n is the array length; every position strictly before the returned index contains a non-zero value; and if the returned index is strictly less than n, then the element at that index is zero.
+fn mfirst_cero(v: &[i32]) -> (i: usize)

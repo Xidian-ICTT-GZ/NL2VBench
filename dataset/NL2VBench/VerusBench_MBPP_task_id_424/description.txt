@@ -1,0 +1,2 @@
+Given a sequence of byte sequences (each representing a string), produce a new byte sequence containing the last byte of each input sequence, in order. Assume every input sequence is non-empty. The result must have the same length as the input sequence of sequences. If the input collection is empty, the result is also empty.
+fn extract_rear_chars(s: &Vec<Vec<u8>>) -> (result: Vec<u8>)

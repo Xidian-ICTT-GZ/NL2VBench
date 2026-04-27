@@ -1,0 +1,9 @@
+You are given two base point values and two time values for a contest with two participants. The first participant has a base point value P1 and a time T1, and the second participant has a base point value P2 and a time T2. Assume the following constraints hold:
+- Each base point value is an integer in the range [250, 3500], and is divisible by 250.
+- Each time value is an integer in the range [0, 180].
+For each participant, the final score is computed as S = max(3 * P / 10, P - P * T / 250), using integer arithmetic. Your task is to determine the winner by comparing the two final scores:
+- Return "Misha" if the first participant’s score is strictly greater than the second’s.
+- Return "Vasya" if the second participant’s score is strictly greater than the first’s.
+- Return "Tie" if both scores are equal.
+The returned string must be exactly one of: "Misha", "Vasya", or "Tie", and it must correctly reflect the comparison of the two computed scores.
+fn determine_winner(a: i8, b: i8, c: i8, d: i8) -> (result: String)

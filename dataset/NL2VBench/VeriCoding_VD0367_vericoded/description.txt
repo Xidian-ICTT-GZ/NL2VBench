@@ -1,0 +1,2 @@
+Given a non-empty vector of characters, return a new vector whose elements are the characters of the input in reverse order. Assume the input size is positive (length > 0). The output must have exactly the same length as the input. Formally, if n is the length of the input and 0 <= k < n, then the element at index k in the output must be equal to the element at index n - 1 - k in the input. The input collection should not be modified; produce a new collection containing the reversed sequence.
+fn yarra(arr: &Vec<char>) -> (outarr: Vec<char>)

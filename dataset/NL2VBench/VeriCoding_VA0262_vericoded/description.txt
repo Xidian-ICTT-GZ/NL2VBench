@@ -1,0 +1,7 @@
+You are given an 8-bit signed integer input. Assume the input value is between 30 and 100 inclusive. Define a category function on any integer x as follows: compute r = x mod 4; if r = 1, the category is 'A'; if r = 3, the category is 'B'; if r = 2, the category is 'C'; if r = 0, the category is 'D'. Your task is to return a pair (offset, category) where the offset is an integer in the range [0, 2] and the category is a character from {'A','B','C','D'}. The pair must satisfy that the category equals the category function applied to (input + offset). In addition, the returned category must be either 'A' or 'B'. The expected behavior is fully determined by the remainder of the input modulo 4:
+- If input mod 4 = 1, return (0, 'A').
+- If input mod 4 = 2, return (1, 'B').
+- If input mod 4 = 3, return (2, 'A').
+- If input mod 4 = 0, return (1, 'A').
+The output must adhere to the constraints 0 <= offset <= 2 and category ∈ {'A','B','C','D'}, and the returned category must be either 'A' or 'B'.
+fn solve(n: i8) -> (i8, char)

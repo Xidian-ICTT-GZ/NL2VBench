@@ -1,0 +1,2 @@
+Implement a function that determines whether a given array of characters consists entirely of decimal digits. A character is considered a digit if it is one of '0' through '9'. The input may be empty; in that case, the result should be true. The function must return true if and only if, for all valid indices in the array, the character at that index is a digit, and false otherwise. There are no additional preconditions on the input.
+fn is_integer(text: &Vec<char>) -> (result: bool)

@@ -1,0 +1,9 @@
+Given a non-empty array of floating-point numbers, a non-negative 8-bit integer, and an additional floating-point parameter, produce a truncated array according to the following rules:
+- Assume the input array length is at least 1.
+- If the integer is zero, return the array unchanged (same length and identical elements).
+- The output length must be equal to: if the input length is greater than the integer, then the input length minus the integer; otherwise, 1.
+- If the integer is greater than or equal to the input length, return an array of length 1 containing the first element of the input.
+- If the integer is strictly between 0 and the input length, return the first (input length minus the integer) elements of the input, preserving order.
+Note: The additional floating-point parameter does not affect the required output.
+fn trunc_len(n: usize, m: usize) -> usize
+fn legder(c: Vec<f64>, m: u8, scl: f64) -> Vec<f64>

@@ -1,0 +1,8 @@
+You are given a signed 8-bit integer representing a temperature in degrees Celsius. Assume the input temperature is within the inclusive range from −40 to 40.
+
+Return a byte vector representing the exact output string that corresponds to the following rule:
+- If the temperature is greater than or equal to 30, return the byte sequence for the characters "Yes" followed by a newline (i.e., 'Y', 'e', 's', '\n').
+- Otherwise, return the byte sequence for the characters "No" followed by a newline (i.e., 'N', 'o', '\n').
+
+The returned vector must encode exactly those characters (ASCII), with no additional characters or whitespace. When interpreting each byte as a character, the resulting character sequence must match the required output for the given temperature.
+fn solve(x: i8) -> Vec<u8>

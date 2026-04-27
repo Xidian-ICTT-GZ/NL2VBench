@@ -1,0 +1,4 @@
+Given a non-empty array of 32-bit signed integers, return the index of the first odd element if one exists; otherwise, return None. Assume the input length is strictly positive. An integer is considered odd if its remainder when divided by 2 is nonzero. The result must satisfy the following properties:
+- If the function returns Some(index), then index is a valid position within the array, the element at that position is odd, and every element at a position strictly less than index is not odd.
+- If the function returns None, then every element of the array is not odd.
+fn find_first_odd(a: &Vec<i32>) -> Option<usize>

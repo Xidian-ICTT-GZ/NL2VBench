@@ -1,0 +1,2 @@
+Given a sequence of 32-bit signed integers and an integer threshold, determine whether every element of the sequence is strictly less than the threshold. Return true if and only if for all valid indices within the sequence, the element at that index is strictly less than the threshold. The sequence may be empty; in that case, the result is true.
+fn below_threshold(l: &[i32], t: i32) -> (result: bool)

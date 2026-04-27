@@ -1,0 +1,15 @@
+use vstd::prelude::*;
+verus! {
+fn contains_z(text: &Vec<char>) -> (result: bool){
+    let mut index = 0;
+    while index < text.len()
+    {
+        if text[index] == 'Z' || text[index] == 'z' {
+            return true;
+        }
+        index += 1;
+    }
+    false
+}
+fn main() {}
+} 

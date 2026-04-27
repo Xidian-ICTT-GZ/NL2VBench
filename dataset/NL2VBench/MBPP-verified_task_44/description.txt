@@ -1,0 +1,12 @@
+Given an array of characters, compute how many elements are uppercase English letters. A character is considered uppercase if its Unicode scalar value lies in the inclusive range 65 through 90 (i.e., 'A' to 'Z' in ASCII). The input may be empty. Return the count as an unsigned 64-bit integer.
+The result must satisfy the following properties:
+- The count is within bounds: 0 ≤ count ≤ the length of the input array.
+- The count equals the value defined by an idealized, purely functional recursive specification that processes the sequence from right to left: if the sequence is empty, the count is 0; otherwise, the count is the result for the sequence without its last element plus 1 if the last element is an uppercase letter and plus 0 otherwise. The recursive specification must decrease structurally with the sequence length to ensure termination.
+In addition, any iterative solution must maintain the following invariants while scanning the array from left to right:
+- At any point during processing a prefix of length k, both the position k and the accumulated count are within bounds: 0 ≤ k ≤ array length and 0 ≤ accumulated count ≤ k.
+- The accumulated count for the processed prefix equals the count specified by the recursive definition for that same prefix.
+The task is to implement a function that returns the described count and fulfills the stated correctness properties.
+spec fn is_lower_case(c: char) -> bool
+spec fn is_upper_case(c: char) -> bool
+spec fn count_uppercase_recursively(seq: Seq<char>) -> int
+fn count_uppercase(text: &Vec<char>) -> (count: u64)

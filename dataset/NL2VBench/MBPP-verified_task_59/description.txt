@@ -1,0 +1,5 @@
+Given an array of 32-bit unsigned integers, return the 0-based index of the first element that is odd. If the array contains no odd elements, return None. The function has no preconditions. The following postconditions must hold:
+- If the result is Some(idx), then every element strictly before idx is even, and the element at idx is odd.
+- If the result is None, then every element in the array is even.
+Assume standard 0-based indexing and that returning None is permitted when there is no odd element.
+fn find_first_odd(arr: &Vec<u32>) -> Option<usize>

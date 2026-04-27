@@ -1,0 +1,8 @@
+Implement a function that takes a vector of 8-bit signed integers and returns a vector of 8-bit signed integers. The function must be total: it must accept any input vector (no preconditions). The following guarantees must hold:
+- The output vector has the same length as the input vector.
+- If the input length is 0, the output equals the input (element-wise equality).
+- If the input length is 1, the output equals the input.
+- If the input length is 2, the output equals the input.
+- If the input length is 4 and the input elements are exactly [0, 1, 2, 3] in this order, then the output must be exactly [-2, -8, 4, 12] in this order.
+No other behavior is required beyond these guarantees. In particular, for inputs not covered by the listed cases, any output with the same length as the input is acceptable.
+fn cheb2poly(c: Vec<i8>) -> (p: Vec<i8>)

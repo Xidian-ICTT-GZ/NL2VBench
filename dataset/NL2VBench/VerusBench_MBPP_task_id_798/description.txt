@@ -1,0 +1,3 @@
+Compute the total sum of all elements in an input array of 64-bit signed integers and return the result as a 128-bit signed integer. The array may be empty. The returned value must equal the mathematical sum of the elements, where the mathematical sum is defined as 0 for an empty array and, for a non-empty array, equal to the sum of its prefix plus the last element. During processing, the algorithm should maintain that the sum of any processed prefix of length k lies between k times the minimum 64-bit signed integer value and k times the maximum 64-bit signed integer value. The algorithm must terminate after examining all elements.
+spec fn sum_to(arr: Seq<i64>) -> int
+fn sum(arr: &Vec<i64>) -> (sum: i128)

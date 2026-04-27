@@ -1,0 +1,2 @@
+Given a read-only array of characters, return the index of the first occurrence of the character 'e'. If 'e' does not appear in the array, return -1. Assume the array length is strictly less than the maximum value of a 32-bit signed integer. If the result is not -1, it must be a valid index within the array bounds, the character at that index must be 'e', and all positions before that index must not contain 'e'.
+fn first_e(a: &[char]) -> i32

@@ -1,0 +1,2 @@
+Given a finite list of character sequences, produce a new list consisting of the last character from each input sequence, in the same order as the inputs. Assume every input sequence is non-empty. The output list must have the same length as the number of input sequences, and for each valid index, the element at that index in the output is equal to the last character of the corresponding input sequence. If the input list is empty, the output is empty.
+fn extract_rear_chars(s: &Vec<Vec<char>>) -> (result: Vec<char>)

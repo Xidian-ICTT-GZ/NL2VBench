@@ -1,0 +1,4 @@
+You are given an array of unsigned 64-bit integers and an index. Assume the array uses zero-based indexing and is non-empty. The index is strictly positive (greater than 0) and strictly less than the length of the array. Additionally, assume the array satisfies the following property for all valid indices k in [0, length): the element at position k equals k + 2.
+
+Return the element at the given index. The result must be equal to the array element at that index and, due to the stated property, must also be equal to (index + 2).
+fn get_element_check_property(arr: Vec<u64>, i: usize) -> (ret: u64)

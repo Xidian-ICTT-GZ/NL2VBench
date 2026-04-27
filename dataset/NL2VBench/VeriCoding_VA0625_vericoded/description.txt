@@ -1,0 +1,6 @@
+Implement a function that classifies the safety of food based on how many days have passed since a reference day. The function takes three signed 8-bit integers: a non-negative threshold, a reference day, and an evaluation day. Compute the number of days past as (evaluation day minus reference day). Return one of the following exact strings according to the rules:
+- Return "delicious" if the computed days past is less than or equal to zero.
+- Return "safe" if the computed days past is greater than zero and less than or equal to the given threshold.
+- Return "dangerous" if the computed days past is greater than the given threshold.
+Assume the threshold input is non-negative. The result must be exactly one of the three strings: "delicious", "safe", or "dangerous".
+fn determine_food_safety(x: i8, a: i8, b: i8) -> &'static str

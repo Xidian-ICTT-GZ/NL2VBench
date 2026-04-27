@@ -1,0 +1,20 @@
+Implement a procedure that computes six times a given size N and stores the result into the single element of an output vector.
+
+Inputs:
+- A mutable vector of 32-bit integers (the working vector).
+- A mutable vector of 32-bit integers that contains exactly one element (the output holder).
+- An integer N.
+
+Assumptions:
+- N is positive (N > 0).
+- N is strictly less than 1000 (N < 1000).
+- The length of the working vector is exactly N at the time the function is called.
+- The output holder vector has length exactly 1 at the time the function is called.
+
+Postcondition:
+- After the function returns, the single element at index 0 of the output holder equals 6 * N.
+
+Notes:
+- The content of the working vector before the call is irrelevant to the result. The procedure may modify the working vector.
+- The algorithm must terminate under the given assumptions.
+fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

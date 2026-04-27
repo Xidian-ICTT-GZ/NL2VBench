@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers and a 32-bit signed integer value, determine whether every element of the array equals the given value. There are no preconditions on the input; the array may be empty. The function must return a boolean that is true if and only if for all valid indices within the array, the element at that index equals the given value. In particular, it should return true for an empty array (by vacuous truth).
+fn all_elements_equals(arr: &Vec<i32>, element: i32) -> (result: bool)

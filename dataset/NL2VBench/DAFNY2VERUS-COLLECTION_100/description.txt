@@ -1,0 +1,2 @@
+Implement a function that, given a sorted array of 32-bit integers in non-decreasing order and a target integer, returns the smallest index at which the target could be inserted while preserving the array’s order. Assume the array may be empty. The returned index must be between 0 and the length of the array, inclusive. Additionally, every element strictly before the returned index must be less than the target, and every element at or after the returned index must be greater than or equal to the target.
+fn binary_search(a: &Vec<i32>, key: i32) -> (n: usize)

@@ -1,0 +1,8 @@
+Implement a function that searches for a target value in a sorted array of 64-bit unsigned integers and returns an index where the target occurs.
+Assume the following:
+- The array is non-empty.
+- The array is sorted in non-decreasing order (for all indices i and j with 0 <= i <= j < length, the element at i is less than or equal to the element at j).
+- The target value is guaranteed to appear at least once in the array.
+The function must return an index that is strictly within the array bounds, and the element at that returned index must equal the target value. If the target appears multiple times, returning any one of its valid indices is acceptable.
+The algorithm should maintain correctness during execution by preserving that the active search interval stays within the array bounds, that at least one occurrence of the target remains within the current interval, and that the interval strictly decreases in size at each step, ensuring termination.
+fn binary_search(v: &Vec<u64>, k: u64) -> (r: usize)

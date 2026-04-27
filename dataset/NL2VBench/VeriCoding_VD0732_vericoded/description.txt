@@ -1,0 +1,2 @@
+Implement a function that, given an array of arrays of 32-bit integers, returns a new array containing the first element of each inner array, in order. Assume every inner array in the input is non-empty. The output must have the same length as the input outer array. For each valid index i in the range [0, input length), the output at position i must equal the first element of the i-th inner array of the input.
+fn get_first_elements(lst: Vec<Vec<i32>>) -> (result: Vec<i32>)

@@ -1,0 +1,9 @@
+You are given two arrays of 32-bit signed integers: a main array and a second array that is checked as a candidate subarray. Implement two functions:
+
+1) A predicate that, given a valid starting index, determines whether the candidate array matches the contiguous segment of the main array starting at that index. Assumptions: the candidate array’s length is less than or equal to the main array’s length; the starting index is within bounds, specifically 0 <= starting_index <= main_length - candidate_length. Return true if the segment of the main array of length equal to the candidate array, beginning at the given starting index, is element-wise equal to the candidate array; otherwise, return false.
+
+2) A predicate that determines whether the candidate array occurs as a contiguous subarray anywhere in the main array. Assumption: the candidate array’s length is less than or equal to the main array’s length. Return true if and only if there exists some starting index k with 0 <= k <= (main_length - candidate_length) such that, for all positions t with 0 <= t < candidate_length, main[k + t] equals candidate[t]. The empty candidate array is permitted and is considered to occur at any index within the main array (including at the end).
+
+All indexing must be within bounds. The returned booleans must exactly reflect the mathematical definitions above: equality for the fixed-index check, and existential occurrence for the anywhere-in-main check.
+fn sub_array_at_index(main: &Vec<i32>, sub: &Vec<i32>, idx: usize) -> (result: bool)
+fn is_sub_array(main: &Vec<i32>, sub: &Vec<i32>) -> (result: bool)

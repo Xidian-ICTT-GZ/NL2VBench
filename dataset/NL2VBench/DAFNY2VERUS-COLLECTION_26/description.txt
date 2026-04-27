@@ -1,0 +1,2 @@
+Given two arrays of integers of equal length, return a new array containing the element-wise sums. Assume the two input arrays have the same length. The output array must have the same length as the inputs, and for every valid index i (0 <= i < length), the output’s i-th element equals the sum of the i-th elements of the two inputs.
+fn array_sum(a: Vec<int>, b: Vec<int>) -> (c: Vec<int>)

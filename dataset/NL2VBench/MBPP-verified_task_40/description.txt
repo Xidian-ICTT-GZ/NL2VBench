@@ -1,0 +1,3 @@
+Given an array of signed 64-bit integers, compute the sum of all elements that are strictly negative. Return this sum as a signed 128-bit integer. The input array may be empty. The returned value must exactly equal the mathematical sum of the negative values in the entire array. Additionally, for any prefix of the array of length k (where 0 <= k <= n, n is the array length), the mathematical sum of the negative values in that prefix is guaranteed to lie between i64::MIN multiplied by k and 0. The algorithm should process the array sequentially and terminate after all elements are considered.
+spec fn sum_negative_to(seq: Seq<i64>) -> int
+fn sum_negatives(arr: &Vec<i64>) -> (sum_neg: i128)

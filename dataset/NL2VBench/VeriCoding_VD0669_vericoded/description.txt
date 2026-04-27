@@ -1,0 +1,2 @@
+Implement a function that takes two mathematical integers and returns their product. The function has no preconditions; it must operate for all integer inputs, including negative values and zero. The required postcondition is that the returned value equals the mathematical multiplication of the two inputs. Treat integers as unbounded mathematical integers (there are no overflow concerns).
+fn multiply(a: int, b: int) -> (result: int)

@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return an index of a maximum element. Assume the input length is at least 1. The returned index must be within the bounds of the array, and the value at that index must be greater than or equal to every other element in the array. If multiple positions hold the maximum value, returning any one of those indices is acceptable.
+fn find_max(a: &[i32]) -> (i: usize)

@@ -1,0 +1,5 @@
+You are given an array of arrays of 32-bit signed integers. Assume that every inner array is non-empty. Build and return a new array that contains, for each inner array in order, its first element. The outer array may be empty; in that case, return an empty array.
+The returned array must satisfy the following properties:
+- Its length is exactly equal to the number of inner arrays in the input.
+- For every valid index i, the element at position i in the result is equal to the first element of the i-th inner array in the input.
+fn get_first_elements(arr: &Vec<Vec<i32>>) -> (result: Vec<i32>)

@@ -1,0 +1,2 @@
+Given two arrays of 32-bit signed integers, determine whether they share at least one common element. Arrays may be empty. Return true if and only if there exists an index within the bounds of the first array and an index within the bounds of the second array such that the elements at those indices are equal. Otherwise, return false, which implies that for all index pairs within bounds across both arrays, the elements are unequal.
+fn has_common_element(a: Vec<i32>, b: Vec<i32>) -> (result: bool)

@@ -1,0 +1,2 @@
+Given a non-empty array of signed 8-bit integers, return the minimum value contained in the array. Assume the input size is greater than zero. The returned value must be equal to one of the elements in the array and must be less than or equal to every element in the array.
+fn min(a: Vec<i8>) -> i8

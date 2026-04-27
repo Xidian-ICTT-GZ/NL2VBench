@@ -1,0 +1,4 @@
+Given a finite list of character sequences, return the longest sequence. If the input list is empty, return None. Otherwise, return Some of a sequence that is exactly equal (in content) to one of the input sequences and satisfies all of the following properties:
+- Its length is greater than or equal to the length of every sequence in the input.
+- Among all sequences that achieve the maximum length, it is the one with the smallest index (i.e., the earliest occurrence of a maximum-length sequence). Equivalently, for every index strictly less than the index of the returned sequence, the length at that index is strictly smaller than the returned sequence’s length.
+fn longest(strings: Vec<Vec<char>>) -> (result: Option<Vec<char>>)

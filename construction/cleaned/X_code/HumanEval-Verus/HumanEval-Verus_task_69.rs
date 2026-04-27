@@ -1,0 +1,33 @@
+use vstd::prelude::*;
+verus! {
+fn is_prime(num: u32) -> (result: bool){
+    let mut i = 2;
+    let mut result = true;
+    while i < num
+    {
+        if num % i == 0 {
+            result = false;
+        }
+        i += 1;
+    }
+    result
+}
+fn largest_prime_factor(n: u32) -> (largest: u32){
+    let mut largest = 1;
+    let mut j = 1;
+    while j < n
+    {
+        j += 1;
+        let flag = is_prime(j);
+        if n % j == 0 && flag {
+            largest =
+            if largest > j {
+                largest
+            } else {
+                j
+            };
+        }
+    }
+    largest
+}
+} 

@@ -1,0 +1,2 @@
+Given a finite array of 32-bit signed integers, compute how many distinct values it contains. Assume the array is non-decreasing (i.e., sorted in ascending order with duplicates allowed). The array length may be zero. The function must not modify the input. The return value must be less than or equal to the array length. For an empty array, return 0; for a non-empty array, return the number of unique values appearing in the array.
+fn remove_duplicates(nums: &Vec<i32>) -> (result: usize)

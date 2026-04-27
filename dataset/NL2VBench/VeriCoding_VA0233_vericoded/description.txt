@@ -1,0 +1,10 @@
+You are given a position on a standard 8×8 chessboard encoded as a two-character array. The first character is the file ('a' through 'h') and the second character is the rank ('1' through '8'). Assume the input length is exactly two and both characters are within these ranges.
+
+Compute the number of distinct squares a king could move to from this position on an otherwise empty board, considering standard king movement (one square in any of the eight directions) and staying within the board.
+
+- If the position is a corner square (a1, a8, h1, h8), return 3.
+- If the position lies on an edge but is not a corner (i.e., file is 'a' or 'h', or rank is '1' or '8', excluding corners), return 5.
+- Otherwise (interior squares), return 8.
+
+The result must be one of {3, 5, 8} and must match the classification above.
+fn solve(position: Vec<char>) -> (moves: i8)

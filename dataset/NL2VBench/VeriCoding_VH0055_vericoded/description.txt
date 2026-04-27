@@ -1,0 +1,2 @@
+Given an array of signed 8-bit integers and a signed 8-bit threshold value, determine whether every element in the array is strictly less than the threshold. Return true if, for all valid indices, the element at that index is less than the threshold; otherwise, return false. If the array is empty, return true. The result must coincide with the mathematical property that, for the integer sequence corresponding to the array elements, all entries are strictly less than the integer form of the threshold.
+fn check_below_threshold(l: Vec<i8>, t: i8) -> (result: bool)

@@ -1,0 +1,6 @@
+Given four arrays of equal length n ≥ 0: two arrays of unsigned 64-bit integers and two arrays of booleans. Assume that for every index i in [0, n), at least one of the two boolean arrays is true at i. Also assume every integer in both integer arrays is strictly less than 1000. Construct an output array of length n such that, for each index i:
+- If both boolean values at i are true, the output at i is the integer average of the two integers at i, computed as (a + b) / 2 using integer division (fractional parts, if any, are discarded).
+- If only the first boolean value at i is true, the output at i is the integer from the first array at i.
+- If only the second boolean value at i is true, the output at i is the integer from the second array at i.
+The output array must be exactly of length n and must overwrite any previous contents of the provided output collection.
+fn conditional_average(vals_1: &Vec<u64>, vals_2: &Vec<u64>, conds_1: &Vec<bool>, conds_2: &Vec<bool>, avgs: &mut Vec<u64>)

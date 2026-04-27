@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers and a 32-bit signed integer value, construct and return a new array that interleaves the given value before each element of the original array. The input may be empty. The output must satisfy the following properties: its length equals twice the length of the input; for every integer index k with 0 <= k < input length, the element at position 2k in the output equals the given value, and the element at position 2k + 1 equals the k-th element of the input.
+fn insert_before_each(arr: &Vec<i32>, elem: i32) -> (result: Vec<i32>)

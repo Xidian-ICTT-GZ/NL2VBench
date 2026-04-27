@@ -1,0 +1,2 @@
+You are given an integer n and an array of length n consisting only of the characters 'I' and 'D'. Assume 1 <= n <= 100, the array length equals n, and every element is either 'I' or 'D'. Start with a running counter at 0 and process the array from left to right: increment the counter by 1 for 'I', and decrement it by 1 for 'D'. Compute and return the maximum value attained by this running counter at any point during the scan, including the initial value 0. The returned value is guaranteed to be non-negative.
+fn solve(n: i8, s: Vec<char>) -> i8

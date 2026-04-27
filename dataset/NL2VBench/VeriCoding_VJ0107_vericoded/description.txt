@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers and an index n, produce a new array that is the original array rotated to the left by n positions. Assume the array length is greater than 0 and n is a strict interior index, i.e., 0 < n < length of the array. The result must be exactly the concatenation of the subarray from index n (inclusive) to the end, followed by the subarray from index 0 (inclusive) up to index n (exclusive). The relative order of elements within each subarray must be preserved.
+fn split_and_append(list: &Vec<i32>, n: usize) -> (new_list: Vec<i32>)

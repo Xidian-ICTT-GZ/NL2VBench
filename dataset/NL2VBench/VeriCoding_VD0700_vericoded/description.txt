@@ -1,0 +1,2 @@
+Given an array of 32-bit integers and a target integer value, determine whether every element in the array is equal to the target. There are no preconditions; the array may be empty. The function must satisfy the following correctness guarantees: if it returns true, then for every valid index in the array, the element at that index equals the target value; if it returns false, then there exists at least one valid index where the element does not equal the target value.
+fn all_elements_equal(a: &[i32], n: i32) -> bool

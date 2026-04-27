@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, determine whether every adjacent pair of elements is consecutive, increasing by exactly 1. Assume for every element x in the array that x + 1 is a valid 32-bit signed integer and non-negative, i.e., -1 <= x < i32::MAX - 1. Return true if and only if, for all indices i where an adjacent pair exists, the next element equals the current element plus one. Otherwise, return false.
+fn contains_consecutive_numbers(arr: &Vec<i32>) -> (is_consecutive: bool)

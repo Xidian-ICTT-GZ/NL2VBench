@@ -1,0 +1,11 @@
+Define the triangular-number function T on natural numbers by T(0) = 0 and T(n) = n + T(n - 1) for n > 0. First, prove the following monotonicity lemma: for any natural numbers i and j, if i <= j then T(i) <= T(j).
+
+Then, implement a function that takes a 32-bit unsigned integer n and returns the sum of the first n positive integers. Assume that T(n) is strictly less than 2^32 (i.e., it fits within the 32-bit unsigned integer range). Under this assumption, the function must return a 32-bit unsigned integer equal to T(n).
+
+Formally:
+- Input: a non-negative integer n of type u32.
+- Assumption: T(n) < 2^32.
+- Output: a value sum such that sum = T(n).
+- Additionally, provide a proof that for any i, j in the natural numbers, i <= j implies T(i) <= T(j).
+
+Edge cases such as n = 0 must be handled, and the implementation must avoid integer overflow under the stated assumption.

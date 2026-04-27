@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, determine whether all elements are identical. The function must return true for an empty array and for a single-element array. For a general array, the result must be true if and only if, for every pair of valid indices i and j, the element at index i equals the element at index j; otherwise, it must be false. There are no additional preconditions on the input.
+fn mall_equal1(v: &[i32]) -> bool

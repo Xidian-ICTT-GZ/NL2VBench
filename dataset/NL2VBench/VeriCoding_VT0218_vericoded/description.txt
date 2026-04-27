@@ -1,0 +1,15 @@
+Implement a function that configures print options for numerical array output. Each option is optional; if an option is not provided, it should be left unchanged. The function must validate any provided option as follows:
+
+- Precision (if provided): must be a strictly positive 8-bit unsigned integer.
+- Threshold (if provided): must be a strictly positive 8-bit unsigned integer.
+- Edge-items (if provided): must be a strictly positive 8-bit unsigned integer.
+- Line width (if provided): must be a strictly positive 8-bit unsigned integer.
+- Suppress small values (if provided): a boolean flag.
+- NaN string (if provided): a non-empty string.
+- Infinity string (if provided): a non-empty string.
+- Sign display (if provided): a single-character string that is one of "-", "+", or a single space.
+- Float mode (if provided): one of the exact strings "fixed", "unique", "maxprec", or "maxprec_equal".
+- Legacy mode (if provided): one of the exact strings "1.13", "1.21", "1.25", "2.1", or "2.2".
+
+Assume all inputs respect the above constraints when present. The function returns successfully with no value (unit).
+fn set_printoptions(precision: Option<u8>, threshold: Option<u8>, edgeitems: Option<u8>, linewidth: Option<u8>, suppress: Option<bool>, nanstr: Option<String>, infstr: Option<String>, sign: Option<String>, floatmode: Option<String>, legacy: Option<String>) -> ()

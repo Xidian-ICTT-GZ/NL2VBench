@@ -1,0 +1,6 @@
+You are given a vector of characters. Produce a new vector of the same length by applying the following transformation to each character independently:
+- If the character is a lowercase English letter ('a' to 'z'), replace it with the letter that is 4 positions later in the lowercase alphabet, wrapping around at 'z' (i.e., 'w' -> 'a', 'x' -> 'b', 'y' -> 'c', 'z' -> 'd').
+- If the character is an uppercase English letter ('A' to 'Z'), replace it with the letter that is 4 positions later in the uppercase alphabet, wrapping around at 'Z' (i.e., 'W' -> 'A', 'X' -> 'B', 'Y' -> 'C', 'Z' -> 'D').
+- All other characters (digits, punctuation, spaces, or any non-letter Unicode characters) remain unchanged.
+Assume the input size is nonnegative (the input may be empty). The output must have the exact same length as the input, and for every valid index, the output character must equal the result of applying the above transformation to the corresponding input character.
+fn encrypt(s: Vec<char>) -> (result: Vec<char>)

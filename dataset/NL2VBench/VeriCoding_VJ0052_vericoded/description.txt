@@ -1,0 +1,9 @@
+Write a procedure that modifies a given array in place under specific size constraints. You are given:
+- An integer N such that 0 < N < 1000.
+- Two mutable arrays of 32-bit signed integers of length N.
+- One mutable array of 32-bit signed integers of length 1.
+
+The procedure must set every element of the first length-N array to the value N + 1. After the procedure returns, for every index k in the range 0 <= k < N, the element at position k in the first array equals N + 1.
+
+Assume the arrays initially have the specified lengths. The specification requires that during execution, the arrays are treated with these fixed lengths. The second length-N array and the single-element array are present only to satisfy the input shape constraints; the postcondition concerns the first array’s contents.
+fn myfun(a: &mut Vec<i32>, b: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

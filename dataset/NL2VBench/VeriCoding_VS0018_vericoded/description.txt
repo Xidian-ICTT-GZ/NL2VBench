@@ -1,0 +1,2 @@
+Given two arrays of signed 8-bit integers with the same length, produce a boolean array of the same length where each element indicates whether the corresponding elements in the two input arrays are equal. Assume both input arrays have equal length. The output array must have the same length as the inputs, and for every valid index, the output at that index is true if and only if the elements at that index in the inputs are equal.
+fn equal(a: Vec<i8>, b: Vec<i8>) -> (result: Vec<bool>)

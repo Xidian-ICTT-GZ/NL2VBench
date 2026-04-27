@@ -1,0 +1,26 @@
+You are given an array of signed 8-bit integers representing multiple test cases for a deterministic number game. The first element of the array is a positive integer t indicating the number of test cases. The array contains exactly t additional elements, each a positive integer n describing a single game.
+
+For each n, output the winner as either "Ashishgup" or "FastestFinger" according to the following rules. Let n be the given positive integer:
+- If n = 1, the winner is "FastestFinger".
+- Else if n = 2, the winner is "Ashishgup".
+- Else if n is a power of two (i.e., n = 2^k for some integer k ≥ 0), the winner is "FastestFinger".
+- Else if n mod 4 ≠ 2 (which includes all odd numbers and all numbers divisible by 4), the winner is "Ashishgup".
+- Else (i.e., n mod 4 = 2), let p = n / 2. If p is "limited-prime", the winner is "FastestFinger"; otherwise the winner is "Ashishgup".
+
+The notion of "limited-prime" is defined as follows:
+- p ≤ 1 is not prime.
+- p = 2 is prime.
+- Any even p > 2 is not prime.
+- Any odd p > 2 is considered prime.
+
+Input assumptions:
+- The input array length is at least 1.
+- The first element t is positive.
+- The array length equals t + 1.
+- All t game values (the remaining elements) are positive integers.
+
+Output requirements:
+- Return an array of length t.
+- Each output entry is either "FastestFinger" or "Ashishgup".
+- The i-th output (0-indexed) must be the winner for the (i+1)-th game value provided in the input, based on the above rules.
+fn solve(input: Vec<i8>) -> Vec<&'static str>

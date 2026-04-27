@@ -1,0 +1,3 @@
+Given two arrays of 8-bit signed integers of equal length, construct a new array where each element is the maximum of the two corresponding elements from the input arrays. Assume the two input arrays have the same length. The output array must have the same length as the inputs. For every valid index i (0 <= i < length), the element at position i in the output must equal the larger of the two input values at index i; consequently, it must be greater than or equal to both corresponding input values and must be exactly one of those two input values.
+fn max_i8(a: i8, b: i8) -> i8
+fn maximum(x1: Vec<i8>, x2: Vec<i8>) -> Vec<i8>

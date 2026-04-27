@@ -1,0 +1,8 @@
+Given an array of 64-bit signed integers and two indices, compute the exact sum of the elements in the inclusive index range from the start index to the end index. Assume the indices satisfy 0 <= start <= end and end is strictly less than the length of the array (i.e., they designate a valid, non-empty contiguous segment of the array). Return the sum as a 128-bit signed integer.
+
+Correctness requirements:
+- The returned value must equal the mathematical sum of the array elements in the inclusive range [start, end].
+- Conceptually, for any prefix of the selected range (from the start index up to any intermediate position within the range), the partial sum is bounded by the element-wise extremal bounds: it lies between i64::MIN multiplied by the number of elements in that prefix and i64::MAX multiplied by the number of elements in that prefix. This reflects that each element is within the i64 range and ensures arithmetic safety of intermediate sums.
+- The computation must terminate after processing exactly end - start + 1 elements.
+spec fn sum_to(arr: Seq<i64>) -> int
+fn sum_range_list(arr: &Vec<i64>, start: usize, end: usize) -> (sum: i128)

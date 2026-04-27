@@ -1,0 +1,2 @@
+Given a list of 32-bit unsigned integers, return a new list containing exactly the elements of the input that are even (i.e., divisible by 2), preserving their original relative order. The input list may be empty. The output must be equal to the result of applying an order-preserving filter with the predicate "value % 2 == 0" to the input list.
+fn remove_odds(arr: &Vec<u32>) -> Vec<u32>

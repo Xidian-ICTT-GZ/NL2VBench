@@ -1,0 +1,2 @@
+Given a non-empty list of integer arrays, determine whether all arrays have the same length. Assume the outer list contains at least one inner array. Return a boolean value that is true if and only if, for every pair of indices within the bounds of the outer list, the lengths of the corresponding inner arrays are equal; otherwise return false.
+fn all_sequence_equal_length(seq: &Vec<Vec<i32>>) -> (result: bool)

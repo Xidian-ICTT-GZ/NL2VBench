@@ -1,0 +1,2 @@
+Implement a function that returns the minimum of two integers. There are no preconditions on the inputs; they may be any integers. The function must satisfy the following postconditions: if the first input is less than or equal to the second, the result equals the first input; if the first input is greater than the second, the result equals the second input.
+fn min(x: int, y: int) -> (z: int)

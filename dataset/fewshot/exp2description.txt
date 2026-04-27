@@ -1,0 +1,3 @@
+Define the mathematical Fibonacci function F over the natural numbers using 0-based indexing: F(0) = 0, F(1) = 1, and for n >= 2, F(n) = F(n-2) + F(n-1). Prove that F is monotonic (non-decreasing): for all natural numbers i and j with i <= j, F(i) <= F(j).
+
+Implement a function that takes a non-negative integer n (given as an unsigned 64-bit integer) and returns the nth Fibonacci number. Assume the result fits in a 64-bit unsigned integer; that is, assume F(n) <= u64::MAX. The function must return exactly F(n), as defined by the mathematical specification.

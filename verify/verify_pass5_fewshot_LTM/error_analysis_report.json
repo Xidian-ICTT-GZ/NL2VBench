@@ -1,0 +1,318 @@
+{
+  "total_errors": 43331,
+  "unique_error_types": 666,
+  "top_30": [
+    {
+      "rank": 1,
+      "error_type": "E0432",
+      "count": 7025,
+      "percentage": 16.212411437538947,
+      "sample": "error[E0432]: unresolved import `vstd::vec`\n --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_1/p1_fewshot+LTM/deepseek-v3.2/00.rs:7:11\n  |\n7 | use vstd::vec::*;\n  |           "
+    },
+    {
+      "rank": 2,
+      "error_type": "E0601",
+      "count": 5751,
+      "percentage": 13.272253121321917,
+      "sample": "error[E0601]: `main` function not found in crate `03`\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_202/p1_fewshot+LTM/deepseek-v3.2/03.rs:71:2\n   |\n71 | }\n   |  ^ conside"
+    },
+    {
+      "rank": 3,
+      "error_type": "E0425",
+      "count": 5717,
+      "percentage": 13.193787357780803,
+      "sample": "error[E0425]: cannot find value `result` in this scope\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_202/p1_fewshot+LTM/deepseek-v3.2/04.rs:15:9\n   |\n15 |         result ="
+    },
+    {
+      "rank": 4,
+      "error_type": "E0308",
+      "count": 5665,
+      "percentage": 13.073780895894394,
+      "sample": "error[E0308]: mismatched types\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_111/p1_fewshot+LTM/deepseek-v3.2/02.rs:36:65\n   |\n36 |                 inner_found == (exists|"
+    },
+    {
+      "rank": 5,
+      "error_type": "forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` i",
+      "count": 2014,
+      "percentage": 4.64794258152362,
+      "sample": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead\n  --> /Users/hlh/program/python/NL2V/exp_generation/MBPP-verified_task_72/p1_fewshot+LTM/deepseek-v3.2/00."
+    },
+    {
+      "rank": 6,
+      "error_type": "expected curly braces",
+      "count": 1919,
+      "percentage": 4.42870000692345,
+      "sample": "error: expected curly braces\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_79/p1_fewshot+LTM/deepseek-v3.2/04.rs:73:60\n   |\n73 | ...   first_e_spec(a@) == (if i < len && i"
+    },
+    {
+      "rank": 7,
+      "error_type": "The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec",
+      "count": 1856,
+      "percentage": 4.283307562714915,
+      "sample": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assigning to a 'ghost' or 'tracked' variable)\n  --> /Users"
+    },
+    {
+      "rank": 8,
+      "error_type": "expected `,`",
+      "count": 1556,
+      "percentage": 3.5909625902933238,
+      "sample": "error: expected `,`\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_15/p1_fewshot+LTM/deepseek-v3.2/04.rs:47:23\n   |\n47 |         i as nat < old(v).len() ==> old(v)[i as nat"
+    },
+    {
+      "rank": 9,
+      "error_type": "E0599",
+      "count": 1106,
+      "percentage": 2.5524451316609356,
+      "sample": "error[E0599]: no method named `abs` found for struct `vstd::prelude::int` in the current scope\n  --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_1/p1_fewshot+LTM/deepseek-v3.2/0"
+    },
+    {
+      "rank": 10,
+      "error_type": "expected one of `!` or `::`, found keyword `fn`",
+      "count": 690,
+      "percentage": 1.5923934365696617,
+      "sample": "error: expected one of `!` or `::`, found keyword `fn`\n --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VA0083_vericoded/p1_fewshot+LTM/deepseek-v3.2/04.rs:6:6\n  |\n6 | spec fn min_coins_s"
+    },
+    {
+      "rank": 11,
+      "error_type": "unexpected token, expected `;`",
+      "count": 542,
+      "percentage": 1.2508365835083428,
+      "sample": "error: unexpected token, expected `;`\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_79/p1_fewshot+LTM/deepseek-v3.2/00.rs:26:41\n   |\n26 |             0 <= result < a.len()"
+    },
+    {
+      "rank": 12,
+      "error_type": "E0428",
+      "count": 533,
+      "percentage": 1.230066234335695,
+      "sample": "error[E0428]: the name `diag_val` is defined multiple times\n  --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VT0022_vericoded/p1_fewshot+LTM/deepseek-v3.2/01.rs:27:1\n   |\n11 |   spec fn "
+    },
+    {
+      "rank": 13,
+      "error_type": "expected -> (pattern: type)",
+      "count": 468,
+      "percentage": 1.0800581569776833,
+      "sample": "error: expected -> (pattern: type)\n  --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_9/p1_fewshot+LTM/deepseek-v3.2/00.rs:15:62\n   |\n15 | spec fn euclidean_div(dividend: int, di"
+    },
+    {
+      "rank": 14,
+      "error_type": "non-private spec function must be marked open or closed to indicate whether the ",
+      "count": 357,
+      "percentage": 0.8238905171816944,
+      "sample": "error: non-private spec function must be marked open or closed to indicate whether the function body is public (pub open) or private (pub closed)\n  --> /Users/hlh/program/python/NL2V/exp_generation/Ve"
+    },
+    {
+      "rank": 15,
+      "error_type": "E0282",
+      "count": 355,
+      "percentage": 0.819274884032217,
+      "sample": "error[E0282]: type annotations needed\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_45/p1_fewshot+LTM/deepseek-v3.2/04.rs:51:13\n   |\n51 |         let mut diff_index = 0;\n "
+    },
+    {
+      "rank": 16,
+      "error_type": "postcondition not satisfied",
+      "count": 345,
+      "percentage": 0.7961967182848309,
+      "sample": "verification results:: 1 verified, 1 errors\nnote: while loop: not all errors may have been reported; rerun with a higher value for --multiple-errors to find other potential errors in this function\n  -"
+    },
+    {
+      "rank": 17,
+      "error_type": "unknown",
+      "count": 322,
+      "percentage": 0.743116937065842,
+      "sample": "warning: using ==> in `assert forall` does not currently assume the antecedent in the body; consider using `implies` instead of `==>`\n  --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-CO"
+    },
+    {
+      "rank": 18,
+      "error_type": "spec functions cannot have requires/ensures",
+      "count": 320,
+      "percentage": 0.7385013039163647,
+      "sample": "error: spec functions cannot have requires/ensures\n  --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_21/p1_fewshot+LTM/deepseek-v3.2/02.rs:16:6\n   |\n16 | spec fn char_xor(a: cha"
+    },
+    {
+      "rank": 19,
+      "error_type": "in requires, use `old(a)` to refer to the pre-state of an &mut variable",
+      "count": 300,
+      "percentage": 0.6923449724215919,
+      "sample": "error: in requires, use `old(a)` to refer to the pre-state of an &mut variable\n  --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VD0844_vericoded/p2_fewshot+LTM/deepseek-v3.2/complete00.r"
+    },
+    {
+      "rank": 20,
+      "error_type": "Could not automatically infer triggers for this quantifier.  Use #[trigger] anno",
+      "count": 284,
+      "percentage": 0.6554199072257737,
+      "sample": "error: Could not automatically infer triggers for this quantifier.  Use #[trigger] annotations to manually mark trigger terms instead.\n  --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Ver"
+    },
+    {
+      "rank": 21,
+      "error_type": "E0283",
+      "count": 229,
+      "percentage": 0.5284899956151485,
+      "sample": "error[E0283]: type annotations needed\n   --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_65/p1_fewshot+LTM/deepseek-v3.2/01.rs:156:23\n    |\n156 |     assert(r0 == Some(0));\n    "
+    },
+    {
+      "rank": 22,
+      "error_type": "E0277",
+      "count": 229,
+      "percentage": 0.5284899956151485,
+      "sample": "error[E0277]: the trait bound `T: std::marker::Copy` is not satisfied\n  --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VD0719_vericoded/p1_fewshot+LTM/deepseek-v3.2/04.rs:25:10\n   |\n25 |"
+    },
+    {
+      "rank": 23,
+      "error_type": "expected one of `!`, `(`, `)`, `+`, `,`, `::`, or `<`, found `:`",
+      "count": 226,
+      "percentage": 0.5215665458909325,
+      "sample": "error: expected one of `!`, `(`, `)`, `+`, `,`, `::`, or `<`, found `:`\n --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VT0520_vericoded/p1_fewshot+LTM/deepseek-v3.2/00.rs:6:41\n  |\n6 | f"
+    },
+    {
+      "rank": 24,
+      "error_type": "This block would be parsed as the function/loop body, but it is followed immedia",
+      "count": 202,
+      "percentage": 0.4661789480972052,
+      "sample": "error: This block would be parsed as the function/loop body, but it is followed immediately by a comma (if you meant this block to be part of the specification, try parenthesizing it)\n   --> /Users/hl"
+    },
+    {
+      "rank": 25,
+      "error_type": "expected `!`",
+      "count": 191,
+      "percentage": 0.4407929657750802,
+      "sample": "error: expected `!`\n  --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_9/p2_fewshot+LTM/deepseek-v3.2/complete02.rs:67:14\n   |\n67 |         mean * n <= sum,\n   |              ^\n\n"
+    },
+    {
+      "rank": 26,
+      "error_type": "missing `fn` or `struct` for function or struct definition",
+      "count": 162,
+      "percentage": 0.3738662851076597,
+      "sample": "error: missing `fn` or `struct` for function or struct definition\n --> /Users/hlh/program/python/NL2V/exp_generation/HumanEval-Verus_task_32/p1_fewshot+LTM/deepseek-v3.2/02.rs:6:1\n  |\n6 | is_proper_di"
+    },
+    {
+      "rank": 27,
+      "error_type": "expected an expression",
+      "count": 160,
+      "percentage": 0.36925065195818235,
+      "sample": "error: expected an expression\n  --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VA0188_vericoded/p1_fewshot+LTM/deepseek-v3.2/04.rs:35:15\n   |\n35 |     decreases ,\n   |               ^\n\ne"
+    },
+    {
+      "rank": 28,
+      "error_type": "expected one of `!` or `::`, found `==`",
+      "count": 154,
+      "percentage": 0.35540375250975054,
+      "sample": "error: expected one of `!` or `::`, found `==`\n --> /Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_109/p1_fewshot+LTM/claude-sonnet-4-5-20250929/02.rs:6:3\n  |\n6 | b ==> exists |i"
+    },
+    {
+      "rank": 29,
+      "error_type": "this file contains an unclosed delimiter",
+      "count": 146,
+      "percentage": 0.3369412199118414,
+      "sample": "error: this file contains an unclosed delimiter\n   --> /Users/hlh/program/python/NL2V/exp_generation/VeriCoding_VA0041_vericoded/p1_fewshot+LTM/deepseek-v3.2/00.rs:166:13\n    |\n  9 | verus! {\n    |   "
+    },
+    {
+      "rank": 30,
+      "error_type": "possible arithmetic underflow/overflow",
+      "count": 130,
+      "percentage": 0.30001615471602316,
+      "sample": "verification results:: 1 verified, 1 errors\nnote: recommendation not met: value may be out of range of the target type (use `#[verifier::truncate]` on the cast to silence this warning)\n  --> /Users/hl"
+    }
+  ],
+  "all_errors": {
+    "E0432": 7025,
+    "E0601": 5751,
+    "E0425": 5717,
+    "E0308": 5665,
+    "forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` i": 2014,
+    "expected curly braces": 1919,
+    "The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec": 1856,
+    "expected `,`": 1556,
+    "E0599": 1106,
+    "expected one of `!` or `::`, found keyword `fn`": 690,
+    "unexpected token, expected `;`": 542,
+    "E0428": 533,
+    "expected -> (pattern: type)": 468,
+    "non-private spec function must be marked open or closed to indicate whether the ": 357,
+    "E0282": 355,
+    "postcondition not satisfied": 345,
+    "unknown": 322,
+    "spec functions cannot have requires/ensures": 320,
+    "in requires, use `old(a)` to refer to the pre-state of an &mut variable": 300,
+    "Could not automatically infer triggers for this quantifier.  Use #[trigger] anno": 284,
+    "E0283": 229,
+    "E0277": 229,
+    "expected one of `!`, `(`, `)`, `+`, `,`, `::`, or `<`, found `:`": 226,
+    "This block would be parsed as the function/loop body, but it is followed immedia": 202,
+    "expected `!`": 191,
+    "missing `fn` or `struct` for function or struct definition": 162,
+    "expected an expression": 160,
+    "expected one of `!` or `::`, found `==`": 154,
+    "this file contains an unclosed delimiter": 146,
+    "possible arithmetic underflow/overflow": 130,
+    "expected one of `!` or `::`, found `result`": 129,
+    "expected one of `->`, `where`, or `{`, found `requires`": 120,
+    "E0573": 102,
+    "expected one of: `broadcast`, `assume_specification`, `fn`, `extern`, `use`, `st": 99,
+    "E0412": 95,
+    "unexpected closing delimiter: `}`": 94,
+    "expected one of `!` or `::`, found `=`": 89,
+    "complex arguments to &mut parameters are currently unsupported": 89,
+    "mismatched closing delimiter: `}`": 89,
+    "expected item, found keyword `if`": 86,
+    "expected item, found keyword `let`": 84,
+    "assertion failed": 82,
+    "E0423": 76,
+    "expected one of `!` or `::`, found `[`": 76,
+    "invariant not satisfied at end of loop body": 75,
+    "E0433": 75,
+    "loop must have a decreases clause": 73,
+    "E0284": 71,
+    "in requires, use `old(sum)` to refer to the pre-state of an &mut variable": 66,
+    "mismatched types; types must be compatible to use == or !=": 61,
+    "Unsupported constant type": 60,
+    "expected one of `!`, `+`, `::`, `where`, or `{`, found `<eof>`": 56,
+    "could not prove termination": 54,
+    "expected one of `->`, `where`, or `{`, found `<eof>`": 49,
+    "expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `<eof>`": 48,
+    "expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `requires`": 46,
+    "cannot call function `alloc::slice::impl&%0::into_vec` with mode exec": 45,
+    "expected one of `!` or `::`, found `.`": 44,
+    "cannot find macro `verus` in this scope": 43,
+    "expected one of `!` or `::`, found `i`": 41,
+    "visibility `pub` is not followed by an item": 40,
+    "mismatched closing delimiter: `)`": 36,
+    "forall, choose, and exists do not allow parentheses, use `exists|<vars>| expr` i": 35,
+    "expected one of `!` or `::`, found `|`": 34,
+    "expected parentheses": 33,
+    "expected `=`": 32,
+    "panic is not supported (if you used Rust's `assert!` macro, you may have meant t": 29,
+    "E0061": 28,
+    "expected `..=`": 28,
+    "in 'ensures' clause of public function, cannot refer to private function": 28,
+    "`core::slice::impl&%0::contains` is not supported (note: you may be able to add ": 27,
+    "recursive function must have a decreases clause": 26,
+    "expected one of: `for`, parentheses, `fn`, `unsafe`, `extern`, `FnSpec`, `spec_f": 23,
+    "expected item, found `(`": 23,
+    "cannot call function `vstd::view::View::view` with mode spec": 22,
+    "in exec code, the index operator is only supported for usize index": 22,
+    "non-associative operator requires additional parentheses": 22,
+    "the return value must be named in a function with an ensures clause": 21,
+    "invariant not satisfied before loop": 20,
+    "expected one of `!`, `+`, `::`, `where`, or `{`, found `requires`": 20,
+    "expected `enum`": 20,
+    "prefix `seq` is unknown": 20,
+    "The verifier does not yet support the following Rust feature: only variables are": 19,
+    "cannot call function `core::cmp::Ord::max` with mode exec": 19,
+    "The verifier does not yet support the following Rust feature: index for &mut not": 19,
+    "expected `)`": 19,
+    "expected identifier or integer": 18,
+    "no rules expected `:`": 18,
+    "E0369": 18,
+    "E0604": 17,
+    "decreases cannot be a tuple; use `decreases x, y` rather than `decreases (x, y)`": 17,
+    "precondition not satisfied": 16,
+    "expected `;`": 16,
+    "unknown start of token: `": 15,
+    "unrecognized verifier attribute": 15,
+    "expected one of `!` or `::`, found `<=`": 15,
+    "expected `by`": 14,
+    "expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `ensures`": 14,
+    "`core::num::impl&%0::abs` is not supported (note: you may be able to add a Verus": 13,
+    "expected one of `!` or `::`, found `a`": 13
+  }
+}

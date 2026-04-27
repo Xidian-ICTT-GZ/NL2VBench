@@ -1,0 +1,3 @@
+Implement a function that takes two 32-bit floating-point numbers and constructs a dynamic array (vector) containing exactly two elements. The returned array must have length 2, with its first element equal to the first input value and its second element equal to the second input value. There are no preconditions on the inputs; assume any f32 values may be provided. The function must guarantee the stated postconditions about the array length and element positions.
+fn vec2(a: f32, b: f32) -> (result: Vec<f32>)
+fn legline(off: f32, scl: f32) -> (result: Vec<f32>)

@@ -1,0 +1,4 @@
+Given a byte array representing an ASCII string, determine whether the string consists entirely of decimal digits. Treat digits as the ASCII characters '0' through '9' (byte values 48 through 57 inclusive). The function must return true if and only if every position in the input is a digit as defined above. If the input is empty, return true (vacuously, all characters satisfy the digit property). The helper that checks a single byte for being a digit must be consistent with the digit definition. The intended specification is: the result is true exactly when, for all indices within the bounds of the input, the corresponding byte is an ASCII digit '0'..'9'.
+spec fn is_digit_sepc(c: u8) -> bool
+fn is_digit(c: u8) -> (res: bool)
+fn is_integer(text: &[u8]) -> (result: bool)

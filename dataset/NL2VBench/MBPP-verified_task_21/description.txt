@@ -1,0 +1,10 @@
+Implement two functions over a vector of characters.
+
+1) Frequency counting: Given a vector of characters and a target character, return the number of times the target appears in the vector. Assume all inputs are valid, including an empty vector. The returned frequency must equal the total count of the target character in the entire vector.
+
+2) First repeated character: Given a vector of characters, return the earliest index i (0-based) and the character at that position such that the character at position i appears more than once in the entire vector. If no character is repeated, return None. Additionally, when a result is returned, every character at positions strictly before i must appear at most once in the entire vector. When None is returned, every character in the vector must appear at most once.
+
+There are no preconditions on input size or content. An empty vector is valid and should yield a frequency of 0 for any target, and None for the first repeated character query.
+pub open spec fn count_frequency_rcr(seq: Seq<char>, key: char) -> int
+fn count_frequency(arr: &Vec<char>, key: char) -> (frequency: usize)
+fn first_repeated_char(str1: &Vec<char>) -> (repeated_char: Option<(usize, char)>)

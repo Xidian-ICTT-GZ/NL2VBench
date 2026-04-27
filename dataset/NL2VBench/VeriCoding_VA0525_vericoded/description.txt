@@ -1,0 +1,4 @@
+You are given two positive integers representing a line of items to be covered and the symmetric coverage radius of each inspector. Assume the number of items is between 1 and 20 inclusive, and the coverage radius is between 1 and 20 inclusive. Each inspector can be placed at an integer position along the line; an inspector positioned at a given location covers all items whose indices lie within the inclusive range from that position minus the radius to that position plus the radius. Equivalently, one inspector can cover at most a contiguous block of length 2·radius + 1 when placed optimally.
+
+Compute and return the minimum number of inspectors required to ensure that all items in the line are covered. The returned value must be at least 1 and at most the number of items. Formally, the required output equals ceil(number_of_items / (2·radius + 1)).
+fn min_inspectors(n: i8, d: i8) -> (result: i8)

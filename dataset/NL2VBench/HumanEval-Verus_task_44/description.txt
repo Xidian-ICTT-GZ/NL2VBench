@@ -1,0 +1,12 @@
+You are given two tasks on arrays of 64-bit integers.
+
+Task 1: Implement a function that returns the number of occurrences of a given 64-bit integer in an input array. The input array may be empty. The result must equal the mathematical frequency of the target value in the array (the number of indices whose element equals the target). The returned count must be a non-negative integer and cannot exceed the length of the array.
+
+Task 2: Implement a function that removes all elements that occur more than once in the input array. The input array may be empty. The function must return a new array consisting exactly of those elements whose overall frequency in the original array is 1, preserving their original relative order. Elements appearing more than once in the input must not appear in the output. No additional assumptions (e.g., sortedness) are made about the input.
+
+Correctness requirements:
+- For Task 1, the output must equal the frequency defined over the entire input array; equivalently, for any prefix of the array, the number of matches in that prefix is the count for that prefix, and the final count is the count for the full array.
+- For Task 2, the output must be the result of filtering the input by the predicate “frequency equals 1” with respect to the original array, maintaining stability (original order) and never introducing or reordering elements.
+pub open spec fn count_frequency_spec(seq: Seq<i64>, key: i64) -> int
+fn count_frequency(elements: &Vec<i64>, key: i64) -> (frequency: usize)
+fn remove_duplicates(numbers: &Vec<i64>) -> (unique_numbers: Vec<i64>)

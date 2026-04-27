@@ -1,0 +1,2 @@
+Implement a function that computes the area of a triangle from two unsigned 64-bit integers representing the base length and the height. The result must be the integer value of base × height ÷ 2 (using truncating integer division). Assume both inputs are strictly positive. Additionally, assume that the mathematically computed value base × height ÷ 2 fits within the range of a 64-bit unsigned integer, so no overflow occurs. The function must return exactly base × height ÷ 2 under integer arithmetic.
+fn triangle_area(a: u64, h: u64) -> (area: u64)

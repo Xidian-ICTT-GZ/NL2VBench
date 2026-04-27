@@ -1,0 +1,14 @@
+You are given an array of 32-bit integers. Return a new array with all duplicate values removed. The output must satisfy the following properties: (1) the output array contains no duplicates; (2) the set of elements in the output is equal to the set of elements in the input. There are no preconditions; the input array may be empty and may contain any integer values, including negatives and boundary values.
+
+In addition to the executable function, formalize the relationship between sequences and sets used in the specification and verification:
+- Define a pure, recursive specification function that converts a finite sequence to a set by repeatedly dropping the last element of the sequence and inserting that element into the set. The recursion must be well-founded with a decreasing measure on the sequence length.
+- Prove that, for any element, membership in the original sequence is logically equivalent to membership in the recursively constructed set.
+- Prove that the recursively defined set is equal to the standard set comprehension of the sequence.
+- Prove that pushing an element onto a sequence corresponds to inserting that element into the set of the sequence, i.e., the set of s.push(x) equals the set of s with x inserted.
+
+The implementation of the array function must ensure the postconditions described above: the result has no duplicates, and the set of result elements equals the set of input elements.
+spec fn seq_to_set_rec<A>(seq: Seq<A>) -> Set<A>
+proof fn seq_to_set_rec_contains<A>(seq: Seq<A>)
+proof fn seq_to_set_equal_rec<A>(seq: Seq<A>)
+proof fn lemma_seq_push_to_set_insert<T>(s: Seq<T>, val: T)
+fn remove_duplicates(nums: Vec<i32>) -> (res: Vec<i32>)

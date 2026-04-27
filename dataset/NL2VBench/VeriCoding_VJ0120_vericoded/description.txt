@@ -1,0 +1,2 @@
+Given an array of characters, determine whether all elements from index 1 up to the last index are equal to the element at index 0. Return true if and only if every character after the first matches the first character. If the array has length 0 or 1, return true (the condition holds vacuously). No additional assumptions are required on the input.
+fn all_characters_same(char_arr: &Vec<char>) -> (result: bool)

@@ -1,0 +1,1 @@
+fn loop_triangle(n: u32) -> (sum: u32)

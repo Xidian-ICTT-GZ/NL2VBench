@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers using 0-based indexing, determine whether every element at an even index is an even number. Return a boolean value that is true if and only if, for all indices i with 0 <= i < n (where n is the array length), if i is even (i mod 2 equals 0), then the element at position i is even (its value mod 2 equals 0). The array may be empty; odd-indexed elements are unconstrained.
+fn is_even_at_index_even(lst: &Vec<i32>) -> (result: bool)

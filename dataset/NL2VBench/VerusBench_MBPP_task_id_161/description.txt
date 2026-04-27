@@ -1,0 +1,7 @@
+Given two arrays of 32-bit signed integers (the first as the source and the second as a filter), return a new array obtained by removing from the source all values that appear at least once in the filter. Preserve the relative order of the remaining elements in the result. Arrays may be empty, and values may repeat.
+Correctness requirements:
+- Every element in the result must be an element of the source and must not be present in the filter.
+- For every element in the source, either it appears in the filter or it appears in the result. (In other words, the result contains exactly those values from the source whose value is not present in the filter; no extra values are introduced.)
+You may implement and use a helper function that determines whether a given value is present in a given array; this helper should return true if and only if there exists an index at which the array holds that value.
+fn contains(list: &Vec<i32>, key: i32) -> bool
+fn remove_elements(arr1: &Vec<i32>, arr2: &Vec<i32>) -> Vec<i32>

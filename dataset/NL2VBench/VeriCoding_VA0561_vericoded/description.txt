@@ -1,0 +1,5 @@
+You are given an integer input that must lie within the inclusive range [1, 1998]. Return a vector of exactly three characters defined as follows:
+- The first two characters are always 'A' and 'B'.
+- The third character is 'C' if the input is strictly less than 1000; otherwise, it is 'D'.
+Assume the input satisfies the given range constraint. The function must produce exactly one of the two possible sequences: ['A', 'B', 'C'] when the input is less than 1000, or ['A', 'B', 'D'] when the input is at least 1000.
+fn solve(n: i32) -> (result: Vec<char>)

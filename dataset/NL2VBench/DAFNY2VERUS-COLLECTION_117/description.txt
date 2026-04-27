@@ -1,0 +1,2 @@
+Given an array of integers and a positive integer n, compute the maximum among the first n elements of the array. Assume that n is strictly greater than 0, n does not exceed the length of the array, and n is strictly less than 1000. The result must be an element taken from within the first n positions, and every element in that prefix must be less than or equal to the returned value. Elements beyond the first n positions are irrelevant to the computation.
+fn max(a: &Vec<int>, n: usize) -> (max: int)

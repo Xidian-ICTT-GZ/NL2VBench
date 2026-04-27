@@ -1,0 +1,2 @@
+Given a non-empty vector of signed 8-bit integers, return the maximum value contained in the vector. Assume the input size is strictly positive. The returned value must be equal to some element of the input vector (i.e., it must match the value at a valid index within the vector). Additionally, the returned value must be greater than or equal to every element in the vector. If multiple elements share the maximum value, returning that maximum value is acceptable.
+fn nanmax(a: Vec<i8>) -> (result: i8)

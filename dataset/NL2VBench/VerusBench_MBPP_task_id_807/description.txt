@@ -1,0 +1,5 @@
+Given a list of 32-bit unsigned integers, return the index of the first element that is odd. If the list contains no odd elements, return None. The input list may be empty.
+Correctness requirements:
+- If an index is returned, every element strictly before that index must be even, and the element at the returned index must be odd.
+- If None is returned, then all elements in the list must be even.
+fn find_first_odd(arr: &Vec<u32>) -> Option<usize>

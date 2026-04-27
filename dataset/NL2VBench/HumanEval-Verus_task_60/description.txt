@@ -1,0 +1,2 @@
+Given an array of characters, construct and return a new array containing exactly those characters from the input that are not vowels. Consider as vowels the five letters 'a', 'e', 'i', 'o', 'u' and their uppercase forms 'A', 'E', 'I', 'O', 'U'. The relative order of the non-vowel characters must be preserved. The input may be empty. Formally, the result must equal the input sequence filtered by the predicate "character is not one of the specified vowels".
+fn remove_vowels(input: &[char]) -> Vec<char>

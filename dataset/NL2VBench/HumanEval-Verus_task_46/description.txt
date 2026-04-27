@@ -1,0 +1,7 @@
+Given a read-only array of characters, return a new array of the same length where each character’s ASCII letter case is flipped. Specifically:
+- If an element is a lowercase ASCII letter ('a' to 'z'), the corresponding element in the result must be its uppercase counterpart.
+- If an element is an uppercase ASCII letter ('A' to 'Z'), the corresponding element in the result must be its lowercase counterpart.
+- Any character that is not an ASCII letter must remain unchanged in the result.
+
+Assume the input may be empty. The output must have exactly the same length as the input. For every valid index i, the result at position i must equal the case-flipped version of the input character at position i according to the rules above.
+fn flip_case(str: &[char]) -> Vec<char>

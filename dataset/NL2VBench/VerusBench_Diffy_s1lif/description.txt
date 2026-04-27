@@ -1,0 +1,2 @@
+Implement a function that takes: (1) a mutable vector of 32-bit integers, (2) a mutable vector of 32-bit integers intended to store an aggregate result, and (3) an integer N. Assume the following preconditions hold at entry: N is positive, N is strictly less than 1000, the input vector’s initial length is exactly N, and the result vector’s initial length is exactly 1. The function may modify both vectors. Upon return, the single element in the result vector must equal 2 × N. No other postconditions are required.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

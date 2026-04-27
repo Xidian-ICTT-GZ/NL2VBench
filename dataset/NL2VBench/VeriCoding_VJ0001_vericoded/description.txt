@@ -1,0 +1,16 @@
+Implement a function that searches for a target value in a sorted array of 64-bit unsigned integers and returns an index where the target occurs.
+
+Input:
+- A vector of u64 values (the array).
+- A u64 value k (the target).
+
+Assumptions:
+- The array is sorted in nondecreasing order; i.e., for all valid indices i and j with i <= j, the element at i is less than or equal to the element at j.
+- The target value k appears at least once in the array (there exists an index within bounds whose value equals k).
+
+Output:
+- Return an index result such that 0 <= result < array length and the element at that index equals k.
+- If the target appears multiple times, returning any one of its indices is acceptable.
+
+The function must not access elements out of bounds and must satisfy the stated preconditions and postconditions.
+fn binary_search(v: &Vec<u64>, k: u64) -> (result:usize)

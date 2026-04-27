@@ -1,0 +1,2 @@
+Given an input string, determine whether its last character is a standalone ASCII alphabetic letter. Return true if and only if all of the following hold: the string is non-empty; the last character is an ASCII letter (one of 'a'–'z' or 'A'–'Z'); and either the string has exactly one character, or the character immediately preceding the last is a space (' '). Interpret the string as a sequence of Unicode scalar values (characters), not bytes. There are no other preconditions.
+fn check_if_last_char_is_a_letter(txt: &str) -> bool

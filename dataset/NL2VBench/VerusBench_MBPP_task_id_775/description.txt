@@ -1,0 +1,2 @@
+Given a zero-based array of non-negative integers, determine whether every index has the same parity as the value stored at that position. Specifically, return true if and only if for all indices i from 0 (inclusive) to the array length (exclusive), i modulo 2 equals the element at position i modulo 2. If the array is empty, the condition is vacuously true. The function must not modify the input.
+fn is_odd_at_odd_index(arr: &Vec<usize>) -> bool

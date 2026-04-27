@@ -1,0 +1,2 @@
+Given an array of 32-bit floating-point numbers, construct a two-dimensional array that contains exactly one row. The single row must have the same length as the input array, and for every valid index, the element in the row must be equal to the corresponding element of the input array. The order of elements must be preserved. There are no preconditions on the input; it may be empty. The function must always return a two-dimensional array whose outer length is exactly 1.
+fn atleast_2d(arr: Vec<f32>) -> (result: Vec<Vec<f32>>)

@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the maximum value present in the array. Assume the input size is positive. The returned value must be greater than or equal to every element in the array, and there must exist at least one position in the array where the element equals the returned value.
+fn maxArrayReverse(arr: &[i32]) -> (max: i32)

@@ -1,0 +1,15 @@
+Given a string that specifies a NumPy-like data type, construct and return a data type descriptor object with predefined attributes. Assume the input string is one of: "int8", "int16", "int32", "int64", "float32", "float64", or "bool". The returned object must satisfy all of the following:
+- The kind category must be one of: "i" for integers, "f" for floating-point numbers, or "b" for boolean.
+- The element size in bytes (itemsize) must be positive.
+- The alignment in bytes must be positive and must not exceed the element size.
+- The name must be non-empty.
+- Size and category consistency must hold:
+  - For "int8", the size is 1 byte, signed is true, and the kind is "i".
+  - For "int16", the size is 2 bytes, signed is true, and the kind is "i".
+  - For "int32", the size is 4 bytes, signed is true, and the kind is "i".
+  - For "int64", the size is 8 bytes, signed is true, and the kind is "i".
+  - For "float32", the size is 4 bytes and the kind is "f" (not signed).
+  - For "float64", the size is 8 bytes and the kind is "f" (not signed).
+  - For "bool", the size is 1 byte and the kind is "b" (not signed).
+Return the corresponding descriptor with these attributes filled consistently with the specification.
+fn numpy_dtype(type_spec: &str) -> (result: DType)

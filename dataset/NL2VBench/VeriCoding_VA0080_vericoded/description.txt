@@ -1,0 +1,9 @@
+You are given a positive signed 8-bit integer as input. Consider the integer-valued function h(x, y) = x^2 + 2xy + x + 1, where x and y are positive integers. Return an array representing a solution to the equation h(x, y) = r under the following specifications:
+- Assume the input r is strictly positive.
+- The return value must be either an empty array or a 2-element array of positive integers.
+- If a 2-element array is returned, it must satisfy h(x, y) = r.
+- If r <= 4, return an empty array.
+- If r > 4 and r is even, return an empty array.
+- If r > 4 and r is odd, return exactly the 2-element array [1, (r - 3) / 2].
+A returned empty array is considered valid by definition. Any returned non-empty array must contain two positive integers that satisfy the equation.
+fn solve(r: i8) -> Vec<i8>

@@ -1,0 +1,6 @@
+Given a nondecreasing (sorted in ascending order, allowing duplicates) array of 32-bit integers and a target value, return the insertion index that partitions the array into elements strictly less than the target and elements greater than or equal to the target. Assume the array is sorted in nondecreasing order. The result index must be within the bounds of the array length. Specifically:
+- All positions strictly before the returned index contain values strictly less than the target.
+- All positions at or after the returned index contain values greater than or equal to the target.
+- If the returned index equals the array length, then all elements in the array are strictly less than the target.
+This index is equivalent to the lower bound: the first position at which the target could be inserted while maintaining the sorted order. The function must handle empty arrays and any target value. If the target appears in the array, the returned index is the first occurrence of a value equal to the target.
+fn binary_search(a: &[i32], key: i32) -> (n: usize)

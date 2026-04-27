@@ -1,0 +1,29 @@
+{
+  "total_samples": 762,
+  "by_pipeline": {
+    "p1_fewshot+LTM": {
+      "total": 762,
+      "passed": 92,
+      "pass_rate": 0.12073490813648294
+    },
+    "p2_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    },
+    "p3_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "by_model": {
+    "claude-sonnet-4-5-20250929": {
+      "total": 762,
+      "passed": 92,
+      "pass_rate": 0.12073490813648294
+    }
+  },
+  "overall_pass5_rate": 0.12073490813648294,
+  "timestamp": "2026-02-01T19:32:35.299996"
+}

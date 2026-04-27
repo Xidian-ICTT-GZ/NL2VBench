@@ -1,0 +1,15 @@
+Given two finite lists of 32-bit integers, determine whether the second list appears as a contiguous sublist of the first list.
+
+Assumptions for the main function:
+- The length of the candidate sublist is less than or equal to the length of the main list.
+
+Behavior of the main function:
+- Return true if and only if there exists a starting position in the main list such that the contiguous segment of length equal to the candidate sublist is exactly equal to the candidate sublist. Otherwise, return false.
+- An empty sublist is considered to be contained in any list and should yield true.
+
+A helper function is also defined to check matching at a specific starting index:
+- Inputs: a main list, a candidate sublist, and a starting index.
+- Assumptions: the candidate sublist’s length is at most the main list’s length, and the starting index is within the inclusive range [0, main_length − sub_length].
+- Behavior: return true if and only if the contiguous segment of the main list starting at the given index and having the same length as the candidate sublist is exactly equal to the candidate sublist.
+fn is_sub_list_at_index(main: &Vec<i32>, sub: &Vec<i32>, idx: usize) -> bool
+fn is_sub_list(main: &Vec<i32>, sub: &Vec<i32>) -> bool

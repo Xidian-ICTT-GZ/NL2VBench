@@ -1,0 +1,13 @@
+You are given two mutable vectors and a length parameter N. The first vector represents an array of length N. The second vector is an accumulator represented as a single-element vector. Assume N > 0, the array length is exactly N, and the accumulator vector length is exactly 1.
+
+Write a function that performs two passes:
+- Initialization pass: Overwrite the array so that each element is a binary value determined by its index parity; specifically, for every index i in [0, N), set the element at index i to i mod 2. As a result, every element in the array must be either 0 or 1.
+- Accumulation pass: Traverse the array from index 0 to N - 1 in increasing order and maintain a running total in the accumulator. At index 0, set the accumulator to 0. For each subsequent index i > 0, add the array value at index i to the accumulator. After the traversal completes, the accumulator holds the sum of the array values from indices 1 to N - 1.
+
+Required properties and assumptions:
+- The input array length is exactly N, and N is positive.
+- The accumulator vector length is exactly 1.
+- After the initialization pass, every element of the array is either 0 or 1.
+- During the accumulation pass, after processing i elements (with i > 0), the running total stored in the accumulator must not exceed i.
+- When the function returns, the final value stored in the accumulator must be less than or equal to N.
+pub fn myfun(a: &mut Vec<usize>, sum: &mut Vec<usize>, N: usize)

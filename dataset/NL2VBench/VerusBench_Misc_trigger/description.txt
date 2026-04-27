@@ -1,0 +1,7 @@
+You are given an array of 64-bit unsigned integers and a target index. Assume the following:
+- The array length is positive.
+- The target index is strictly between 0 and the array length (exclusive), i.e., it is nonzero and less than the length.
+- The array satisfies a global property: for every valid position k in the range 0 <= k < length, the element at position k equals k + 2.
+
+Return the element at the given index. The result must equal both the array’s element at that position and the arithmetic value index + 2.
+fn get_element_check_property(arr: Vec<u64>, i: usize) -> (ret: u64)

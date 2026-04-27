@@ -1,0 +1,2 @@
+You are given a non-empty list of rows, where each row is a list of 32-bit integers and has length at least two. Return the value from index 0 of a row whose index 1 value is minimal across all rows. If multiple rows share the same minimal value at index 1, returning the index 0 value from any one of those rows is acceptable. Assume the outer list has positive length, and every inner list has length at least two.
+fn min_second_value_first(s: &Vec<Vec<i32>>) -> (first_of_min_second: i32)

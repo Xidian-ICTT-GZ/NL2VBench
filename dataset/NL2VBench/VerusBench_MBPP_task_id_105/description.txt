@@ -1,0 +1,3 @@
+Given a finite array of booleans, return the number of elements that are equal to true. Assume the input size can be zero or more. The function must return an unsigned 64-bit integer. The result must satisfy 0 ≤ result ≤ input_size and must equal the mathematical count of true elements in the entire array. For verification, the implementation should be correct for every prefix: for any k with 0 ≤ k ≤ input_size, the intermediate count over the first k elements equals the number of true elements in that prefix. For an empty array, the result is 0.
+spec fn count_boolean(seq: Seq<bool>) -> int
+fn count_true(arr: &Vec<bool>) -> (count: u64)

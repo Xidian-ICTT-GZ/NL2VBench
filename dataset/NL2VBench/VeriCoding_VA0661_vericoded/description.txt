@@ -1,0 +1,9 @@
+You are given two non-negative integers representing available quantities of two resource types. The goal is to compute the maximum number of groups that can be formed under the following rules:
+- Mixed groups require 1 unit of the first resource and 2 units of the second resource.
+- Pure groups require 4 units of the second resource and do not use the first resource.
+The formation process is constrained as follows:
+- First, form as many mixed groups as possible, which is limited by both the availability of the first resource and the second resource. The number of mixed groups is min(the first resource, floor(the second resource / 2)).
+- Then, with the remaining units of the second resource after forming mixed groups, form pure groups. The number of pure groups is floor(remaining second resource / 4).
+Return the total number of groups, i.e., the sum of mixed groups and pure groups.
+Assume both input values are signed 8-bit integers and are non-negative (i.e., in the range 0 to 127). The result must be a non-negative signed 8-bit integer.
+fn solve(n: i8, m: i8) -> i8

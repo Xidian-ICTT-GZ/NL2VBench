@@ -1,0 +1,14 @@
+You are given two sequences of characters. Consider only the first L characters of the first sequence and the first P characters of the second sequence. You are also given a position A within the range [0, L]. Construct and return a new sequence defined by inserting the considered P-character prefix of the second sequence into the considered L-character prefix of the first sequence at position A. Formally:
+- Assume L does not exceed the length of the first sequence.
+- Assume P does not exceed the length of the second sequence.
+- Assume A is between 0 and L (inclusive).
+The result must have length L + P and be exactly the concatenation of three segments:
+1) The first A characters of the first sequence.
+2) The first P characters of the second sequence.
+3) The remaining (L - A) characters from the first sequence starting at position A (i.e., up to position L).
+Equivalently, for every valid index i:
+- For 0 <= i < A, the i-th element of the result equals the i-th element of the first sequence.
+- For 0 <= i < P, the element at position A + i in the result equals the i-th element of the second sequence.
+- For 0 <= i < (L - A), the element at position A + P + i in the result equals the element at position A + i in the first sequence.
+No elements beyond the first L characters of the first sequence or beyond the first P characters of the second sequence are used.
+fn insert(oline: &Vec<char>, l: usize, nl: &Vec<char>, p: usize, at_pos: usize) -> Vec<char>

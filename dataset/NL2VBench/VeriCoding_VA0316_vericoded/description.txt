@@ -1,0 +1,6 @@
+Given a positive integer n, construct any character sequence of length n that satisfies the following constraints:
+- The sequence must use only the characters 'a', 'b', and 'c'.
+- For every index i with 0 ≤ i ≤ n − 3, the character at position i must be different from the character at position i + 2.
+- The solution must minimize the use of the character 'c' by not using it at all; i.e., every character in the sequence is either 'a' or 'b'.
+Assume n ≥ 1. Return the constructed sequence as a vector of characters.
+fn solve(n: i8) -> (result: Vec<char>)

@@ -1,0 +1,2 @@
+Implement an in-place operation on a non-empty array of 32-bit integers that reverses the inclusive prefix from index 0 up to a given index. Assume the array length is positive and the given index is strictly less than the array length (i.e., it is a valid position in the array). After the operation, for every position k in the range 0 <= k <= index, the element at position k equals the element originally at position (index - k). The array length must remain unchanged. Elements beyond the given index are not modified.
+fn flip(a: &mut Vec<i32>, num: usize)

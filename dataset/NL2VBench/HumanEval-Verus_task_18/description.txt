@@ -1,0 +1,8 @@
+Implement a function that processes an array of 32-bit unsigned integers and returns two results:
+- The exact sum of all elements as a 64-bit unsigned integer.
+- The product of all elements as an optional 32-bit unsigned integer.
+
+Assume the array length is strictly less than 2^32 (i.e., less than u32::MAX). The returned sum must equal the mathematical sum of the array elements. The product is computed using standard 32-bit unsigned multiplication semantics: if the exact mathematical product of all elements fits within the range [0, u32::MAX], return it as Some(value); otherwise, return None to indicate that overflow occurs during sequential multiplication.
+
+The overflow condition must be evidenced by the existence of some position i in the array (0 <= i < length) such that the product of the elements strictly before position i, multiplied by the element at position i, would exceed u32::MAX. When overflow does not occur, the returned product must equal the exact mathematical product of all elements. For the empty array, the sum is 0 and the product is Some(1).
+fn sum_product(numbers: Vec<u32>) -> (u64, Option<u32>)

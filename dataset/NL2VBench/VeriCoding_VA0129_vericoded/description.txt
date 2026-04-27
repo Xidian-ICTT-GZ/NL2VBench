@@ -1,0 +1,5 @@
+You are given a word composed of uppercase English letters. Assume the input length is between 1 and 10 inclusive, and every character is between 'A' and 'Z'. There are two fixed sets of letters:
+- Set A: A, E, F, H, I, K, L, M, N, T, V, W, X, Y, Z
+- Set B: B, C, D, G, J, O, P, Q, R, S, U
+Determine whether all characters of the input belong to the same set (either all in Set A or all in Set B). Return the string "YES" if this condition holds; otherwise, return "NO". The return value must be exactly one of these two strings, represented as a vector of characters. "YES" must be returned if and only if all characters are contained in a single set as specified above.
+fn solve(word: Vec<char>) -> (result: Vec<char>)

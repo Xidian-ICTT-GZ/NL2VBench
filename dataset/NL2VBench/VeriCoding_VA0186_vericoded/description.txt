@@ -1,0 +1,16 @@
+You are given a character array that represents an input. Assume the input length is at least 2 and that the first two characters are ASCII decimal digits ('0' through '9'). The input may optionally end with a newline character; otherwise, any trailing characters beyond the first two are irrelevant and should be ignored. Only the first two characters are used for the computation.
+
+Define the following mapping from a digit to its "good count":
+- '0' -> 2
+- '1' -> 7
+- '2' -> 2
+- '3' -> 3
+- '4' -> 3
+- '5' -> 4
+- '6' -> 2
+- '7' -> 5
+- '8' -> 1
+- '9' -> 2
+
+Compute the product of the good counts of the first and second digits. This product is guaranteed to be between 1 and 49 inclusive. Return a new character array that is the standard decimal representation of this product (without leading zeros) followed by a newline character. The output must contain only digit characters and the trailing newline, and its last character must be a newline.
+fn solve(input: Vec<char>) -> Vec<char>

@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the maximum value contained in the array. Assume the input length is at least 1. The returned value must be greater than or equal to every element in the array and must be exactly equal to the value of some element in the array (i.e., it is one of the array elements).
+fn max_array(a: &Vec<i32>) -> (result: i32)

@@ -1,0 +1,2 @@
+Given a non-empty list of integer lists, return the length of the shortest inner list. Assume the outer list contains at least one inner list. The result must be a non-negative integer. The returned value must be less than or equal to the length of every inner list, and there must exist at least one inner list whose length is exactly equal to the returned value. Inner lists may be empty.
+fn smallest_list_length(list: &Vec<Vec<i32>>) -> usize

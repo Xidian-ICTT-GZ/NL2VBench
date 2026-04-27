@@ -1,0 +1,11 @@
+Implement two functions operating on arrays of characters:
+
+1) Membership check: Given an array of characters and a key character, return true if and only if the key occurs at some valid index in the array; otherwise return false. There are no preconditions on the input array.
+
+2) Character removal by filter: Given two arrays of characters, return a new array consisting of exactly those characters from the first array whose value does not appear anywhere in the second array. The relative order of the characters retained from the first array must be preserved. The result must satisfy both of the following properties:
+- Every character in the result is an element of the first array and does not occur in the second array.
+- For every character in the first array, that character either occurs in the second array or occurs somewhere in the result.
+
+Assume the input arrays may be empty. Duplicates are supported: every occurrence in the first array whose value is absent from the second array is included in the result.
+fn contains(str: &Vec<char>, key: char) -> bool
+fn remove_chars(str1: &Vec<char>, str2: &Vec<char>) -> Vec<char>

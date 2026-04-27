@@ -1,0 +1,2 @@
+Given a 32-bit signed integer, determine whether it is divisible by 11. Return true if and only if there exists an integer k such that k * 11 equals the input value. The function must be total over all 32-bit signed integers, including zero and negative numbers. There are no preconditions. Zero is considered divisible by 11. The returned boolean must exactly match the mathematical property: the result is true if and only if the input is an integer multiple of 11, and false otherwise.
+fn is_divisible_by_11(n: i32) -> (result: bool)

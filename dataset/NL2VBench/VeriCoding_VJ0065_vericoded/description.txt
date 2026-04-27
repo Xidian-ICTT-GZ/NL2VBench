@@ -1,0 +1,2 @@
+Given a boolean array, return the number of elements that are true. The result must be an integer between 0 and the array length (inclusive). The returned value must equal the formal count obtained by summing 1 for each true and 0 for each false over the entire array. In addition, the implementation should be correct for all prefixes of the array: for any prefix length processed during iteration, the current accumulated count must equal the formal count over that prefix.
+fn count_true(arr: &Vec<bool>) -> (count: u64)

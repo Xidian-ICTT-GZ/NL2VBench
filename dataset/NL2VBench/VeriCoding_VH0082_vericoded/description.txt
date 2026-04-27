@@ -1,0 +1,2 @@
+Given a sequence of characters, determine whether it is "happy". A sequence is considered happy if and only if its length is at least 3 and, for every starting index from 0 up to length minus 3 (inclusive), the contiguous block of three consecutive characters at that position consists of three pairwise distinct characters (no two of the three are equal). Return true if these conditions hold; otherwise, return false.
+fn is_happy(s: Vec<char>) -> (result: bool)

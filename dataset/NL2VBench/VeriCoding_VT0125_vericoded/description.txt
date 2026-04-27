@@ -1,0 +1,15 @@
+Implement a function that determines whether one NumPy-like type class is a direct subclass of another, according to a fixed hierarchy of type classes. The universe of type classes consists of: IntegerType, FloatingType, ComplexType, BooleanType, ScalarType, NumberType, InexactType, Int8Type, Int16Type, Int32Type, Int64Type, UInt8Type, UInt16Type, UInt32Type, UInt64Type, Float32Type, Float64Type, Complex64Type, Complex128Type, and ObjectType.
+
+Return true if and only if the pair of input type classes matches one of the following rules:
+- Reflexivity: any type class is considered a subclass of itself.
+- Integer leaves: Int8Type, Int16Type, Int32Type, Int64Type, UInt8Type, UInt16Type, UInt32Type, and UInt64Type are subclasses of IntegerType.
+- Floating-point leaves: Float32Type and Float64Type are subclasses of FloatingType.
+- Complex leaves: Complex64Type and Complex128Type are subclasses of ComplexType.
+- Mid-level relations: IntegerType is a subclass of NumberType.
+- FloatingType is a subclass of InexactType and a subclass of NumberType.
+- ComplexType is a subclass of InexactType and a subclass of NumberType.
+- Top-level scalar relations: NumberType, BooleanType, IntegerType, FloatingType, ComplexType, and InexactType are subclasses of ScalarType.
+- No other pairs are considered subclasses. In particular, do not assume transitive closure; only the directly listed pairs (and equality) should return true. For example, Int32Type is not considered a subclass of NumberType under these rules (despite IntegerType being a subclass of NumberType), and Complex64Type is not considered a subclass of NumberType (despite being a subclass of ComplexType and ComplexType being a subclass of NumberType).
+
+Assume there are no additional constraints or preconditions on the inputs. The function must faithfully implement the above relation.
+fn issubclass_(arg1: NumpyTypeClass, arg2: NumpyTypeClass) -> bool

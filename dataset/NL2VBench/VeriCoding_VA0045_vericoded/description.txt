@@ -1,0 +1,8 @@
+You are given an integer angle in degrees as a signed 8-bit value. Angles are interpreted modulo 360, so any input is normalized into the range [0, 360) before reasoning about rotations. You may rotate the image by quarter-turns, i.e., by 0, 1, 2, or 3 steps of 90 degrees.
+
+For a chosen number of quarter-turns r in {0, 1, 2, 3}, define the image’s resulting orientation relative to the vertical as the angle A obtained by normalizing (-input_angle + 90 × r) modulo 360 into [0, 360). The deviation from vertical for this r is the shortest angular distance to vertical, computed as min(A, 360 − A), which lies in [0, 180].
+
+Return the rotation count r (an unsigned 8-bit value) that minimizes the deviation from vertical. The result must satisfy 0 ≤ r ≤ 3. If multiple rotation counts yield the same minimal deviation, return the smallest such r.
+
+Formally, for all k in {0, 1, 2, 3}, the deviation after k rotations is at least the deviation after the returned r, and in case of equality, r ≤ k.
+fn solve(x: i8) -> (result: u8)

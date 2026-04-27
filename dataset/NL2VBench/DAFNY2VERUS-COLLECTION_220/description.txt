@@ -1,0 +1,2 @@
+Given an array of 32-bit integers, implement a function that reverses the array in place. After the function returns, for every valid index i in the range [0, n), the element at position i must equal the element that was originally at position n − 1 − i, where n is the length of the array. The function must work for any array length, including zero and one.
+fn invert_array(a: &mut Vec<i32>)

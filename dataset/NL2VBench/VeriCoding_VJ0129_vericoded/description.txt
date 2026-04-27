@@ -1,0 +1,4 @@
+Given an array of 32-bit unsigned integers, determine whether the array contains at least one even number. Return true if and only if there exists an index within the bounds of the array such that the element at that index is divisible by 2. The array may be empty; in that case, the function must return false. Formally, the result must be logically equivalent to the existence of an index k with 0 ≤ k < length such that the element at k is even (divisible by 2).
+spec fn is_even(n: u32) -> (result: bool)
+fn is_even_exec(n: u32) -> (result: bool)
+fn is_product_even(arr: &Vec<u32>) -> (result: bool)

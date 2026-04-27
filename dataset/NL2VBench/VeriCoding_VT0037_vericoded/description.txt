@@ -1,0 +1,7 @@
+Implement a function that appends one vector of 32-bit floating-point numbers to another. Given two input vectors, return a new vector whose contents are exactly the elements of the first vector followed by the elements of the second vector, preserving the original order of elements in both inputs. There are no special preconditions; either input may be empty.
+
+The function must satisfy the following guarantees:
+- The length of the returned vector equals the sum of the lengths of the two input vectors.
+- For every valid index i within the bounds of the first input vector, the element at position i in the result equals the element at position i in the first input.
+- For every valid index j within the bounds of the second input vector, the element at position (length of the first input + j) in the result equals the element at position j in the second input.
+fn numpy_append(arr: Vec<f32>, values: Vec<f32>) -> (result: Vec<f32>)

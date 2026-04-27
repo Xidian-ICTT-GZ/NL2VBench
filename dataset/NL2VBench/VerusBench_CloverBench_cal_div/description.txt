@@ -1,0 +1,7 @@
+Implement a function that returns the quotient and remainder when dividing 191 by 7, using 32-bit unsigned integers. The function takes no input and must return a pair (quotient, remainder) such that:
+- The quotient equals 27 and the remainder equals 2.
+- The remainder is always non-negative during the computation.
+- At all times during the computation, the identity 7 * quotient + remainder = 191 holds.
+- The computation terminates once the remainder becomes strictly less than 7, and a strictly decreasing measure based on the remainder guarantees termination.
+Return the pair (27, 2).
+fn cal_div() -> (u32, u32)

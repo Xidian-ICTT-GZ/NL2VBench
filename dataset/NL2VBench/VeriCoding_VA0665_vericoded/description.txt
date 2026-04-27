@@ -1,0 +1,6 @@
+You are given a 3×3 matrix of characters. Assume the input consists of exactly three rows, each row containing exactly three characters. Construct and return a list of characters of length 4 formed by:
+- The three characters on the main diagonal (top-left, center, bottom-right) in order.
+- Followed by a newline character '\n' as the fourth element.
+
+Formally, if the input matrix is M with indices starting at 0, the output must be [M[0][0], M[1][1], M[2][2], '\n']. The output size must be exactly 4. No other transformations are performed.
+fn solve(lines: Vec<Vec<char>>) -> Vec<char>

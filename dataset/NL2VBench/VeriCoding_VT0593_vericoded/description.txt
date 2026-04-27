@@ -1,0 +1,2 @@
+You are given a non-empty array of 8-bit signed integers. Return the minimum element in the array. Assume the input size is positive. The returned value must be equal to some element of the array and must be less than or equal to every element in the array (i.e., it is a true minimum with respect to the usual integer ordering).
+fn nanmin(a: Vec<i8>) -> (result: i8)

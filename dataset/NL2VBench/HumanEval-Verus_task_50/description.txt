@@ -1,0 +1,3 @@
+Given a finite list of 32-bit signed integers, return a new list containing exactly the elements of the input that are strictly greater than zero. The relative order of the retained elements must be preserved. There are no preconditions on the input: it may be empty or contain any integers (including negative values, zero, and duplicates).
+Guarantee that the returned list is equal to the result of filtering the input sequence with the predicate x > 0. Equivalently, every element in the output is an element from the input and is strictly positive; no zero or negative elements appear in the output; and the output order matches the original order for those retained elements.
+fn get_positive(input: Vec<i32>) -> (positive_list: Vec<i32>)

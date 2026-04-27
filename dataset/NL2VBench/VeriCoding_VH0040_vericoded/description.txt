@@ -1,0 +1,5 @@
+Given an array of signed 8-bit integers, return a new array of the same length that applies a specific transformation on consecutive triplets starting from the beginning. Let L be the length of the input array and P = L − (L mod 3), i.e., the largest multiple of 3 not exceeding L. For every index i in the range [0, P):
+- If i mod 3 = 0, the output at position i must equal the input at position i + 2.
+- If i mod 3 = 1, the output at position i must equal the input at position i − 1.
+Additionally, for every index i in the range [P, L), the output must equal the input (the remaining suffix of length L mod 3 is unchanged). Assume no other preconditions; the function must work for any input length.
+fn decode_cyclic(s: &Vec<i8>) -> (res: Vec<i8>)

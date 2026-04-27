@@ -1,0 +1,16 @@
+Implement a function that constructs and returns a data structure describing floating-point format metadata. The function takes no input and must return fields that satisfy the following properties:
+- The machine epsilon (a positive integer representing the smallest increment) is strictly positive.
+- The negative machine epsilon (a positive integer representing the smallest decrement) is strictly positive.
+- The maximum representable value (an unsigned integer) is strictly positive.
+- The minimum representable value (a signed integer) equals the negation of the maximum representable value (after converting the maximum to a signed integer). This models a symmetric range around zero.
+- The smallest positive normal number is strictly positive.
+- The smallest positive subnormal number is strictly positive and strictly less than the smallest positive normal number.
+- The maximum exponent is strictly positive.
+- The minimum exponent is strictly negative.
+- The exponent corresponding to the negative machine epsilon is strictly negative.
+- The number of exponent bits is strictly positive.
+- The number of mantissa (significand) bits is strictly positive.
+- The approximate decimal precision is at least 1 and does not exceed the number of mantissa bits.
+Return any values that satisfy all of the above constraints.
+proof fn lemma_one_lt_two()
+fn numpy_finfo() -> (info: FloatInfo)

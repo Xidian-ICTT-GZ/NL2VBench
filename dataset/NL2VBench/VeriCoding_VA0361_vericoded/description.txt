@@ -1,0 +1,11 @@
+You are given a non-negative integer n and a sequence of exactly n moves, where each move is either 'U' (up) or 'R' (right). Starting at coordinate (0, 0), apply the moves in order: 'U' increases the y-coordinate by 1, and 'R' increases the x-coordinate by 1.
+
+Define two regions of the plane relative to the main diagonal x = y:
+- Region A: positions where x > y.
+- Region B: positions where y > x.
+Positions where x = y are considered to be on the border and belong to neither region.
+
+Count the number of transitions between Region A and Region B as you walk the path. A transition is counted when, after performing a move, you are strictly in a different region than the most recent region you were in. The initial move from the starting border (0, 0) into a region does not count as a transition. Time spent on the border does not itself count transitions; transitions are only considered at steps where x != y, and leaving the border into a region is compared against the last region visited before being on the border.
+
+Assume the input size n is non-negative. The sequence length equals n, and every character in the sequence is either 'U' or 'R'. The result must be a non-negative integer not exceeding n. If n = 0, the result is 0.
+fn solve(n: i8, s: Vec<char>) -> i8

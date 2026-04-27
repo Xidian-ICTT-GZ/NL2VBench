@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, determine whether the array is sorted in nondecreasing order. Return a boolean value. Assume the input size is positive. The result must satisfy the following properties: it is true if and only if every element at a lower index is less than or equal to every element at a higher index; and if the result is false, then there exists at least one pair of indices i < j such that the element at index i is greater than the element at index j.
+fn is_sorted(a: &[i32]) -> (sorted: bool)

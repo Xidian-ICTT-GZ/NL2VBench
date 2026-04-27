@@ -1,0 +1,11 @@
+Given a vector of 32-bit integers, produce a new vector that reorders only the elements at indices divisible by 3 (using zero-based indexing) so that those elements are in nondecreasing order, while all other positions remain unchanged. The output vector must have the same length as the input and must be a permutation of the input; that is, for every integer value, the number of occurrences in the output equals the number of occurrences in the input.
+
+More precisely:
+- Assume zero-based indexing. Indices divisible by 3 are 0, 3, 6, and so on.
+- The output length equals the input length.
+- For every index i where i mod 3 ≠ 0, the output value at position i is equal to the input value at position i (these positions are fixed).
+- For all index pairs i and j with 0 ≤ i < j < n, both i and j divisible by 3, the output satisfies output[i] ≤ output[j]. Equivalently, the subsequence formed by the values at indices divisible by 3 is sorted in nondecreasing order.
+- The output is a permutation of the input: for every integer x, count(output, x) = count(input, x).
+
+No additional preconditions are required; empty and non-empty inputs are both allowed.
+fn sort_third(l: Vec<i32>) -> (l_prime: Vec<i32>)

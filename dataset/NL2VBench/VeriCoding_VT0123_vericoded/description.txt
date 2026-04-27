@@ -1,0 +1,15 @@
+Implement a function that determines whether a given data type belongs to a specified kind. The setting provides two enumerations:
+- A data type enumeration with the variants: Bool, Int8, Int16, Int32, Int64, UInt8, UInt16, UInt32, UInt64, Float16, Float32, Float64, Complex64, Complex128.
+- A kind enumeration with the variants: Bool, SignedInteger, UnsignedInteger, Integral, RealFloating, ComplexFloating, Numeric.
+
+The function must return true if and only if the given data type is of the given kind according to the following rules:
+- Bool kind: only the Bool data type.
+- SignedInteger kind: any of Int8, Int16, Int32, Int64.
+- UnsignedInteger kind: any of UInt8, UInt16, UInt32, UInt64.
+- Integral kind: any signed integer or unsigned integer (i.e., the union of SignedInteger and UnsignedInteger kinds).
+- RealFloating kind: any of Float16, Float32, Float64.
+- ComplexFloating kind: any of Complex64, Complex128.
+- Numeric kind: any of the following data types: Bool, any signed integer, any unsigned integer, any real floating-point, or any complex floating-point (i.e., the union of Bool, SignedInteger, UnsignedInteger, RealFloating, and ComplexFloating kinds).
+
+Assume no additional constraints on inputs. The function must be total and return a boolean for all pairs of inputs.
+fn numpy_isdtype(dtype: NumpyDType, kind: DTypeKind) -> bool

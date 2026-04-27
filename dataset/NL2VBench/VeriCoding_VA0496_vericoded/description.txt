@@ -1,0 +1,2 @@
+Given a non-empty array of characters representing a lowercase English word, construct its plural form using the following simplified rule: if the word ends with the character 's', append the characters 'e' and 's' to the end; otherwise, append the character 's'. Assume the input size is positive and every character in the array is a lowercase letter between 'a' and 'z'. The function must return a new array that equals the original array concatenated with the appropriate suffix ('es' or 's'), exactly as specified by the rule.
+fn solve(s: &Vec<char>) -> (result: Vec<char>)

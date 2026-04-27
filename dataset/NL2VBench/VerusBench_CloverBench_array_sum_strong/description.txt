@@ -1,0 +1,6 @@
+Given two arrays of non-negative 32-bit integers, return a new array containing the element-wise sums. Assume the following:
+- The two input arrays have the same length.
+- The length is at most 100.
+- For every valid index, the sum of the corresponding elements from the two arrays is strictly less than 1000.
+The output array must have exactly the same length as the inputs, and at each index it must equal the sum of the elements from the two inputs at that index.
+fn sum(a: &Vec<u32>, b: &Vec<u32>) -> (c: Vec<u32>)

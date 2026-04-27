@@ -1,0 +1,29 @@
+{
+  "total_samples": 762,
+  "by_pipeline": {
+    "p1_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    },
+    "p2_fewshot+LTM": {
+      "total": 762,
+      "passed": 19,
+      "pass_rate": 0.024934383202099737
+    },
+    "p3_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "by_model": {
+    "gpt-4o-mini": {
+      "total": 762,
+      "passed": 19,
+      "pass_rate": 0.024934383202099737
+    }
+  },
+  "overall_pass5_rate": 0.024934383202099737,
+  "timestamp": "2026-02-01T19:53:12.086070"
+}

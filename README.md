@@ -1,44 +1,82 @@
-# Anonymized Benchmark Dataset for Verified Program Synthesis
+# NL2VerusBench
 
-This repository contains an anonymized benchmark dataset for research on program verification and natural language to verified code generation.
+NL2VerusBench is a research repository for natural-language-to-Verus generation and verification experiments. It includes:
 
-Each sample in the dataset includes:
+- Dataset construction and preprocessing artifacts  
+- Benchmark datasets  
+- Prompt templates  
+- Experiment and batch execution scripts  
+- Generation outputs and verification results  
 
-- a unique sample identifier,
-- a natural language problem description,
-- a target function signature,
-- a difficulty category,
-- and a Verus implementation that has been verified successfully.
+---
 
-This repository is prepared for anonymous review. No author-identifying information is included.
+## Repository Overview
 
-## Purpose
+- `config/` — Unified configuration files (models, generation settings, Verus paths, etc.)
+- `construction/` — Dataset construction pipeline (source data, cleaned data, reverse construction)
+- `dataset/` — Benchmark datasets and few-shot exemplars
+- `prompt/` — Prompt templates for different experimental pipelines
+- `script/` — Experiment runners and repair utilities
+- `generation/` — Model generation outputs (organized by sample)
+- `verify/` — Verification scripts, outputs, and summary results
 
-The dataset is intended for academic research on:
+---
 
-- verified program synthesis,
-- formal verification,
-- natural language to code generation,
-- benchmark construction and analysis,
-- and evaluation of models that generate or reason about verified code.
+## Key Directories
 
-## Data Format
+### `construction/`
 
-Each benchmark instance is stored as a structured record with the following fields:
+Contains materials related to benchmark construction and data transformation, including:
 
-- **sample_id**: a unique identifier for the task
-- **description**: a natural language specification of the task
-- **function_signature**: the target function signature
-- **category**: the task category or difficulty label
-- **verified_verus**: a Verus implementation that satisfies the specification
+- `source/` — Source datasets and related materials
+- `cleaned/` — Cleaned intermediate data
+- `generation/` — Scripts and I/O files for reverse construction from code to JSONL
 
-A typical record has the following structure:
+For additional details, see:
 
-```json
-{
-  "sample_id": "DAFNY2VERUS-COLLECTION_1",
-  "description": "Given a non-empty array of 32-bit signed integers, return an index of a maximal element. ...",
-  "function_signature": "fn max(a: &Vec<i32>) -> usize",
-  "category": "Loops",
-  "verified_verus": "use vstd::prelude::*; ..."
-}
+`construction/generation/README.md`
+
+---
+
+### `dataset/`
+
+Contains the benchmark data used in experiments:
+
+- `NL2VBench.jsonl` — Main dataset file
+- `NL2VBench/` — Per-sample organized structure
+- `fewshot/` — Few-shot exemplars
+- `statistics.csv` — Basic dataset statistics
+
+For additional details, see:
+
+`dataset/README.md`
+
+---
+
+## Main Entry Points
+
+- Single-pipeline experiments: `script/run_p*_*.py`
+- Batch execution: `script/run_all_experiments.py`
+- Missing-output repair: `script/repair_missing_generations.py`
+- Unified verification: `verify/verify_generation.py`
+
+---
+
+## Configuration
+
+Please complete the settings in `config/config.yaml` before running experiments:
+
+- Model `api_key` / `base_url`
+- `verus.verus_path` (for local verification)
+
+Default paths are aligned to:
+
+- Dataset: `dataset/NL2VBench.jsonl`
+- Output directory: `generation/`
+
+---
+
+## Notes
+
+This README provides only a repository-level overview.  
+Detailed formats, construction procedures, and experimental conventions are documented in subdirectory READMEs and corresponding scripts.

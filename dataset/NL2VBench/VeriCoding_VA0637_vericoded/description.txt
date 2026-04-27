@@ -1,0 +1,2 @@
+Given a four-digit base-10 integer, determine whether the number has either its first three digits all equal or its last three digits all equal. Assume the input is a valid four-digit number in the range [1000, 9999]. The result must be true if and only if the property holds for the digits of the input (thousands, hundreds, tens, and ones).
+fn solve(n: i8) -> bool

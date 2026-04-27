@@ -1,0 +1,2 @@
+Given a non-negative 32-bit signed integer, return its last decimal digit. Assume the input is at least 0. The output must be an integer in the range [0, 9] and must equal the remainder of the input when divided by 10.
+fn last_digit(n: i32) -> (result: i32)

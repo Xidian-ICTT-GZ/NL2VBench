@@ -1,0 +1,11 @@
+Given a read-only sequence of bytes (a slice of u8), find the earliest position where the byte at that position appears more than once in the entire sequence. Return an optional pair containing the index and the corresponding byte. If no byte appears more than once, return None.
+
+More formally:
+- Let n be the length of the input (n may be zero).
+- If there exists any byte that occurs at least twice in the input, return Some(i, b) where i is the smallest index such that the byte at position i occurs more than once in the whole input, and b is the byte at that position.
+- If the result is Some(i, b), then for every index k with 0 <= k < i, the byte at position k occurs at most once in the entire input, and the returned byte b occurs more than once in the entire input.
+- If the result is None, then every byte in the input occurs at most once in the entire input.
+
+Also provide a helper function that, given a byte slice and a target byte, returns the total number of occurrences of that byte in the slice.
+fn count_frequency(arr: &[u8], key: u8) -> usize
+fn first_repeated_char(str1: &[u8]) -> Option<(usize, u8)>

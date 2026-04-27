@@ -1,0 +1,5 @@
+Implement a function that searches a list of 32-bit integers for a given target value using a linear scan and returns the index of the first occurrence. The return type is a 32-bit signed integer. Assume the input list length is strictly less than 2,147,483,648. The function must satisfy the following properties:
+- If the target is present, return a non-negative index strictly less than the list length where the element equals the target, and no earlier position contains the target (i.e., the returned index is the first occurrence).
+- If the target is absent, return a negative value; in this case, all positions in the list must be different from the target.
+- In all cases, the return value must be strictly less than the list length (which is vacuously true when returning a negative value).
+fn linear_search(nums: Vec<i32>, target: i32) -> (ret: i32)

@@ -1,0 +1,8 @@
+You are given three inputs: a mutable integer array, a mutable single-element integer array used as an accumulator, and an integer N. Assume the main array’s initial length equals N, the accumulator array’s initial length is exactly 1, N is positive, and N is strictly less than 1000.
+
+Perform two passes:
+1) Overwrite the main array so that for every index from 0 to N−1, the value is either 0 or 3, and specifically 3 at indices divisible by 3 and 0 otherwise. During this pass, maintain that all processed elements satisfy the property “value is either 0 or 3.”
+2) Set the accumulator’s single element to 0 at the start of the second pass. Then iterate over the array, and for each step after the first, add the current array element to the accumulator. Throughout this accumulation, maintain that after processing i items (for any i > 0), the accumulator’s value is at most 3·i.
+
+At the end of the function, guarantee that the accumulator’s final value is at most 3·N.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

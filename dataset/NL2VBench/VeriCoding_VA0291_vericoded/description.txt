@@ -1,0 +1,8 @@
+You are given three inputs: an integer n, an integer k, and a list of non-negative integers representing how many sessions each participant has already attended. Assume the following:
+- Each attendance count is between 0 and 5 inclusive.
+- The value k is between 0 and 5 inclusive.
+- The value n is non-negative. If the list has fewer than n elements, process all available elements. If the list has more than n elements, only the first n elements are relevant.
+
+A participant is eligible if they can attend at least k more sessions, i.e., if 5 − attendance_count ≥ k. You may form teams of exactly three eligible participants. Compute and return the maximum number of disjoint teams that can be formed from the considered participants. The output is the integer quotient of the number of eligible participants divided by 3.
+spec fn count_eligible(participations: Seq<int>, k: int) -> int
+fn solve(n: u8, k: u8, participations: Vec<u8>) -> u8

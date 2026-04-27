@@ -1,0 +1,10 @@
+Implement a function that, given three arrays of 32-bit floating-point numbers and a three-dimensional tensor of 32-bit floating-point coefficients, produces an output array of 32-bit floating-point numbers subject to the following constraints and guarantees:
+- The three input arrays must have equal length, and this length must be positive.
+- The coefficient tensor must be non-empty in all three dimensions (its first dimension length is positive; its first subarray has positive length; and its first sub-subarray has positive length). This ensures that the single element at the first index of each dimension is well-defined.
+- The output array must have the same length as each of the three input arrays.
+- Special case: if the coefficient tensor has shape 1×1×1 (its lengths in all three dimensions are exactly one), then every element of the output array must equal the sole coefficient value in the tensor.
+- In all other cases (when the tensor is not 1×1×1), return an output array of the required length where every element is zero.
+
+You may assume standard contiguous vectors for all arrays and that the function should produce the output deterministically based only on the provided inputs.
+fn mk_filled_vec(n: usize, val: f32) -> Vec<f32>
+fn lagval3d(x: Vec<f32>, y: Vec<f32>, z: Vec<f32>, c: Vec<Vec<Vec<f32>>>) -> Vec<f32>

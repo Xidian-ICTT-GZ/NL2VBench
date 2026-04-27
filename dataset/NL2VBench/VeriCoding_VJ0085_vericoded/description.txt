@@ -1,0 +1,2 @@
+You are given a sequence of sequences of characters. Assume that every inner sequence is non-empty. Construct and return a sequence containing, for each inner sequence, its last character, preserving the original order. The returned sequence must have the same length as the number of inner sequences. If the outer sequence is empty, the result is empty. Formally: for every valid index i of the outer sequence, the i-th element of the result equals the last character of the i-th inner sequence.
+fn extract_rear_chars(s: &Vec<Vec<char>>) -> Vec<char>

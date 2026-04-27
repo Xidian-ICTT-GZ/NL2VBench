@@ -1,0 +1,11 @@
+You are given two arrays of 32-bit integers A and B. Assume A is non-empty. Construct and return a new array defined as follows: take all elements of A except its last element, in their original order, and then append all elements of B, in order. The result must satisfy these properties:
+- Its length equals (length of A minus 1) plus (length of B).
+- For every index i with 0 <= i < length(A) - 1, the element at position i in the result equals A[i].
+- For every index i with length(A) - 1 <= i < length(result), the element at position i in the result equals B[i - (length(A) - 1)].
+
+Additionally, implement a generic helper operation for arrays of any copyable element type that returns the concatenation of two input arrays X and Y. The concatenation must satisfy:
+- Its length equals length(X) + length(Y).
+- For every index i with 0 <= i < length(X), the element at position i in the concatenation equals X[i].
+- For every index i with length(X) <= i < length(concatenation), the element at position i in the concatenation equals Y[i - length(X)].
+fn append_vectors<T: Copy>(v1: &Vec<T>, v2: &Vec<T>) -> Vec<T>
+fn replace_last_element(first: &Vec<i32>, second: &Vec<i32>) -> Vec<i32>

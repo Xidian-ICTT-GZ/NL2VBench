@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, create and return a new array formed by removing the first element of the input. Assume the input size is positive. The output must preserve the relative order of the remaining elements and have length exactly one less than the input. For every valid index i in the output, the element at position i must equal the element at position i + 1 in the input. The input array must not be modified.
+fn remove_front(a: &Vec<i32>) -> Vec<i32>

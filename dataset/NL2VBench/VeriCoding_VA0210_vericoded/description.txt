@@ -1,0 +1,5 @@
+You are given a single integer input. Assume the input value is an 8-bit signed integer and is at least 2. Determine the winning side based on the parity of the input: if the input is odd, the winning side is "black"; if the input is even, the winning side is "white". Return a string that encodes this outcome exactly as follows:
+- If the input is odd, return the string "black\n".
+- If the input is even, return the string "white\n1 2\n" (i.e., the word "white", followed by a newline, then the two integers "1 2" separated by a space, followed by a newline).
+The returned string must match exactly, including spaces and newline characters. No other outputs are allowed.
+fn solve(n: i8) -> (result: String)

@@ -1,0 +1,2 @@
+Given a finite sequence of bytes representing characters, determine whether all elements in the sequence are equal to the first element. Return true if and only if, for every index i with 1 <= i < length, the element at position i equals the element at position 0. An empty sequence or a single-element sequence is considered trivially uniform and should return true. There are no additional preconditions on the input.
+fn all_characters_same(char_arr: &[u8]) -> (result: bool)

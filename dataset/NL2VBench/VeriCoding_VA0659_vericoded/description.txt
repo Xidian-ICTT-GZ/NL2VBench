@@ -1,0 +1,2 @@
+You are given an 8-bit signed integer representing an input value. Assume the input is within the inclusive range [1, 23]. Compute and return the difference between 48 and the input. The returned value must equal 48 minus the input and will be within the inclusive range [25, 47] under the given input assumptions.
+fn solve(m: i8) -> (result: i8)

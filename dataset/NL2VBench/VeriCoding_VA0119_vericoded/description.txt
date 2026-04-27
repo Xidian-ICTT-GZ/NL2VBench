@@ -1,0 +1,2 @@
+Implement a function that takes two signed 8-bit integers as inputs. Assume both inputs are at least 1. The function must return a pair of signed 8-bit integers (first, second) satisfying the following properties: the second component equals the smaller of the two inputs; the first component equals the total n + m − 1 minus the second component (equivalently, it equals the larger input minus 1). Consequently, the sum of the returned components must equal n + m − 1. The returned values must fit within the signed 8-bit range.
+fn solve(n: i8, m: i8) -> (i8, i8)

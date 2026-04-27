@@ -1,0 +1,6 @@
+Implement a function that, given a reference to a vector of any element type, returns a new vector of 32-bit integers whose length matches the input vector and whose elements are all equal to 1. Assume the input length can be any non-negative integer (including zero). The returned vector must satisfy: (1) its length equals the input vector's length, and (2) for every valid index, the element at that index is 1.
+
+The construction must use a loop that iterates from 0 up to the input length. During the loop, maintain the following properties for the partially constructed output vector: the loop counter is within bounds (between 0 and the input length), the current output length equals the number of iterations already completed, and all elements written so far are 1. The loop must have a well-founded termination argument by monotonically decreasing the number of remaining iterations.
+
+Edge cases to handle include an empty input vector and single-element inputs. There are no constraints on the input values, only on its size and on the properties of the output vector.
+fn ones_like<T>(a: &Vec<T>) -> (result: Vec<i32>)

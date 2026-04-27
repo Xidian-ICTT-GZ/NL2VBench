@@ -1,0 +1,2 @@
+Construct and return an object representing a Hermite E polynomial from a given array of 32-bit floating-point coefficients. The output object must preserve the input coefficients exactly: the coefficient array length must match the input, and each element must be equal to the corresponding element of the input. The polynomial’s domain bounds must be fixed to -1.0 and 1.0, and its window bounds must also be fixed to -1.0 and 1.0. No additional constraints are imposed on the input coefficients.
+fn hermite_e(coef: Vec<f32>) -> (result: HermiteEPoly)

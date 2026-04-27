@@ -1,0 +1,2 @@
+Implement a function that takes a vector of 32-bit integers and returns a new vector containing the elements in reverse order. The input may be empty. The returned vector must have the same length as the input. For every valid index i in the range [0, n), the element at position i in the output must equal the element at position (n − 1 − i) in the input, where n is the length of the input.
+fn reverse(a: &Vec<i32>) -> (result: Vec<i32>)

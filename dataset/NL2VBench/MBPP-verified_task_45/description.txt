@@ -1,0 +1,10 @@
+Given two arrays of 32-bit signed integers, determine whether the second array appears as a contiguous subarray of the first array.
+
+You must provide two functions:
+1) An index-based checker that, given a start index, determines whether the contiguous slice of the first array starting at that index and having the same length as the second array is exactly equal to the second array. Assume the second array’s length is less than or equal to the first array’s length. Also assume the start index is valid for such a comparison, i.e., it is an integer k with 0 ≤ k ≤ n − m, where n is the length of the first array and m is the length of the second array. The function returns true if and only if the slice of the first array from k (inclusive) to k + m (exclusive) matches the second array element-by-element; otherwise it returns false.
+
+2) A search function that checks whether there exists some start index k satisfying 0 ≤ k ≤ n − m such that the contiguous slice of the first array from k (inclusive) to k + m (exclusive) matches the second array element-by-element. Assume the second array’s length is less than or equal to the first array’s length. The function returns true if and only if such an index exists; otherwise it returns false.
+
+Indexes are 0-based. If the second array is empty (m = 0), it is considered to occur at every valid start index, and the search function must return true. For the index-based checker with an empty second array, any k with 0 ≤ k ≤ n is valid and should yield true.
+fn is_sub_list_at_index(first: &Vec<i32>, second: &Vec<i32>, start: usize) -> bool
+fn is_sub_list(first: &Vec<i32>, second: &Vec<i32>) -> bool

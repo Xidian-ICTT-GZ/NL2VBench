@@ -1,0 +1,2 @@
+You are given two integers. Assume both inputs are within the inclusive range [1, 100]. Compute the non-negative integer equal to the uncovered portion of a segment after removing twice the second input from the first input. Formally, return max(first_input − 2 × second_input, 0). The result must be non-negative. Equivalently, if first_input > 2 × second_input, return first_input − 2 × second_input; otherwise, return 0.
+fn solve(a: i8, b: i8) -> (result: i8)

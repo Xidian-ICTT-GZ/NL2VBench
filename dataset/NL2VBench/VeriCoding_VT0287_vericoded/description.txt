@@ -1,0 +1,19 @@
+Implement two functions:
+1) A scalar approximation function that maps a 32-bit signed integer input to a 32-bit signed integer output that behaves like a coarse approximation of arctangent. The output must satisfy all of the following constraints for the given input:
+   - The output is within the inclusive range [-2, 2].
+   - If the input is positive, the output is nonnegative.
+   - If the input is negative, the output is nonpositive.
+   - If the input is zero, the output is zero.
+   - If the input is strictly greater than 10, the output is at least 1.
+   - If the input is strictly less than -10, the output is at most -1.
+
+2) An array-processing function that, given a non-empty array of 32-bit signed integers, returns a new array of the same length by applying the above scalar approximation to each element of the input array. The result must satisfy, for each index:
+   - The output element is within the inclusive range [-2, 2].
+   - If the corresponding input element is positive, the output element is nonnegative.
+   - If the corresponding input element is negative, the output element is nonpositive.
+   - If the corresponding input element is zero, the output element is zero.
+   - If the corresponding input element is strictly greater than 10, the output element is at least 1.
+   - If the corresponding input element is strictly less than -10, the output element is at most -1.
+Assume the input array length is positive. The returned array length must exactly match the input array length.
+fn arctan_approximation(x: i32) -> i32
+fn arctan(x: Vec<i32>) -> Vec<i32>

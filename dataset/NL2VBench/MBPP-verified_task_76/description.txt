@@ -1,0 +1,10 @@
+Implement two functions over arrays of 32-bit signed integers.
+
+1) Boolean membership check: Given an array and a key value, return true if and only if there exists an index within the array bounds such that the element at that index equals the key; otherwise return false. There are no preconditions on the array (it may be empty).
+
+2) Distinct intersection: Given two arrays, return a new array containing values that are present in both input arrays. The returned array must satisfy the following properties:
+- Every element in the returned array appears in both input arrays.
+- The returned array contains no duplicate values (all elements are pairwise distinct).
+There are no preconditions on the inputs (they may be empty and may contain duplicates). No particular ordering of the returned elements is required.
+fn contains(arr: &Vec<i32>, key: i32) -> (result: bool)
+fn shared_elements(list1: &Vec<i32>, list2: &Vec<i32>) -> (shared: Vec<i32>)

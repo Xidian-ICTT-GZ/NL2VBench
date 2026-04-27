@@ -1,0 +1,2 @@
+Given an array of non-negative integers (0-based indexing), determine whether the parity of each index matches the parity of the element stored at that index. Return true if and only if, for every valid index i in [0, n), i mod 2 equals the element at index i mod 2. The array length may be zero, in which case the property holds vacuously.
+fn is_even_at_even_index(arr: &Vec<usize>) -> (result: bool)

@@ -1,0 +1,29 @@
+{
+  "total_samples": 762,
+  "by_pipeline": {
+    "p1_fewshot+LTM": {
+      "total": 762,
+      "passed": 239,
+      "pass_rate": 0.3136482939632546
+    },
+    "p2_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    },
+    "p3_fewshot+LTM": {
+      "total": 0,
+      "passed": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "by_model": {
+    "gpt-5.2": {
+      "total": 762,
+      "passed": 239,
+      "pass_rate": 0.3136482939632546
+    }
+  },
+  "overall_pass5_rate": 0.3136482939632546,
+  "timestamp": "2026-02-01T19:10:04.708950"
+}

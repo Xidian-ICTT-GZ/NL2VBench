@@ -1,0 +1,2 @@
+Implement a function that determines whether a given positive integer is prime. The input is a 64-bit unsigned integer. Assume the input value is at least 2. The function must return true if and only if there does not exist any integer k with 2 ≤ k < the input value such that k divides the input value exactly (i.e., the remainder when dividing by k is zero). Equivalently, the function should indicate primality by ruling out all proper divisors in the range [2, n).
+fn prime_num(n: u64) -> bool

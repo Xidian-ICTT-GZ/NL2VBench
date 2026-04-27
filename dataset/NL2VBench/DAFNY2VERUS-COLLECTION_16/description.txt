@@ -1,0 +1,2 @@
+Given a vector of mathematical integers, return a new vector such that: (1) the output vector has the same length as the input, and (2) for every valid index i, the element at index i in the output equals the square of the element at index i in the input. There are no additional preconditions on the input.
+fn square_elements(a: Vec<int>) -> (squared: Vec<int>)

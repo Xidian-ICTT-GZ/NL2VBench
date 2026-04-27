@@ -1,0 +1,7 @@
+Construct an n×n identity matrix using 64-bit floating-point values. Assume the input size n is a non-negative integer. Return a two-dimensional array (vector of vectors) where the following properties hold:
+- The returned matrix has exactly n rows.
+- Each row has exactly n elements.
+- For every pair of indices i and j with 0 ≤ i < n and 0 ≤ j < n, the element at position (i, j) equals 1.0 if i equals j, and equals 0.0 otherwise.
+The construction must be total for all finite n and produce a matrix that exactly satisfies the above shape and value conditions.
+fn diag_val(i: int, j: int) -> (result: f64)
+fn identity(n: usize) -> (result: Vec<Vec<f64>>)

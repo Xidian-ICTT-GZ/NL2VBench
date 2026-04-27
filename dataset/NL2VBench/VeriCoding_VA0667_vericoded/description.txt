@@ -1,0 +1,5 @@
+Implement a function that maps an integer to a specific sequence of characters. The function receives a single 32-bit signed integer. Assume the input value is within the inclusive range [1, 3000]. The function must return a vector of exactly four characters according to the following rule:
+- If the input is less than 1200, return the characters 'A', 'B', 'C', followed by a newline character.
+- Otherwise (input greater than or equal to 1200), return the characters 'A', 'R', 'C', followed by a newline character.
+No other outputs are permitted. The result must strictly match one of the two sequences described above.
+fn solve(x: i32) -> (result: Vec<char>)

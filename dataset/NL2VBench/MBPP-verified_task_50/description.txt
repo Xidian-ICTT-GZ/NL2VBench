@@ -1,0 +1,11 @@
+Given a non-empty array of 32-bit integers and a positive index n that is strictly less than the array length, return a new array formed by reversing the first n elements and then appending the remaining elements in their original order. The input array is not modified.
+
+Assumptions:
+- The array length is greater than 0.
+- The index n satisfies 0 < n < length of the array.
+
+Output requirements:
+- The returned array has the same length as the input array.
+- Its first n elements are the reverse of the input array’s first n elements.
+- The elements from position n to the end are identical to the corresponding elements of the input array and remain in the same order.
+fn reverse_to_k(list: &Vec<i32>, n: usize) -> Vec<i32>

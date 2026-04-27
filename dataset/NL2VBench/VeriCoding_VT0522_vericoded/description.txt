@@ -1,0 +1,10 @@
+Implement a function that takes an array of 32-bit floating-point numbers and returns a new array formed by prefixing a single 0.0 at the start and then copying all elements of the input array after it in the same order. The output length must be exactly one more than the input length. The first element of the output must be exactly 0.0, and for every valid index i in the input (0 <= i < input length), the element at position i + 1 in the output must equal the element at position i in the input. Assume no special preconditions; the function must handle empty inputs correctly.
+
+Verification-oriented requirements to guide a correct solution:
+- Maintain a loop that processes the input from left to right, and use a counter representing how many elements have been copied so far. The counter must always range between 0 and the input length (inclusive).
+- At every loop iteration, the partially constructed output must have length equal to the counter plus one (accounting for the initial 0.0), and its first element must be 0.0.
+- For every position k that has already been processed (0 <= k < processed count), the element at position k + 1 in the output must equal the element at position k in the input.
+- The loop must be proven terminating by a variant that strictly decreases, such as the difference between the input length and the number of elements processed.
+
+The function should be linear-time and allocate a new output array. Preserve the order of all input elements and do not modify the input.
+fn polymulx(c: Vec<f32>) -> (result: Vec<f32>)

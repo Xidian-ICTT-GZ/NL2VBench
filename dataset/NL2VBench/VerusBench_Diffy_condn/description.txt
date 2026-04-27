@@ -1,0 +1,2 @@
+Implement a function that takes a mutable array of 32-bit integers, a positive integer N, and an integer m. Assume N > 0 and the array’s length equals N. The function must modify the array in-place without changing its length so that, for every index k with 0 <= k < N, the value stored at that index is less than or equal to N. A valid target state that satisfies this requirement is for every element of the array to become min(m, N).
+pub fn myfun(a: &mut Vec<i32>, N: i32, m: i32)

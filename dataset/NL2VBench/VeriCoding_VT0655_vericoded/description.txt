@@ -1,0 +1,2 @@
+Given a non-empty array of 64-bit floating-point numbers, return the value of its last element. Assume the input length is strictly positive. The function must satisfy these postconditions: if the length is exactly 1, it returns the only element; if the length is greater than 1, it returns the element at index length − 1 (the final position).
+fn reduce(arr: Vec<f64>) -> (result: f64)

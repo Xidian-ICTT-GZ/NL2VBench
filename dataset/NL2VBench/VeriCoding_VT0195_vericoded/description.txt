@@ -1,0 +1,5 @@
+Given a two-dimensional collection represented as a vector of vectors of 32-bit floating-point values and a signed integer offset, compute the sum of the diagonal that is parallel to the main diagonal and shifted by the given offset. Interpret the offset as follows:
+- If the offset is nonnegative, for each row index i, the column index is j = i + offset.
+- If the offset is negative, for each row index i, the column index is j = i - |offset|.
+For each row i from 0 up to (but not including) the number of rows, include the element at position (i, j) in the sum only if j is a valid index within that specific row (i.e., 0 <= j < length of that row). If the column index j is out of bounds for a given row, skip that row. Rows may have different lengths, and the number of rows may be zero. The offset may be any 32-bit signed integer. Return the resulting sum as an f32.
+fn trace(a: Vec<Vec<f32>>, offset: i32) -> f32

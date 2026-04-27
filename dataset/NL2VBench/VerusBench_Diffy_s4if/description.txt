@@ -1,0 +1,4 @@
+You are given three inputs: a mutable array of 32-bit integers, a mutable single-element array that will hold an output value, and an integer representing the size. Assume the size is a positive integer less than 1000. Assume the input array’s length is exactly equal to the given size at entry, and the output array’s length is exactly 1 at entry.
+
+Modify the input array so that all of its elements are set to 4. Then compute the sum of all elements of the array and store the result into the output array’s sole element. On return, the sole element of the output array must equal 4 times the given size. The lengths of both arrays must remain unchanged throughout.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

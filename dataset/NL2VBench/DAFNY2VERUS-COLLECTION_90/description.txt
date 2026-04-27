@@ -1,0 +1,2 @@
+Given a collection of integer sequences, return a new sequence containing the first element from each inner sequence. Assume the outer collection may be empty, but every inner sequence in the collection is non-empty. The returned sequence must have the same length as the outer collection, and for every valid index, the element at that index in the output equals the first element of the corresponding inner sequence in the input.
+fn get_first_elements(lst: Vec<Vec<int>>) -> (result: Vec<int>)

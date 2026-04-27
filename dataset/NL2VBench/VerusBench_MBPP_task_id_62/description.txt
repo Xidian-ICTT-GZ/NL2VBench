@@ -1,0 +1,2 @@
+Given a non-empty list of 32-bit signed integers, return the smallest value present in the list. Assume the input length is strictly positive. The result must be less than or equal to every element in the list and must be equal to at least one element of the list. The list may be unsorted and may contain duplicates or negative values.
+fn smallest_num(nums: &Vec<i32>) -> (min: i32)

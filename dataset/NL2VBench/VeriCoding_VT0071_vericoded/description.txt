@@ -1,0 +1,3 @@
+Implement a function that takes a reference to a dynamic array of 64-bit floating-point numbers and returns the number of elements in the array. The function must satisfy the postcondition that the returned value is exactly equal to the array’s length. There are no preconditions: the array may be empty or contain any floating-point values.
+proof fn lemma_len_reflexive(a: &Vec<f64>) ensures a.len() == a.len()
+fn size(a: &Vec<f64>) -> (result: usize) ensures result == a.len()

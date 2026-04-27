@@ -1,0 +1,4 @@
+Given two arrays of 32-bit signed integers, compute an element-wise bitwise XOR of the arrays.
+Assume the two input arrays have the same length. Return a new array of the same length where, for every valid index i, the value at position i is equal to the bitwise XOR of the corresponding elements from the two input arrays.
+If the arrays are empty, return an empty array.
+fn bit_wise_xor(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: Vec<i32>)

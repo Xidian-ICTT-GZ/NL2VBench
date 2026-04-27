@@ -1,0 +1,4 @@
+You are given a list of range queries, each represented by a pair (l, r) of signed 8-bit integers. Assume every query satisfies l >= 1 and l <= r. Consider the infinite integer sequence defined for positive indices by a[i] = -i if i is odd, and a[i] = +i if i is even. For each query (l, r), return the sum of this sequence over indices i from l to r, inclusive.
+
+The required output list must have the same length as the input list of queries, and the ith output must equal the exact mathematical sum for the ith query. Equivalently, if S(k) denotes the alternating-sign prefix sum of the sequence from 1 to k, where S(k) = k / 2 when k is even and S(k) = -(k + 1) / 2 when k is odd, then for each query (l, r) the answer must be S(r) - S(l - 1).
+fn solve(queries: Vec<(i8, i8)>) -> Vec<i8>

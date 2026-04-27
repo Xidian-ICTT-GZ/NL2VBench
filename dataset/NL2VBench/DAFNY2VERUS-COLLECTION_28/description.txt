@@ -1,0 +1,2 @@
+Given a byte slice representing an ASCII string, determine whether there exists a '.' character such that it is followed by exactly two characters and those two characters are the final two characters of the string (i.e., the '.' appears at position length − 3). Return true if and only if such a position exists; otherwise, return false. There are no assumptions about the content of the two trailing characters—they need not be digits. The input may be any finite byte slice, including empty.
+fn is_decimal_with_two_precision(s: &[u8]) -> (result: bool)

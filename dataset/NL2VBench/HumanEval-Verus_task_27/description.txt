@@ -1,0 +1,11 @@
+You are given two arrays of characters: a text and a pattern. Assume the pattern is non-empty. Define that the pattern occurs in the text at index i if the pattern matches the consecutive characters of the text starting at i (i.e., the pattern is a prefix of the suffix of the text beginning at i). Overlaps are allowed; for example, in the text "aaaa" the pattern "aa" occurs at indices 0, 1, and 2, for a total of 3 occurrences.
+
+Task: Compute the total number of indices i such that the pattern occurs at i in the text. If the total number of occurrences fits within an unsigned 32-bit integer, return Some(count). If the count is larger than u32::MAX, return None.
+
+Additional details and assumptions:
+- The pattern length is at least 1. The text length may be zero.
+- If the text length is smaller than the pattern length, the result is 0.
+- The result counts overlapping occurrences. Formally, the count is the number of i with 0 <= i <= text_len - pattern_len such that for all j in 0..pattern_len, text[i + j] == pattern[j].
+- Return Some(k) exactly when the true count equals k and k <= u32::MAX; return None exactly when the true count is greater than u32::MAX.
+fn how_many_times_impl(string: Vec<char>, substring: Vec<char>) -> Option<u32>
+fn is_prefix(substring: Vec<char>, string: Vec<char>) -> bool

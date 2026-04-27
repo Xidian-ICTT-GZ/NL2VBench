@@ -1,0 +1,2 @@
+Given a mutable array (vector) of 64-bit unsigned integers, reverse the order of its elements in place. The function should not allocate an additional array and must modify the input directly. The length of the array must remain unchanged. On return, for every index i in the range [0, n), where n is the original length of the array, the element at index i must be equal to the element at index n − 1 − i from the original array. The function must handle all valid vectors, including empty arrays and arrays with one element.
+fn reverse(v: &mut Vec<u64>)

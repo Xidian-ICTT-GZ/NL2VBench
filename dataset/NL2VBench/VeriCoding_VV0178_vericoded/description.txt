@@ -1,0 +1,2 @@
+Implement a function that returns three times a given 32-bit signed integer. Assume the input is chosen so that multiplying it by 3 does not overflow the range of a signed 32-bit integer. The function must guarantee that the returned value divided by 3 equals the original input, and that multiplying this quotient by 3 reconstructs the returned value. In other words, the result is exactly three times the input and is divisible by 3 without remainder.
+fn triple(x: i32) -> i32

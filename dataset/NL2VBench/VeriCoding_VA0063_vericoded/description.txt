@@ -1,0 +1,5 @@
+You are given a shell game with three positions labeled 0, 1, and 2. A token starts at an initial position x. Assume 0 ≤ x ≤ 2. You then perform n moves, where 1 ≤ n ≤ 2,000,000,000. The moves are defined as follows for each step i from 1 to n inclusive:
+- If i is odd, the token swaps between positions 0 and 1: a token at 0 moves to 1; at 1 moves to 0; at 2 stays at 2.
+- If i is even, the token swaps between positions 1 and 2: a token at 1 moves to 2; at 2 moves to 1; at 0 stays at 0.
+Return the final position of the token after all n moves. The result must be one of {0, 1, 2}.
+fn shell_game(n: i32, x: i8) -> (result: i8)

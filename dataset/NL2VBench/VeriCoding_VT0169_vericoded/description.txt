@@ -1,0 +1,7 @@
+You are given two non-empty inputs: (1) an array of indices and (2) a matrix represented as a list of rows, where each row is a non-empty array of floating-point numbers. Assume the following constraints:
+- The matrix has at least one row.
+- The length of every row in the matrix is exactly equal to the length of the index array.
+- Every index value is a valid row selector: for each position i in the index array, the index at position i is less than the total number of rows in the matrix.
+
+Construct and return a new array of length equal to the index array's length such that, for each position i, the element in the result is the element from the matrix at row number given by the index array at position i and column i. In other words, the result at position i equals the matrix[ index_array[i] ][ i ].
+fn choose(indices: Vec<u8>, choices: Vec<Vec<f64>>) -> Vec<f64>

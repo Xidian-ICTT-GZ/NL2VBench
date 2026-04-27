@@ -1,0 +1,6 @@
+Given an array of signed 8-bit integers, return the second-largest value present in the array if the array has at least two elements; otherwise, return None. The output must satisfy the following properties:
+- If the array length is less than 2, the function returns None.
+- If the function returns Some(value), then value is equal to one of the elements of the array.
+- For every pair of distinct indices i and j with i < j, at least one of the two elements at positions i or j is less than or equal to the returned value. In other words, the returned value is not smaller than the second-largest element in the array.
+Assume no additional constraints on the input beyond element type and length.
+fn rolling_max(s: &Vec<i8>) -> (res: Option<i8>)

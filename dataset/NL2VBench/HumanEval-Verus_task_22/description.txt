@@ -1,0 +1,15 @@
+Implement three functions that operate on non-negative integers and character sequences:
+
+1) A function that converts a single decimal digit to its corresponding character. Assume the input is a single digit in the range 0 through 9. The output must be the character '0' through '9' matching the input value.
+
+2) A function that converts a non-negative integer to the sequence of its decimal digits as characters, in left-to-right order, without leading zeros. For the value zero, return an empty sequence (i.e., do not return the character '0'). The input is a non-negative integer that fits within an 8-bit unsigned integer.
+
+3) A function that constructs the character sequence representing the numbers from 0 up to a given non-negative integer, separated by single spaces. The resulting character sequence must be exactly: the character '0', followed by, for each positive integer i from 1 to the input value, one space ' ' and then the decimal digit characters of i as produced by the second function. For an input of zero, the result is just the single character '0'. The input is a non-negative integer that fits within an 8-bit unsigned integer. There must be no trailing space at the end of the sequence.
+
+Correctness requirements:
+- The single-digit conversion must only accept values 0 through 9.
+- The integer-to-digit-sequence conversion must produce no characters for zero and otherwise produce the canonical decimal representation (no leading zeros) in left-to-right order.
+- The 0-to-n sequence must begin with '0' and, for each subsequent number, contain a single leading space followed by its decimal digits. The sequence must be contiguous in increasing order from 0 to the input value.
+fn single_digit_number_to_char_impl(n: u8) -> (output: char)
+pub fn number_to_char_impl(n: u8) -> (char_vec: Vec<char>)
+fn string_sequence_impl(n: u8) -> (string_seq: Vec<char>)

@@ -1,0 +1,17 @@
+You are given a one-dimensional array of 8-bit signed integers and a target matrix shape specified by an array of two unsigned bytes [R, C]. Construct a matrix of dimensions R × C by broadcasting the one-dimensional array along the compatible dimension.
+
+Assumptions:
+- The one-dimensional array has positive length.
+- The shape array has length exactly 2.
+- Both shape entries R and C are positive.
+- The length of the one-dimensional array equals either R or C (at least one dimension must match the array length).
+
+Output requirements:
+- Return a well-formed R × C matrix (each of the R rows contains exactly C elements).
+- The total number of elements in the matrix equals R × C.
+- Broadcasting rule:
+  - If R equals the array length, treat the array as a column vector. For each valid row index i and column index j, the matrix entry at (i, j) must equal the i-th element of the array (each element replicated across its entire row).
+  - Otherwise, C equals the array length, and the array is treated as a row vector. For each valid row index i and column index j, the matrix entry at (i, j) must equal the j-th element of the array (the entire array duplicated for every row).
+
+The result must satisfy the above mapping for all valid indices 0 ≤ i < R and 0 ≤ j < C.
+fn broadcast(a: Vec<i8>, shape: Vec<u8>) -> (ret: Matrix<i8>)

@@ -1,0 +1,2 @@
+Given a nonempty list of 32-bit signed integers, determine whether the list is sorted in nondecreasing (ascending) order. Assume the input size is strictly greater than zero. Return true if and only if, for every pair of indices i and j with 0 <= i < j < n, the element at index i is less than or equal to the element at index j. Equality between adjacent or non-adjacent elements is allowed and does not violate sortedness.
+fn is_sorted(arr: &Vec<i32>) -> (is_sorted: bool)

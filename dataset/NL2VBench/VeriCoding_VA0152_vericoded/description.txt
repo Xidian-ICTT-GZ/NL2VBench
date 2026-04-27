@@ -1,0 +1,2 @@
+Given a signed 8-bit integer input that is at least 1, return the minimal number of fixed-size steps of 5 needed to reach or exceed the input. Formally, the output s must satisfy: s >= 1, 5 * s >= x, and (s - 1) * 5 < x. The input is guaranteed to fit in the signed 8-bit range, and the result also fits in the signed 8-bit range. This is equivalent to computing ceil(x / 5) for x >= 1.
+fn min_steps(x: i8) -> (result: i8)

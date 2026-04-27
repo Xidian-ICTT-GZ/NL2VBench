@@ -1,0 +1,7 @@
+Implement two functions over arrays of 32-bit integers.
+
+1) Membership check: Given an array and an integer key, return whether the key occurs in the array. The result must be true if and only if there exists an index within the bounds of the array such that the element at that index equals the key.
+
+2) Symmetric difference: Given two arrays, construct and return a new array that contains every integer that appears in exactly one of the two input arrays. Inputs may be empty and may contain repeated values. The result must not contain duplicate values (each qualifying integer appears at most once in the output). The output order is not specified. Formally, for each element from the first array that is not present in the second array, the result must contain that element; likewise, for each element from the second array that is not present in the first array, the result must contain that element; and for any two distinct indices in the result, the elements at those indices must be different.
+fn contains(arr: &Vec<i32>, key: i32) -> (result: bool)
+fn difference(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: Vec<i32>)

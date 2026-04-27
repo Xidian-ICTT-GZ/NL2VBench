@@ -1,0 +1,5 @@
+Given two input collections of 32-bit integers provided as read-only slices, construct and return a vector containing all integers that appear in the first input slice and do not appear in the second input slice. The output must not contain any duplicates: any two distinct positions in the returned vector must hold different values. There are no preconditions on the inputs; they may be empty or contain repeated values, and elements can be any valid 32-bit integers. Correctness is defined by the following properties: every value in the returned vector must be a member of the first input slice and must not be a member of the second input slice; and for any two indices i and j with 0 ≤ i < j < length of the returned vector, the elements at positions i and j are different. No ordering constraints are required for the returned vector.
+spec fn in_array(a: &[i32], x: i32) -> bool
+fn is_in_array(a: &[i32], x: i32) -> (result: bool)
+fn contains(v: &Vec<i32>, x: i32) -> (result: bool)
+fn remove_elements(a: &[i32], b: &[i32]) -> (result: Vec<i32>)

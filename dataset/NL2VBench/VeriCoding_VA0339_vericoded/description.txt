@@ -1,0 +1,9 @@
+You are given a non-empty string consisting of characters. Consider the following operation (a move): if the string contains two equal adjacent characters, remove that pair from the string. Repeatedly perform such moves until no adjacent equal characters remain. Let the total number of pairs removed over the entire process be M. Return "Yes" if M is odd; otherwise return "No".
+
+Assumptions:
+- The input string length is at least 1.
+
+Output requirements:
+- The function returns either "Yes" or "No".
+- "Yes" must be returned if and only if the total number of pair-removal moves M is odd; "No" must be returned if and only if M is even.
+fn solve(s: Vec<char>) -> (result: &'static str)

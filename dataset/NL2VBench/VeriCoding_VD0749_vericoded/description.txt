@@ -1,0 +1,4 @@
+Given a non-negative 64-bit unsigned integer, compute the factorial of its last decimal digit. The last digit is defined as the remainder when dividing the input by 10. The factorial function is defined for non-negative integers with factorial(0) = 1 and factorial(k) = k × factorial(k−1) for k ≥ 1. The function must satisfy the following specification: the returned value equals factorial(last_digit). Assume the input is non-negative. Since the last digit is in the range 0 through 9, the result is at most 362,880 and fits within a 64-bit unsigned integer.
+fn factorial_of_last_digit(n: u64) -> (fact: u64)
+    requires n >= 0
+    ensures fact == factorial((n % 10) as int)

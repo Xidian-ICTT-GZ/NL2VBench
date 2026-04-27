@@ -1,0 +1,2 @@
+Implement a function that takes a reference to a list of 64-bit unsigned integers and returns a new list that is a deep copy of the input. The output must have exactly the same number of elements as the input, and for every valid index i, the element at position i in the output must be equal to the element at position i in the input. The order of elements must be preserved, including duplicates. The function should work for any input length, including empty lists.
+fn list_deep_clone(arr: &Vec<u64>) -> (copied: Vec<u64>)

@@ -1,0 +1,6 @@
+Given two non-empty arrays of 8-bit signed integers, produce two output arrays by applying broadcasting rules similar to element-wise operations with shape compatibility. Assume the two inputs are compatible: either both have the same length, or at least one of them has length 1. Let m be the length of the first input and n be the length of the second input. The output consists of two arrays, each having length max(m, n). The broadcasting rules are:
+- If an input has length 1, its single value is repeated to fill max(m, n).
+- If both inputs have the same length, each output is a copy of the corresponding input.
+- If one input has length 1 and the other has length greater than 1, the longer input is copied unchanged into its output.
+The result must satisfy that both outputs have the same length max(m, n), and the element-wise contents respect the above broadcasting semantics across all valid indices.
+fn broadcast_arrays(a: Vec<i8>, b: Vec<i8>) -> (Vec<i8>, Vec<i8>)

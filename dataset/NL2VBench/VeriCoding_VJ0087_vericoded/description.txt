@@ -1,0 +1,3 @@
+Given two read-only arrays of 32-bit integers, determine whether they share at least one common value. The arrays may be empty, and their lengths are nonnegative. Use standard zero-based indexing. Return true if and only if there exist indices i and j such that 0 ≤ i < length of the first array, 0 ≤ j < length of the second array, and the element at position i in the first array equals the element at position j in the second array. Otherwise, return false. The function must not modify the input arrays and must terminate for all valid inputs.
+fn has_common_element(list1: &Vec<i32>, list2: &Vec<i32>) -> bool
+fn contains(list: &Vec<i32>, element: i32) -> bool

@@ -1,0 +1,4 @@
+Given a read-only sequence of characters, determine whether the length of the sequence is a prime number. Use the following definition of primality: an integer n is prime if and only if n >= 2 and, for all integers k with 2 <= k < n, n % k != 0. If the length is less than 2, return false. The input length may be any non-negative integer.
+pub open spec fn is_divisible(n: int, divisor: int) -> bool
+pub open spec fn is_prime(n: int) -> bool
+fn prime_length(str: &[char]) -> (result: bool)

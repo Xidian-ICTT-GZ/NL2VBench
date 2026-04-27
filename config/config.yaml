@@ -1,0 +1,108 @@
+# ==========================================================
+# NL2VBench Configuration File
+# ----------------------------------------------------------
+# This file defines model APIs, generation settings, and
+# verifier execution settings.
+#
+# Before running:
+#   1. Fill in your own API keys
+#   2. Replace base_url if using another provider
+#   3. Set your local Verus installation path
+# ==========================================================
+
+models:
+
+  # --------------------------------------------------------
+  # DeepSeek V3.2
+  # --------------------------------------------------------
+  deepseek-v3.2:
+    api_key: ""                # Your API key
+    base_url: ""              # Example: https://api.xxx.com/v1/chat/completions
+    model_name: "deepseek-v3.2"
+    max_n: 5                   # Maximum supported parallel outputs
+    is_thinking: false         # Whether model uses reasoning mode
+
+  # --------------------------------------------------------
+  # GPT-5.2
+  # --------------------------------------------------------
+  gpt-5.2:
+    api_key: ""
+    base_url: ""
+    model_name: "gpt-5.2"
+    max_n: 5
+    is_thinking: false
+
+  # --------------------------------------------------------
+  # Claude Sonnet 4.5
+  # --------------------------------------------------------
+  claude-sonnet-4-5-20250929:
+    api_key: ""
+    base_url: ""
+    model_name: "claude-sonnet-4-5-20250929"
+    max_n: 5
+    is_thinking: false
+
+  # --------------------------------------------------------
+  # OpenAI o4-mini (reasoning model)
+  # --------------------------------------------------------
+  o4-mini:
+    api_key: ""
+    base_url: ""
+    model_name: "o4-mini"
+    max_n: 5
+    is_thinking: true
+
+  # --------------------------------------------------------
+  # GPT-4o-mini
+  # --------------------------------------------------------
+  gpt-4o-mini:
+    api_key: ""
+    base_url: ""
+    model_name: "gpt-4o-mini"
+    max_n: 5
+    is_thinking: false
+
+
+# ==========================================================
+# Generation Settings
+# ==========================================================
+generation:
+
+  chat_max_tokens: 4096
+  # Max tokens for standard chat models
+
+  thinking_max_tokens: 32000
+  # Max tokens for reasoning / thinking models
+
+  n: 5
+  # Number of candidate generations per prompt
+
+  temperature: 0
+  # 0 = deterministic generation
+
+  seed: 42
+  # Random seed for reproducibility
+
+  max_retries: 3
+  # Retry attempts if API request fails
+
+  retry_delay: 1
+  # Seconds between retries
+
+  max_tokens_cap: 32000
+  # Global upper bound for token requests
+
+
+# ==========================================================
+# Verus Verification Settings
+# ==========================================================
+verus:
+
+  verus_path: ""
+  # Path to local Verus binary
+  # Example:
+  # /path/to/verus/verus
+  # Version: 0.2026.01.10.531beb1
+
+  timeout_duration: 10
+  # Timeout (seconds) for each verification run

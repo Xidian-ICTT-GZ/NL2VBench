@@ -1,0 +1,2 @@
+Implement a function that takes a vector of mathematical integers and returns a new vector of the same length where each output element is the cube of the corresponding input element. There are no preconditions on the input; the function must be total and terminate for all inputs. The result must preserve the input length, and for every valid index i in the range [0, n), the ith element of the output equals the cube of the ith element of the input.
+fn cube_elements(a: Vec<int>) -> (cubed: Vec<int>)

@@ -1,0 +1,7 @@
+Given a non-negative integer n (treated as the size), construct and return a vector of 8-bit signed integers of length exactly n such that every element is equal to 1. The following properties must hold for the returned vector:
+- Its length is n.
+- For every index i with 0 <= i < n, the element at index i is exactly 1.
+- For any two indices i and j with 0 <= i < n and 0 <= j < n, the elements at those indices are equal to each other (i.e., the vector is constant throughout).
+- For every index i with 0 <= i < n, the element at index i is strictly positive.
+No additional preconditions are required beyond n being a valid size (n >= 0).
+fn ones(n: usize) -> (result: Vec<i8>)

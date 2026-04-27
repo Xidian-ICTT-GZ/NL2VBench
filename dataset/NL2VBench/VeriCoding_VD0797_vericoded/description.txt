@@ -1,0 +1,5 @@
+Given an array of 32-bit integers, return a pair of indices (i, j) where i is the index of the first even element and j is the index of the first odd element when scanning from left to right. Assume the array length is at least 2. Also assume the array contains at least one even number and at least one odd number. The output must satisfy the following properties:
+- The indices i and j are valid zero-based indices into the array.
+- The element at index i is even, and for every index k with 0 <= k < i, the element at k is odd (i.e., i is the smallest index of an even element).
+- The element at index j is odd, and for every index k with 0 <= k < j, the element at k is even (i.e., j is the smallest index of an odd element).
+fn first_even_odd_indices(lst: Vec<i32>) -> (usize, usize)

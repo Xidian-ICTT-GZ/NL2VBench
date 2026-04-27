@@ -1,0 +1,5 @@
+Given two non-empty lists of 8-bit signed integers, construct and return a pair of two-dimensional lists with the following structure and properties:
+- The first two-dimensional list has a length equal to the length of the first input list. Each sublist in this structure has length 1 and contains exactly the element from the first input list at the corresponding index.
+- The second two-dimensional list has exactly one sublist. That single sublist is a copy of the second input list, preserving order and values, and its length equals the length of the second input list.
+Assume both input lists have positive length. The returned pair must satisfy element-wise equality: for any valid index in the first input list, the singleton sublist in the first returned structure contains precisely that element; for any valid index in the second input list, the single row in the second returned structure contains precisely that element. The construction should not rely on aliasing from the inputs; all elements in the outputs are copies of the corresponding inputs.
+fn ix_(seq1: Vec<i8>, seq2: Vec<i8>) -> (Vec<Vec<i8>>, Vec<Vec<i8>>)

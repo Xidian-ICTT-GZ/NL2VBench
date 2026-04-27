@@ -1,0 +1,12 @@
+Implement two functions over an array of 32-bit integers.
+
+1) Frequency of a target value:
+Given an immutable array and a target integer, return the number of times the target appears in the array. The result must equal the frequency defined by the following abstract specification over the sequence view of the array: the frequency of a value in an empty sequence is 0; otherwise it is the frequency in the sequence without its last element plus 1 if the last element equals the target, and plus 0 otherwise. Assume the array length is finite. The returned count must be non-negative and no greater than the array length.
+
+2) Remove duplicates by global frequency:
+Given an immutable array, construct and return a new array that contains exactly those elements from the input whose total frequency in the input (as defined by the specification above) is 1. The elements in the returned array must appear in the same relative order as they appear in the input. Elements that appear more than once in the input must not appear in the output at all. The behavior on an empty input array should produce an empty output.
+
+No assumptions about sorting or distinctness are made; any 32-bit integer values are allowed. Both routines must be total and terminate, and their results must agree with the abstract specification described above.
+pub open spec fn count_frequency_rcr(seq: Seq<i32>, key: i32) -> int
+fn count_frequency(arr: &Vec<i32>, key: i32) -> (frequency: usize)
+fn remove_duplicates(arr: &Vec<i32>) -> (unique_arr: Vec<i32>)

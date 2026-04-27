@@ -1,0 +1,14 @@
+You are given the coordinates of two squares on a standard 8×8 chessboard using 1-based indexing. Each square is identified by a row and a column, both in the range 1 through 8 inclusive. Assume both the starting square and the destination square are valid (their row and column are within 1..=8).
+
+Return a length-3 array where:
+- The first element is the minimum number of moves a rook needs to move from the starting square to the destination on an empty board.
+- The second element is the minimum number of moves a bishop needs to move from the starting square to the destination on an empty board. If the destination is unreachable by a bishop (the squares are of different colors), return 0 for the bishop. Note that if the starting square equals the destination, the bishop also requires 0 moves.
+- The third element is the minimum number of moves a king needs to move from the starting square to the destination on an empty board.
+
+Details:
+- Rook: Returns 0 if the starting square equals the destination; 1 if the two squares share the same row or the same column; otherwise 2.
+- Bishop: Returns 0 if the starting square equals the destination; 1 if the two squares lie on the same diagonal; 2 if the squares are of the same color but not on the same diagonal; otherwise 0 (unreachable because the squares are of different colors).
+- King: Returns the Chebyshev distance between the squares, i.e., max(|row difference|, |column difference|).
+
+All returned values are integers between 0 and 8 inclusive.
+fn solve(r1: i8, c1: i8, r2: i8, c2: i8) -> (result: Vec<i8>)

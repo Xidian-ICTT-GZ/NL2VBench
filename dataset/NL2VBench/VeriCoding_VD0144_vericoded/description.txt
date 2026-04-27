@@ -1,0 +1,18 @@
+You are given a non-empty array of 32-bit integers and an index within the array bounds. Determine whether this index acts as a strict partition barrier: every element at indices less than or equal to the given index is strictly smaller than every element at indices greater than the given index. Return true exactly when this property holds; otherwise, return false.
+
+Assumptions:
+- The array length is positive.
+- The index is a valid position in the array (strictly less than the length).
+
+Interpretation of the property:
+- The property evaluates all pairs of indices (k, l) such that k is at most the given index and l is strictly greater than the given index and still within the array. For the property to hold, the value at k must be strictly less than the value at l for all such pairs.
+- If there are no indices greater than the given index (i.e., the given index is the last element), the condition is vacuously true and the function should return true.
+
+Helper functionality semantics (if used):
+- A helper that, given an array and an end index less than the array length, returns the maximum value along with an index where it occurs within the prefix [0..=end]. The returned index must lie within [0..=end], the returned value must equal the array value at that index, and every element in the prefix must be less than or equal to the returned value.
+- A helper that, given an array and a start index less than the array length, returns the minimum value along with an index where it occurs within the suffix [start..n-1]. The returned index must lie within [start..n-1], the returned value must equal the array value at that index, and every element in the suffix must be greater than or equal to the returned value.
+
+Equivalently, the barrier condition holds if and only if the maximum in the prefix up to the given index is strictly less than the minimum in the suffix starting at the next index.
+fn find_max_in_prefix(v: &[i32], end: usize) -> (res: (i32, usize))
+fn find_min_in_suffix(v: &[i32], start: usize) -> (res: (i32, usize))
+fn barrier(v: &[i32], p: usize) -> (b: bool)

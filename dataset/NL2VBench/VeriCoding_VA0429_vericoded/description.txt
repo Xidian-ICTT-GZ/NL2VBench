@@ -1,0 +1,10 @@
+Given a positive 8-bit signed integer n (1 ≤ n ≤ 127), determine nonnegative integers a, b, and c such that 3·a + 5·b + 7·c = n. Return the result as a vector of three 8-bit signed integers [a, b, c] if such a solution exists; otherwise, return a single-element vector [-1]. The output is required to follow these canonical rules:
+- If n is divisible by 3, return [n/3, 0, 0].
+- If n ≡ 1 (mod 3):
+  - If n < 7, return [-1] (no nonnegative solution exists).
+  - If n ≥ 7, return [ (n − 7)/3, 0, 1 ].
+- If n ≡ 2 (mod 3):
+  - If n < 5, return [-1] (no nonnegative solution exists).
+  - If n ≥ 5, return [ (n − 5)/3, 1, 0 ].
+Additionally, any returned triple must consist of nonnegative components that satisfy 3·a + 5·b + 7·c = n. When a solution exists, the output must match the specified canonical triple for the respective residue class of n modulo 3.
+fn solve(n: i8) -> Vec<i8>

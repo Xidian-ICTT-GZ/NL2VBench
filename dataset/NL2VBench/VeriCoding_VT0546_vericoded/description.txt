@@ -1,0 +1,5 @@
+Design a constructor function for a 256-bit state consisting of four 64-bit unsigned components, used to initialize a simple random generator state from an optional seed. The function takes an optional 64-bit unsigned integer as input and returns a freshly initialized state with the following guarantees:
+- If no seed is provided (the input is None), all four components of the returned state must be zero.
+- If a seed is provided (the input is Some(value)), the returned state must not be the all-zero state. To ensure this, set the first component to the provided value; if the provided value is zero, set the first component to 1 instead. The remaining components must be zero.
+There are no preconditions on the seed value; the function must satisfy the above postconditions for all possible inputs.
+fn sfc64(seed: Option<u64>) -> (state: SFC64State)

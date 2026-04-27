@@ -1,0 +1,8 @@
+Implement two functions over arrays of 32-bit integers.
+1) A membership check: Given an array and an integer value, return true if and only if there exists some index within the array where the element equals the given value. The array may be empty.
+2) A cross-array existence check: Given two arrays, return true if and only if there exists some index in the first array such that the corresponding value appears somewhere in the second array. Either array may be empty.
+There are no additional input preconditions. The returned results must exactly match these existence properties:
+- For the membership check, the result is true if and only if there exists an index in the valid range of the array where the element equals the target.
+- For the cross-array check, the result is true if and only if there exists an index in the valid range of the first array whose value is contained in the second array.
+fn contains(arr: &Vec<i32>, key: i32) -> (result: bool)
+fn any_value_exists(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: bool)

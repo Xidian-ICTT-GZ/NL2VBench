@@ -1,0 +1,15 @@
+You are given a mutable array of 32-bit integers and a separate mutable vector that contains exactly one 32-bit integer used as an accumulator. You are also given a positive size parameter N satisfying N < 1000, and the array length is exactly N. The accumulator vector has length 1 at the time of the call.
+
+Write a function that may modify the array and must set the single accumulator element to the total sum of the array after processing. The computation must ensure that, by the time the sum is accumulated, every element of the array equals 4, and therefore the final accumulator value equals 4 × N. The algorithm should be structured so that:
+- In an initial pass over the array, every position processed so far equals 1.
+- In a second pass, after processing a prefix of length i, the processed prefix equals 4 while the remaining suffix is still 1.
+- In the final pass that computes the sum into the accumulator, after processing i elements, the accumulator equals 4 × i, and at all times the array contains only the value 4.
+
+Assume the following input conditions:
+- N > 0.
+- The array length equals N at the start of the function.
+- The accumulator vector length equals 1 at the start of the function.
+- N < 1000.
+
+The function must terminate and, upon return, the sole element of the accumulator vector equals 4 × N.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: usize)

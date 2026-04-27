@@ -1,0 +1,6 @@
+Given two finite sequences of 8-bit signed integers (vectors), construct and return a new vector that is the concatenation of the first input followed by the second input. Assume no special preconditions on the inputs (they may be empty or of any length that fits in memory). The result must satisfy all of the following properties:
+- The length of the result equals the sum of the lengths of the two inputs.
+- For every valid index i in the first input (0 <= i < length of the first input), the element at index i in the result equals the element at index i of the first input.
+- For every valid index j in the second input (0 <= j < length of the second input), the element at index (length of the first input + j) in the result equals the element at index j of the second input.
+In other words, the returned vector preserves the order of elements from both inputs, with all elements of the first input appearing before all elements of the second input.
+fn r_(a: Vec<i8>, b: Vec<i8>) -> Vec<i8>

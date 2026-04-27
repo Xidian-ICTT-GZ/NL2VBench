@@ -1,0 +1,11 @@
+Implement a function that, given an unsigned 8-bit integer, returns the number of digits equal to 7 in its base-10 representation.
+
+Assumptions and constraints:
+- The input is an unsigned 8-bit integer in the range [0, 255].
+
+Required correctness properties:
+- The returned value must equal the mathematically defined count of 7s in the decimal expansion of the input. That count is defined for any non-negative integer as follows: if the value is less than 10, the count is 1 if the value equals 7 and 0 otherwise; if the value is 10 or more, the count equals (1 if the last decimal digit is 7, else 0) plus the count for the integer obtained by integer division by 10.
+- Because the input range is [0, 255], the count is at most 3.
+
+The function should terminate and produce a result consistent with the specification above.
+fn count7(x: u8) -> u8

@@ -1,0 +1,2 @@
+Implement a function that takes three signed 8-bit integers and returns true if and only if one of them is exactly equal to the sum of the other two. There are no preconditions; all signed 8-bit integer values are allowed as inputs. The comparison must use standard mathematical integer semantics (i.e., treat sums as exact integers, not as modular arithmetic with overflow).
+fn any_int(x: i8, y: i8, z: i8) -> (result: bool)

@@ -1,0 +1,3 @@
+Given a non-empty one-dimensional array of 32-bit floating-point numbers, construct a square matrix where the length of each side equals the length of the input array. The matrix must place the input values on the main diagonal in order, and all off-diagonal entries must be exactly 0.0. Formally, if n is the length of the input, the output is an n×n matrix M such that for all indices i in [0, n), M[i][i] equals the i-th element of the input, and for all i, j in [0, n) with i ≠ j, M[i][j] equals 0.0. Assume the input size is positive.
+fn diagflat(v: Vec<f32>) -> Vec<Vec<f32>>
+fn create_row(v: &Vec<f32>, i: usize) -> Vec<f32>

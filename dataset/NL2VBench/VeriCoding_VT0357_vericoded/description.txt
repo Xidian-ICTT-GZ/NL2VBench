@@ -1,0 +1,6 @@
+Given a non-empty array of 8-bit signed integers, construct and return a new array of the same length such that, for every index in the range from 0 to the input length minus 1:
+- The output element is -1 if the corresponding input element is less than 0.
+- The output element is 0 if the corresponding input element is equal to 0.
+- The output element is 1 if the corresponding input element is greater than 0.
+Assume the input size is positive. The output must have exactly the same length as the input, and each output element must reflect the sign classification of the corresponding input element.
+fn sign(x: Vec<i8>) -> (result: Vec<i8>)

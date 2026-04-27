@@ -1,0 +1,11 @@
+Given a vector of characters, construct and return a new vector of the same length where the case of each ASCII alphabetic character is toggled:
+- Each lowercase letter in the range 'a'..='z' is replaced by its corresponding uppercase letter in 'A'..='Z'.
+- Each uppercase letter in the range 'A'..='Z' is replaced by its corresponding lowercase letter in 'a'..='z'.
+- All other characters (including digits, punctuation, whitespace, and any non-ASCII Unicode characters) remain unchanged.
+
+Output requirements:
+- The output vector must have exactly the same length as the input vector.
+- For every valid index i (0 <= i < length of the input), the output at position i equals the toggle-case transformation of the input character at position i as defined above.
+
+There are no additional preconditions on the input; the function must handle empty inputs and arbitrary Unicode characters by leaving non-ASCII characters unchanged.
+fn to_toggle_case(str1: &Vec<char>) -> (toggle_case: Vec<char>)

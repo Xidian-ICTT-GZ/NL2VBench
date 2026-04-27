@@ -1,0 +1,2 @@
+You are given a vector of character vectors. Assume that every inner character vector is non-empty. Return a new vector of characters such that: (1) the output length equals the number of inner vectors in the input, and (2) the i-th output character equals the last character of the i-th inner vector. The outer vector may be empty.
+fn extract_rear_chars(l: &Vec<Vec<char>>) -> (r: Vec<char>)

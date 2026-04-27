@@ -1,0 +1,25 @@
+You are given four positive integers: the total distance between two endpoints, a vehicle’s fuel capacity, the position of a single refueling station measured from the starting endpoint, and the number of full journeys to perform. Assume the station position is strictly within the segment (i.e., the station lies between the two endpoints). The vehicle starts at the starting endpoint with a full tank. Fuel consumption is one unit per unit distance. The vehicle may refuel to full capacity only when passing the station; refueling at endpoints is not allowed.
+
+Determine whether the itinerary of the specified number of end-to-end journeys (alternating direction each time) is possible. If it is impossible, return −1. If it is possible, return 0 if no refueling at the station is needed at all, or return 1 if at least one refueling at the station is needed at any point.
+
+Input assumptions:
+- All four inputs are positive.
+- The station’s position is strictly less than the total distance (i.e., it lies strictly inside the route).
+
+Impossibility conditions (if any holds, the answer must be −1):
+- The fuel capacity is less than the distance from the start to the station.
+- The fuel capacity is less than the distance from the station to the opposite endpoint.
+- When the number of journeys is greater than one, the fuel capacity is less than the quantity (2 × total distance − station position).
+- When the number of journeys is exactly one and the capacity is less than the total distance as well as less than the station position, the trip is impossible.
+
+Feasibility conditions for any non-negative answer:
+- The capacity must be at least the distance to the station and at least the distance from the station to the far endpoint.
+- If the number of journeys is greater than one, the capacity must also be at least (2 × total distance − station position).
+- If there is exactly one journey, feasibility implies either the capacity is at least the total distance or at least the distance to the station.
+
+Exact behavior on a single journey (if feasible):
+- Return 0 if the capacity is at least the total distance (no refuel needed).
+- Return 1 if the capacity is less than the total distance but at least the distance to the station (one refuel at the station is needed).
+
+For multiple journeys (if feasible), the capacity necessarily meets the station reachability, the far-end reachability from the station, and the (2 × total distance − station position) bound. The returned value is guaranteed to be in {−1, 0, 1} and does not exceed the number of journeys.
+fn solve(a: i8, b: i8, f: i8, k: i8) -> (result: i8)

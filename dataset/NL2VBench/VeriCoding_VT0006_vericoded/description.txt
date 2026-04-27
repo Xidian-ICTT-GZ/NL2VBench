@@ -1,0 +1,9 @@
+You are given four arrays of 32-bit floating point numbers. Assume all four arrays have the same length n (n can be zero). Construct and return a new array of length 4n formed by concatenating the four input arrays in order: the first n elements must be exactly the elements of the first input array (in the same order), the next n elements must be exactly the elements of the second input array, the next n must be exactly the elements of the third input array, and the final n must be exactly the elements of the fourth input array. The output must preserve the order of elements within each input array and contain no additional elements.
+
+Formally, if the input arrays are A, B, C, and D, all of length n, then the result R must satisfy:
+- R has length 4n.
+- For all i with 0 <= i < n, R[i] = A[i].
+- For all i with 0 <= i < n, R[i + n] = B[i].
+- For all i with 0 <= i < n, R[i + 2n] = C[i].
+- For all i with 0 <= i < n, R[i + 3n] = D[i].
+fn bmat(top_left: Vec<f32>, top_right: Vec<f32>, bottom_left: Vec<f32>, bottom_right: Vec<f32>) -> (result: Vec<f32>)

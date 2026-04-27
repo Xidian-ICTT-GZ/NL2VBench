@@ -1,0 +1,8 @@
+Given a signed 8-bit integer in the range 1 to 99 inclusive, return whether it satisfies the following predicate:
+- If the value is less than 12, return false when it is 1, 7, 9, 10, or 11; otherwise return true.
+- If 12 < value < 30, return false.
+- If 69 < value < 80, return false.
+- If value > 89, return false.
+- Otherwise (i.e., for the remaining values 12, 30–69, and 80–89 inclusive), return true if and only if the last decimal digit (value mod 10) is not 1, 7, or 9; otherwise return false.
+Assume the input value satisfies 1 <= value <= 99.
+fn solve(n: i8) -> (result: bool)

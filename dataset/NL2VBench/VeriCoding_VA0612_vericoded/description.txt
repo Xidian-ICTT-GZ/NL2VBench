@@ -1,0 +1,2 @@
+You are given a collection containing exactly one character. Assume the input size is exactly one and the sole character is a lowercase English letter between 'a' and 'z'. Determine whether the letter is a vowel. If the character is one of 'a', 'e', 'i', 'o', or 'u', return a collection of characters spelling "vowel". Otherwise, return a collection of characters spelling "consonant". The result must be one of these two words and must correctly correspond to whether the input letter is a vowel or a consonant.
+fn solve(input: Vec<char>) -> Vec<char>

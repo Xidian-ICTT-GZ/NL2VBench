@@ -1,0 +1,7 @@
+Given three 32-bit signed integers, return an integer indicating how many of the inputs are equal. The result must satisfy the following properties:
+- The output is between 0 and 3 inclusive.
+- Return 3 if and only if all three inputs are equal.
+- Return 2 if and only if exactly two of the inputs are equal and the remaining one is different (this includes any of the three possible pairings).
+- Return 1 if and only if all three inputs are pairwise distinct.
+Assume no additional constraints on the inputs.
+fn count_equal_numbers(a: i32, b: i32, c: i32) -> (count: i32)

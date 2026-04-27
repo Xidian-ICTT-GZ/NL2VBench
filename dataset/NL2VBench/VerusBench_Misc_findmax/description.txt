@@ -1,0 +1,14 @@
+Given a non-empty vector of 32-bit signed integers, return the maximum value present in the vector.
+
+Assumptions:
+- The input vector has positive length (it is non-empty).
+
+Requirements for the result:
+- The returned value is greater than or equal to every element in the input vector.
+- The returned value is equal to at least one element in the input vector (i.e., it is an element of the vector).
+
+Notes:
+- The vector may contain duplicate values.
+- The vector may contain negative and positive values, including the minimum and maximum 32-bit integers.
+- The input must not be modified.
+fn find_max(nums: Vec<i32>) -> (ret:i32)

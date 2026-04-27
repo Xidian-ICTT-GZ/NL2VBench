@@ -1,0 +1,5 @@
+Given an array of 64-bit unsigned integers, return a 64-bit signed integer defined as follows:
+- If the array is empty, return -1.
+- Otherwise, consider each element converted to a 64-bit signed integer; return the maximum value under signed 64-bit ordering. The returned value must be at least as large (in signed comparison) as every converted element and must be equal to the signed 64-bit conversion of some element in the array.
+No additional assumptions are required; the array length may be zero.
+fn max(a: Vec<u64>) -> i64

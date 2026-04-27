@@ -1,0 +1,5 @@
+You are given a sequence of keystrokes, each being one of the characters '0', '1', or 'B'. Assume the sequence length is between 1 and 10 inclusive, and no other characters appear. Starting from an empty buffer, process the keystrokes in order as follows:
+- When a digit ('0' or '1') is encountered, append it to the end of the buffer.
+- When 'B' is encountered, delete the last character in the buffer if the buffer is non-empty; otherwise, it has no effect.
+Return the final contents of the buffer as a sequence of characters. The result must consist only of the digits '0' and '1'. The implementation must produce exactly the same sequence as the described simulation of keystrokes.
+fn solve(s: Vec<char>) -> (result: Vec<char>)

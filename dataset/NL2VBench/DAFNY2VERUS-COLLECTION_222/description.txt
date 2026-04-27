@@ -1,0 +1,2 @@
+Implement a function that takes a mutable array (vector) of 32-bit integers and reverses its contents in place. After the function returns, for every index i such that 0 <= i < n (where n is the length of the array at the time of the call), the element at position i must equal the element that was originally at position n - 1 - i. There are no preconditions on the input: the array may be empty or have any length. The function must terminate for any finite-length input.
+fn reverse(a: &mut Vec<i32>)

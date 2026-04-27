@@ -1,0 +1,17 @@
+Given an input sequence of characters, construct a new sequence by updating the year prefix from "2017" to "2018" while preserving the remaining characters.
+
+Assumptions:
+- The input sequence length is exactly 10 characters.
+- The input sequence begins with the four characters "2", "0", "1", "7" (using 0-based indexing, positions 0..3).
+
+Required output properties:
+- The returned sequence length is exactly 10.
+- The first four characters of the returned sequence are "2", "0", "1", "8".
+- For positions 4 through 9 (0-based indexing), the returned sequence must be identical to the corresponding positions in the input sequence.
+- Equivalently, the returned sequence equals the concatenation of the four-character sequence ["2","0","1","8"] with the sub-sequence of the input starting at index 4 and extending to the end.
+
+Your task is to implement a function that, under the above assumptions, returns a sequence satisfying all the listed properties. The rest of the characters beyond the year prefix must remain unchanged from the input to the output.
+
+The function should operate on a vector of characters and produce a vector of characters as the result, adhering to the specified constraints and properties of the transformation.
+
+fn solve(date_str: Vec<char>) -> (result: Vec<char>)

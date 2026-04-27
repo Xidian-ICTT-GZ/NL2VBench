@@ -1,0 +1,2 @@
+Given an unsigned 64-bit integer n, determine whether n is non-prime (i.e., has a non-trivial divisor). Assume n is at least 2. Return true if and only if there exists an integer k with 2 <= k < n such that k divides n (equivalently, n % k == 0). Otherwise, return false. The returned value must exactly reflect this existential condition over the range [2, n-1]. In particular, for prime numbers and for n = 2, the function must return false; for composite numbers, it must return true.
+fn is_non_prime(n: u64) -> (result: bool)

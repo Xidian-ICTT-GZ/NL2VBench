@@ -1,0 +1,2 @@
+Given a sequence of characters, implement a function that determines whether the sequence contains the letter 'Z' or 'z'. The input may be empty. The function returns true if and only if there exists an index i such that 0 <= i < length of the sequence and the character at index i is either uppercase 'Z' or lowercase 'z'; otherwise, it returns false.
+fn contains_z(text: &Vec<char>) -> (result: bool)

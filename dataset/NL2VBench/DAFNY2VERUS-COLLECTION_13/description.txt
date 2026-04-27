@@ -1,0 +1,2 @@
+Given an array of mathematical integers with even length, return a new array formed by summing each consecutive pair of elements in the input. Assume the input length is even. The output array must have length exactly half of the input length, and for every valid index i in the output, the element at position i equals the sum of the two input elements at positions 2·i and 2·i+1.
+fn pairwise_addition(a: Vec<int>) -> (result: Vec<int>)

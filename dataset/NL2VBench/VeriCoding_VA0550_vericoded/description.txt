@@ -1,0 +1,14 @@
+You are given an array of characters representing a string. Assume the following about the input array (using 0-based indexing):
+- Its length is exactly 19.
+- Every character is either a lowercase English letter ('a' to 'z') or a comma (',').
+- The character at index 5 is a comma, and the character at index 13 is a comma.
+
+Construct and return a new array of characters such that:
+- For each position i in the range [0, 18], if the input character at i is a comma, the output character at i is a single space (' '); otherwise, it is the same letter as in the input.
+- The output array has one additional character appended at the end: a newline character ('\n').
+
+Formally, the output must satisfy:
+- Output length equals 20 (input length + 1).
+- The last character of the output is '\n'.
+- For every index i in [0, 18], if the input at i is ',', the output at i is ' '; otherwise, the output at i equals the input at i.
+fn solve(s: Vec<char>) -> (result: Vec<char>)

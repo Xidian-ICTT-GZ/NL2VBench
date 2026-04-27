@@ -1,0 +1,2 @@
+Given an array of characters, determine whether all elements in the array are identical. Return true if and only if every character at index i (for all i with 1 <= i < array length) is equal to the character at index 0. If the array has length 0 or 1, return true. There are no additional preconditions on the input; the array may be empty.
+fn all_characters_same(char_arr: &Vec<char>) -> (result: bool)

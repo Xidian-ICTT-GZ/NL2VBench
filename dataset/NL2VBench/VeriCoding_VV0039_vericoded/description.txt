@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the maximum value in the array. Assume the input length is strictly greater than 0. The returned value must be equal to the value at some index of the input (i.e., it must be one of the elements of the array), and every element in the array must be less than or equal to the returned value. Indices are 0-based.
+fn max_of_list(lst: Vec<i32>) -> (result: i32)

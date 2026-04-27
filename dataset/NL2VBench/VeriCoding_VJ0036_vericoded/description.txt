@@ -1,0 +1,3 @@
+Implement a function that takes three inputs: (1) a mutable vector of 32-bit integers whose length equals a given size, (2) a mutable vector of 32-bit integers that initially has exactly one element, and (3) a 32-bit integer representing the size. Assume the size is positive and strictly less than 1000, and that the length of the first vector equals the size provided. Also assume the second vector has length 1 before the function is called. The function must set the first (and only) element of the second vector to twice the size. On return, the sole element of the second vector equals 2 times the given size.
+fn set_first(sum: &mut Vec<i32>, val: i32)
+fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

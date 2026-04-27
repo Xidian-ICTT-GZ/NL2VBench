@@ -1,0 +1,2 @@
+Implement a function that takes two arrays of unsigned 32-bit integers of equal length and returns a new array containing the element-wise remainder of dividing the first array by the second. For each index, the divisor in the second array must be non-zero. Assume that for every index, the computed remainder fits within the signed 32-bit integer range. The returned array must have the same length as the input arrays, and at every index it must equal the remainder of the corresponding elements.
+fn element_wise_module(arr1: &Vec<u32>, arr2: &Vec<u32>) -> (result: Vec<u32>)

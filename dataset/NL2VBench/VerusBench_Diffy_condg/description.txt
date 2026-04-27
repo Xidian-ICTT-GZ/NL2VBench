@@ -1,0 +1,11 @@
+Implement a function that takes: (1) a mutable array of 32-bit integers, (2) a mutable single-element array acting as an accumulator, and (3) a positive integer N. Assume the input size N is positive. Assume, before any modification, the length of the first array is exactly N and the length of the accumulator array is exactly 1. The function must complete with the guarantee that, for every index k from 0 to N−1, the element at position k in the first array is equal to 0.
+
+Operational requirements and properties to be maintained during execution:
+- The lengths of both arrays must remain unchanged throughout the function.
+- The process should proceed in three passes over the array:
+  1) Initialization: progressively set the elements encountered so far to 1, maintaining as a loop invariant that all elements before the current index are 1.
+  2) Accumulation: traverse the entire array while maintaining that every element is 1, and the accumulator’s single entry equals the current iteration count; at the end of this pass, the accumulator must equal N.
+  3) Normalization: traverse the array again while maintaining that all positions before the current index are 0 and all remaining positions are 1, with the accumulator staying equal to N; conditionally update each element so that, by the end of this pass, all elements in the array are 0.
+
+All iterations must be bounded and strictly decrease a natural measure toward termination.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

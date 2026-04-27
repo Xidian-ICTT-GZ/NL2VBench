@@ -1,0 +1,2 @@
+You are given a non-empty list of integer sequences. Assume every sequence contains at least two elements. Return the first element of a sequence whose second element is minimal among the second elements of all sequences. If multiple sequences share the same minimal second element, returning the first element from any one of those sequences is acceptable.
+fn min_second_value_first(arr: &Vec<Vec<i32>>) -> (first_of_min_second: i32)

@@ -1,0 +1,7 @@
+Given two arrays of 32-bit signed integers, determine whether the second array appears as a contiguous subarray within the first array. The result must satisfy the following specification: it is true if and only if there exists an index k such that 0 <= k <= (length of the first array − length of the second array) and the slice of the first array from k (inclusive) to k + (length of the second array) (exclusive) is element-wise equal to the second array. Assume the empty second array always qualifies as a subarray (i.e., return true if the second array is empty). If the second array is longer than the first array, the result must be false.
+
+Additionally, there is a helper function that checks whether the second array matches the first array starting at a given index. This helper requires that the starting index plus the length of the second array does not exceed the length of the first array. Under this assumption, it returns true exactly when, for all positions j within the bounds of the second array, the j-th element of the second array equals the (starting index + j)-th element of the first array.
+spec fn is_subrange_at(main: Seq<i32>, sub: Seq<i32>, i: int) -> bool
+spec fn matches_at(main: Seq<i32>, sub: Seq<i32>, start: int) -> bool
+fn check_match_at(main: &Vec<i32>, sub: &Vec<i32>, start: usize) -> bool
+fn is_sub_array(main: &Vec<i32>, sub: &Vec<i32>) -> bool

@@ -1,0 +1,2 @@
+Given an 8-bit signed integer input greater than 1, return the largest proper divisor of the input. The result must be an integer d such that 1 ≤ d < input and input mod d = 0. Additionally, it must be guaranteed that no integer k with d < k < input divides the input (i.e., d is the maximal proper divisor). Assume the input value is strictly greater than 1.
+fn largest_divisor(n: i8) -> i8

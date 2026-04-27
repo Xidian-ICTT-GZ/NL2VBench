@@ -1,0 +1,2 @@
+Implement a function that takes a vector of 64-bit unsigned integers and returns a new vector that is an exact copy of the input. Assume the input vector’s length is at most 100. The returned vector must have the same length as the input, and for every valid index from 0 (inclusive) to the input length (exclusive), the element in the returned vector at that index must be equal to the corresponding element in the input. The order of elements must be preserved.
+fn copy(a: &Vec<u64>) -> (b: Vec<u64>)

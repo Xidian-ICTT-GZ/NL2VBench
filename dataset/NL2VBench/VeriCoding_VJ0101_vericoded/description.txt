@@ -1,0 +1,6 @@
+Given a non-empty array of 32-bit signed integers, determine whether the array is sorted in nondecreasing order. Assume the input array has at least one element. The function must return true if and only if, for every pair of indices i and j with 0 ≤ i < j < length of the array, the element at index i is less than or equal to the element at index j. Return false otherwise. Duplicates are allowed; the ordering is nondecreasing (ascending with equal values permitted).
+fn is_sorted(arr: &Vec<i32>) -> (result: bool)
+    requires
+        arr.len() > 0,
+    ensures
+        result == (forall|i: int, j: int| 0 <= i < j < arr.len() ==> (arr[i] <= arr[j])),

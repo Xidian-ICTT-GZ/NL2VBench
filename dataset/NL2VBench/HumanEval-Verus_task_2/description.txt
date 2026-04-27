@@ -1,0 +1,13 @@
+You are given a sequence of characters that may include any characters, including parentheses. Define the "parentheses-only" subsequence of the input as the subsequence obtained by removing all characters except '(' and ')'. Assume the parentheses-only subsequence forms a valid sequence of balanced groups, meaning: its overall net nesting level (where '(' increments and ')' decrements) is zero, and the net nesting level of every prefix is never negative.
+
+Partition the parentheses-only subsequence into contiguous groups such that:
+- Each group is non-empty.
+- Each group consists only of '(' and ')'.
+- Each group is balanced: its net nesting level is zero, and every non-empty strict prefix of the group has a positive net nesting level.
+
+Return these groups in order as a list of character vectors. The concatenation of all groups in the result must equal the parentheses-only subsequence of the original input. Non-parenthesis characters in the input are ignored and do not appear in the output.
+
+Assumptions:
+- The parentheses-only subsequence of the input has an overall net nesting level of zero.
+- The net nesting level of every non-empty prefix of the parentheses-only subsequence is non-negative.
+fn separate_paren_groups(input: &Vec<char>) -> (groups: Vec<Vec<char>>)

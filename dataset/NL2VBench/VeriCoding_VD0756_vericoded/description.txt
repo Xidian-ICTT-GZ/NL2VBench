@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, perform an in-place operation that swaps the first element with the last element. Assume the input length is at least 1. After the operation, the length of the array must remain unchanged. The new first element must be equal to the original last element, and the new last element must be equal to the original first element. All elements strictly between the first and last positions must remain unchanged.
+fn swap_first_and_last(a: &mut Vec<i32>)

@@ -1,0 +1,6 @@
+Implement a function that splits a given array of 32-bit signed integers into two arrays. The output must satisfy all of the following properties:
+- The concatenation of the first returned array followed by the second returned array reconstructs the original array exactly (same elements in the same order).
+- The sum of the lengths of the two returned arrays equals the length of the original array.
+- If the original array has length greater than 1, then each of the returned arrays must be strictly shorter than the original array.
+There are no preconditions on the input; the array may be empty. Returning two empty arrays is valid when the input is empty.
+fn array_split(a: Vec<i32>) -> (Vec<i32>, Vec<i32>)

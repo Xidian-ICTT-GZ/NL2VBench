@@ -1,0 +1,12 @@
+Given a non-empty vector of vectors of 32-bit integers, return the length of the shortest inner vector.
+
+Assumptions:
+- The outer vector contains at least one inner vector (i.e., its length is strictly positive).
+
+Requirements for the returned value:
+- It is a non-negative integer (a vector length).
+- It is less than or equal to the length of every inner vector in the outer vector.
+- There exists at least one inner vector whose length is exactly equal to the returned value.
+
+Inner vectors may be empty; in that case, the result can be 0.
+fn smallest_list_length(list: &Vec<Vec<i32>>) -> usize

@@ -1,0 +1,2 @@
+Given two arrays of unsigned 8-bit integers (bytes) of equal length, compute an element-wise bitwise OR and return the resulting array. Assume the two input arrays have the same length. The output array must have exactly the same length as the inputs and preserve the original order. For each index i with 0 ≤ i < n, the i-th element of the output equals the bitwise OR of the i-th elements of the inputs.
+fn bitwise_or(a: Vec<u8>, b: Vec<u8>) -> (result: Vec<u8>)

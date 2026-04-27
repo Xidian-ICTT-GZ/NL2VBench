@@ -1,0 +1,8 @@
+Given two input arrays of 32-bit floating-point numbers and a 2D coefficient grid (vector of vectors of 32-bit floating-point numbers), construct an output array under the following constraints and behavior:
+- The two input arrays must have equal length and this length must be positive.
+- The coefficient grid must be non-empty, and every row in the grid must be non-empty.
+- The output array must have the same length as the two input arrays.
+- If the coefficient grid has exactly one row and one column (i.e., it contains a single value), then every element of the output array must equal that sole coefficient value.
+- Otherwise (when the coefficient grid is not 1x1), return an output array of the required length filled with zeros.
+fn lagval2d(x: Vec<f32>, y: Vec<f32>, c: Vec<Vec<f32>>) -> Vec<f32>
+fn default_value(c: &Vec<Vec<f32>>) -> f32

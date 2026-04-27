@@ -1,0 +1,2 @@
+You are given a single signed 8-bit integer input that is guaranteed to be at least 1. Compute an output value defined by the following rule: if the input is divisible by 3, return twice the integer quotient of dividing the input by 3; otherwise, return twice that quotient plus 1. Integer division is floor division. Equivalently, the output is floor((2 × input + 1) / 3), which is the nearest-integer rounding of 2 × input / 3. The output must be at least 1.
+fn solve(n: i8) -> (result: i8)

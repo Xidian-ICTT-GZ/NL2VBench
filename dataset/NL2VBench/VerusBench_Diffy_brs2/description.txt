@@ -1,0 +1,13 @@
+You are given a mutable integer array and a separate mutable single-element array that will hold a running total, along with a positive integer N. Assume the integer N satisfies 0 < N < 1000, the array length is exactly N, and the single-element array length is exactly 1. Your task is to:
+
+- Overwrite the integer array so that each even index holds the value 2 and each odd index holds the value 0. Consequently, after initialization and for the remainder of the computation, every element of the array must be either 0 or 2.
+- Traverse the first N elements to compute a running total stored in the single-element array. On the first step, set the total to 0; on each subsequent step, add the current array element to the total.
+
+The computation must maintain the following properties:
+- The array length remains N during the entire execution.
+- The single-element total container length remains 1 during the entire execution.
+- For any prefix of length i > 0 considered during the traversal, the running total does not exceed 2 · i.
+- Upon completion, the final total does not exceed 2 · N.
+
+Indices are zero-based. No additional allocations are required; the operation must be performed in-place under the above constraints.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

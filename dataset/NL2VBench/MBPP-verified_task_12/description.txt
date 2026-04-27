@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, return a new array where each element is the square of the corresponding element in the input. The output must preserve the input order and have the same length as the input. Assume the following precondition: for every valid index, the square of the element is non-negative and strictly less than i32::MAX, ensuring that squaring any input element does not overflow a 32-bit signed integer.
+fn square_nums(nums: &Vec<i32>) -> (squared: Vec<i32>)

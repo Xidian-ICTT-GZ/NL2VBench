@@ -1,0 +1,2 @@
+Given an array of 32-bit signed integers, return a new array obtained by incrementing each element by exactly 1. Assume the input may be empty. Assume further that for every valid index in the input, adding 1 to that element does not overflow a 32-bit signed integer (i.e., each element is at most i32::MAX - 1). The output must have the same length as the input, preserve the original order, and satisfy: for every index i within bounds, result[i] equals input[i] + 1.
+fn incr_list(l: Vec<i32>) -> (result: Vec<i32>)

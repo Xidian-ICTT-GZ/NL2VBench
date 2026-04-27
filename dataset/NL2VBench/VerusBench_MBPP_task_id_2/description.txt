@@ -1,0 +1,3 @@
+Given two finite lists of 32-bit signed integers, return a list containing the elements that are present in both input lists, with no duplicates in the result. Assume the inputs may be empty. If an element appears multiple times in one or both inputs, it must appear at most once in the output. Every element in the output must be contained in the first input and also contained in the second input. The problem does not require a specific ordering of the output; returning elements in the order of their first appearance in the first input is acceptable.
+fn contains(arr: &Vec<i32>, key: i32) -> (result: bool)
+fn shared_elements(list1: &Vec<i32>, list2: &Vec<i32>) -> (shared: Vec<i32>)

@@ -1,0 +1,2 @@
+You are given two signed 8-bit integers as inputs. Assume the first input is in the range 1 to 12 inclusive, and the second input is in the range 1 to 31 inclusive. Compute and return the following value: if the first input is greater than the second input, return the first input minus one; otherwise, return the first input itself. The returned value is an 8-bit signed integer and, under the given input constraints, it will lie between 0 and 12 inclusive.
+fn solve(a: i8, b: i8) -> (result: i8)

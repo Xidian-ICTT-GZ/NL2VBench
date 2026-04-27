@@ -1,0 +1,2 @@
+Given an array of non-negative integers (0-based indexing), determine whether the parity of each element matches the parity of its index. Specifically, for every index i in the range [0, length of the array), the element at position i must be even if i is even and odd if i is odd. Return true if and only if this property holds for all indices; otherwise, return false. The array may be empty.
+fn is_odd_at_odd_index(arr: &Vec<usize>) -> (result: bool)

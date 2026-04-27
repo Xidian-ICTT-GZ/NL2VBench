@@ -1,0 +1,5 @@
+You are given two integer arrays of equal length. Assume the common length is positive and each array is sorted in nondecreasing order (every element is less than or equal to its successor). Define the output "median" as follows:
+- If the common length is odd, return the middle element of the first array.
+- If the common length is even, return the integer average of the last element of the lower half of the first array and the first element of the second array. Use integer division semantics (i.e., the average is computed as (x + y) / 2 with rounding down for negative sums).
+Return this single integer value.
+fn find_median(a: &[i32], b: &[i32]) -> (median: i32)

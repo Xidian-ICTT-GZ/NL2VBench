@@ -1,0 +1,2 @@
+Given a vector of characters, return a new vector containing the characters in reverse order. The output must have the same length as the input. For every valid index i in the output, the element at position i must equal the element from the input at position (input_length − 1 − i). There are no additional preconditions; the function must handle empty inputs and any finite sequence of characters.
+fn reverse_string(s: &Vec<char>) -> (result: Vec<char>)

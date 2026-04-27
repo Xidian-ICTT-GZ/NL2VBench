@@ -1,0 +1,2 @@
+Given an array of 32-bit unsigned integers, return a new array consisting of exactly the odd values from the input, preserving their original order. Even values must be excluded. The output must be equal to the mathematical filter of the input under the predicate value mod 2 != 0. The input length may be zero or more. Duplicates are preserved, and no new elements are introduced.
+fn find_odd_numbers(arr: &Vec<u32>) -> Vec<u32>

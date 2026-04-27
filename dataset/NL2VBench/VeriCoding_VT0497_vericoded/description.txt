@@ -1,0 +1,2 @@
+You are given a non-empty array of 32-bit floating-point numbers representing the coefficients of a polynomial p(x) = c0 + c1·x + c2·x^2 + … + c_{n−1}·x^{n−1}. Construct and return a new array representing the coefficients of x·p(x). Assume the input size is positive. The output array must have length equal to the input length plus one, the first element of the output must be 0.0, and for every index j in [0, n), the element at position j+1 in the output must equal the element at position j in the input.
+fn legmulx(c: Vec<f32>) -> (result: Vec<f32>)

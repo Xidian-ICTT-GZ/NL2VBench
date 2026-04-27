@@ -1,0 +1,2 @@
+You are given a non-empty array of integer arrays. Assume that every inner array has length at least 2 (it may be longer). Consider the second element (index 1) of each inner array. Among all inner arrays, find the minimum value of these second elements. Return the first element (index 0) of one inner array whose second element attains this minimum. If multiple inner arrays have the same minimum second element, returning the first element from any one of them is acceptable.
+fn min_second_value_first(arr: &Vec<Vec<i32>>) -> (first_of_min_second: i32)

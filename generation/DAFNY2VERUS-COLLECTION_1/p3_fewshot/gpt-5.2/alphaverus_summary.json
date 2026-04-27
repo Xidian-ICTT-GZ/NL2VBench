@@ -1,0 +1,18 @@
+{
+  "target_dir": "/Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_1/p3_fewshot/gpt-5.2",
+  "model": "gpt-5.2",
+  "port": 30000,
+  "n": 1,
+  "temperature": 0.0,
+  "results": [
+    {
+      "spec_file": "/Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_1/p3_fewshot/gpt-5.2/spec.rs",
+      "output_file": "/Users/hlh/program/python/NL2V/exp_generation/DAFNY2VERUS-COLLECTION_1/p3_fewshot/gpt-5.2/alphaverus.rs",
+      "success": true,
+      "num_candidates": 1,
+      "best_candidate_index": 0,
+      "verified": 0,
+      "errors": 5
+    }
+  ]
+}

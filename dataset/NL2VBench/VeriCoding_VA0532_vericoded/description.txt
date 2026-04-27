@@ -1,0 +1,2 @@
+Given two positive integers n and k, determine whether n is divisible by k. Assume 1 <= n <= 100 and 1 <= k <= 100. Return 0 if n is divisible by k; otherwise, return 1. The output must satisfy: it equals 0 if and only if n mod k equals 0, and it equals 1 if and only if n mod k is not 0.
+fn solve(n: i8, k: i8) -> i8

@@ -1,0 +1,5 @@
+You are given three integers. Each integer is guaranteed to be within the inclusive range [0, 50]. In one operation, you may perform exactly one of the following actions:
+- Increase any single one of the three integers by 2.
+- Increase any two distinct integers by 1 each.
+Your task is to compute the minimum number of operations required to make all three integers equal. Assume all inputs are non-negative and within the specified bounds. The result must be a non-negative integer, and if the three integers are already equal, the minimum number of operations is 0.
+fn solve(a: i8, b: i8, c: i8) -> i8

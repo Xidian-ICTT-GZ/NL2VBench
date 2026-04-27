@@ -1,0 +1,4 @@
+You are given a non-empty array of 8-bit signed integers and a percentile value q in the range [0, 100]. Return the extreme quantile defined as follows: if q equals 100, return the maximum element of the array; otherwise (including q = 0), return the minimum element of the array.
+
+Assume the input array length is positive and q is within [0, 100]. The returned value must be within the range of the dataset: there exists an element in the array that is less than or equal to the returned value, and there exists an element in the array that is greater than or equal to the returned value. Additionally, for q = 0, the returned value must be less than or equal to every element in the array, and for q = 100, the returned value must be greater than or equal to every element in the array.
+fn quantile(a: Vec<i8>, q: i8) -> i8

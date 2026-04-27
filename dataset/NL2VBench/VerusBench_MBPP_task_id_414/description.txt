@@ -1,0 +1,3 @@
+Implement two functions over sequences of 32-bit signed integers. The first function takes a sequence and a key value and returns true if and only if the key appears at some valid index within the sequence; otherwise, it returns false. The second function takes two sequences and returns true if and only if there exists an index in the first sequence such that the value at that index is present somewhere in the second sequence; otherwise, it returns false. No additional assumptions are required: both sequences may be empty, and values may repeat. The returned results must exactly match these logical predicates.
+fn contains(arr: &Vec<i32>, key: i32) -> bool
+fn any_value_exists(arr1: &Vec<i32>, arr2: &Vec<i32>) -> bool

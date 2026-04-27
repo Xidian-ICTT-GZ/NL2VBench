@@ -1,0 +1,2 @@
+Given a non-empty array of 32-bit signed integers, return the maximum possible value of a[i] - a[j] over all pairs of indices i and j. Assume every element of the array is strictly greater than i32::MIN / 2 and strictly less than i32::MAX / 2 so that no arithmetic overflow can occur during the computation. The returned result must be an upper bound on all pairwise differences in the array; that is, for any indices i and j within bounds, a[i] - a[j] is less than or equal to the returned value.
+fn max_difference(arr: &Vec<i32>) -> i32

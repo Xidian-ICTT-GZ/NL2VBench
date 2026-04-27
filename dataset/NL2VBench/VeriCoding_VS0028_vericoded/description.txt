@@ -1,0 +1,14 @@
+You are given two arrays of 8-bit signed integers of equal, non-zero length, and a strictly positive 8-bit signed tolerance value. Produce a boolean array of the same length where, for each index, the output is true if and only if the difference between the corresponding elements of the two input arrays is strictly between the negative tolerance and the positive tolerance. Equivalently, a position is marked true exactly when the absolute difference of the paired elements is strictly less than the tolerance (values equal to the tolerance are considered not close).
+
+Additionally, implement a scalar check that, given two 8-bit signed integers and a strictly positive tolerance, returns whether their difference is strictly within the open interval (−tolerance, tolerance).
+
+Assumptions:
+- The input arrays have equal lengths.
+- The common length of the arrays is positive (greater than zero).
+- The tolerance is strictly positive.
+
+Required properties:
+- The output array length matches the input length.
+- For every valid index, the corresponding output boolean reflects whether the element-wise difference lies strictly within the open bounds defined by the negative and positive tolerance.
+fn is_close_i8(a: i8, b: i8, tol: i8) -> (res: bool)
+fn np_isclose(a: Vec<i8>, b: Vec<i8>, tol: i8) -> (result: Vec<bool>)

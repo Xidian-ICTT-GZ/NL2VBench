@@ -1,0 +1,2 @@
+Implement a function that, given a mutable vector of 32-bit integers, swaps the first and last elements in place. Assume the input vector is non-empty. The function must not change the overall length of the vector. After the operation, the new first element must equal the original last element, and the new last element must equal the original first element. All elements strictly between the first and last positions must remain unchanged.
+fn swap_first_and_last(a: &mut Vec<i32>)

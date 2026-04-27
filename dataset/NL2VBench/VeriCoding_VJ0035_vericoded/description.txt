@@ -1,0 +1,13 @@
+Implement a function that, given a mutable vector of 32-bit integers (the array), a mutable vector intended to hold a single 32-bit integer (the output vector), and an integer N, updates the output vector so that its only element is exactly 2 × N.
+
+Assumptions:
+- N is a positive integer (N > 0).
+- N is strictly less than 1000.
+- The length of the input array is exactly N.
+- Initially, the output vector contains exactly one element.
+
+Guarantee:
+- After the function returns, the first (and only) element of the output vector equals 2 × N.
+
+You may assume standard 32-bit signed integer arithmetic; under the given constraints, doubling N does not overflow. The contents of the input array are irrelevant to the computation beyond its length requirement.
+fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

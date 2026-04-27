@@ -1,0 +1,8 @@
+Given an array of signed 8-bit integers, return a new array of equal length where every consecutive block of three elements (starting from the beginning) is cyclically shifted left by one position. Specifically, for each complete block of three, the first element moves to the third position, the second moves to the first position, and the third moves to the second position. If the array length is not a multiple of three, any remaining one or two elements at the end are left unchanged. The output must preserve the input length. Formally:
+- Let L be the largest multiple of 3 less than or equal to the input length (i.e., L = length − (length mod 3)). For every index i with 0 ≤ i < L:
+  - If i mod 3 = 0, the result at position i equals the input at position i + 1.
+  - If i mod 3 = 1, the result at position i equals the input at position i + 1.
+  - If i mod 3 = 2, the result at position i equals the input at position i − 2.
+- For every index i with L ≤ i < length, the result at position i equals the input at position i.
+Assume the input may be empty or of any length; there are no additional preconditions.
+fn encode_cyclic(s: Vec<i8>) -> Vec<i8>

@@ -1,0 +1,9 @@
+You are given a mutable array of 32-bit unsigned integers. Assume the array may be empty and that every element in the array is initially exactly 1. You are also given a 32-bit unsigned integer a satisfying 10 < a < 20, and a boolean flag that is equal to false.
+
+Modify the array in place by adding a to each element. After the operation completes, the following must hold:
+- For every valid index in the array, the element at that index equals 1 + a.
+- The arithmetic property 20 < 2·a < 40 holds.
+- The negation of the input boolean flag is true.
+
+All operations must be valid for 32-bit unsigned arithmetic under the given assumptions. The function returns no value and performs the transformation in place on the input array.
+pub fn havoc_inline_post(v: &mut Vec<u32>, a: u32, b: bool)

@@ -1,0 +1,39 @@
+{
+  "total_tasks": 664,
+  "repaired": 664,
+  "failed": 0,
+  "by_pipeline": {
+    "p1_fewshot+LTM": {
+      "repaired": 0,
+      "failed": 0
+    },
+    "p2_fewshot+LTM": {
+      "repaired": 0,
+      "failed": 0
+    },
+    "p3_fewshot+LTM": {
+      "repaired": 664,
+      "failed": 0
+    }
+  },
+  "by_model": {
+    "gpt-5.2": {
+      "repaired": 0,
+      "failed": 0
+    },
+    "deepseek-v3.2": {
+      "repaired": 664,
+      "failed": 0
+    },
+    "claude-sonnet-4-5-20250929": {
+      "repaired": 0,
+      "failed": 0
+    },
+    "gpt-4o-mini": {
+      "repaired": 0,
+      "failed": 0
+    }
+  },
+  "errors": [],
+  "timestamp": "2026-02-02T17:25:48.424153"
+}

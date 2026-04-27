@@ -1,0 +1,2 @@
+Implement a function that takes a vector of 32-bit floating-point numbers and returns a new vector containing the same elements in reverse order. The output must have the same length as the input. For every valid index i in the range [0, n), where n is the input length, the element at index i of the result must equal the element at index (n − 1 − i) of the input. The function must handle all input sizes, including an empty vector.
+fn flipud(m: Vec<f32>) -> (result: Vec<f32>)

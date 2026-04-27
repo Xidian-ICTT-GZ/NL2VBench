@@ -1,0 +1,5 @@
+You are given a positive integer N with 0 < N < 1000, an integer array of length N, and an integer array of length 1 that will hold the result. Assume the input arrays already have these exact lengths upon entry. Perform the following tasks:
+1) Overwrite the N-length array so that, for every index i in the range [0, N), the element at index i equals i modulo 5.
+2) Compute the sum of the elements at indices 1 through N−1 of the modified array (i.e., exclude the element at index 0) and store this sum into the single-element result array.
+The procedure must not change the lengths of the arrays. The result must satisfy the postcondition that the stored sum is at most 4 × N.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

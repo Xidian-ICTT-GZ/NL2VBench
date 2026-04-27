@@ -1,0 +1,2 @@
+Given a non-empty array of integer arrays, return one of the arrays whose length is maximal among all arrays in the input. Assume the outer array has a strictly positive length. The returned array must be exactly equal to one of the arrays in the input (i.e., it is not a newly constructed array), and its length must be at least as large as the length of every array in the input. If several arrays tie for the maximal length, returning any one of them is acceptable.
+fn max_length_list(seq: &Vec<Vec<i32>>) -> (max_list: &Vec<i32>)

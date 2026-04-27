@@ -1,0 +1,10 @@
+Given a read-only array of bytes representing a string, determine whether all characters in the array are identical.
+
+Return true if and only if every pair of positions within the array holds the same byte value. Edge cases are defined as follows: an empty array and a single-element array are considered to have all identical characters and should return true.
+
+Correctness requirements:
+- If the function returns true, then for any two indices i and j within bounds (0 <= i < length and 0 <= j < length), the elements at those indices are equal.
+- If the function returns false, then the length of the array is at least 2, and there exist two distinct indices i and j within bounds such that the elements at those indices are different.
+
+There are no additional preconditions on the input; any finite byte array is allowed.
+fn all_characters_same(s: &[u8]) -> (result: bool)

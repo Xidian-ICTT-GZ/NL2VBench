@@ -1,0 +1,4 @@
+You are given three inputs: (1) a mutable vector of 32-bit integers, (2) a mutable vector of 32-bit integers of length exactly 1 that serves as an accumulator to store a result, and (3) a positive integer representing the intended length. Assume the following preconditions hold: the length parameter is greater than 0, the length of the first vector equals this parameter, and the second vector has length exactly 1.
+
+Write a procedure that modifies the first vector so that every element within its bounds is set to 1. Then update the single element of the accumulator vector to equal the sum of all elements of the first vector after this modification. The procedure does not return a value. After completion, the single element in the accumulator must equal the given length parameter.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

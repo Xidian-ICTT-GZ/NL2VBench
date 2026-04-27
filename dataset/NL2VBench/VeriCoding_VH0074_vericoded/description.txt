@@ -1,0 +1,8 @@
+Given an array of signed 8-bit integers, compute the minimum number of element modifications required to make the array palindromic. An array is palindromic if, for every index i from 0 to floor(n/2) − 1, the element at position i equals the element at position n − 1 − i.
+Assume no preconditions on the input beyond standard array semantics. The result must satisfy the following properties:
+- The returned value is equal to the number of index pairs (i, n − 1 − i) whose elements are different.
+- The returned value is at most floor(n/2).
+- If the array length is 0 or 1, the returned value is 0.
+- For any non-negative integer c, it is possible to make the array palindromic using at most c changes if and only if c is at least the returned value; in particular, it is not possible with any c strictly smaller than the returned value, and it is possible with c equal to the returned value.
+This problem asks for the minimal number of changes, where a "change" can set an element to any value. Only mirrored comparisons are relevant; the middle element in odd-length arrays does not affect the count.
+fn smallest_change(arr: Vec<i8>) -> usize

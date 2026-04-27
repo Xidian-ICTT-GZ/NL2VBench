@@ -1,0 +1,8 @@
+Given an array of integers with length at least 2, return a pair of distinct indices (i_min, i_second) satisfying the following properties:
+- i_min is the index of a minimum value in the entire array.
+- i_second is an index different from i_min such that, for every index k in the array with k != i_min, the value at k is greater than or equal to the value at i_second. In other words, i_second points to a minimum value among all positions excluding i_min.
+- If the minimum value occurs more than once, i_second may be the index of another occurrence of that same minimum.
+- Both indices must be valid (0 <= i_min < n and 0 <= i_second < n where n is the array length) and must be distinct (i_min != i_second).
+Assume the input array length is at least 2. The returned indices must satisfy that for every position k != i_min, the array[k] is greater than or equal to array[i_second], and there exists some position k != i_min whose value equals array[i_second] (ensuring i_second references an actual element among the non-minimum index positions).
+spec fn min_spec(seq: Seq<i32>) -> int
+fn second_smallest(numbers: &Vec<i32>) -> (usize, usize)

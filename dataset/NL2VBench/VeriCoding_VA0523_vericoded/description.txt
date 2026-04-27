@@ -1,0 +1,2 @@
+Given two 8-bit signed integers n and k, compute the minimal nonnegative distance from n to a multiple of k. Assume n is nonnegative and k is at least 1. Formally, let r be the remainder of dividing n by k (using the standard nonnegative remainder since n ≥ 0 and k ≥ 1). Return min(r, k − r). The result must be an 8-bit signed integer d satisfying 0 ≤ d < k. Intuitively, this is the minimum number of increments or decrements needed to reach the nearest multiple of k from n.
+fn solve(n: i8, k: i8) -> (result: i8)

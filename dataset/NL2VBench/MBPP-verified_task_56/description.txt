@@ -1,0 +1,2 @@
+Implement a function that, given a vector of unsigned 32-bit integers, returns a new vector containing exactly the even elements of the input, in their original relative order. The input may be empty. The output must be observationally equivalent to filtering the input sequence by the predicate “value modulo 2 equals 0,” preserving duplicates and order. The function must not modify the input. There are no additional preconditions on the input.
+fn remove_odds(arr: &Vec<u32>) -> (even_list: Vec<u32>)

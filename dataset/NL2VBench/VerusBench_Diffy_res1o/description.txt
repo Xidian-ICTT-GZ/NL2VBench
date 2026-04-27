@@ -1,0 +1,10 @@
+You are given two mutable arrays of 32-bit integers and a third mutable array that contains exactly one 32-bit integer. You are also given a positive integer N with N < 1000. Assume both input arrays have length exactly N at the time of the call, and the single-element output array has length exactly 1.
+
+Write a procedure that sets every element of both input arrays to 1, initializes the single-element output to 0, and then accumulates the sum of all elements from both arrays into that single output element. At return, the value stored in the single-element output must be at most 2 × N. The procedure must not change the lengths of any arrays and must operate within valid bounds for all array accesses.
+
+Formally:
+- Preconditions: N > 0, N < 1000; the two input arrays each have length N; the output array has length 1.
+- Postcondition: the single output value is at most 2 × N.
+
+Note: Because the procedure sets all entries of both arrays to 1 and sums them, the computed result equals 2 × N, which satisfies the postcondition.
+pub fn myfun(a: &mut Vec<i32>, b: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

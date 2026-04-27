@@ -1,0 +1,10 @@
+Given an array of 32-bit integers and a positive integer n such that n is at most the length of the array, compute the minimum value among the first n elements of the array. The returned value must be equal to one of the elements within the first n positions, and it must be less than or equal to every element within those n positions.
+
+Assumptions:
+- The array length is at least n.
+- The value n is strictly positive.
+
+Output requirements:
+- The result equals some element among the first n elements of the array.
+- No element within the first n positions is strictly less than the result.
+fn min(a: &Vec<i32>, n: usize) -> i32

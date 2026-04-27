@@ -1,0 +1,10 @@
+Given a read-only slice of bytes representing a string, return the number of characters that are decimal digits. A character is considered a digit if its byte value is between 48 and 57 inclusive, corresponding to the ASCII characters '0' through '9'. The result must satisfy the following conditions:
+- The result is an integer between 0 and the length of the input slice (inclusive).
+- The result equals the value of a recursive specification that counts digits over the sequence abstraction of the input: for an empty sequence the count is 0; otherwise the count is the count of the sequence with its last element removed plus 1 if the last element is a digit, and plus 0 otherwise.
+Additionally, if the implementation uses a loop to process the input:
+- At each iteration over a prefix of length k (0 ≤ k ≤ input length), the running count equals the recursive specification applied to that prefix.
+- The running count always stays between 0 and k.
+- The iteration variable stays within the bounds 0 ≤ k ≤ input length, and the measure input length − k strictly decreases, ensuring termination.
+spec fn is_digit(c: u8) -> bool
+spec fn count_digits_recursively(seq: Seq<u8>) -> int
+fn count_digits(text: &[u8]) -> (count: usize)

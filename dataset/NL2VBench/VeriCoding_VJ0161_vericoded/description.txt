@@ -1,0 +1,2 @@
+Compute the running (prefix) maximums of an array of 32-bit signed integers. Given an input array of length n (n ≥ 0), return an output array of the same length such that, for every index i with 0 ≤ i < n, the output at position i equals the maximum value among the first i + 1 elements of the input. If the input is empty, the output must be empty. Indices are 0-based.
+fn rolling_max(numbers: Vec<i32>) -> (result: Vec<i32>)

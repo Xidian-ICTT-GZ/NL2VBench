@@ -1,0 +1,5 @@
+You are given a positive integer n, a positive integer s, and an array of n positive integers. Assume the following input constraints: n >= 1, s >= 1, the array length equals n, n <= 3000, s <= 3000, and every array element is in the range [1, 3000]. Compute an integer result in the range [0, 998244353) such that result is congruent to itself modulo 998244353. The required behavior is:
+- If n = 1, output 1 if and only if the single element of the array equals s; otherwise output 0.
+- In all other cases (n > 1), the output must be 0.
+Additionally, the output must be 0 whenever every element of the array is strictly greater than s.
+fn solve(n: i8, s: i8, a: Vec<i8>) -> (result: i8)

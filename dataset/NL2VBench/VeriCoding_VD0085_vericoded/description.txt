@@ -1,0 +1,2 @@
+Implement a function that takes two 32-bit signed integers and returns them in reversed order as a pair. There are no preconditions; the function must accept any valid 32-bit signed integers. The returned pair must have its first element equal to the original second input, and its second element equal to the original first input.
+fn swap(x: i32, y: i32) -> (result: (i32, i32))

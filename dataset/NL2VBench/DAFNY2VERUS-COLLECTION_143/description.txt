@@ -1,0 +1,2 @@
+Implement a function that returns the square of an unsigned 64-bit integer. Assume the input is a natural number less than 1,000,000,000. Additionally, assume that the square of the input is strictly less than the maximum value representable by a 64-bit unsigned integer. The function must return a value equal to the mathematical square of the input.
+fn carre(a: u64) -> (c: u64)

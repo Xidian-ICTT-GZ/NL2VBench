@@ -1,0 +1,2 @@
+Given a non-empty array of 8-bit signed integers, return the index of the first occurrence of the maximum element. Assume the input array length is positive. The returned index must be within bounds. The value at the returned index is greater than or equal to every other element in the array. If multiple positions share the same maximal value, return the smallest index among those positions.
+fn nanargmax(a: Vec<i8>) -> (idx: usize)

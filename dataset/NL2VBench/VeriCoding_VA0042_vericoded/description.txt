@@ -1,0 +1,11 @@
+You are given two integer sizes and two arrays of characters describing the directions of arrows along the borders of a rectangular grid. The first size is the number of horizontal positions (n), and the second size is the number of vertical positions (m). Assume n and m are integers satisfying 2 <= n <= 20 and 2 <= m <= 20. The horizontal array has length exactly n and each element is either '<' or '>'. The vertical array has length exactly m and each element is either '^' or 'v'.
+
+Determine whether the configuration is "disconnected" based solely on the arrows at the four corners, defined by the first and last elements of each array. The configuration is disconnected if and only if at least one of the following holds:
+- The first horizontal element is '>' and the first vertical element is 'v'.
+- The first horizontal element is '<' and the last vertical element is 'v'.
+- The last horizontal element is '>' and the first vertical element is '^'.
+- The last horizontal element is '<' and the last vertical element is '^'.
+
+Return the result as a vector of characters. Return ['N','O','\n'] if the configuration is disconnected; otherwise return ['Y','E','S','\n'].
+fn solve(n: i8, m: i8, horizontal: Vec<char>, vertical: Vec<char>) -> Vec<char>
+fn check_disconnected(n: i8, m: i8, horizontal: &Vec<char>, vertical: &Vec<char>) -> bool

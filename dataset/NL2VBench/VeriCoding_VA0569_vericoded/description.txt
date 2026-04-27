@@ -1,0 +1,8 @@
+You are given a list of exactly three characters. Each character is either 'A' or 'B'. Determine whether there is at least one position where two consecutive characters differ. Return the string "Yes" if at least one adjacent pair is different; otherwise, return "No". The result must be exactly either "Yes" or "No".
+Assumptions:
+- The input length is exactly 3.
+- Every character in the input is either 'A' or 'B'.
+Required properties:
+- The output is "Yes" if and only if there exists an index i in {0, 1} such that input[i] != input[i+1].
+- The output must be exactly one of the two strings: "Yes" or "No".
+fn solve(input: Vec<char>) -> (result: Vec<char>)

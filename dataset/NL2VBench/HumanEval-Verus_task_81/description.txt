@@ -1,0 +1,5 @@
+Compute the Brazilian factorial (also known as the product of factorials or superfactorial) of a given non-negative integer. The input is provided as a 64-bit unsigned integer. Define the mathematical factorial for natural numbers by 0! = 1, 1! = 1, and for n ≥ 2, n! = n × (n − 1)!. Define the Brazilian factorial BF(n) as the product of factorials from 1 through n: BF(0) = 1, BF(1) = 1, and for n ≥ 2, BF(n) = n! × BF(n − 1) (equivalently, BF(n) = ∏_{k=1}^n k!). The function must return an Option<u64> where:
+- Some(v) is returned if BF(n) fits exactly within a 64-bit unsigned integer, with v equal to BF(n).
+- None is returned if BF(n) exceeds the maximum value representable by a 64-bit unsigned integer.
+You may assume all computations are performed over mathematical integers and then checked against 64-bit bounds. The Brazilian factorial is known to be positive for all n and monotonically non-decreasing with respect to n. In particular, BF(9) exceeds u64::MAX, and for all n ≥ 9, BF(n) > u64::MAX, so the function must return None for such inputs.
+pub fn brazilian_factorial_impl(n: u64) -> (ret: Option<u64>)

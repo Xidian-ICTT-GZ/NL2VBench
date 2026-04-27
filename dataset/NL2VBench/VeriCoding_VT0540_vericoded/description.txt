@@ -1,0 +1,7 @@
+Implement a function that initializes a bit generator state from an optional 64-bit unsigned seed. The function must return a state object containing two fields: the original seed and an internal 64-bit unsigned state. The following properties must hold for the returned object:
+- The seed field equals the input seed.
+- If a seed is provided, the internal state must be a non-zero 64-bit unsigned integer.
+- If no seed is provided, the internal state must be exactly zero.
+Assume no additional constraints on the input beyond it being an optional 64-bit unsigned integer. Any non-zero internal state is acceptable when the seed is present, provided the above conditions are satisfied.
+fn compute_internal_state(seed: Option<u64>) -> (s: u64)
+fn numpy_random_bit_generator(seed: Option<u64>) -> (result: BitGeneratorState)

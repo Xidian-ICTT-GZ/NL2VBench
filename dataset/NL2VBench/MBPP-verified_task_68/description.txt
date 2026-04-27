@@ -1,0 +1,5 @@
+Given an array of characters, determine whether every element is a decimal digit from '0' to '9'. Return true if and only if all characters in the array have Unicode code points between 48 and 57 inclusive (i.e., the ASCII digits '0' through '9'). If the array is empty, return true.
+
+Correctness requirement: The result must be true exactly when, for all valid indices in the array, the character at that index is a digit ('0'–'9'). Otherwise, the result must be false.
+fn is_digit(c: char) -> bool
+fn is_integer(text: &Vec<char>) -> bool

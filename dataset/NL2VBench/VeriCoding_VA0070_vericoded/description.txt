@@ -1,0 +1,12 @@
+You are given two integers representing a total count and a selected count. Assume the total count is at least 1 and the selected count is between 0 and the total count (inclusive). Return a pair of two integers [x_min, x_max] that summarizes the possible range for the number of "good" unselected items under the following requirements:
+- The pair has exactly two elements.
+- Both elements are non-negative.
+- The first element is less than or equal to the second element.
+- Both elements are less than or equal to the number of unselected items (total minus selected).
+
+The values must be computed as:
+- If the selected count is 0 or equals the total count, then x_min = 0 and x_max = 0.
+- Otherwise, x_min = 1 and x_max = min(total − selected, 2 × selected).
+
+The function must return the pair [x_min, x_max] that satisfies the above constraints and ensures x_min ≤ x_max. Inputs and outputs are 8-bit signed integers.
+fn solve(n: i8, k: i8) -> Vec<i8>

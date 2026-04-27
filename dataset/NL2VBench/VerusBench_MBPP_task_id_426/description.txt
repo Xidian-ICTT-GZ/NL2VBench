@@ -1,0 +1,2 @@
+Given an array of 32-bit unsigned integers, return a new array containing exactly those elements whose value is odd (value modulo 2 is not zero). Preserve the original relative order of the retained elements. If the input is empty, the output is empty. No additional assumptions are required on the input values. The returned array must be equal to the result of filtering the input sequence by the predicate "value % 2 != 0".
+fn filter_odd_numbers(arr: &Vec<u32>) -> Vec<u32>

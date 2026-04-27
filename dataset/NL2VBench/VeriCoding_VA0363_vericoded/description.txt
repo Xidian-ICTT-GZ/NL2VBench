@@ -1,0 +1,7 @@
+You are given a non-empty word represented as a vector of characters. Assume every character in the input is an English alphabet letter (only 'a'–'z' or 'A'–'Z'). Return a new vector of characters of the same length with the following properties:
+- The first character in the output is an uppercase letter.
+- If the first character in the input is already uppercase, it must remain unchanged in the output.
+- If the first character in the input is lowercase, replace it with the uppercase letter 'A'.
+- All characters at positions 1 through the end must be identical to the corresponding characters in the input.
+The output must have the same length as the input.
+fn capitalize_first_letter(word: Vec<char>) -> (result: Vec<char>)

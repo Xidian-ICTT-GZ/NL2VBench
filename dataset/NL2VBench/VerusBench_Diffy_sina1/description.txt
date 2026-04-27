@@ -1,0 +1,7 @@
+You are given three inputs: a mutable array of 32-bit integers, a mutable auxiliary array of 32-bit integers, and a positive integer N. Assume the following conditions hold before the function runs:
+- N is strictly positive.
+- The length of the first array is exactly N.
+- The length of the auxiliary array is exactly 1.
+
+Modify the first array in place so that, after the function returns, every index k with 0 <= k < N contains the value N. No other postconditions are required about the contents of the auxiliary array.
+pub fn myfun(a: &mut Vec<i32>, sum: &mut Vec<i32>, N: i32)

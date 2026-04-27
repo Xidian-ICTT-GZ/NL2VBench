@@ -1,0 +1,6 @@
+Implement a constructor function that creates and returns a data structure representing a Legendre polynomial descriptor. The inputs are: a vector of floating-point coefficients; a domain interval represented by an array of two floating-point values; a window interval represented by an array of two floating-point values; and a symbol string. There are no preconditions on the inputs.
+
+The function must return an object whose fields are exactly equal to the corresponding inputs: the sequence of coefficients in the returned object must have the same length and elements, in the same order, as the input sequence; the domain interval in the returned object must be element-wise equal to the input domain interval; the window interval in the returned object must be element-wise equal to the input window interval; and the symbol string in the returned object must be equal to the input symbol string.
+
+Additionally, the function must preserve the special interval property: if the input domain interval equals [-1.0, 1.0], then the returned object's domain interval must also equal [-1.0, 1.0]; and if the input window interval equals [-1.0, 1.0], then the returned object's window interval must also equal [-1.0, 1.0].
+fn mk_legendre(coef: Vec<f64>, domain: [f64; 2], window: [f64; 2], symbol: String) -> Legendre

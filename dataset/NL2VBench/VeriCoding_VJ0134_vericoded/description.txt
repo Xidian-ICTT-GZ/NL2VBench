@@ -1,0 +1,2 @@
+Implement a function that computes the absolute value of a 32-bit signed integer. Assume the input is not equal to the minimum 32-bit integer (−2,147,483,648), so that negation does not overflow. The function must return a non-negative integer that is either the input itself (when the input is non-negative) or the negation of the input (when the input is negative).
+fn abs(x: i32) -> (result: i32)

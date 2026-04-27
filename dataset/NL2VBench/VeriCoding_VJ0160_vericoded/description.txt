@@ -1,0 +1,2 @@
+Given an array (slice) of 32-bit integers, construct and return a new vector containing the same elements in reverse order. The output must have the same length as the input. For every valid index i in the output, the value at that position must equal the value at position (input_length − 1 − i) in the input. There are no preconditions on the input; handle empty arrays and any integer values correctly. The algorithm must terminate and produce a fresh vector that represents the exact reverse of the input sequence.
+fn reverse(a: &[i32]) -> (result: Vec<i32>)

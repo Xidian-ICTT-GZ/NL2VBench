@@ -1,0 +1,3 @@
+Implement two functions that expose the Euler–Mascheroni constant using 64-bit floating point arithmetic. There are no inputs and no preconditions. The first function must return exactly the numeric value 0.5772156649015329. The second function must return the same value by delegating to the first function (i.e., it obtains the constant from the first function and returns it). Postconditions: both functions return exactly 0.5772156649015329.
+fn euler_gamma_const() -> (result: f64)
+fn euler_gamma() -> (result: f64)

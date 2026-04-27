@@ -1,0 +1,5 @@
+Implement a function that takes a non-empty array of 32-bit floating-point numbers and returns a new array whose length is exactly equal to the input array's length. Assume the input size is positive (the array contains at least one element). The postcondition requires that the returned array has the same number of elements as the input. No specific transformation of the element values is required or guaranteed; only the length property must hold.
+
+If an iterative approach is used, the iteration must not access indices outside the bounds of the input. At any point during the iteration, the length of the partially constructed output should equal the number of elements processed so far, and the loop index must never exceed the input length. Termination should be justified by a strictly decreasing measure of the remaining elements to process.
+fn vec_len<T>(x: &Vec<T>) -> (r: usize)
+fn numpy_log10(x: Vec<f32>) -> (result: Vec<f32>)

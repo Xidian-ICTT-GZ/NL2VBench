@@ -1,0 +1,9 @@
+Implement two functions over read-only slices of 32-bit integers. The first function determines whether two given slices share at least one common element. It must return true if and only if there exist indices within bounds of each slice such that the elements at those indices are equal. Equivalently, returning false means that for all index pairs within bounds, the elements differ. The slices may be empty or non-empty; when either slice is empty, the result must be false because no in-bounds pair exists. The second function determines whether a given value occurs in a single slice. It must return true if and only if there exists some in-bounds index whose element equals the given value, and false otherwise.
+
+Semantics to satisfy:
+- Common-element function: true implies there exists a pair of indices in bounds of the two inputs whose elements are equal; false implies all pairs of in-bounds indices have unequal elements.
+- Membership function: true implies the value equals the element at some in-bounds index; false implies the value differs from every in-bounds element.
+
+No additional preconditions are assumed; both functions must handle empty and non-empty inputs and be total.
+fn has_common_element(a: &[i32], b: &[i32]) -> bool
+fn slice_contains(s: &[i32], val: i32) -> bool

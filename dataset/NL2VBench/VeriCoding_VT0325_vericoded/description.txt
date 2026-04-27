@@ -1,0 +1,10 @@
+You are given an array of pairs of floating-point numbers, where each pair represents a complex number (real part, imaginary part). Construct and return a new array containing, for each index i, the imaginary part of the i-th complex number from the input. The output must preserve the input order and have the same length as the input.
+
+Required properties:
+- The output array has the same length as the input array.
+- For every valid index i, the i-th element of the output equals the imaginary part (the second component) of the i-th input pair.
+- For every valid index i, if the imaginary part of the i-th input pair is 0.0, then the i-th element of the output is 0.0.
+- For every valid index i, if the i-th input pair is not the zero complex number (i.e., its real part is nonzero or its imaginary part is nonzero), then the i-th element of the output equals the imaginary part of the i-th input pair.
+
+Assume standard IEEE-754 semantics for f64 values. The function should not modify the input array.
+fn imag(val: Vec<(f64, f64)>) -> Vec<f64>

@@ -1,0 +1,9 @@
+You are given an operation selector over the integers with four possible cases: addition, multiplication, logical AND, and logical OR. For logical operations, interpret any nonzero integer as true and zero as false; the result of a logical operation must be the integer 1 for true and 0 for false. Define the identity element for an operation as an integer id such that, for all integers x, both applying the operation with id on the right and on the left leaves x unchanged. Formally, id is an identity element for the chosen operation if, for all integers x, op(x, id) = x and op(id, x) = x, where op denotes the semantics of the chosen operation.
+
+Write a function that, given the operation selector, returns the identity element if it exists, and returns None otherwise. The function must satisfy the following specification:
+- If it returns Some(id), then id is an identity element for the selected operation, i.e., for all integers x, op(x, id) = x and op(id, x) = x.
+- If it returns None, then there exists no integer that is an identity element for the selected operation (i.e., for every integer candidate id, there is some x for which at least one of op(x, id) ≠ x or op(id, x) ≠ x holds).
+
+Assume no preconditions on the input; the function must handle all four operation selectors. The intended behavior corresponds to returning 0 for addition, 1 for multiplication, and reporting that no identity exists for the defined integer-semantics of logical AND and logical OR.
+enum OpType { Add, Multiply, LogicalAnd, LogicalOr }
+fn ufunc_identity(op: OpType) -> (result: Option<i8>)

@@ -1,0 +1,29 @@
+You are given an expression tree over mathematical integers with the following node types: a constant, a variable identified by a string, addition of two sub-expressions, and multiplication of two sub-expressions. The semantics of evaluation are:
+- A constant evaluates to its integer value.
+- A variable evaluates to the integer assigned to its name by a given store (a finite map from strings to integers). If a variable name is not present in the store, its value is defined to be -1.
+- Addition evaluates to the sum of its two sub-expressions.
+- Multiplication evaluates to the product of its two sub-expressions.
+
+Implement a pure function that performs a single-step, local optimization at the root of the expression (do not traverse or optimize deeper sub-expressions). Apply only the following peephole rules:
+- For multiplication:
+  - If either operand is the constant 0, replace the whole multiplication with the constant 0 (absorbing element).
+  - If either operand is the constant 1, replace the whole multiplication with the other operand (neutral element).
+  - If both operands are constants, replace the multiplication with their product (constant folding).
+- For addition:
+  - If either operand is the constant 0, replace the whole addition with the other operand (neutral element).
+  - If both operands are constants, replace the addition with their sum (constant folding).
+- In all other cases, return the expression unchanged.
+
+Prove that this optimization preserves the evaluation result for all expressions and for all stores: the value obtained by evaluating the original expression with any store is equal to the value obtained by evaluating the optimized expression with the same store. Assume standard integer arithmetic (no overflow) and that the function terminates.
+enum Exp {
+    Const(int),
+    Var(String),
+    Plus(Box<Exp>, Box<Exp>),
+    Mult(Box<Exp>, Box<Exp>),
+}
+
+spec fn eval(e: Exp, store: Map<String, int>) -> int
+
+spec fn optimize(e: Exp) -> Exp
+
+fn optimize_correct(e: Exp, s: Map<String, int>)

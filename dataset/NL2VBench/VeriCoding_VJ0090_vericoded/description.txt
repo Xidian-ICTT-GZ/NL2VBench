@@ -1,0 +1,2 @@
+Given two arrays of 32-bit signed integers, return a new array containing the element-wise product of the inputs. Assume the two input arrays have the same length. Additionally, assume that for every valid index, the product of the corresponding elements fits within the 32-bit signed integer range (no overflow or underflow occurs). The output array must have the same length as the inputs, and for each index, the output element equals the product of the two input elements at that index.
+fn element_wise_multiplication(arr1: &Vec<i32>, arr2: &Vec<i32>) -> (result: Vec<i32>)

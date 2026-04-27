@@ -1,0 +1,5 @@
+You are given a list of queries. Each query consists of two positive integers (a, b). For each query, determine the minimum number of moves required to transform a into b under the following operation rules:
+- In one move, you may increase the current value by any positive odd integer.
+- In one move, you may decrease the current value by any positive even integer.
+If a is already equal to b, the minimum number of moves is 0. Assume every query in the input satisfies a ≥ 1 and b ≥ 1. The output must be a list of nonnegative integers where the i-th element is the minimum number of moves for the i-th query, and the output list must have the same length as the input list.
+fn solve(input: Vec<(i8, i8)>) -> Vec<i8>

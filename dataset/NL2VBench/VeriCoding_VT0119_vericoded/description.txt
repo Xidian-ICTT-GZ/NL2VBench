@@ -1,0 +1,18 @@
+You are given two collections of data types representing NumPy-like dtypes. Each dtype belongs to one of the following categories (kind): boolean ('b'), signed integers ('i'), unsigned integers ('u'), floating point ('f'), complex numbers ('c'), or objects ('O'). Each dtype also has a precedence value used for promotion, where larger precedence indicates a more general type:
+- Bool: 0
+- Int8: 1, Int16: 2, Int32: 3, Int64: 4
+- UInt8: 5, UInt16: 6, UInt32: 7, UInt64: 8
+- Float32: 9, Float64: 10
+- Complex64: 11, Complex128: 12
+- Object: 13
+
+Task 1 (find_max_precedence_type): Given a non-empty collection of dtypes, return a dtype that appears in the collection and whose precedence is at least as large as that of every dtype in the collection. Assume the input collection is non-empty.
+
+Task 2 (find_common_type): Given two collections of dtypes, one representing array dtypes and the other representing scalar dtypes, determine the common dtype according to the following rules. Assume at least one of the collections is non-empty.
+- If only array dtypes are provided, return a dtype that appears in the array collection and has maximum precedence among the array dtypes.
+- If only scalar dtypes are provided, return a dtype that appears in the scalar collection and has maximum precedence among the scalar dtypes.
+- If both collections are provided, compute the maximum-precedence dtype from each collection (each must appear in its respective collection). If the kinds of these two maxima are the same, return the maximum from the array collection. Otherwise, return the maximum from the scalar collection.
+
+In all cases, the result must be a dtype present in the corresponding input collection(s) as specified above, and it must satisfy the described precedence comparisons.
+fn find_max_precedence_type(types: Vec<DType>) -> (result: DType)
+fn find_common_type(array_types: Vec<DType>, scalar_types: Vec<DType>) -> (result: Option<DType>)

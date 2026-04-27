@@ -1,0 +1,27 @@
+Implement a function that maps a given object to its corresponding NumPy-like scalar data type, with an optional default used only when the object does not carry inherent type information.
+
+Inputs:
+- An object that can be one of: integer value, floating-point value, array of integers, array of floats, array of complex number pairs, string value, boolean value, or a generic object without specific type information.
+- An optional default scalar type.
+
+Output:
+- An optional scalar type determined by the following rules:
+  - If the object is an integer value, return Int64.
+  - If the object is a floating-point value, return Float64.
+  - If the object is an array of integers, return Int64.
+  - If the object is an array of floats, return Float64.
+  - If the object is an array of complex pairs (each pair representing a complex number), return Complex128.
+  - If the object is a string value, return String.
+  - If the object is a boolean value, return Bool.
+  - If the object is a generic object (no inherent type), return the provided default.
+
+Additionally, the function must satisfy the following properties:
+- If a scalar type is returned (i.e., the output is Some(dtype)), then one of the following holds:
+  - The returned type corresponds to the scalar type of the object (e.g., integer value -> Int64, float value -> Float64, string -> String, boolean -> Bool), or
+  - The returned type corresponds to the element type of the array (e.g., array of integers -> Int64, array of floats -> Float64, array of complex pairs -> Complex128), or
+  - The object is generic and the returned type equals the provided default.
+- If no scalar type is returned (i.e., the output is None), then the object is generic and the provided default is None.
+
+Assumptions:
+- No additional preconditions are required; all object variants are valid inputs. The function must ignore the default for non-generic objects and use it only for generic objects.
+fn obj2sctype(rep: NumpyObject, default: Option<NumpyScalarType>) -> Option<NumpyScalarType>

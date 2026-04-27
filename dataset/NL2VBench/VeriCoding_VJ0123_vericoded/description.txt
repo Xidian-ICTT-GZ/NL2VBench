@@ -1,0 +1,2 @@
+Given an array of 32-bit integers, determine whether the array has only one distinct value. Specifically, return true if and only if for every index i such that 1 <= i < length of the array, the element at index i is equal to the element at index 0. There are no preconditions on the input; the array may be empty. For an empty array or an array with exactly one element, the condition holds vacuously and the function must return true.
+fn has_only_one_distinct_element(arr: &Vec<i32>) -> bool

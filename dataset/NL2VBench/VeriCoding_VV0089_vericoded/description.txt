@@ -1,0 +1,2 @@
+Given two non-empty arrays of 32-bit signed integers, determine whether they share at least one common value. Assume both input arrays have length greater than zero. Return true if and only if there exist indices i and j within the respective bounds of the two arrays such that the element at position i in the first array equals the element at position j in the second array; otherwise, return false. Duplicates may appear in either array, and the arrays need not be sorted.
+fn has_common_element(a: &Vec<i32>, b: &Vec<i32>) -> (result: bool)

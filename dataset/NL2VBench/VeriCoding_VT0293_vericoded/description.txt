@@ -1,0 +1,5 @@
+You are given a vector of 8-bit signed integers and two 8-bit signed integers representing a lower bound and an upper bound. Construct and return a new vector of the same length by applying the following rule to each element:
+- If the lower bound is less than or equal to the upper bound, then each element is "clipped" into the inclusive range [lower bound, upper bound]. Specifically, values below the lower bound become the lower bound, values above the upper bound become the upper bound, and values within the range remain unchanged.
+- If the lower bound is greater than the upper bound, then the resulting vector must contain only the upper bound repeated for every position, regardless of the input values.
+Assume no additional constraints beyond the usual 8-bit signed integer range for the inputs. The output vector must have exactly the same length as the input vector, and for every index the element-wise condition described above must hold.
+fn clip(arr: &Vec<i8>, min_val: i8, max_val: i8) -> Vec<i8>
