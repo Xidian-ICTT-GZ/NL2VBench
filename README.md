@@ -1,6 +1,6 @@
-# NL2VerusBench
+# NL2VBench
 
-NL2VerusBench is a research repository for natural-language-to-Verus generation and verification experiments. It includes:
+NL2VBench is a research repository for natural-language-to-Verus generation and verification experiments. It includes:
 
 - Dataset construction and preprocessing artifacts  
 - Benchmark datasets  
