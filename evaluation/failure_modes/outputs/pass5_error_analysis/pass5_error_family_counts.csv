@@ -1,0 +1,7 @@
+rank,family,name,count,percentage
+1,F1_syntax,Syntax errors,69189,35.19%
+2,F2_environment,Environment issues,56728,28.85%
+3,F3_type,Type / ownership / compile errors,34979,17.79%
+4,F6_other,Other,22926,11.66%
+5,F4_spec_construction,Verus spec construction,9842,5.01%
+6,F5_verification_logic,Verus verification logic,2965,1.51%

@@ -1,11 +1,11 @@
 {
   "generated_from": [
-    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot",
-    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot_COT",
-    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_fewshot_LTM",
-    "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass5_zeroshot"
+    "/Users/hlh/program/python/NL2VerusBench/evaluation/verify/verify_pass5_fewshot",
+    "/Users/hlh/program/python/NL2VerusBench/evaluation/verify/verify_pass5_fewshot_COT",
+    "/Users/hlh/program/python/NL2VerusBench/evaluation/verify/verify_pass5_fewshot_LTM",
+    "/Users/hlh/program/python/NL2VerusBench/evaluation/verify/verify_pass5_zeroshot"
   ],
-  "output_dir": "/Users/hlh/program/python/NL2VerusBench/verify/verify_pass1",
+  "output_dir": "/Users/hlh/program/python/NL2VerusBench/evaluation/verify/verify_pass1",
   "generation": 4,
   "generation_name": "fourth",
   "total_experiments": 54,

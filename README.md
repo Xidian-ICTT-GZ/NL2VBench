@@ -18,7 +18,8 @@ NL2VBench is a research repository for natural-language-to-Verus generation and 
 - `prompt/` — Prompt templates for different experimental pipelines
 - `script/` — Experiment runners and repair utilities
 - `generation/` — Model generation outputs (organized by sample)
-- `verify/` — Verification scripts, outputs, and summary results
+- `evaluation/verify/` — Verification scripts, outputs, and summary results
+- `evaluation/SVC/` — Expert review CSVs and SVC-related annotations
 
 ---
 
@@ -58,7 +59,7 @@ For additional details, see:
 - Single-pipeline experiments: `script/run_p*_*.py`
 - Batch execution: `script/run_all_experiments.py`
 - Missing-output repair: `script/repair_missing_generations.py`
-- Unified verification: `verify/verify_generation.py`
+- Unified verification: `evaluation/verify/verify_generation.py`
 
 ---
 
@@ -68,6 +69,11 @@ Please complete the settings in `config/config.yaml` before running experiments:
 
 - Model `api_key` / `base_url`
 - `verus.verus_path` (for local verification)
+
+## Reproducibility
+
+The verification results in this repository were produced with Verus version `0.2026.01.10.531beb1`.
+If you rerun the experiments, using the same Verus version is recommended for consistent results.
 
 Default paths are aligned to:
 

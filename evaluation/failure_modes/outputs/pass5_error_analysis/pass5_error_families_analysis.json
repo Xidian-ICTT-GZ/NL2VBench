@@ -1,0 +1,237 @@
+{
+  "source_base_directory": "/Users/hlh/program/python/NL2VerusBench/evaluation/verify",
+  "total_failed": 196629,
+  "family_distribution": [
+    {
+      "rank": 1,
+      "family": "F1_syntax",
+      "name": "Syntax errors",
+      "count": 69189,
+      "percentage": "35.19%"
+    },
+    {
+      "rank": 2,
+      "family": "F2_environment",
+      "name": "Environment issues",
+      "count": 56728,
+      "percentage": "28.85%"
+    },
+    {
+      "rank": 3,
+      "family": "F3_type",
+      "name": "Type / ownership / compile errors",
+      "count": 34979,
+      "percentage": "17.79%"
+    },
+    {
+      "rank": 4,
+      "family": "F6_other",
+      "name": "Other",
+      "count": 22926,
+      "percentage": "11.66%"
+    },
+    {
+      "rank": 5,
+      "family": "F4_spec_construction",
+      "name": "Verus spec construction",
+      "count": 9842,
+      "percentage": "5.01%"
+    },
+    {
+      "rank": 6,
+      "family": "F5_verification_logic",
+      "name": "Verus verification logic",
+      "count": 2965,
+      "percentage": "1.51%"
+    }
+  ],
+  "family_examples": {
+    "F6_other": [
+      {
+        "main": "other_error",
+        "sub": "unclassified_error",
+        "count": 22592,
+        "percentage": 11.489658188771749
+      },
+      {
+        "main": "unknown",
+        "sub": "unknown_error",
+        "count": 310,
+        "percentage": 0.15765731402794095
+      },
+      {
+        "main": "macro_error",
+        "sub": "macro_expansion_failed",
+        "count": 22,
+        "percentage": 0.011188583576176454
+      },
+      {
+        "main": "timeout",
+        "sub": "verification_timeout",
+        "count": 1,
+        "percentage": 0.0005085719807352934
+      },
+      {
+        "main": "verus_toolchain",
+        "sub": "verus_tool_error",
+        "count": 1,
+        "percentage": 0.0005085719807352934
+      }
+    ],
+    "F1_syntax": [
+      {
+        "main": "syntax_error",
+        "sub": "unexpected_symbol",
+        "count": 31590,
+        "percentage": 16.065788871427916
+      },
+      {
+        "main": "syntax_error",
+        "sub": "expected_one_of",
+        "count": 12222,
+        "percentage": 6.215766748546756
+      },
+      {
+        "main": "verus_syntax",
+        "sub": "spec_keyword_misuse",
+        "count": 10654,
+        "percentage": 5.418325882753815
+      },
+      {
+        "main": "syntax_error",
+        "sub": "unexpected_token",
+        "count": 9752,
+        "percentage": 4.959593956130581
+      },
+      {
+        "main": "syntax_error",
+        "sub": "missing_semicolon",
+        "count": 3139,
+        "percentage": 1.5964074475280858
+      }
+    ],
+    "F2_environment": [
+      {
+        "main": "undefined_symbol",
+        "sub": "undefined_value",
+        "count": 25111,
+        "percentage": 12.770751008243952
+      },
+      {
+        "main": "main_function",
+        "sub": "missing_main",
+        "count": 18616,
+        "percentage": 9.467575993368222
+      },
+      {
+        "main": "import_error",
+        "sub": "missing_verus_macro",
+        "count": 7385,
+        "percentage": 3.755804077730142
+      },
+      {
+        "main": "undefined_symbol",
+        "sub": "undefined_function",
+        "count": 3060,
+        "percentage": 1.5562302610499976
+      },
+      {
+        "main": "undefined_symbol",
+        "sub": "undefined_generic",
+        "count": 2150,
+        "percentage": 1.0934297585808808
+      }
+    ],
+    "F3_type": [
+      {
+        "main": "rust_compile_error",
+        "sub": "E0432",
+        "count": 26912,
+        "percentage": 13.686689145548215
+      },
+      {
+        "main": "rust_compile_error",
+        "sub": "E0599",
+        "count": 2442,
+        "percentage": 1.2419327769555863
+      },
+      {
+        "main": "type_error",
+        "sub": "type_mismatch",
+        "count": 1058,
+        "percentage": 0.5380691556179403
+      },
+      {
+        "main": "rust_compile_error",
+        "sub": "E0277",
+        "count": 777,
+        "percentage": 0.3951604290313229
+      },
+      {
+        "main": "rust_compile_error",
+        "sub": "E0282",
+        "count": 718,
+        "percentage": 0.3651546821679406
+      }
+    ],
+    "F4_spec_construction": [
+      {
+        "main": "verus_syntax",
+        "sub": "ghost_error",
+        "count": 6215,
+        "percentage": 3.1607748602698487
+      },
+      {
+        "main": "verus_syntax",
+        "sub": "spec_function_error",
+        "count": 2322,
+        "percentage": 1.1809041392673514
+      },
+      {
+        "main": "verus_syntax",
+        "sub": "exec_mode_error",
+        "count": 1300,
+        "percentage": 0.6611435749558814
+      },
+      {
+        "main": "verus_syntax",
+        "sub": "proof_block_error",
+        "count": 5,
+        "percentage": 0.0025428599036764667
+      }
+    ],
+    "F5_verification_logic": [
+      {
+        "main": "verus_verification",
+        "sub": "postcondition_failed",
+        "count": 1587,
+        "percentage": 0.8071037334269106
+      },
+      {
+        "main": "verus_verification",
+        "sub": "precondition_failed",
+        "count": 524,
+        "percentage": 0.2664917179052937
+      },
+      {
+        "main": "verus_verification",
+        "sub": "invariant_failed",
+        "count": 461,
+        "percentage": 0.23445168311897027
+      },
+      {
+        "main": "verus_verification",
+        "sub": "assertion_failed",
+        "count": 383,
+        "percentage": 0.19478306862161734
+      },
+      {
+        "main": "verus_verification",
+        "sub": "termination_proof_failed",
+        "count": 10,
+        "percentage": 0.0050857198073529335
+      }
+    ]
+  },
+  "mapping_function": "map_to_family_6"
+}

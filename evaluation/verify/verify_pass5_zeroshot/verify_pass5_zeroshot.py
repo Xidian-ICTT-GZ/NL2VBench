@@ -23,8 +23,8 @@ from tqdm import tqdm
 import argparse
 
 # Constants
-WORKDIR = Path(__file__).parent.parent.parent.absolute()
-EXP_GENERATION_DIR = WORKDIR / 'exp_generation'
+WORKDIR = Path(__file__).resolve().parents[3]
+EXP_GENERATION_DIR = WORKDIR / 'generation'
 VERIFY_OUTPUT_DIR = Path(__file__).parent.absolute()
 
 # Pipelines and models to verify

@@ -1,0 +1,3076 @@
+{
+  "source_base_directory": "/Users/hlh/program/python/NL2VerusBench/evaluation/verify",
+  "global_stats": {
+    "result_files": 54,
+    "verification_attempts": 205740,
+    "passed_attempts": 9111,
+    "failed_attempts": 196629,
+    "pass_rate": 4.428404782735491,
+    "by_experiment": {
+      "p1_fewshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 250,
+        "failed": 3560,
+        "families": {
+          "F6_other": 664,
+          "F1_syntax": 1602,
+          "F2_environment": 765,
+          "F3_type": 255,
+          "F4_spec_construction": 218,
+          "F5_verification_logic": 56
+        }
+      },
+      "p1_fewshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 116,
+        "failed": 3694,
+        "families": {
+          "F3_type": 2553,
+          "F4_spec_construction": 125,
+          "F1_syntax": 368,
+          "F5_verification_logic": 56,
+          "F2_environment": 466,
+          "F6_other": 126
+        }
+      },
+      "p1_fewshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 98,
+        "failed": 3712,
+        "families": {
+          "F6_other": 585,
+          "F1_syntax": 1078,
+          "F2_environment": 1221,
+          "F4_spec_construction": 685,
+          "F5_verification_logic": 12,
+          "F3_type": 131
+        }
+      },
+      "p1_fewshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 1136,
+        "failed": 2674,
+        "families": {
+          "F2_environment": 159,
+          "F1_syntax": 909,
+          "F6_other": 741,
+          "F5_verification_logic": 361,
+          "F3_type": 230,
+          "F4_spec_construction": 274
+        }
+      },
+      "p1_fewshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 123,
+        "failed": 3687,
+        "families": {
+          "F2_environment": 1240,
+          "F1_syntax": 1658,
+          "F3_type": 320,
+          "F6_other": 354,
+          "F4_spec_construction": 102,
+          "F5_verification_logic": 13
+        }
+      },
+      "p2_fewshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 117,
+        "failed": 3693,
+        "families": {
+          "F1_syntax": 1060,
+          "F2_environment": 1739,
+          "F6_other": 551,
+          "F3_type": 238,
+          "F5_verification_logic": 48,
+          "F4_spec_construction": 57
+        }
+      },
+      "p2_fewshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 31,
+        "failed": 3779,
+        "families": {
+          "F3_type": 2470,
+          "F2_environment": 753,
+          "F1_syntax": 379,
+          "F6_other": 133,
+          "F4_spec_construction": 33,
+          "F5_verification_logic": 11
+        }
+      },
+      "p2_fewshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 26,
+        "failed": 3784,
+        "families": {
+          "F1_syntax": 1388,
+          "F2_environment": 1390,
+          "F6_other": 680,
+          "F3_type": 223,
+          "F4_spec_construction": 97,
+          "F5_verification_logic": 6
+        }
+      },
+      "p2_fewshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 357,
+        "failed": 3453,
+        "families": {
+          "F1_syntax": 1281,
+          "F3_type": 524,
+          "F6_other": 989,
+          "F2_environment": 443,
+          "F4_spec_construction": 119,
+          "F5_verification_logic": 97
+        }
+      },
+      "p2_fewshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 93,
+        "failed": 3717,
+        "families": {
+          "F2_environment": 1366,
+          "F1_syntax": 1556,
+          "F6_other": 497,
+          "F3_type": 251,
+          "F4_spec_construction": 38,
+          "F5_verification_logic": 9
+        }
+      },
+      "p3_fewshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 165,
+        "failed": 3645,
+        "families": {
+          "F1_syntax": 1596,
+          "F2_environment": 773,
+          "F6_other": 777,
+          "F3_type": 275,
+          "F4_spec_construction": 178,
+          "F5_verification_logic": 46
+        }
+      },
+      "p3_fewshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 120,
+        "failed": 3690,
+        "families": {
+          "F3_type": 2513,
+          "F1_syntax": 388,
+          "F2_environment": 351,
+          "F6_other": 212,
+          "F5_verification_logic": 70,
+          "F4_spec_construction": 156
+        }
+      },
+      "p3_fewshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 101,
+        "failed": 3709,
+        "families": {
+          "F2_environment": 1284,
+          "F6_other": 470,
+          "F1_syntax": 1387,
+          "F4_spec_construction": 377,
+          "F5_verification_logic": 35,
+          "F3_type": 156
+        }
+      },
+      "p3_fewshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 758,
+        "failed": 3052,
+        "families": {
+          "F1_syntax": 996,
+          "F2_environment": 393,
+          "F4_spec_construction": 636,
+          "F6_other": 583,
+          "F5_verification_logic": 248,
+          "F3_type": 196
+        }
+      },
+      "p3_fewshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 137,
+        "failed": 3673,
+        "families": {
+          "F1_syntax": 2039,
+          "F2_environment": 816,
+          "F6_other": 444,
+          "F3_type": 251,
+          "F4_spec_construction": 107,
+          "F5_verification_logic": 16
+        }
+      },
+      "p1_fewshotplusCOT::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 209,
+        "failed": 3601,
+        "families": {
+          "F2_environment": 746,
+          "F1_syntax": 1786,
+          "F4_spec_construction": 199,
+          "F6_other": 650,
+          "F3_type": 181,
+          "F5_verification_logic": 39
+        }
+      },
+      "p1_fewshotplusCOT::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 126,
+        "failed": 3684,
+        "families": {
+          "F3_type": 2558,
+          "F1_syntax": 377,
+          "F6_other": 144,
+          "F5_verification_logic": 79,
+          "F2_environment": 423,
+          "F4_spec_construction": 103
+        }
+      },
+      "p1_fewshotplusCOT::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 75,
+        "failed": 3735,
+        "families": {
+          "F6_other": 665,
+          "F2_environment": 1245,
+          "F1_syntax": 1010,
+          "F4_spec_construction": 652,
+          "F5_verification_logic": 33,
+          "F3_type": 130
+        }
+      },
+      "p1_fewshotplusCOT::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 825,
+        "failed": 2985,
+        "families": {
+          "F2_environment": 586,
+          "F1_syntax": 1036,
+          "F4_spec_construction": 247,
+          "F5_verification_logic": 286,
+          "F6_other": 627,
+          "F3_type": 203
+        }
+      },
+      "p2_fewshotplusCOT::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 139,
+        "failed": 3671,
+        "families": {
+          "F2_environment": 1630,
+          "F6_other": 640,
+          "F1_syntax": 1051,
+          "F5_verification_logic": 39,
+          "F3_type": 236,
+          "F4_spec_construction": 75
+        }
+      },
+      "p2_fewshotplusCOT::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 13,
+        "failed": 3797,
+        "families": {
+          "F3_type": 2536,
+          "F1_syntax": 373,
+          "F6_other": 129,
+          "F2_environment": 723,
+          "F5_verification_logic": 6,
+          "F4_spec_construction": 30
+        }
+      },
+      "p2_fewshotplusCOT::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 24,
+        "failed": 3786,
+        "families": {
+          "F2_environment": 1472,
+          "F1_syntax": 1368,
+          "F6_other": 618,
+          "F3_type": 209,
+          "F4_spec_construction": 114,
+          "F5_verification_logic": 5
+        }
+      },
+      "p2_fewshotplusCOT::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 357,
+        "failed": 3453,
+        "families": {
+          "F3_type": 563,
+          "F1_syntax": 1299,
+          "F2_environment": 384,
+          "F6_other": 998,
+          "F5_verification_logic": 92,
+          "F4_spec_construction": 117
+        }
+      },
+      "p3_fewshotplusCOT::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 188,
+        "failed": 3622,
+        "families": {
+          "F6_other": 654,
+          "F2_environment": 692,
+          "F1_syntax": 1780,
+          "F3_type": 272,
+          "F5_verification_logic": 62,
+          "F4_spec_construction": 162
+        }
+      },
+      "p3_fewshotplusCOT::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 156,
+        "failed": 3654,
+        "families": {
+          "F3_type": 2387,
+          "F4_spec_construction": 163,
+          "F1_syntax": 451,
+          "F2_environment": 323,
+          "F5_verification_logic": 89,
+          "F6_other": 241
+        }
+      },
+      "p3_fewshotplusCOT::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 92,
+        "failed": 3718,
+        "families": {
+          "F6_other": 537,
+          "F2_environment": 1254,
+          "F3_type": 172,
+          "F1_syntax": 1362,
+          "F4_spec_construction": 350,
+          "F5_verification_logic": 43
+        }
+      },
+      "p3_fewshotplusCOT::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 821,
+        "failed": 2989,
+        "families": {
+          "F2_environment": 177,
+          "F4_spec_construction": 631,
+          "F5_verification_logic": 275,
+          "F1_syntax": 1010,
+          "F6_other": 647,
+          "F3_type": 249
+        }
+      },
+      "p1_fewshotplusLTM::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 147,
+        "failed": 3663,
+        "families": {
+          "F1_syntax": 1977,
+          "F4_spec_construction": 107,
+          "F2_environment": 713,
+          "F6_other": 682,
+          "F3_type": 164,
+          "F5_verification_logic": 20
+        }
+      },
+      "p1_fewshotplusLTM::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 236,
+        "failed": 3574,
+        "families": {
+          "F3_type": 2569,
+          "F2_environment": 270,
+          "F1_syntax": 332,
+          "F4_spec_construction": 127,
+          "F6_other": 179,
+          "F5_verification_logic": 97
+        }
+      },
+      "p1_fewshotplusLTM::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 103,
+        "failed": 3707,
+        "families": {
+          "F6_other": 614,
+          "F4_spec_construction": 609,
+          "F2_environment": 1199,
+          "F1_syntax": 1132,
+          "F5_verification_logic": 36,
+          "F3_type": 117
+        }
+      },
+      "p1_fewshotplusLTM::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 469,
+        "failed": 3341,
+        "families": {
+          "F6_other": 527,
+          "F1_syntax": 1062,
+          "F2_environment": 1247,
+          "F5_verification_logic": 147,
+          "F4_spec_construction": 238,
+          "F3_type": 120
+        }
+      },
+      "p2_fewshotplusLTM::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 70,
+        "failed": 3740,
+        "families": {
+          "F1_syntax": 1271,
+          "F6_other": 453,
+          "F2_environment": 1768,
+          "F3_type": 202,
+          "F5_verification_logic": 12,
+          "F4_spec_construction": 34
+        }
+      },
+      "p2_fewshotplusLTM::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 194,
+        "failed": 3616,
+        "families": {
+          "F3_type": 2351,
+          "F2_environment": 371,
+          "F1_syntax": 398,
+          "F6_other": 289,
+          "F4_spec_construction": 123,
+          "F5_verification_logic": 84
+        }
+      },
+      "p2_fewshotplusLTM::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 49,
+        "failed": 3761,
+        "families": {
+          "F1_syntax": 1224,
+          "F2_environment": 1445,
+          "F4_spec_construction": 145,
+          "F6_other": 651,
+          "F3_type": 268,
+          "F5_verification_logic": 28
+        }
+      },
+      "p2_fewshotplusLTM::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 2,
+        "failed": 3808,
+        "families": {
+          "F3_type": 29,
+          "F1_syntax": 1233,
+          "F4_spec_construction": 32,
+          "F2_environment": 2222,
+          "F6_other": 292
+        }
+      },
+      "p3_fewshotplusLTM::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 127,
+        "failed": 3683,
+        "families": {
+          "F1_syntax": 2037,
+          "F2_environment": 572,
+          "F6_other": 671,
+          "F3_type": 248,
+          "F4_spec_construction": 123,
+          "F5_verification_logic": 32
+        }
+      },
+      "p3_fewshotplusLTM::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 230,
+        "failed": 3580,
+        "families": {
+          "F3_type": 2207,
+          "F1_syntax": 501,
+          "F2_environment": 342,
+          "F6_other": 228,
+          "F5_verification_logic": 95,
+          "F4_spec_construction": 207
+        }
+      },
+      "p3_fewshotplusLTM::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 101,
+        "failed": 3709,
+        "families": {
+          "F6_other": 533,
+          "F1_syntax": 1387,
+          "F4_spec_construction": 423,
+          "F3_type": 185,
+          "F2_environment": 1153,
+          "F5_verification_logic": 28
+        }
+      },
+      "p3_fewshotplusLTM::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 661,
+        "failed": 3149,
+        "families": {
+          "F1_syntax": 1114,
+          "F6_other": 783,
+          "F4_spec_construction": 662,
+          "F3_type": 244,
+          "F5_verification_logic": 244,
+          "F2_environment": 102
+        }
+      },
+      "p1_zeroshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 2,
+        "failed": 3808,
+        "families": {
+          "F1_syntax": 1234,
+          "F2_environment": 2341,
+          "F3_type": 167,
+          "F4_spec_construction": 33,
+          "F6_other": 33
+        }
+      },
+      "p1_zeroshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 53,
+        "failed": 3757,
+        "families": {
+          "F3_type": 2138,
+          "F1_syntax": 614,
+          "F6_other": 158,
+          "F2_environment": 693,
+          "F4_spec_construction": 146,
+          "F5_verification_logic": 8
+        }
+      },
+      "p1_zeroshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 1755,
+          "F2_environment": 1936,
+          "F3_type": 47,
+          "F6_other": 72
+        }
+      },
+      "p1_zeroshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 13,
+        "failed": 3797,
+        "families": {
+          "F1_syntax": 793,
+          "F6_other": 405,
+          "F2_environment": 2328,
+          "F4_spec_construction": 268,
+          "F5_verification_logic": 1,
+          "F3_type": 2
+        }
+      },
+      "p1_zeroshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 2074,
+          "F2_environment": 1560,
+          "F3_type": 82,
+          "F6_other": 88,
+          "F4_spec_construction": 6
+        }
+      },
+      "p2_zeroshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 3174,
+          "F2_environment": 578,
+          "F4_spec_construction": 8,
+          "F3_type": 30,
+          "F6_other": 20
+        }
+      },
+      "p2_zeroshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F3_type": 1385,
+          "F6_other": 103,
+          "F1_syntax": 788,
+          "F2_environment": 1521,
+          "F4_spec_construction": 12,
+          "F5_verification_logic": 1
+        }
+      },
+      "p2_zeroshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 1348,
+          "F2_environment": 1342,
+          "F6_other": 1064,
+          "F3_type": 47,
+          "F4_spec_construction": 9
+        }
+      },
+      "p2_zeroshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 1148,
+          "F2_environment": 2483,
+          "F4_spec_construction": 20,
+          "F6_other": 156,
+          "F3_type": 3
+        }
+      },
+      "p2_zeroshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 1862,
+          "F2_environment": 1664,
+          "F6_other": 41,
+          "F3_type": 240,
+          "F4_spec_construction": 3
+        }
+      },
+      "p3_zeroshot::claude-sonnet-4-5-20250929": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 2540,
+          "F2_environment": 1225,
+          "F4_spec_construction": 6,
+          "F3_type": 14,
+          "F6_other": 25
+        }
+      },
+      "p3_zeroshot::deepseek-v3.2": {
+        "attempts": 3810,
+        "passed": 1,
+        "failed": 3809,
+        "families": {
+          "F1_syntax": 788,
+          "F3_type": 1781,
+          "F4_spec_construction": 98,
+          "F6_other": 137,
+          "F2_environment": 1005
+        }
+      },
+      "p3_zeroshot::gpt-4o-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 3572,
+          "F2_environment": 210,
+          "F6_other": 28
+        }
+      },
+      "p3_zeroshot::gpt-5.2": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F2_environment": 2367,
+          "F1_syntax": 831,
+          "F6_other": 254,
+          "F4_spec_construction": 355,
+          "F3_type": 3
+        }
+      },
+      "p3_zeroshot::o4-mini": {
+        "attempts": 3810,
+        "passed": 0,
+        "failed": 3810,
+        "families": {
+          "F1_syntax": 2412,
+          "F2_environment": 1257,
+          "F3_type": 54,
+          "F6_other": 84,
+          "F4_spec_construction": 3
+        }
+      }
+    }
+  },
+  "error_main_categories": {
+    "other_error": 22592,
+    "syntax_error": 57888,
+    "undefined_symbol": 30708,
+    "verus_syntax": 21143,
+    "rust_compile_error": 33848,
+    "verus_verification": 2965,
+    "main_function": 18616,
+    "type_error": 1072,
+    "ownership_error": 59,
+    "import_error": 7404,
+    "macro_error": 22,
+    "timeout": 1,
+    "unknown": 310,
+    "verus_toolchain": 1
+  },
+  "error_sub_categories": {
+    "unclassified_error": 22592,
+    "missing_semicolon": 3139,
+    "undefined_value": 25111,
+    "spec_keyword_misuse": 10654,
+    "unexpected_symbol": 31590,
+    "E0599": 2442,
+    "E0423": 488,
+    "ghost_error": 6215,
+    "exec_mode_error": 1300,
+    "invariant_failed": 461,
+    "postcondition_failed": 1587,
+    "precondition_failed": 524,
+    "unexpected_token": 9752,
+    "E0433": 410,
+    "undefined_generic": 2150,
+    "undefined_type": 387,
+    "expected_one_of": 12222,
+    "unclosed_delimiter": 747,
+    "E0282": 718,
+    "missing_main": 18616,
+    "verus_macro_error": 647,
+    "E0432": 26912,
+    "E0573": 108,
+    "undefined_function": 3060,
+    "E0284": 265,
+    "spec_function_error": 2322,
+    "E0428": 688,
+    "E0283": 622,
+    "type_mismatch": 1058,
+    "E0604": 94,
+    "mutable_borrow_error": 11,
+    "assertion_failed": 383,
+    "E0614": 19,
+    "E0277": 777,
+    "E0507": 23,
+    "missing_curly_brace": 200,
+    "E0369": 46,
+    "expected_identifier": 238,
+    "operator_not_implemented": 14,
+    "E0061": 35,
+    "E0308": 17,
+    "E0605": 26,
+    "E0204": 10,
+    "E0608": 7,
+    "proof_block_error": 5,
+    "E0434": 9,
+    "missing_verus_macro": 7385,
+    "E0762": 27,
+    "E0603": 8,
+    "termination_proof_failed": 10,
+    "missing_vstd_module": 19,
+    "E0164": 1,
+    "lifetime_error": 34,
+    "E0592": 4,
+    "macro_expansion_failed": 22,
+    "E0424": 11,
+    "E0404": 5,
+    "verification_timeout": 1,
+    "E0070": 12,
+    "E0368": 16,
+    "unknown_error": 310,
+    "E0408": 13,
+    "verus_tool_error": 1,
+    "E0615": 7,
+    "E0600": 1,
+    "E0107": 1,
+    "E0610": 2,
+    "use_after_move": 14,
+    "E0763": 2,
+    "E0658": 2,
+    "E0532": 1,
+    "E0659": 2,
+    "E0758": 1,
+    "E0765": 2,
+    "E0609": 3,
+    "E0606": 2,
+    "E0574": 1,
+    "E0080": 3,
+    "E0463": 5
+  },
+  "error_full_categories": {
+    "other_error::unclassified_error": 22592,
+    "syntax_error::missing_semicolon": 3139,
+    "undefined_symbol::undefined_value": 25111,
+    "verus_syntax::spec_keyword_misuse": 10654,
+    "syntax_error::unexpected_symbol": 31590,
+    "rust_compile_error::E0599": 2442,
+    "rust_compile_error::E0423": 488,
+    "verus_syntax::ghost_error": 6215,
+    "verus_syntax::exec_mode_error": 1300,
+    "verus_verification::invariant_failed": 461,
+    "verus_verification::postcondition_failed": 1587,
+    "verus_verification::precondition_failed": 524,
+    "syntax_error::unexpected_token": 9752,
+    "rust_compile_error::E0433": 410,
+    "undefined_symbol::undefined_generic": 2150,
+    "undefined_symbol::undefined_type": 387,
+    "syntax_error::expected_one_of": 12222,
+    "syntax_error::unclosed_delimiter": 747,
+    "rust_compile_error::E0282": 718,
+    "main_function::missing_main": 18616,
+    "verus_syntax::verus_macro_error": 647,
+    "rust_compile_error::E0432": 26912,
+    "rust_compile_error::E0573": 108,
+    "undefined_symbol::undefined_function": 3060,
+    "rust_compile_error::E0284": 265,
+    "verus_syntax::spec_function_error": 2322,
+    "rust_compile_error::E0428": 688,
+    "rust_compile_error::E0283": 622,
+    "type_error::type_mismatch": 1058,
+    "rust_compile_error::E0604": 94,
+    "ownership_error::mutable_borrow_error": 11,
+    "verus_verification::assertion_failed": 383,
+    "rust_compile_error::E0614": 19,
+    "rust_compile_error::E0277": 777,
+    "rust_compile_error::E0507": 23,
+    "syntax_error::missing_curly_brace": 200,
+    "rust_compile_error::E0369": 46,
+    "syntax_error::expected_identifier": 238,
+    "type_error::operator_not_implemented": 14,
+    "rust_compile_error::E0061": 35,
+    "rust_compile_error::E0308": 17,
+    "rust_compile_error::E0605": 26,
+    "rust_compile_error::E0204": 10,
+    "rust_compile_error::E0608": 7,
+    "verus_syntax::proof_block_error": 5,
+    "rust_compile_error::E0434": 9,
+    "import_error::missing_verus_macro": 7385,
+    "rust_compile_error::E0762": 27,
+    "rust_compile_error::E0603": 8,
+    "verus_verification::termination_proof_failed": 10,
+    "import_error::missing_vstd_module": 19,
+    "rust_compile_error::E0164": 1,
+    "ownership_error::lifetime_error": 34,
+    "rust_compile_error::E0592": 4,
+    "macro_error::macro_expansion_failed": 22,
+    "rust_compile_error::E0424": 11,
+    "rust_compile_error::E0404": 5,
+    "timeout::verification_timeout": 1,
+    "rust_compile_error::E0070": 12,
+    "rust_compile_error::E0368": 16,
+    "unknown::unknown_error": 310,
+    "rust_compile_error::E0408": 13,
+    "verus_toolchain::verus_tool_error": 1,
+    "rust_compile_error::E0615": 7,
+    "rust_compile_error::E0600": 1,
+    "rust_compile_error::E0107": 1,
+    "rust_compile_error::E0610": 2,
+    "ownership_error::use_after_move": 14,
+    "rust_compile_error::E0763": 2,
+    "rust_compile_error::E0658": 2,
+    "rust_compile_error::E0532": 1,
+    "rust_compile_error::E0659": 2,
+    "rust_compile_error::E0758": 1,
+    "rust_compile_error::E0765": 2,
+    "rust_compile_error::E0609": 3,
+    "rust_compile_error::E0606": 2,
+    "rust_compile_error::E0574": 1,
+    "rust_compile_error::E0080": 3,
+    "rust_compile_error::E0463": 5
+  },
+  "error_contexts": {
+    "other_error::unclassified_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_1",
+        "context": "error: no rules expected `:`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_100",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_100",
+        "context": "error: expected parentheses"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_104",
+        "context": "error: expected an expression"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_109",
+        "context": "error: expected curly braces"
+      }
+    ],
+    "syntax_error::missing_semicolon": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_1",
+        "context": "error: unexpected token, expected `;`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_15",
+        "context": "error: unexpected token, expected `;`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_22",
+        "context": "error: unexpected token, expected `;`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_220",
+        "context": "error: unexpected token, expected `;`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_35",
+        "context": "error: unexpected token, expected `;`"
+      }
+    ],
+    "undefined_symbol::undefined_value": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_1",
+        "context": "error[E0425]: cannot find value `result` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_1",
+        "context": "error[E0425]: cannot find value `result` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_1",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_109",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_109",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `exists|<vars>| expr` instead"
+      }
+    ],
+    "verus_syntax::spec_keyword_misuse": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_10",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_10",
+        "context": "error: This block would be parsed as the function/loop body, but it is followed immediately by another block (if you meant this block to be part of th"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_10",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_10",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_104",
+        "context": "error: expected curly braces"
+      }
+    ],
+    "syntax_error::unexpected_symbol": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_10",
+        "context": "error[E0599]: no method named `index` found for struct `std::vec::Vec<vstd::prelude::int>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_100",
+        "context": "error[E0308]: mismatched types"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_100",
+        "context": "error[E0308]: mismatched types"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_100",
+        "context": "error[E0308]: mismatched types"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_104",
+        "context": "error[E0308]: mismatched types"
+      }
+    ],
+    "rust_compile_error::E0599": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_109",
+        "context": "error[E0599]: no method named `borrow` found for struct `std::vec::Vec<u64>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_26",
+        "context": "error[E0599]: no method named `index` found for struct `std::vec::Vec<vstd::prelude::int>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_26",
+        "context": "error[E0599]: no function or associated item named `empty` found for struct `std::vec::Vec<_, _>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_36",
+        "context": "error[E0599]: no method named `index` found for struct `std::vec::Vec<vstd::prelude::int>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_90",
+        "context": "error[E0599]: no method named `index` found for struct `std::vec::Vec<std::vec::Vec<vstd::prelude::int>>` in the current scope"
+      }
+    ],
+    "rust_compile_error::E0423": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_117",
+        "context": "error[E0423]: expected function, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_45",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_62",
+        "context": "error[E0423]: expected value, found builtin type `i32`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_62",
+        "context": "error[E0423]: expected function, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_62",
+        "context": "error[E0423]: expected value, found builtin type `i32`"
+      }
+    ],
+    "verus_syntax::ghost_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_14",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_205",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_222",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_38",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_87",
+        "context": "error: The Verus types 'nat' and 'int' can only be used in ghost code (e.g., in a 'spec' or 'proof' function, inside a 'proof' block, or when assignin"
+      }
+    ],
+    "verus_syntax::exec_mode_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_16",
+        "context": "error: loop must have a decreases clause"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_16",
+        "context": "error: loop must have a decreases clause"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_50",
+        "context": "error: loop must have a decreases clause"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_8",
+        "context": "error: loop must have a decreases clause"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_89",
+        "context": "error: loop must have a decreases clause"
+      }
+    ],
+    "verus_verification::invariant_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_202",
+        "context": "verification results:: 1 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_220",
+        "context": "verification results:: 1 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_55",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0146_vericoded",
+        "context": "verification results:: 6 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0653_vericoded",
+        "context": "verification results:: 3 verified, 1 errors"
+      }
+    ],
+    "verus_verification::postcondition_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_222",
+        "context": "verification results:: 0 verified, 2 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_222",
+        "context": "verification results:: 0 verified, 2 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_1",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_1",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_34",
+        "context": "verification results:: 0 verified, 2 errors"
+      }
+    ],
+    "verus_verification::precondition_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_23",
+        "context": "verification results:: 1 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_6",
+        "context": "verification results:: 2 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_75",
+        "context": "verification results:: 1 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_74",
+        "context": "verification results:: 1 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0797_vericoded",
+        "context": "verification results:: 1 verified, 1 errors"
+      }
+    ],
+    "syntax_error::unexpected_token": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_35",
+        "context": "error: unexpected token, expected `]`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "MBPP-verified_task_11",
+        "context": "error: unexpected token, expected `)`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0065_vericoded",
+        "context": "error: expected one of `!` or `::`, found `nums`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0399_vericoded",
+        "context": "error: unexpected token, expected `)`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0399_vericoded",
+        "context": "error: unexpected token, expected `)`"
+      }
+    ],
+    "rust_compile_error::E0433": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_36",
+        "context": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `stm`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_54",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_59",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_59",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_79",
+        "context": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `casts`"
+      }
+    ],
+    "undefined_symbol::undefined_generic": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_38",
+        "context": "error: cannot find attribute `trigger` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_78",
+        "context": "error: cannot find macro `body_invariant` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0152_vericoded",
+        "context": "error: cannot find macro `calc` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0416_vericoded",
+        "context": "error: cannot find attribute `trigger` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0569_vericoded",
+        "context": "error[E0425]: cannot find function, tuple struct or tuple variant `Exists` in this scope"
+      }
+    ],
+    "undefined_symbol::undefined_type": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_8",
+        "context": "error[E0412]: cannot find type `uint` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0022_vericoded",
+        "context": "error[E0412]: cannot find type `uint` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0114_vericoded",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VS0008_vericoded",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VS0032_vericoded",
+        "context": "error[E0412]: cannot find type `uint` in this scope"
+      }
+    ],
+    "syntax_error::expected_one_of": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_91",
+        "context": "error: expected one of: `struct`, `enum`, `union`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_32",
+        "context": "error: expected one of `!` or `::`, found `you`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_58",
+        "context": "error: unknown start of token: `"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_74",
+        "context": "error: unknown start of token: `"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_12",
+        "context": "error: expected one of: `broadcast`, `assume_specification`, `fn`, `extern`, `use`, `static`, `const`, `unsafe`, `mod`, `type`, `struct`, `enum`, `uni"
+      }
+    ],
+    "syntax_error::unclosed_delimiter": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_15",
+        "context": "error: this file contains an unclosed delimiter"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_15",
+        "context": "error: this file contains an unclosed delimiter"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_68",
+        "context": "error: prefix `I` is unknown"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_80",
+        "context": "error: this file contains an unclosed delimiter"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_67",
+        "context": "error: this file contains an unclosed delimiter"
+      }
+    ],
+    "rust_compile_error::E0282": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_2",
+        "context": "error[E0282]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_71",
+        "context": "error[E0282]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_71",
+        "context": "error[E0282]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_78",
+        "context": "error[E0282]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_26",
+        "context": "error[E0282]: type annotations needed"
+      }
+    ],
+    "main_function::missing_main": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_20",
+        "context": "error[E0601]: `main` function not found in crate `00`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_68",
+        "context": "error[E0601]: `main` function not found in crate `00`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0586_vericoded",
+        "context": "error[E0601]: `main` function not found in crate `03`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0729_vericoded",
+        "context": "error[E0601]: `main` function not found in crate `00`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0101_vericoded",
+        "context": "error[E0601]: `main` function not found in crate `03`"
+      }
+    ],
+    "verus_syntax::verus_macro_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_50",
+        "context": "error: unexpected closing delimiter: `}`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0104_vericoded",
+        "context": "error: unexpected closing delimiter: `}`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0133_vericoded",
+        "context": "error: unexpected end of input, expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error: cannot use function `$~00::NumpyDType::eq` which is ignored because it is either declared outside the verus! macro or it is marked as `external"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error: cannot use function `$~03::NumpyDType::eq` which is ignored because it is either declared outside the verus! macro or it is marked as `external"
+      }
+    ],
+    "rust_compile_error::E0432": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_54",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0197_vericoded",
+        "context": "error[E0432]: unresolved import `builtin`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0197_vericoded",
+        "context": "error[E0432]: unresolved import `builtin`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0197_vericoded",
+        "context": "error[E0432]: unresolved import `builtin`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0367_vericoded",
+        "context": "error: expected curly braces"
+      }
+    ],
+    "rust_compile_error::E0573": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_67",
+        "context": "error[E0573]: expected type, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0020_vericoded",
+        "context": "error[E0573]: expected type, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_18",
+        "context": "error[E0573]: expected type, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_23",
+        "context": "error[E0573]: expected type, found macro `seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VD0257_vericoded",
+        "context": "error[E0573]: expected type, found macro `seq`"
+      }
+    ],
+    "undefined_symbol::undefined_function": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_74",
+        "context": "error[E0425]: cannot find function `str_to_seq_char` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_23",
+        "context": "error[E0425]: cannot find function `equal_seq` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_27",
+        "context": "error[E0425]: cannot find function `char_from_u32` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_27",
+        "context": "error[E0425]: cannot find function `map_seq` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_31",
+        "context": "error: expected curly braces"
+      }
+    ],
+    "rust_compile_error::E0284": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_18",
+        "context": "error[E0284]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0094_vericoded",
+        "context": "error[E0284]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s1lif",
+        "context": "error[E0284]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s1lif",
+        "context": "error[E0284]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_602",
+        "context": "error[E0284]: type annotations needed"
+      }
+    ],
+    "verus_syntax::spec_function_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_34",
+        "context": "error: spec functions cannot have requires/ensures"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0115_vericoded",
+        "context": "error: spec functions cannot have requires/ensures"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0487_vericoded",
+        "context": "error: spec functions cannot have requires/ensures"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0534_vericoded",
+        "context": "error: spec functions cannot have requires/ensures"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0575_vericoded",
+        "context": "error: spec functions cannot have requires/ensures"
+      }
+    ],
+    "rust_compile_error::E0428": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_51",
+        "context": "error[E0428]: the name `first_elements_spec` is defined multiple times"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0551_vericoded",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_424",
+        "context": "error[E0428]: the name `extract_rear_chars_spec` is defined multiple times"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "HumanEval-Verus_task_63",
+        "context": "error[E0428]: the name `fib` is defined multiple times"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "HumanEval-Verus_task_63",
+        "context": "error[E0428]: the name `fib` is defined multiple times"
+      }
+    ],
+    "rust_compile_error::E0283": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0049_vericoded",
+        "context": "error[E0283]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0085_vericoded",
+        "context": "error[E0283]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0136_vericoded",
+        "context": "error[E0283]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0211_vericoded",
+        "context": "error[E0283]: type annotations needed"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0347_vericoded",
+        "context": "error[E0283]: type annotations needed"
+      }
+    ],
+    "type_error::type_mismatch": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0117_vericoded",
+        "context": "error: mismatched types; types must be compatible to use == or !="
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0210_vericoded",
+        "context": "error: mismatched types; types must be compatible to use == or !="
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0210_vericoded",
+        "context": "error: mismatched types; types must be compatible to use == or !="
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0210_vericoded",
+        "context": "error: mismatched types; types must be compatible to use == or !="
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0422_vericoded",
+        "context": "error[E0308]: mismatched types"
+      }
+    ],
+    "rust_compile_error::E0604": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0186_vericoded",
+        "context": "error[E0604]: only `u8` can be cast as `char`, not `u32`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0741_vericoded",
+        "context": "error[E0604]: only `u8` can be cast as `char`, not `u32`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0741_vericoded",
+        "context": "error[E0604]: only `u8` can be cast as `char`, not `u32`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VH0025_vericoded",
+        "context": "error[E0604]: only `u8` can be cast as `char`, not `u32`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VH0025_vericoded",
+        "context": "error[E0604]: only `u8` can be cast as `char`, not `u32`"
+      }
+    ],
+    "ownership_error::mutable_borrow_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0378_vericoded",
+        "context": "error[E0599]: no method named `borrow` found for mutable reference `&mut std::vec::Vec<i32>` in the current scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0037_vericoded",
+        "context": "error[E0596]: cannot borrow `values` as mutable, as it is not declared as mutable"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0037_vericoded",
+        "context": "error[E0596]: cannot borrow `values` as mutable, as it is not declared as mutable"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0057_vericoded",
+        "context": "error[E0596]: cannot borrow `b` as mutable, as it is not declared as mutable"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0057_vericoded",
+        "context": "error[E0596]: cannot borrow `b` as mutable, as it is not declared as mutable"
+      }
+    ],
+    "verus_verification::assertion_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VH0041_vericoded",
+        "context": "verification results:: 2 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VH0041_vericoded",
+        "context": "verification results:: 2 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0658_vericoded",
+        "context": "verification results:: 4 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0658_vericoded",
+        "context": "verification results:: 3 verified, 2 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "MBPP-verified_task_73",
+        "context": "verification results:: 3 verified, 1 errors"
+      }
+    ],
+    "rust_compile_error::E0614": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0035_vericoded",
+        "context": "error[E0614]: type `std::option::Option<&_>` cannot be dereferenced"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0035_vericoded",
+        "context": "error[E0614]: type `std::option::Option<&_>` cannot be dereferenced"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s3if",
+        "context": "error[E0614]: type `std::option::Option<&_>` cannot be dereferenced"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0612_vericoded",
+        "context": "error[E0614]: type `std::option::Option<&char>` cannot be dereferenced"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0612_vericoded",
+        "context": "error[E0614]: type `std::option::Option<&char>` cannot be dereferenced"
+      }
+    ],
+    "rust_compile_error::E0277": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0113_vericoded",
+        "context": "error[E0277]: the type `[u32]` cannot be indexed by `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0132_vericoded",
+        "context": "error[E0277]: the trait bound `f64: std::cmp::Eq` is not satisfied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_94",
+        "context": "error[E0277]: the type `[std::vec::Vec<i32>]` cannot be indexed by `vstd::prelude::int`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0277]: the trait bound `std::string::String: vstd::prelude::Structural` is not satisfied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0483_vericoded",
+        "context": "error[E0277]: the trait bound `f64: std::cmp::Eq` is not satisfied"
+      }
+    ],
+    "rust_compile_error::E0507": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0058_vericoded",
+        "context": "error[E0507]: cannot move out of index of `std::vec::Vec<T>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0058_vericoded",
+        "context": "error[E0507]: cannot move out of index of `std::vec::Vec<T>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0058_vericoded",
+        "context": "error[E0507]: cannot move out of index of `std::vec::Vec<T>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0058_vericoded",
+        "context": "error[E0507]: cannot move out of index of `std::vec::Vec<T>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0058_vericoded",
+        "context": "error[E0507]: cannot move out of index of `std::vec::Vec<T>`"
+      }
+    ],
+    "syntax_error::missing_curly_brace": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0081_vericoded",
+        "context": "error: expected `{`, found `invariant`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_588",
+        "context": "error: expected `{`, found `invariant`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_760",
+        "context": "error: expected identifier, found keyword `crate`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0194_vericoded",
+        "context": "error: expected `{`, found `<eof>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0541_vericoded",
+        "context": "error: expected one of `!`, `(`, `)`, `+`, `,`, `::`, or `<`, found `:`"
+      }
+    ],
+    "rust_compile_error::E0369": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0125_vericoded",
+        "context": "error[E0369]: binary operation `==` cannot be applied to type `NumpyTypeClass`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0125_vericoded",
+        "context": "error[E0369]: binary operation `==` cannot be applied to type `NumpyTypeClass`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s5if",
+        "context": "error[E0369]: cannot add `std::option::Option<&i32>` to `std::option::Option<&i32>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VH0057_vericoded",
+        "context": "error[E0369]: binary operation `==` cannot be applied to type `vstd::set::Set<char>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VH0057_vericoded",
+        "context": "error[E0369]: binary operation `==` cannot be applied to type `vstd::set::Set<char>`"
+      }
+    ],
+    "syntax_error::expected_identifier": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s32if",
+        "context": "error: no rules expected `:`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_644",
+        "context": "error: no rules expected `:`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_82",
+        "context": "error: expected identifier, found keyword `crate`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_47",
+        "context": "error: expected identifier, found keyword `crate`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_79",
+        "context": "error: expected identifier, found keyword `crate`"
+      }
+    ],
+    "type_error::operator_not_implemented": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_s3lif",
+        "context": "error[E0277]: cannot multiply `{integer}` by `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0188_vericoded",
+        "context": "error[E0277]: cannot add-assign `vstd::prelude::int` to `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0188_vericoded",
+        "context": "error[E0277]: cannot add-assign `vstd::prelude::int` to `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0339_vericoded",
+        "context": "error[E0277]: cannot add-assign `_` to `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0188_vericoded",
+        "context": "error[E0277]: cannot add-assign `vstd::prelude::int` to `i8`"
+      }
+    ],
+    "rust_compile_error::E0061": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "MBPP-verified_task_69",
+        "context": "error[E0061]: this function takes 0 arguments but 2 arguments were supplied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VD0721_vericoded",
+        "context": "error[E0061]: this function takes 2 arguments but 1 argument was supplied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "HumanEval-Verus_task_32",
+        "context": "error[E0061]: this function takes 2 arguments but 3 arguments were supplied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0045_vericoded",
+        "context": "error[E0061]: this function takes 2 arguments but 1 argument was supplied"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VD0735_vericoded",
+        "context": "error[E0061]: this method takes 0 arguments but 1 argument was supplied"
+      }
+    ],
+    "rust_compile_error::E0308": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VD0431_vericoded",
+        "context": "error[E0308]: arguments to this function are incorrect"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VD0669_vericoded",
+        "context": "error[E0308]: arguments to this function are incorrect"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VJ0000_vericoded",
+        "context": "error[E0308]: arguments to this function are incorrect"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "VerusBench_MBPP_task_id_474",
+        "context": "error[E0308]: arguments to this function are incorrect"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_74",
+        "context": "error[E0308]: arguments to this function are incorrect"
+      }
+    ],
+    "rust_compile_error::E0605": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0575_vericoded",
+        "context": "error[E0605]: non-primitive cast: `vstd::prelude::nat` as `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0575_vericoded",
+        "context": "error[E0605]: non-primitive cast: `vstd::prelude::nat` as `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0575_vericoded",
+        "context": "error[E0605]: non-primitive cast: `vstd::prelude::nat` as `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0575_vericoded",
+        "context": "error[E0605]: non-primitive cast: `vstd::prelude::nat` as `i8`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0352_vericoded",
+        "context": "error[E0605]: non-primitive cast: `vstd::prelude::int` as `i32`"
+      }
+    ],
+    "rust_compile_error::E0204": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0204]: the trait `std::marker::Copy` cannot be implemented for this type"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0204]: the trait `std::marker::Copy` cannot be implemented for this type"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0204]: the trait `std::marker::Copy` cannot be implemented for this type"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0204]: the trait `std::marker::Copy` cannot be implemented for this type"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0219_vericoded",
+        "context": "error[E0204]: the trait `std::marker::Copy` cannot be implemented for this type"
+      }
+    ],
+    "rust_compile_error::E0608": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VD0908_vericoded",
+        "context": "error[E0608]: cannot index into a value of type `vstd::seq::Seq<char>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_808",
+        "context": "error[E0608]: cannot index into a value of type `vstd::seq::Seq<i32>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "HumanEval-Verus_task_78",
+        "context": "error[E0608]: cannot index into a value of type `std::str::Chars<'_>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VerusBench_MBPP_task_id_476",
+        "context": "error[E0608]: cannot index into a value of type `vstd::seq::Seq<i32>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p3_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VA0633_vericoded",
+        "context": "error[E0608]: cannot index into a value of type `vstd::seq::Seq<char>`"
+      }
+    ],
+    "verus_syntax::proof_block_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VH0086_vericoded",
+        "context": "error: proof blocks inside spec code is currently supported only for spec functions with decreases"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VS0010_vericoded",
+        "context": "error: proof blocks inside spec code is currently supported only for spec functions with decreases"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p1_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VA0634_vericoded",
+        "context": "error: proof block must have type ()"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p3_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_109",
+        "context": "error: proof block must have type ()"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p3_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VD0749_vericoded",
+        "context": "error: proof blocks inside spec code is currently supported only for spec functions with decreases"
+      }
+    ],
+    "rust_compile_error::E0434": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_gpt-5.2.json",
+        "sample_id": "VerusBench_Misc_bubble",
+        "context": "error[E0434]: can't capture dynamic environment in a fn item"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0662_vericoded",
+        "context": "error[E0434]: can't capture dynamic environment in a fn item"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VV0029_vericoded",
+        "context": "error[E0434]: can't capture dynamic environment in a fn item"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VV0029_vericoded",
+        "context": "error[E0434]: can't capture dynamic environment in a fn item"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p1_zeroshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0661_vericoded",
+        "context": "error[E0434]: can't capture dynamic environment in a fn item"
+      }
+    ],
+    "import_error::missing_verus_macro": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_66",
+        "context": "error: cannot find macro `verus` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_769",
+        "context": "error: cannot find macro `verus` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0109_vericoded",
+        "context": "error: cannot find macro `verus` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0109_vericoded",
+        "context": "error: cannot find macro `verus` in this scope"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VD0924_vericoded",
+        "context": "error: cannot find macro `verus` in this scope"
+      }
+    ],
+    "rust_compile_error::E0762": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VA0119_vericoded",
+        "context": "error: prefix `n` is unknown"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VV0078_vericoded",
+        "context": "error: prefix `i` is unknown"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_61",
+        "context": "error: prefix `hd` is unknown"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VA0339_vericoded",
+        "context": "error: prefix `s` is unknown"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VJ0096_vericoded",
+        "context": "error: prefix `head` is unknown"
+      }
+    ],
+    "rust_compile_error::E0603": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VA0210_vericoded",
+        "context": "error[E0603]: struct `String` is private"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VT0599_vericoded",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VD0197_vericoded",
+        "context": "error[E0603]: struct `String` is private"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "HumanEval-Verus_task_44",
+        "context": "error: expected curly braces"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0057_vericoded",
+        "context": "error[E0603]: function `result_len` is private"
+      }
+    ],
+    "verus_verification::termination_proof_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p1_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VD0265_vericoded",
+        "context": "verification results:: 2 verified, 2 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_45",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_576",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_60",
+        "context": "verification results:: 3 verified, 1 errors"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0561_vericoded",
+        "context": "verification results:: 1 verified, 1 errors"
+      }
+    ],
+    "import_error::missing_vstd_module": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_19",
+        "context": "error[E0425]: cannot find function `seq_from_slice` in crate `vstd`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0131_vericoded",
+        "context": "error[E0425]: cannot find function `vec_view` in crate `vstd`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_14",
+        "context": "error: forall, choose, and exists do not allow parentheses, use `forall|<vars>| expr` instead"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0612_vericoded",
+        "context": "error[E0425]: cannot find function `vec_to_seq` in crate `vstd`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VV0062_vericoded",
+        "context": "error[E0425]: cannot find function `seq_from_slice` in crate `vstd`"
+      }
+    ],
+    "rust_compile_error::E0164": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_20",
+        "context": "error[E0164]: expected tuple struct or tuple variant, found associated function `Seq::empty`"
+      }
+    ],
+    "ownership_error::lifetime_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VA0115_vericoded",
+        "context": "Internal Verus Error: The thir_body query is running for item DefId(0:8 ~ complete02[1b63]::solve::PRESIDENTS) which may require erasure, but the Veru"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0253_vericoded",
+        "context": "Internal Verus Error: The thir_body query is running for item DefId(0:8 ~ complete01[5d2f]::solve::MOD) which may require erasure, but the VerusErasur"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0253_vericoded",
+        "context": "Internal Verus Error: The thir_body query is running for item DefId(0:9 ~ complete02[1b63]::solve::MOD) which may require erasure, but the VerusErasur"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0253_vericoded",
+        "context": "Internal Verus Error: The thir_body query is running for item DefId(0:9 ~ complete03[2357]::solve::MOD) which may require erasure, but the VerusErasur"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VA0115_vericoded",
+        "context": "Internal Verus Error: The thir_body query is running for item DefId(0:7 ~ complete00[98d5]::solve::PRESIDENTS) which may require erasure, but the Veru"
+      }
+    ],
+    "rust_compile_error::E0592": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0130_vericoded",
+        "context": "error[E0592]: duplicate definitions with name `dtype_size`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p1_fewshotplusLTM_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0540_vericoded",
+        "context": "this will become a hard error in the future"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0119_vericoded",
+        "context": "error[E0592]: duplicate definitions with name `precedence`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p3_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0043_vericoded",
+        "context": "this will become a hard error in the future"
+      }
+    ],
+    "macro_error::macro_expansion_failed": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0132_vericoded",
+        "context": "error: `core::clone::impls::impl&%19::clone` is not supported (note: you may be able to add a Verus specification to this function with `assume_specif"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0132_vericoded",
+        "context": "error: `core::clone::impls::impl&%19::clone` is not supported (note: you may be able to add a Verus specification to this function with `assume_specif"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0132_vericoded",
+        "context": "error: `core::clone::impls::impl&%19::clone` is not supported (note: you may be able to add a Verus specification to this function with `assume_specif"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0406_vericoded",
+        "context": "error: The verifier does not yet support the following Rust feature: built-in instance Misc"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0406_vericoded",
+        "context": "error: The verifier does not yet support the following Rust feature: built-in instance Misc"
+      }
+    ],
+    "rust_compile_error::E0424": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0557_vericoded",
+        "context": "error[E0424]: expected value, found module `self`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VH0012_vericoded",
+        "context": "error[E0424]: expected value, found module `self`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VH0012_vericoded",
+        "context": "error[E0424]: expected value, found module `self`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_27",
+        "context": "error[E0424]: expected value, found module `self`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0178_vericoded",
+        "context": "error[E0424]: expected value, found module `self`"
+      }
+    ],
+    "rust_compile_error::E0404": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_res2o",
+        "context": "error[E0404]: expected trait, found struct `nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_Diffy_sina5",
+        "context": "error[E0404]: expected trait, found struct `int`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VJ0153_vericoded",
+        "context": "error[E0404]: expected trait, found struct `Seq`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0073_vericoded",
+        "context": "error: expected an expression"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_deepseek-v3.2.json",
+        "sample_id": "HumanEval-Verus_task_67",
+        "context": "error[E0404]: expected trait, found builtin type `char`"
+      }
+    ],
+    "timeout::verification_timeout": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0548_vericoded",
+        "context": "Verification timeout (120s)"
+      }
+    ],
+    "rust_compile_error::E0070": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_47",
+        "context": "error[E0070]: invalid left-hand side of assignment"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0363_vericoded",
+        "context": "error[E0070]: invalid left-hand side of assignment"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VA0363_vericoded",
+        "context": "error[E0070]: invalid left-hand side of assignment"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0188_vericoded",
+        "context": "error[E0070]: invalid left-hand side of assignment"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0188_vericoded",
+        "context": "error[E0070]: invalid left-hand side of assignment"
+      }
+    ],
+    "rust_compile_error::E0368": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "MBPP-verified_task_70",
+        "context": "error[E0368]: binary assignment operation `+=` cannot be applied to type `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VJ0065_vericoded",
+        "context": "error[E0368]: binary assignment operation `+=` cannot be applied to type `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VH0050_vericoded",
+        "context": "error[E0368]: binary assignment operation `>>=` cannot be applied to type `bool`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_22",
+        "context": "error[E0368]: binary assignment operation `/=` cannot be applied to type `vstd::prelude::nat`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "MBPP-verified_task_70",
+        "context": "error[E0368]: binary assignment operation `+=` cannot be applied to type `vstd::prelude::nat`"
+      }
+    ],
+    "unknown::unknown_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0109_vericoded",
+        "context": "\nthread 'rustc' (46076836) panicked at rust_verify/src/erase.rs:308:14:\ncalled `Option::unwrap()` on a `None` value\nnote: run with `RUST_BACKTRACE=1` "
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0118_vericoded",
+        "context": "\nthread 'rustc' (46083771) panicked at rust_verify/src/erase.rs:308:14:\ncalled `Option::unwrap()` on a `None` value\nnote: run with `RUST_BACKTRACE=1` "
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0118_vericoded",
+        "context": "\nthread 'rustc' (46084196) panicked at rust_verify/src/erase.rs:308:14:\ncalled `Option::unwrap()` on a `None` value\nnote: run with `RUST_BACKTRACE=1` "
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0119_vericoded",
+        "context": "\nthread 'rustc' (46086863) panicked at rust_verify/src/erase.rs:308:14:\ncalled `Option::unwrap()` on a `None` value\nnote: run with `RUST_BACKTRACE=1` "
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VT0119_vericoded",
+        "context": "\nthread 'rustc' (46087664) panicked at rust_verify/src/erase.rs:308:14:\ncalled `Option::unwrap()` on a `None` value\nnote: run with `RUST_BACKTRACE=1` "
+      }
+    ],
+    "rust_compile_error::E0408": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0408]: variable `Bool` is not bound in all patterns"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0408]: variable `Bool` is not bound in all patterns"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0408]: variable `Bool` is not bound in all patterns"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0408]: variable `Bool` is not bound in all patterns"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0408]: variable `Bool` is not bound in all patterns"
+      }
+    ],
+    "verus_toolchain::verus_tool_error": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p2_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0287_vericoded",
+        "context": "error: verus internal error: expected const constructor"
+      }
+    ],
+    "rust_compile_error::E0615": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "MBPP-verified_task_15",
+        "context": "error[E0615]: attempted to take value of method `len` on type `vstd::seq::Seq<vstd::prelude::int>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_o4-mini.json",
+        "sample_id": "DAFNY2VERUS-COLLECTION_91",
+        "context": "error[E0615]: attempted to take value of method `len` on type `vstd::seq::Seq<i32>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_6",
+        "context": "error[E0615]: attempted to take value of method `len` on type `vstd::seq::Seq<usize>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VT0048_vericoded",
+        "context": "error[E0615]: attempted to take value of method `len` on type `vstd::seq::Seq<T>`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_o4-mini.json",
+        "sample_id": "VerusBench_Diffy_s1lif",
+        "context": "error[E0615]: attempted to take value of method `len` on type `vstd::seq::Seq<i32>`"
+      }
+    ],
+    "rust_compile_error::E0600": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VJ0084_vericoded",
+        "context": "error[E0600]: cannot apply unary operator `!` to type `fn(&..., i32) -> bool {contains_value}`"
+      }
+    ],
+    "rust_compile_error::E0107": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VerusBench_MBPP_task_id_424",
+        "context": "error[E0107]: associated function takes 0 generic arguments but 1 generic argument was supplied"
+      }
+    ],
+    "rust_compile_error::E0610": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_22",
+        "context": "error[E0610]: `char` is a primitive type and therefore doesn't have fields"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "HumanEval-Verus_task_22",
+        "context": "error[E0610]: `char` is a primitive type and therefore doesn't have fields"
+      }
+    ],
+    "ownership_error::use_after_move": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0382]: use of moved value: `dtype`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0457_vericoded",
+        "context": "error[E0382]: use of moved value: `unit`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0125_vericoded",
+        "context": "error[E0382]: use of moved value: `arg1`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0382]: use of moved value: `dtype`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p1_fewshotplusLTM_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0382]: use of moved value: `dtype`"
+      }
+    ],
+    "rust_compile_error::E0763": [
+      {
+        "source_dir": "verify_pass5_fewshot",
+        "file": "p3_fewshot_o4-mini.json",
+        "sample_id": "VeriCoding_VA0475_vericoded",
+        "context": "error[E0763]: unterminated byte constant"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-4o-mini.json",
+        "sample_id": "VerusBench_MBPP_task_id_557",
+        "context": "error[E0763]: unterminated byte constant"
+      }
+    ],
+    "rust_compile_error::E0658": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VH0136_vericoded",
+        "context": "error[E0658]: use of unstable library feature `str_as_str`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VT0376_vericoded",
+        "context": "error[E0658]: attributes in `where` clause are unstable"
+      }
+    ],
+    "rust_compile_error::E0532": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0118_vericoded",
+        "context": "error[E0532]: expected tuple struct or tuple variant, found associated function `$crate::vstd::view::View::view`"
+      }
+    ],
+    "rust_compile_error::E0659": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p1_fewshotplusCOT_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0659]: `Bool` is ambiguous"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0123_vericoded",
+        "context": "error[E0659]: `Bool` is ambiguous"
+      }
+    ],
+    "rust_compile_error::E0758": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VD0197_vericoded",
+        "context": "error[E0758]: unterminated block comment"
+      }
+    ],
+    "rust_compile_error::E0765": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VA0115_vericoded",
+        "context": "error: unknown start of token: `"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VA0115_vericoded",
+        "context": "error: unknown start of token: `"
+      }
+    ],
+    "rust_compile_error::E0609": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p2_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0119_vericoded",
+        "context": "error[E0609]: no field `0` on type `DType`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p1_fewshotplusLTM_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0119_vericoded",
+        "context": "error[E0609]: no field `0` on type `DType`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VV0152_vericoded",
+        "context": "error[E0609]: no field `seq` on type `std::vec::Vec<i32>`"
+      }
+    ],
+    "rust_compile_error::E0606": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_claude-sonnet-4-5-20250929.json",
+        "sample_id": "VeriCoding_VS0022_vericoded",
+        "context": "error[E0606]: casting `&i8` as `i32` is invalid"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_gpt-4o-mini.json",
+        "sample_id": "VeriCoding_VH0052_vericoded",
+        "context": "error[E0606]: casting `&char` as `u8` is invalid"
+      }
+    ],
+    "rust_compile_error::E0574": [
+      {
+        "source_dir": "verify_pass5_fewshot_COT",
+        "file": "p3_fewshotplusCOT_gpt-5.2.json",
+        "sample_id": "VeriCoding_VT0658_vericoded",
+        "context": "error[E0574]: expected struct, variant or union type, found function `choose`"
+      }
+    ],
+    "rust_compile_error::E0080": [
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0218_vericoded",
+        "context": "error[E0080]: calling non-const function `<PrintConfig as std::default::Default>::default`"
+      },
+      {
+        "source_dir": "verify_pass5_fewshot_LTM",
+        "file": "p2_fewshotplusLTM_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VT0218_vericoded",
+        "context": "error[E0080]: calling non-const function `<PrintOptions as std::default::Default>::default`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p1_zeroshot_deepseek-v3.2.json",
+        "sample_id": "VeriCoding_VA0129_vericoded",
+        "context": "error[E0080]: calling non-const function `vstd::set::Set::<char>::empty`"
+      }
+    ],
+    "rust_compile_error::E0463": [
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p1_zeroshot_o4-mini.json",
+        "sample_id": "MBPP-verified_task_11",
+        "context": "error[E0463]: can't find crate for `prusti_contracts`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p1_zeroshot_o4-mini.json",
+        "sample_id": "VeriCoding_VS0018_vericoded",
+        "context": "error[E0463]: can't find crate for `builtin`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_o4-mini.json",
+        "sample_id": "HumanEval-Verus_task_46",
+        "context": "error[E0463]: can't find crate for `verus`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_o4-mini.json",
+        "sample_id": "VeriCoding_VA0409_vericoded",
+        "context": "error[E0463]: can't find crate for `verus`"
+      },
+      {
+        "source_dir": "verify_pass5_zeroshot",
+        "file": "p2_zeroshot_o4-mini.json",
+        "sample_id": "VerusBench_Diffy_s4if",
+        "context": "error[E0463]: can't find crate for `builtin`"
+      }
+    ]
+  }
+}

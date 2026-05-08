@@ -46,9 +46,9 @@ try:
 except Exception:  # pragma: no cover
     tqdm = None
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 GEN_ROOT = ROOT / "generation"
-VERIFY_ROOT = ROOT / "verify"
+VERIFY_ROOT = Path(__file__).resolve().parent
 SUMMARY_TABLES_DIR = VERIFY_ROOT / "summary_tables"
 
 PIPELINE_VARIANT_TO_DIR = {
